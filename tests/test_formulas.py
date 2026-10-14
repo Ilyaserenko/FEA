@@ -100,15 +100,16 @@ def test_1_1_13_14_15_linearity():
     assert stats.mean_total([1.0, 2.0], [3.0, 5.0], [6.0, 5.0]) == pytest.approx([10.0, 12.0])  # 1.1.15
 
 
-@pytest.mark.parametrize("pdf_fn,args,ref", [
-    (stats.pdf_exponential, (1.0, 2.0), expon.pdf(1.0, scale=0.5)),                       # 1.1.16
-    (stats.pdf_uniform, (0.3, 0.0, 1.0), uniform.pdf(0.3)),                               # 1.1.17
-    (stats.pdf_triangular, (0.5, 0.0, 1.0), 2.0),                                         # 1.1.18 пик
-    (stats.pdf_normal, (1.0, 0.0, 2.0), norm.pdf(1.0, 0, 2)),                             # 1.1.19
-    (stats.pdf_weibull, (1.5, 2.0, 3.0), weibull_min.pdf(1.5, c=2.0, scale=3.0)),         # 1.1.27
-])
-def test_pdfs_vs_scipy(pdf_fn, args, ref):
-    assert pdf_fn(*args) == pytest.approx(ref, rel=1e-9)
+def test_pdfs_vs_scipy():
+    cases = [
+        (stats.pdf_exponential, (1.0, 2.0), expon.pdf(1.0, scale=0.5)),               # 1.1.16
+        (stats.pdf_uniform, (0.3, 0.0, 1.0), uniform.pdf(0.3)),                        # 1.1.17
+        (stats.pdf_triangular, (0.5, 0.0, 1.0), 2.0),                                  # 1.1.18 пик
+        (stats.pdf_normal, (1.0, 0.0, 2.0), norm.pdf(1.0, 0, 2)),                      # 1.1.19
+        (stats.pdf_weibull, (1.5, 2.0, 3.0), weibull_min.pdf(1.5, c=2.0, scale=3.0)),   # 1.1.27
+    ]
+    for pdf_fn, args, ref in cases:
+        assert pdf_fn(*args) == pytest.approx(ref, rel=1e-9)
 
 
 def test_1_1_18_triangular_shape():

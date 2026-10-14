@@ -1,0 +1,716 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="File-List" href="./chap2_9.files/filelist.xml">
+<link rel="Edit-Time-Data" href="./chap2_9.files/editdata.mso">
+<title>Глава 2.9. Устойчивость механических конструкций</title><style>
+<!--
+p.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+h1 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-align:right; mso-pagination:widow-orphan; page-break-after:avoid; mso-outline-level:1; mso-element:frame; mso-element-frame-width:319.55pt; mso-element-frame-hspace:9.0pt; mso-element-wrap:auto; mso-element-anchor-vertical:paragraph; mso-element-anchor-horizontal:page; mso-element-left:103.0pt; mso-element-top:90.35pt; mso-height-rule:exactly; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-font-kerning:0pt; mso-bidi-font-weight:normal; }
+p.MsoIndex1 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+li.MsoIndex1 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+div.MsoIndex1 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+p.MsoToc1 { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 16.0cm; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.MsoToc1 { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 16.0cm; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.MsoToc1 { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 16.0cm; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.MsoToc2 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 16.0cm; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoToc2 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 16.0cm; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoToc2 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 16.0cm; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.MsoCommentText { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoCommentText { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoCommentText { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+span.MsoCommentReference { mso-ansi-font-size:8.0pt; mso-bidi-font-size:8.0pt; }
+p.MsoBodyText { margin:0cm; margin-bottom:.0001pt; text-align:justify; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoBodyText { margin:0cm; margin-bottom:.0001pt; text-align:justify; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoBodyText { margin:0cm; margin-bottom:.0001pt; text-align:justify; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.UG1bodytext { mso-style-name:UG1 body text; margin:0cm; margin-bottom:.0001pt; text-indent:21.3pt; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.UG1bodytext { mso-style-name:UG1 body text; margin:0cm; margin-bottom:.0001pt; text-indent:21.3pt; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.UG1bodytext { mso-style-name:UG1 body text; margin:0cm; margin-bottom:.0001pt; text-indent:21.3pt; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.Section1 { page:Section1; }
+-->
+</style><style title="hcp" type="text/css">
+<!--
+div.hcp1 { position:relative; }
+span.hcp2 { font-size:10.0pt; font-family:Arial; }
+i.hcp3 { mso-bidi-font-style:normal; }
+span.hcp4 { mso-spacerun:yes; }
+td.hcp5 { padding-top:0cm; padding-right:9.05pt; padding-bottom:0cm; padding-left:9.05pt; }
+span.hcp6 { font-family:Arial; }
+span.hcp7 { font-family:Arial; mso-ansi-language:EN-US; }
+span.hcp8 { font-size:10.0pt; mso-bidi-font-size:11.0pt; font-family:Arial; letter-spacing:.2pt; }
+span.hcp9 { font-size:10.0pt; mso-bidi-font-size:11.0pt; font-family:Arial; letter-spacing:.2pt; mso-ansi-language:EN-US; }
+b.hcp10 { mso-bidi-font-weight:normal; }
+td.hcp11 { border:none; padding:0cm 5.4pt 0cm 5.4pt; }
+span.hcp12 { mso-tab-count:1; }
+span.hcp13 { mso-tab-count:4; }
+span.hcp14 { mso-tab-count:3; }
+span.hcp15 { mso-tab-count:2; }
+span.hcp16 { letter-spacing:2.0pt; mso-bidi-font-style:italic; }
+span.hcp17 { font-family:Arial; mso-bidi-font-weight:bold; mso-bidi-font-style:italic; }
+td.hcp18 { border:solid windowtext .75pt; border-top:none; mso-border-top-alt:solid windowtext .75pt; padding:0cm 5.4pt 0cm 5.4pt; }
+td.hcp19 { border-top:none; border-left:none; border-bottom:solid windowtext .75pt; border-right:solid windowtext .75pt; mso-border-top-alt:solid windowtext .75pt; mso-border-left-alt:solid windowtext .75pt; padding:0cm 5.4pt 0cm 5.4pt; }
+span.hcp20 { font-size:10.0pt; font-family:Arial; mso-ansi-language:EN-US; }
+-->
+</style>
+</head>
+<body lang="RU" style="tab-interval:35.4pt">
+<div placeholder id="header" style="width:100%;" class="hcp1">
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			background-color: #d8e8f9;
+			margin-left: 0px;"><img src="head_for_help.jpg"
+									x-maintain-ratio=TRUE
+									style="border: none;
+											width: 1000px;
+											height: 50px;
+											float: none;
+											border-style: none;
+											border-style: none;"
+									width=1000
+									height=50
+									border=0></p>
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			border-top-color: #000080;
+			border-top-width: 2px;
+			border-top-style: Ridge;
+			margin-left: 0px;">&nbsp;</p>
+</div>
+<div class=Section1>
+
+<h1 align=left style='margin-top:12.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:left;page-break-after:auto;mso-element:frame;
+mso-element-frame-width:0cm;mso-element-frame-hspace:0cm;mso-element-wrap:auto;
+mso-element-anchor-vertical:margin;mso-element-anchor-horizontal:column;
+mso-element-left:left;mso-element-top:0cm;mso-height-rule:exactly'><span
+style='font-size:14.0pt;font-family:Arial;color:navy;mso-font-kerning:18.0pt'>Глава
+2.9. Устойчивость механических конструкций</span></h1>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Под <span style='letter-spacing:2.0pt;mso-bidi-font-weight:
+bold'>устойчивостью</span> понимается свойство системы сохранять свое состояние
+при внешних воздействиях. Понятие устойчивости играет очень важную роль в механике.
+Дело в том, что если какая-либо механическая система сконструирована без учета
+требований устойчивости, то она будет чувствительна даже к незначительным
+внешним воздействиям, а это в конечном итоге может привести к самым
+нежелательным последствиям. Переход системы в <i class="hcp3">неустойчивое состояние</i> (или <i class="hcp3">потеря
+устойчивости</i>) так же опасен, как и потеря прочности, т.&nbsp;е. способен
+вызвать полное разрушение данной конструкции. Вот почему так важно определить
+границы перехода механической системы от устойчивого состояния к неустойчивому.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Определим <i class="hcp3">состояние
+устойчивости</i> механической системы как состояние, находясь в котором,
+система при приложении любого сколь угодно малого внешнего воздействия
+(т.&nbsp;е. воздействия, которое является не только малым, но может быть сделано
+меньше любой наперед заданной величины) возвращается в исходное положение
+равновесия после снятия внешних силовых факторов. Значение внешней силы, при
+которой система переходит из устойчивого состояния в неустойчивое, называется <i class="hcp3">критической силой</i>. Долю <sub><img width="14" height="14" src="chap2_9.files/image002.gif" v:shapes="_x0000_i1025"></sub><span class="hcp4"> </span>внешней нагрузки по отношению к критической
+назовем <i class="hcp3">запасом устойчивости</i>.</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:122.45pt;mso-element-frame-hspace:
+9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+mso-element-anchor-horizontal:page;mso-element-left:373.15pt;mso-element-top:
+71.5pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=175 align=left>
+ <tr>
+  <td valign="top" align="left" class="hcp5">
+  <p class=MsoNormal align=center style='text-align:center;tab-stops:99.25pt;
+  mso-element:frame;mso-element-frame-width:122.45pt;mso-element-frame-hspace:
+  9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:page;mso-element-left:373.15pt;mso-element-top:
+  71.5pt;mso-height-rule:exactly'><span class="hcp6"><img width="151" height="77" src="chap2_9.files/image004.gif" v:shapes="_x0000_i1026"></span></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-element:frame;
+  mso-element-frame-width:122.45pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  page;mso-element-left:373.15pt;mso-element-top:71.5pt;mso-height-rule:exactly'><span lang="EN-US" class="hcp7">a)</span></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-element:frame;
+  mso-element-frame-width:122.45pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  page;mso-element-left:373.15pt;mso-element-top:71.5pt;mso-height-rule:exactly'><span class="hcp6"><img width="151" height="77" src="chap2_9.files/image006.gif" v:shapes="_x0000_i1027"></span></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-element:frame;
+  mso-element-frame-width:122.45pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  page;mso-element-left:373.15pt;mso-element-top:71.5pt;mso-height-rule:exactly'><span lang="EN-US" class="hcp7">b)</span></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-element:frame;
+  mso-element-frame-width:122.45pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  page;mso-element-left:373.15pt;mso-element-top:71.5pt;mso-height-rule:exactly'><span class="hcp6"><img width="151" height="77" src="chap2_9.files/image008.gif" v:shapes="_x0000_i1028"></span></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-element:frame;
+  mso-element-frame-width:122.45pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  page;mso-element-left:373.15pt;mso-element-top:71.5pt;mso-height-rule:exactly'><span lang="EN-US" class="hcp7">c</span><span class="hcp6">)</span></p>
+  <p class=MsoNormal align=center style='margin-top:8.0pt;text-align:center;
+  mso-element:frame;mso-element-frame-width:122.45pt;mso-element-frame-hspace:
+  9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:page;mso-element-left:373.15pt;mso-element-top:
+  71.5pt;mso-height-rule:exactly'><span class="hcp6">Рис. 2.9.1</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp8">Физический
+смысл устойчивости можно проиллюстрировать на простом примере (рис. 2.9.1).
+Если тяжелый шар находится внутри вогнутой поверхности (рис. 2.9.1</span><span lang="EN-US" class="hcp9">a</span><span class="hcp8">), то
+состояние его равновесия следует считать устойчивым, так как после малого
+толчка он будет двигаться со все уменьшающейся скоростью, причем чем слабее
+толчок, тем на меньшее расстояние шар отклонится от исходного положения. Если
+же шар находится в состоянии равновесия на вершине выпуклой поверхности (рис.
+2.9.1</span><span lang="EN-US" class="hcp9">b</span><span class="hcp8">), то достаточно слегка толкнуть его, чтобы он начал с возрастающей
+скоростью удаляться от положения равновесия&nbsp;– следовательно, исходное
+состояние равновесия неустойчиво. Когда же шар расположен на плоскости (рис.
+2.9.1</span><span lang="EN-US" class="hcp9">c</span><span class="hcp8">), то с точки зрения устойчивости его равновесие безразлично.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Таким образом, устойчивым следует считать такое состояние
+механической системы, при котором любое внешнее отклонение от состояния
+равновесия вызывает реакцию системы, восстанавливающую это равновесие.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span style='font-size:10.0pt;
+mso-bidi-font-size:11.0pt;font-family:Arial'>В качестве еще одного примера
+рассмотрим сжатие длинного стержня (или тонкостенной трубы) центральной осевой
+нагрузкой <sub><img width="18" height="18" src="chap2_9.files/image010.gif" v:shapes="_x0000_i1029"></sub>(рис.
+2.9.2). При малых деформациях стержень остается прямым и после снятия нагрузки
+восстанавливает первоначальное положение. Возрастание осевой нагрузки приводит
+к резкому увеличению деформаций изгиба. При больших значениях деформаций изгиба
+могут появиться признаки пластического деформирования, вследствие которых
+стержень не вернется в исходное состояние, а его ось останется криволинейной.
+Такое явление называется <i class="hcp3">потерей
+устойчивости</i>. Следует отметить, что пластические деформации могут быть вызваны
+и деформациями растяжения, но в этом случае ось стержня остается прямой.
+Отсутствие пластических деформаций при растяжении можно проверить по условию
+прочности, а при сжатии&nbsp;– по тому из критериев (прочности или устойчивости),
+нарушение которого проявляется раньше.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Увеличение линейных размеров конструкции при постоянстве
+внешних силовых факторов также может привести к возникновению сильных
+пластических деформаций и даже к ее разрушению, несмотря на то, что все условия
+статической прочности будут выполнены.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Подобных примеров можно привести множество. Все они
+указывают на исключительную важность понятия устойчивости в механике.</span></p>
+
+<div style='mso-element:frame;mso-element-frame-height:152.8pt;mso-element-frame-hspace:
+9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+mso-element-anchor-horizontal:page;mso-element-left:103.55pt;mso-element-top:
+47.1pt'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 height=204 align=left>
+ <tr>
+  <td valign="top" align="left" height="204" class="hcp5">
+  <p class=MsoNormal align=center style='text-align:center;mso-element:frame;
+  mso-element-frame-height:152.8pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  page;mso-element-left:103.55pt;mso-element-top:47.1pt'><span class="hcp6"><img width="94" height="182" src="chap2_9.files/image012.gif" v:shapes="_x0000_i1030"></span></p>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  mso-element:frame;mso-element-frame-height:152.8pt;mso-element-frame-hspace:
+  9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:page;mso-element-left:103.55pt;mso-element-top:
+  47.1pt'><span class="hcp6">Рис. 2.9.2</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp10"><span class="hcp2">Задача устойчивости сжатого стержня.</span></b> <span class="hcp2">Задачу расчета устойчивости проиллюстрируем на классическом
+примере: рассмотрим равновесие двухопорного стержня постоянного поперечного
+сечения <sub><img width="16" height="18" src="chap2_9.files/image014.gif" v:shapes="_x0000_i1031"></sub>,
+нагруженного осевой силой <sub><img width="18" height="18" src="chap2_9.files/image016.gif" v:shapes="_x0000_i1032"></sub><span class="hcp4"> </span>(задача Эйлера). После приложения осевой силы
+упругая линия стержня из линейной превращается в криволинейную (рис. 2.9.2).
+Если возникающий в сечении стержня изгибающий момент <sub><img width="31" height="24" src="chap2_9.files/image018.gif" v:shapes="_x0000_i1033"></sub><span class="hcp4"> </span>способен удержать стержень в изогнутом
+состоянии, то первоначальная прямолинейная форма равновесия стержня окажется
+неустойчивой. Форму упругой линии можно определить из уравнения изгиба стержня
+(2.5.22), справедливого при малых прогибах:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="106" height="24" src="chap2_9.files/image020.gif" v:shapes="_x0000_i1034"></span></sub><span class="hcp2">.<span class="hcp4">                                </span>(2.9.1)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Здесь <sub><img width="28" height="22" src="chap2_9.files/image022.gif" v:shapes="_x0000_i1035"></sub>&nbsp;–
+минимальный осевой момент инерции (2.3.4), <sub><img width="66" height="24" src="chap2_9.files/image024.gif" v:shapes="_x0000_i1036"></sub>&nbsp;–
+изгибающий момент. Знак «–» в правой части уравнения обусловлен выбором направления
+кривизны (в данном случае кривизна уменьшается, поэтому вызывающая ее сила
+считается отрицательной). Записанное дифференциальное уравнение (2.9.1) можно
+представить в иной форме, а именно</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="86" height="24" src="chap2_9.files/image026.gif" v:shapes="_x0000_i1037"></span></sub><span class="hcp2">,<span class="hcp4">                                                 </span>(2.9.2)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">где</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp2"><img width="76" height="46" src="chap2_9.files/image028.gif" v:shapes="_x0000_i1038"></span></sub><span class="hcp2">.<span class="hcp4">                                                </span>(2.9.3)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Общее решение такого уравнения, как известно, следует искать
+в виде</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp2"><img width="172" height="22" src="chap2_9.files/image030.gif" v:shapes="_x0000_i1039"></span></sub><span class="hcp2">.<span class="hcp4">                                 </span>(2.9.4)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Постоянные интегрирования в (2.9.4) выбираются так, чтобы
+были выполнены граничные условия:</span></p>
+
+<p class=Bookbody align=center style='margin-bottom:4.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><sub><span class="hcp2"><img width="103" height="22" src="chap2_9.files/image032.gif" v:shapes="_x0000_i1040"></span></sub><span class="hcp2">;<sub><img width="100" height="26" src="chap2_9.files/image034.gif" v:shapes="_x0000_i1041"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Из первого условия однозначно следует <sub><img width="46" height="22" src="chap2_9.files/image036.gif" v:shapes="_x0000_i1042"></sub>.
+Выполнение второго граничного условия приводит к уравнению <sub><img width="90" height="22" src="chap2_9.files/image038.gif" v:shapes="_x0000_i1043"></sub>,
+которое имеет два решения. Первое решение, <sub><img width="46" height="22" src="chap2_9.files/image040.gif" v:shapes="_x0000_i1044"></sub>,
+соответствует варианту, при котором балка не деформируется, и практического
+интереса не представляет. Во втором случае, когда <sub><img width="74" height="22" src="chap2_9.files/image042.gif" v:shapes="_x0000_i1045"></sub>,
+получаем <sub><img width="56" height="22" src="chap2_9.files/image044.gif" v:shapes="_x0000_i1046"></sub>,
+где <sub><img width="14" height="14" src="chap2_9.files/image046.gif" v:shapes="_x0000_i1047"></sub>&nbsp;–
+произвольное целое число. Тогда для осевой нагрузки из (2.9.3) имеем</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='margin-left:197.2pt;
+ border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width="136" style="width:101.9pt;" class="hcp11">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp6"><img width="79" height="196" src="chap2_9.files/image048.gif" v:shapes="_x0000_i1048"></span></p>
+  </td>
+  <td width="136" style="width:101.9pt;" class="hcp11">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp6"><img width="75" height="188" src="chap2_9.files/image050.gif" v:shapes="_x0000_i1049"></span></p>
+  </td>
+  <td width="136" style="width:101.9pt;" class="hcp11">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp6"><img width="79" height="187" src="chap2_9.files/image052.gif" v:shapes="_x0000_i1050"></span></p>
+  </td>
+  <td width="136" style="width:101.95pt;" class="hcp11">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp6"><img width="81" height="178" src="chap2_9.files/image054.gif" v:shapes="_x0000_i1051"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="544" colspan="4" style="width:407.65pt;" class="hcp11">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp6">Рис. 2.9.3</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'>&nbsp;</p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp2"><img width="104" height="44" src="chap2_9.files/image056.gif" v:shapes="_x0000_i1052"></span></sub><span class="hcp2">.<span class="hcp4">            </span><span class="hcp4">                                    </span>(2.9.5)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Наличие в выражении (2.9.5) целого множителя <sub><img width="14" height="14" src="chap2_9.files/image058.gif" v:shapes="_x0000_i1053"></sub><span class="hcp4"> </span>означает, что при данной постановке задачи
+осевая сила может принимать не любые значения, а только кратные <sub><img width="14" height="14" src="chap2_9.files/image059.gif" v:shapes="_x0000_i1054"></sub>.
+Более того, меняя последовательно <sub><img width="14" height="14" src="chap2_9.files/image060.gif" v:shapes="_x0000_i1055"></sub><span class="hcp4"> </span>и определяя для каждого из них функцию <sub><img width="14" height="18" src="chap2_9.files/image062.gif" v:shapes="_x0000_i1056"></sub>,
+можно обнаружить, что форма стержня при этом тоже меняется. Так, при <sub><img width="36" height="16" src="chap2_9.files/image064.gif" v:shapes="_x0000_i1057"></sub><span class="hcp4"> </span>стержень принимает форму полуволны синусоиды,
+при <sub><img width="38" height="16" src="chap2_9.files/image066.gif" v:shapes="_x0000_i1058"></sub><span class="hcp4"> </span>на той же длине <sub><img width="11" height="16" src="chap2_9.files/image068.gif" v:shapes="_x0000_i1059"></sub><span class="hcp4"> </span>укладывается уже одна полная волна, и т. д.
+(рис. 2.9.3). В общем случае при любом целом <sub><img width="14" height="14" src="chap2_9.files/image069.gif" v:shapes="_x0000_i1060"></sub><span class="hcp4"> </span>упругая линия балки описывается кривой</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="98" height="42" src="chap2_9.files/image071.gif" v:shapes="_x0000_i1061"></span></sub><span class="hcp2">, <span class="hcp12">         </span><span class="hcp4">                                       </span>(2.9.6)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">которая представляет собой
+синусоиду, состоящую из <sub><img width="14" height="14" src="chap2_9.files/image073.gif" v:shapes="_x0000_i1062"></sub><span class="hcp4"> </span>полуволн. Амплитуда <sub><img width="18" height="22" src="chap2_9.files/image075.gif" v:shapes="_x0000_i1063"></sub><span class="hcp4"> </span>синусоиды равняется максимальному прогибу
+стержня, который в рамках принятых допущений (т.е. при рассмотрении только
+малых прогибов, когда дифференциальное уравнение упругой линии стержня
+приближенно принимается линейным) определить нельзя.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Дополнительные исследования показали, что переход от
+деформированного состояния с <sub><img width="36" height="16" src="chap2_9.files/image076.gif" v:shapes="_x0000_i1064"></sub><span class="hcp4"> </span>к состоянию с <sub><img width="38" height="16" src="chap2_9.files/image077.gif" v:shapes="_x0000_i1065"></sub><span class="hcp4"> </span>всегда связан с большими деформациями при
+малом изменении нагрузки. Следовательно, состояние при <sub><img width="36" height="16" src="chap2_9.files/image078.gif" v:shapes="_x0000_i1066"></sub><span class="hcp4"> </span>является предельным, а наименьшая отличная от
+нуля осевая сила <sub><img width="26" height="22" src="chap2_9.files/image080.gif" v:shapes="_x0000_i1067"></sub>,
+соответствующая этому случаю, называется <i class="hcp3">критической</i>:</span></p>
+
+<p class=MsoNormal align=right style='margin-bottom:4.0pt;text-align:right'><sub><span class="hcp6"><img width="116" height="44" src="chap2_9.files/image082.gif" v:shapes="_x0000_i1068"></span></sub><span class="hcp6">.<span class="hcp4">                                   </span><span class="hcp4">          </span>(2.9.7)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Значение критической силы (2.9.7), определяющей границу
+устойчивости для случая сжатия стержня, впервые получено Эйлером, поэтому эта
+сила получила название <i class="hcp3">силы Эйлера.</i></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Заметим, что, так же как и в рассмотренном выше простейшем
+примере, решение любой задачи устойчивости сводится к определению критической
+нагрузки и, следовательно, коэффициента запаса устойчивости. При решении задачи
+Эйлера этот результат получается путем решения дифференциального уравнения
+изгиба для соответствующих граничных условий. Однако на практике такая схема
+решения не является широко распространенной, поскольку часто приводит к
+громоздким вычислениям.</span></p>
+
+<div style='mso-element:frame;mso-element-frame-height:153.25pt;mso-element-frame-hspace:
+9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:
+margin;mso-element-top:225.25pt'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 height=204 align=left>
+ <tr>
+  <td valign="top" align="left" height="204" class="hcp5">
+  <p class=MsoNormal align=center style='text-align:center;mso-element:frame;
+  mso-element-frame-height:153.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:margin;
+  mso-element-top:225.25pt'><span class="hcp6"><img width="228" height="175" src="chap2_9.files/image084.gif" v:shapes="_x0000_i1069"></span></p>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  mso-element:frame;mso-element-frame-height:153.25pt;mso-element-frame-hspace:
+  9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:
+  margin;mso-element-top:225.25pt'><span class="hcp6">Рис. 2.9.4</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp10"><span class="hcp2">Энергетический метод определения критических нагрузок при расчете на
+устойчивость.</span></b> <span class="hcp2">Среди
+других методов, используемых для решения задачи устойчивости, наиболее
+универсальным является приближенный метод расчета критических нагрузок <sub><img width="26" height="22" src="chap2_9.files/image086.gif" v:shapes="_x0000_i1070"></sub>,
+называемый <i class="hcp3">энергетическим</i>. Реализация
+этого метода может быть эффективной при использовании вычислительной техники.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Рассмотрим стержень, к которому приложена постоянная
+сжимающая критическая сила <sub><img width="54" height="22" src="chap2_9.files/image088.gif" v:shapes="_x0000_i1071"></sub>.
+Очевидно, что после приложения этой нагрузки ось стержня изгибается (рис.
+2.9.4), при этом критическая нагрузка <sub><img width="28" height="22" src="chap2_9.files/image090.gif" v:shapes="_x0000_i1072"></sub><span class="hcp4"> </span>совершает работу <sub><img width="24" height="22" src="chap2_9.files/image092.gif" v:shapes="_x0000_i1073"></sub><span class="hcp4"> </span>на осевом перемещении <sub><img width="14" height="18" src="chap2_9.files/image094.gif" v:shapes="_x0000_i1074"></sub>:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp2"><span class="hcp4">     </span><sub><img width="76" height="22" src="chap2_9.files/image096.gif" v:shapes="_x0000_i1075"></sub>,<span class="hcp4">    </span><span class="hcp12">      </span><span class="hcp4">   </span><span class="hcp4">          </span><span class="hcp12">           </span><span class="hcp4">        </span>(2.9.8)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">В соответствии с законом сохранения
+энергии работа <sub><img width="24" height="22" src="chap2_9.files/image097.gif" v:shapes="_x0000_i1076"></sub><span class="hcp4"> </span>должна быть равна увеличению потенциальной
+энергии деформации <sub><img width="18" height="16" src="chap2_9.files/image099.gif" v:shapes="_x0000_i1077"></sub>, а
+именно</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="54" height="22" src="chap2_9.files/image101.gif" v:shapes="_x0000_i1078"></span></sub><span class="hcp2">.<span class="hcp12">         </span><span class="hcp4">                                              
+</span>(2.9.9)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">C другой стороны, потенциальная энергия деформации при
+изгибе согласно (2.5.33) рассчитывается как сумма</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp2"><img width="120" height="50" src="chap2_9.files/image103.gif" v:shapes="_x0000_i1079"></span></sub><span class="hcp2">, <span class="hcp13">                                       </span><span class="hcp4">  </span>(2.9.10)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span
+style='font-size:10.0pt;font-family:Arial;letter-spacing:-.2pt'>где <sub><img width="14" height="18" src="chap2_9.files/image105.gif" v:shapes="_x0000_i1080"></sub>&nbsp;–
+число участков разного поперечного сечения; <sub><img width="11" height="16" src="chap2_9.files/image107.gif" v:shapes="_x0000_i1081"></sub>и <sub><img width="12" height="22" src="chap2_9.files/image109.gif" v:shapes="_x0000_i1082"></sub>&nbsp;–
+номер текущего участка равной площади и его длина соответственно. Подставив в
+(2.9.10) выражение для <sub><img width="31" height="24" src="chap2_9.files/image111.gif" v:shapes="_x0000_i1083"></sub><span class="hcp4"> </span>из (2.9.1), перепишем (2.9.10) в виде</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="162" height="50" src="chap2_9.files/image113.gif" v:shapes="_x0000_i1084"></span></sub><span class="hcp2">.<span class="hcp14">                             </span><span class="hcp4">   </span>(2.9.11)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Элемент длины <sub><img width="20" height="18" src="chap2_9.files/image115.gif" v:shapes="_x0000_i1085"></sub><span class="hcp4"> </span>после деформации повернется на угол <sub><img width="24" height="18" src="chap2_9.files/image117.gif" v:shapes="_x0000_i1086"></sub><span class="hcp4"> </span>и сместится на величину <sub><img width="24" height="18" src="chap2_9.files/image119.gif" v:shapes="_x0000_i1087"></sub><span class="hcp4"> </span>(рис. 2.9.4). Тогда полное осевое перемещение
+точки приложения силы <sub><img width="18" height="22" src="chap2_9.files/image121.gif" v:shapes="_x0000_i1088"></sub><span class="hcp4"> </span>может быть подсчитано по формуле</span></p>
+
+<p class=Bookbody align=right style='text-align:right;line-height:normal'><sub><span class="hcp2"><img width="60" height="52" src="chap2_9.files/image123.gif" v:shapes="_x0000_i1089"></span></sub><span class="hcp2">.<span class="hcp15">            </span>
+<span class="hcp15">                       </span><span class="hcp4">            </span>(2.9.12)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Из геометрических соображений ясно, что</span></p>
+
+<p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:center;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp2"><img width="134" height="20" src="chap2_9.files/image125.gif" v:shapes="_x0000_i1090"></span></sub><span class="hcp2">=<sub><img width="82" height="41" src="chap2_9.files/image127.gif" v:shapes="_x0000_i1091"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Поскольку в рассматриваемом случае углы поворота сечения
+деформированной балки считаются малыми, то</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="114" height="41" src="chap2_9.files/image129.gif" v:shapes="_x0000_i1092"></span></sub><span class="hcp2">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">тогда</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp2"><img width="100" height="54" src="chap2_9.files/image131.gif" v:shapes="_x0000_i1093"></span></sub><span class="hcp2">.<span class="hcp4">                                             </span>(2.9.13)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Подставляя (2.9.8) и (2.9.11) в закон сохранения энергии
+(2.9.9) и разрешая его относительно критической силы, с учетом (2.9.13)
+получаем:</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp2"><img width="162" height="100" src="chap2_9.files/image133.gif" v:shapes="_x0000_i1094"></span></sub><span class="hcp2">.<span class="hcp4">                                        </span>(2.9.14)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Из выражения (2.9.14) следует, что необходимым условием
+получения правильного решения является наличие информации, описывающей
+поведение упругой линии стержня. Уравнение этой кривой <sub><img width="60" height="20" src="chap2_9.files/image135.gif" v:shapes="_x0000_i1095"></sub><span class="hcp4"> </span>приближенно может быть представлено в явной
+форме. К примеру, зададим его в виде степенного ряда, число членов которого на
+единицу больше количества граничных условий, которым необходимо удовлетворить:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="218" height="26" src="chap2_9.files/image137.gif" v:shapes="_x0000_i1096"></span></sub><span class="hcp2">+ <sub><img width="62" height="26" src="chap2_9.files/image139.gif" v:shapes="_x0000_i1097"></sub>.<span class="hcp12">        </span> (2.9.15)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Постоянные множители <sub><img width="122" height="24" src="chap2_9.files/image141.gif" v:shapes="_x0000_i1098"></sub><span class="hcp4"> </span>ряда (2.9.15) определяются из граничных
+условий, которые зависят от вида стержня, местоположения и типа опор типа, а
+также местоположения и вида внешних сил. При этом точность полученного
+результата, разумеется, напрямую зависит от точности описания формы изогнутой
+оси стержня.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Численные методы позволяют определить перемещение каждой
+точки стержня, что дает возможность использовать их для решения задачи устойчивости,
+не прибегая к процедуре аналитического описания изогнутой оси <sub><img width="60" height="20" src="chap2_9.files/image143.gif" v:shapes="_x0000_i1099"></sub>.
+При таком подходе определение производных оказывается простой численной
+операцией, а задача расчета устойчивости существенно упрощается.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">В случае, когда на стержень действует несколько осевых сил,
+вызывающих его сжатие, работа этих сил имеет вид</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp2"><img width="162" height="54" src="chap2_9.files/image145.gif" v:shapes="_x0000_i1100"></span></sub><span class="hcp2">, <span class="hcp14">                            </span><span class="hcp4">  </span>(2.9.16)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span
+style='font-size:10.0pt;font-family:Arial;letter-spacing:.2pt'>где <sub><img width="14" height="20" src="chap2_9.files/image147.gif" v:shapes="_x0000_i1101"></sub>&nbsp;–
+текущее значение осевой силы, <sub><img width="16" height="14" src="chap2_9.files/image149.gif" v:shapes="_x0000_i1102"></sub>&nbsp;–
+общее число приложенных нагрузок; <sub><img width="14" height="26" src="chap2_9.files/image151.gif" v:shapes="_x0000_i1103"></sub>&nbsp;–
+расстояние от точки закрепления до точки приложения сжимающей силы.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp10"><span class="hcp2">Критические напряжения.</span></b> <span class="hcp2">Если максимальную из приложенных сил назвать <i class="hcp3">критической</i>, а остальные выразить в
+долях по отношении к ней, то подстановкой в уравнение сохранения энергии
+находится значение этой критической нагрузки. По значению критической нагрузки
+можно определить вызванное ею <span class="hcp16">критическое сжимающее напряжение</span> <sub><img width="30" height="22" src="chap2_9.files/image153.gif" v:shapes="_x0000_i1104"></sub>,
+т.е. то напряжение, при котором прямолинейная форма равновесия стержня
+становится неустойчивой:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="74" height="42" src="chap2_9.files/image155.gif" v:shapes="_x0000_i1105"></span></sub><span class="hcp2">.<span class="hcp15">                </span>
+<span class="hcp15">                       </span><span class="hcp4">      </span>(2.9.17)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">С целью выяснения границ применимости рассмотренной выше
+теории заметим, что выражение для критической силы в случае произвольного
+стержня допустимо представить в виде</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="96" height="48" src="chap2_9.files/image157.gif" v:shapes="_x0000_i1106"></span></sub><span class="hcp2">,<span class="hcp4">                                             </span>(2.9.18)</span></p>
+
+<h1 align=left style='margin-top:12.0pt;margin-right:0cm;margin-bottom:4.0pt;
+margin-left:0cm;text-align:left;mso-element:frame;mso-element-frame-width:0cm;
+mso-element-frame-hspace:0cm;mso-element-wrap:auto;mso-element-anchor-vertical:
+margin;mso-element-anchor-horizontal:column;mso-element-left:left;mso-element-top:
+0cm;mso-height-rule:exactly'><span style='font-size:10.0pt;font-family:Arial;
+letter-spacing:2.0pt;font-weight:normal;mso-bidi-font-weight:bold'>Таблица</span>
+<span style='font-size:10.0pt;font-family:Arial;font-weight:normal;mso-bidi-font-weight:
+bold'>2.9.1</span> <span class="hcp2">Значения
+коэффициента приведения длины <sub><img width="16" height="18" src="chap2_9.files/image159.gif" v:shapes="_x0000_i1107"></sub></span></h1>
+
+<table border=1 cellspacing=0 cellpadding=0 style='margin-left:5.4pt;
+ border-collapse:collapse;border:none;mso-border-alt:solid windowtext .75pt;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width=350 style='width:262.25pt;border:solid windowtext .75pt;padding:
+  0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp17">Способ
+  закрепления концов стержня</span></p>
+  </td>
+  <td width=180 style='width:134.65pt;border:solid windowtext .75pt;border-left:
+  none;mso-border-left-alt:solid windowtext .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><sub><span class="hcp17"><img width="18" height="17" src="chap2_9.files/image160.gif" v:shapes="_x0000_i1108"></span></sub></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="350" valign="top" style="width:262.25pt;" class="hcp18">
+  <p class=MsoNormal style='margin-top:2.0pt;margin-right:0cm;margin-bottom:
+  2.0pt;margin-left:0cm;text-align:justify;text-indent:1.7pt'><span class="hcp6">оба конца шарнирно закреплены</span></p>
+  </td>
+  <td width="180" style="width:134.65pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:1.7pt'><span class="hcp6">1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="350" valign="top" style="width:262.25pt;" class="hcp18">
+  <p class=MsoNormal style='margin-top:2.0pt;margin-right:0cm;margin-bottom:
+  2.0pt;margin-left:0cm;text-align:justify;text-indent:1.7pt'><span class="hcp6">оба конца заделаны</span></p>
+  </td>
+  <td width="180" style="width:134.65pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:1.7pt'><span class="hcp6">0,5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="350" valign="top" style="width:262.25pt;" class="hcp18">
+  <p class=MsoNormal style='margin-top:2.0pt;margin-right:0cm;margin-bottom:
+  2.0pt;margin-left:0cm;text-align:justify;text-indent:1.7pt'><span class="hcp6">один конец заделан, а другой шарнирно закреплен</span></p>
+  </td>
+  <td width="180" style="width:134.65pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:1.7pt'><span class="hcp6">0,7</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="350" valign="top" style="width:262.25pt;" class="hcp18">
+  <p class=MsoNormal style='margin-top:2.0pt;margin-right:0cm;margin-bottom:
+  2.0pt;margin-left:0cm;text-align:justify;text-indent:1.7pt'><span class="hcp6">один конец заделан, а другой свободен</span></p>
+  </td>
+  <td width="180" style="width:134.65pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:1.7pt'><span class="hcp6">2</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=Bookbody style='margin-top:8.0pt;text-indent:0cm;line-height:normal'><span class="hcp2">где <sub><img width="16" height="18" src="chap2_9.files/image161.gif" v:shapes="_x0000_i1109"></sub>&nbsp;–
+так называемый <span class="hcp16">коэффициент
+приведенной длины стержн</span><span style='mso-bidi-font-style:italic'>я</span>,
+зависящий от наложенных на стержень связей, изменения жесткости сечения вдоль
+его оси и способа нагружения стержня. Коэффициент <sub><img width="16" height="18" src="chap2_9.files/image162.gif" v:shapes="_x0000_i1110"></sub><span class="hcp4"> </span>позволяет при расчетах и испытаниях на
+устойчивость заменять произвольный случай закрепления концов стержня основным
+случаем, т.&nbsp;е. стержнем с шарнирно закрепленными концами. Таким образом,
+результаты испытаний для основного случая можно перенести на произвольный
+стержень, если для него известен коэффициент <sub><img width="16" height="18" src="chap2_9.files/image163.gif" v:shapes="_x0000_i1111"></sub>.
+Если стержень обладает постоянной жесткостью и нагружен сжимающей силой в
+концевых сечениях, величина <sub><img width="16" height="18" src="chap2_9.files/image164.gif" v:shapes="_x0000_i1112"></sub><span class="hcp4"> </span>рассчитывается методом Эйлера. Значения <sub><img width="16" height="18" src="chap2_9.files/image165.gif" v:shapes="_x0000_i1113"></sub><span class="hcp4"> </span>для наиболее часто встречающихся вариантов
+закрепления приведены в таблице 2.9.1.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Подставляя (2.9.18) в (2.9.17), получаем формулу</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;text-align:center;
+text-indent:7.1pt;line-height:normal'><sub><span class="hcp2"><img width="98" height="48" src="chap2_9.files/image167.gif" v:shapes="_x0000_i1114"></span></sub><span class="hcp2">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">которую удобнее записать как</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp2"><img width="76" height="44" src="chap2_9.files/image169.gif" v:shapes="_x0000_i1115"></span></sub><span class="hcp2">, <span class="hcp13">                                      </span><span class="hcp4">      </span>(2.9.19)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">где <sub><img width="82" height="26" src="chap2_9.files/image171.gif" v:shapes="_x0000_i1116"></sub>&nbsp;–
+гибкость стержня; <sub><img width="100" height="26" src="chap2_9.files/image173.gif" v:shapes="_x0000_i1117"></sub>&nbsp;–
+наименьший радиус инерции поперечного сечения стержня.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Выражение (2.9.19) носит название <i class="hcp3">формулы Эйлера для определения критических напряжений.</i> Ею можно
+пользоваться только тогда, когда напряжения <sub><img width="30" height="22" src="chap2_9.files/image175.gif" v:shapes="_x0000_i1118"></sub>в
+материале стержня, вызванные действием критической силы, не превышают предела
+пропорциональности <sub><img width="22" height="22" src="chap2_9.files/image177.gif" v:shapes="_x0000_i1119"></sub>(рис.
+2.2.3),</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="66" height="22" src="chap2_9.files/image179.gif" v:shapes="_x0000_i1120"></span></sub><span class="hcp2">,<span class="hcp4">                                                </span>(2.9.20)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">поскольку в основу ее вывода было положено
+дифференциальное уравнение упругой линии стержня, справедливое лишь в пределах
+применимости закону Гука. С учетом (2.9.19) условие (2.9.20) приобретает вид</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><sub><span class="hcp2"><img width="113" height="44" src="chap2_9.files/image181.gif" v:shapes="_x0000_i1121"></span></sub><span class="hcp2">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">откуда</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp2"><img width="113" height="52" src="chap2_9.files/image183.gif" v:shapes="_x0000_i1122"></span></sub><span class="hcp2">.<span class="hcp4">                                         </span>(2.9.21)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">В правой части (2.9.21) стоит то наименьшее значение
+гибкости стержня, при котором формула Эйлера еще применима, т.&nbsp;е<span
+style='letter-spacing:2.0pt'>. предельная гибкость</span> <sub><img width="112" height="30" src="chap2_9.files/image185.gif" v:shapes="_x0000_i1123"></sub>,
+зависящая только от физико-механических характеристик материала стержня&nbsp;–
+модуля упругости и предела пропорциональности. Например, для дерева <sub><img width="68" height="24" src="chap2_9.files/image187.gif" v:shapes="_x0000_i1124"></sub>,
+для чугуна&nbsp;– <sub><img width="62" height="24" src="chap2_9.files/image189.gif" v:shapes="_x0000_i1125"></sub>,
+для сталей&nbsp;– обычно<sub><img width="68" height="24" src="chap2_9.files/image191.gif" v:shapes="_x0000_i1126"></sub>.
+Однако для сталей с повышенным значением предела пропорциональности предельная
+гибкость уменьшается; так, некоторые легированные стали обладают <sub><img width="92" height="24" src="chap2_9.files/image193.gif" v:shapes="_x0000_i1127"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Итак, при выполнении условия (2.9.21) расчет критических сил
+и напряжений можно проводить по формулам Эйлера (2.9.18)&nbsp;– (2.9.19). Для
+стержней же с гибкостью меньше предельной, <sub><img width="54" height="24" src="chap2_9.files/image195.gif" v:shapes="_x0000_i1128"></sub>,
+действительные критические силы и напряжения значительно меньше тех значений,
+которые получаются из (2.9.18)&nbsp;– (2.9.19). К примеру, при гибкости
+стального стержня, равной <sub><img width="86" height="24" src="chap2_9.files/image197.gif" v:shapes="_x0000_i1129"></sub>, в
+соответствии с (2.9.19) имеем <sub><img width="74" height="22" src="chap2_9.files/image199.gif" v:shapes="_x0000_i1130"></sub>МПа,
+что намного превышает не только предел пропорциональности, но даже пределы
+прочности и текучести большинства сталей. В таких случаях критические параметры
+можно определять по эмпирическим формулам, одна из которых носит имя <i class="hcp3">Ясинского</i>: <span class="hcp12">      </span></span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="90" height="22" src="chap2_9.files/image201.gif" v:shapes="_x0000_i1131"></span></sub><span class="hcp2">,<span class="hcp13">                                               </span>
+(2.9.22)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">где <sub><img width="14" height="14" src="chap2_9.files/image203.gif" v:shapes="_x0000_i1132"></sub><span class="hcp4"> </span>и <sub><img width="14" height="18" src="chap2_9.files/image205.gif" v:shapes="_x0000_i1133"></sub>&nbsp;–
+некоторые определяемые экспериментально коэффициенты, зависящие от
+физико-химических свойств материала.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Формула Ясинского справедлива для пластичных материалов,
+гибкость которых лежит в пределах <sub><img width="84" height="22" src="chap2_9.files/image207.gif" v:shapes="_x0000_i1134"></sub>. На
+основании анализа многочисленных экспериментальных данных установлено, что для
+сталей <sub><img width="77" height="22" src="chap2_9.files/image209.gif" v:shapes="_x0000_i1135"></sub>;
+для цветных металлов <sub><img width="86" height="22" src="chap2_9.files/image211.gif" v:shapes="_x0000_i1136"></sub>.
+При гибкости <sub><img width="46" height="18" src="chap2_9.files/image213.gif" v:shapes="_x0000_i1137"></sub><span class="hcp4"> </span>напряжение <sub><img width="30" height="22" src="chap2_9.files/image215.gif" v:shapes="_x0000_i1138"></sub><span class="hcp4"> </span>полагается постоянным и равным пределу
+текучести <sub><img width="20" height="22" src="chap2_9.files/image217.gif" v:shapes="_x0000_i1139"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">На рис. 2.9.5 приведен график критических напряжений,
+т.&nbsp;е. зависимость <sub><img width="94" height="22" src="chap2_9.files/image219.gif" v:shapes="_x0000_i1140"></sub>. Из
+рисунка видно, что на участке <sub><img width="46" height="18" src="chap2_9.files/image220.gif" v:shapes="_x0000_i1141"></sub><span class="hcp4"> </span>напряжение <sub><img width="30" height="22" src="chap2_9.files/image221.gif" v:shapes="_x0000_i1142"></sub><span class="hcp4"> </span>имеет постоянное значение; участок <sub><img width="84" height="22" src="chap2_9.files/image222.gif" v:shapes="_x0000_i1143"></sub><span class="hcp4"> </span>описывается формулой Ясинского
+(2.9.22)&nbsp;– прямая</span> <span lang="EN-US" class="hcp20">I</span><span class="hcp2">; при <sub><img width="54" height="22" src="chap2_9.files/image224.gif" v:shapes="_x0000_i1144"></sub><span class="hcp4"> </span>критическое напряжение определяется по
+формуле Эйлера (2.9.19)&nbsp;– кривая</span> <span lang="EN-US" class="hcp20">II</span><span class="hcp2">.</span></p>
+
+<p class=Bookbody align=center style='text-align:center;line-height:normal'><span class="hcp6">&nbsp;</span></p>
+
+<p class=Bookbody align=center style='text-align:center;line-height:normal'><span class="hcp6"><img width="278" height="162" src="chap2_9.files/image226.gif" v:shapes="_x0000_i1145"></span></p>
+
+<p class=Bookbody align=center style='text-align:center;line-height:normal'><span class="hcp6">Рис. 2.9.5</span><span class="hcp2"></span></p>
+
+<p class=Bookbody style='line-height:normal'>&nbsp;</p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">В заключение следует отметить, что решение задачи
+устойчивости в общем виде для любой твердотельной модели может быть выполнено
+методом конечных элементов.</span></p>
+
+</div>
+
+<div placeholder id="footer" style="width:100%;" class="hcp1">
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			border-bottom-color: #000080;
+			border-bottom-style: Ridge;
+			border-bottom-width: 2px;
+			font-size: 10pt;">&nbsp;</p>
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			font-size: 8pt;">&#169; 
+ 2007 Copyright &nbsp;&#1053;&#1058;&#1062; 
+ &#1040;&#1055;&#1052;</p>
+</div>
+</body>
+</html>

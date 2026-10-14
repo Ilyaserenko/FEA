@@ -1,0 +1,1104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="File-List" href="./chap3_2.files/filelist.xml">
+<link rel="Edit-Time-Data" href="./chap3_2.files/editdata.mso">
+<title>Глава 3.2. Напряжения и деформации на контакте двух тел</title><style>
+<!--
+p.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+h1 { margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; mso-outline-level:1; font-size:14.0pt; font-family:Arial; }
+p.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.MsoCaption { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-align:center; mso-pagination:widow-orphan; mso-element:frame; mso-element-frame-width:390.45pt; mso-element-frame-height:273.0pt; mso-element-frame-hspace:9.0pt; mso-element-wrap:auto; mso-element-anchor-vertical:paragraph; mso-element-anchor-horizontal:page; mso-element-left:103.0pt; mso-element-top:67.8pt; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.MsoCaption { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-align:center; mso-pagination:widow-orphan; mso-element:frame; mso-element-frame-width:390.45pt; mso-element-frame-height:273.0pt; mso-element-frame-hspace:9.0pt; mso-element-wrap:auto; mso-element-anchor-vertical:paragraph; mso-element-anchor-horizontal:page; mso-element-left:103.0pt; mso-element-top:67.8pt; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.MsoCaption { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-align:center; mso-pagination:widow-orphan; mso-element:frame; mso-element-frame-width:390.45pt; mso-element-frame-height:273.0pt; mso-element-frame-hspace:9.0pt; mso-element-wrap:auto; mso-element-anchor-vertical:paragraph; mso-element-anchor-horizontal:page; mso-element-left:103.0pt; mso-element-top:67.8pt; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.Section1 { page:Section1; }
+lfo2 { mso-level-number-format:bullet; mso-level-numbering:continue; mso-level-text:\F0B7; mso-level-tab-stop:none; mso-level-number-position:left; mso-level-legacy:yes; mso-level-legacy-indent:14.15pt; mso-level-legacy-space:0cm; margin-left:2.0cm; text-indent:-14.15pt; font-family:Symbol; }
+ol { margin-bottom:0cm; }
+ul { margin-bottom:0cm; }
+-->
+</style><style title="hcp" type="text/css">
+<!--
+div.hcp1 { position:relative; }
+span.hcp2 { font-size:10.0pt; font-family:Arial; }
+i.hcp3 { mso-bidi-font-style:normal; }
+span.hcp4 { font-family:Symbol; }
+span.hcp5 { font:7.0pt "Times New Roman"; }
+span.hcp6 { font-family:Arial; }
+td.hcp7 { padding-top:0cm; padding-right:9.05pt; padding-bottom:0cm; padding-left:9.05pt; }
+span.hcp8 { font-family:Arial; mso-ansi-language:EN-US; }
+span.hcp9 { mso-tab-count:4; }
+span.hcp10 { mso-ansi-language:EN-US; }
+b.hcp11 { mso-bidi-font-weight:normal; }
+span.hcp12 { font-size:10.0pt; font-family:Arial; mso-ansi-language:EN-US; }
+span.hcp13 { mso-spacerun:yes; }
+span.hcp14 { mso-tab-count:1; }
+span.hcp15 { mso-tab-count:3; }
+td.hcp16 { border:solid windowtext .75pt; border-left:none; mso-border-left-alt:solid windowtext .75pt; padding:0cm 5.4pt 0cm 5.4pt; }
+td.hcp17 { border:solid windowtext .75pt; border-top:none; mso-border-top-alt:solid windowtext .75pt; padding:0cm 5.4pt 0cm 5.4pt; }
+td.hcp18 { border-top:none; border-left:none; border-bottom:solid windowtext .75pt; border-right:solid windowtext .75pt; mso-border-top-alt:solid windowtext .75pt; mso-border-left-alt:solid windowtext .75pt; padding:0cm 5.4pt 0cm 5.4pt; }
+td.hcp19 { border:none; border-bottom:solid windowtext .75pt; mso-border-top-alt:solid windowtext .75pt; mso-border-left-alt:solid windowtext .75pt; padding:0cm 5.4pt 0cm 5.4pt; }
+td.hcp20 { border-top:none; border-left:double windowtext 2.25pt; border-bottom:solid windowtext .75pt; border-right:solid windowtext .75pt; mso-border-top-alt:solid windowtext .75pt; padding:0cm 5.4pt 0cm 5.4pt; }
+td.hcp21 { border:none; border-right:solid windowtext .75pt; mso-border-top-alt:solid windowtext .75pt; mso-border-left-alt:solid windowtext .75pt; padding:0cm 5.4pt 0cm 5.4pt; }
+span.hcp22 { font-size:12.0pt; }
+td.hcp23 { border-top:solid windowtext .75pt; border-left:none; border-bottom:solid windowtext .5pt; border-right:solid windowtext .75pt; mso-border-left-alt:solid windowtext .75pt; padding:0cm 5.4pt 0cm 5.4pt; }
+-->
+</style>
+</head>
+<body lang="RU" style="tab-interval:35.4pt">
+<div placeholder id="header" style="width:100%;" class="hcp1">
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			background-color: #d8e8f9;
+			margin-left: 0px;"><img src="head_for_help.jpg"
+									x-maintain-ratio=TRUE
+									style="border: none;
+											width: 1000px;
+											height: 50px;
+											float: none;
+											border-style: none;
+											border-style: none;"
+									width=1000
+									height=50
+									border=0></p>
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			border-top-color: #000080;
+			border-top-width: 2px;
+			border-top-style: Ridge;
+			margin-left: 0px;">&nbsp;</p>
+</div>
+<div class=Section1>
+
+<h1><span style='color:navy;mso-bidi-font-weight:normal'>Глава 3.2. Напряжения
+и деформации на контакте двух тел</span></h1>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Напряженно-деформированное состояние в условиях контакта тел
+изучается в специальных разделах теории упругости. Задача расчета такого
+состояния получила название <i class="hcp3">контактной
+задачи теории упругости</i>. Следует отметить, что полное аналитическое решение
+контактной задачи теории упругости очень громоздко и подробно изложено в [24].
+В настоящей главе эта задача излагается в сокращенной форме с целью получения
+читателем общего представления о методике ее решения.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Первоначальное решение контактной задачи было предложено
+Герцем для двух возможных вариантов начального контакта: точечного и линейного.
+Современные методы расчета напряженно-деформированного состояния в задачах контакта
+деталей, и прежде всего численные, иногда позволяют получить даже более точные
+решения, но это ни в коей мере не умаляет интерес к задачам Герца, поскольку он
+продиктован прежде всего возможностью получения <i class="hcp3">аналитических зависимостей</i>. Строго говоря, решения Герца не
+являются в чистом виде аналитическими, так как они приводят к интегралам,
+которые не выражаются через элементарные функции (для вычисления таких
+интегралов составлены таблицы). Тем не менее эти зависимости, хотя и
+приближенные, лежат в основе ряда важных инженерных методик, реализованных и
+проверенных в практике проектирования.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">В основе теории Герца лежит ряд допущений:</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:21.3pt;
+mso-list:l0 level1 lfo2'><span class="hcp4">·<span class="hcp5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span class="hcp6">материалы контактирующих тел однородны и изотропны;</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:21.3pt;
+mso-list:l0 level1 lfo2'><span class="hcp4">·<span class="hcp5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span class="hcp6">нагрузка, действующая в точке контакта, направлена по
+прямой, соединяющей центры кривизны контактирующих тел;</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:21.3pt;
+mso-list:l0 level1 lfo2'><span class="hcp4">·<span class="hcp5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span class="hcp6">пластические деформации в контакте отсутствуют;</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:21.3pt;
+mso-list:l0 level1 lfo2'><span class="hcp4">·<span class="hcp5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:Arial;letter-spacing:-.2pt'>размеры зоны контакта малы по
+сравнению с размерами контактирующих тел;</span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:21.3pt;
+mso-list:l0 level1 lfo2'><span class="hcp4">·<span class="hcp5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span class="hcp6">тела, участвующие в контакте, имеют абсолютно гладкие
+поверхности, без шероховатого слоя и погрешностей формы.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Результат решения задачи Герца принципиально зависит от вида
+начального контакта. Рассмотрим последовательно два возможных контакта&nbsp;–
+точечный и линейный.</span></p>
+
+<div style='mso-element:frame;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+page;mso-element-left:103.55pt;mso-element-top:44.0pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 align=left>
+ <tr>
+  <td valign="top" align="left" class="hcp7">
+  <p class=MsoNormal align=center style='text-align:center;mso-element:frame;
+  mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:page;mso-element-left:103.55pt;
+  mso-element-top:44.0pt;mso-height-rule:exactly'><span class="hcp6"><img width="277" height="131" src="chap3_2.files/image002.gif" v:shapes="_x0000_i1025"></span></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-element:frame;
+  mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:page;mso-element-left:103.55pt;
+  mso-element-top:44.0pt;mso-height-rule:exactly'><span lang="EN-US" class="hcp8">a)<span class="hcp9">                                            </span> b)</span><span lang="EN-US" class="hcp10"></span></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-element:frame;
+  mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:page;mso-element-left:103.55pt;
+  mso-element-top:44.0pt;mso-height-rule:exactly'><span class="hcp6">Рис</span><span lang="EN-US" class="hcp8">. 3.2.1</span><span lang="EN-US" class="hcp10"></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp11"><span class="hcp2">Случай начального контакта в точке.</span></b> <span class="hcp2">На рис. 3.2.1</span><span lang="EN-US" class="hcp12">a</span><span lang="EN-US" class="hcp2"> </span><span class="hcp2">показано контактное взаимодействие
+двух тел <sub><img width="11" height="18" src="chap3_2.files/image004.gif" v:shapes="_x0000_i1026"></sub><span class="hcp13"> </span>и <sub><img width="14" height="18" src="chap3_2.files/image006.gif" v:shapes="_x0000_i1027"></sub>,
+ограниченных криволинейными поверхностями <sub><img width="87" height="26" src="chap3_2.files/image008.gif" v:shapes="_x0000_i1028"></sub><span class="hcp13"> </span>и <sub><img width="93" height="26" src="chap3_2.files/image010.gif" v:shapes="_x0000_i1029"></sub>, в
+случае, когда начальный контакт осуществляется в точке. Если характер этого
+взаимодействия таков, что распределение давления в зоне контакта представляется
+в форме эллипсоида, то под действием внешней нагрузки границы точечного
+контакта расширяются и в конечном итоге принимают форму эллипса с полуосями <sub><img width="12" height="14" src="chap3_2.files/image012.gif" v:shapes="_x0000_i1030"></sub><span class="hcp13"> </span>и <sub><img width="12" height="18" src="chap3_2.files/image014.gif" v:shapes="_x0000_i1031"></sub><span class="hcp13"> </span>(рис. 3.2.1</span><span lang="EN-US" class="hcp12">b</span><span class="hcp2">).</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Очевидно, что для комплексного расчета контактного
+взаимодействия необходимо определить величины <sub><img width="12" height="14" src="chap3_2.files/image015.gif" v:shapes="_x0000_i1032"></sub><span class="hcp13"> </span>и <sub><img width="12" height="18" src="chap3_2.files/image016.gif" v:shapes="_x0000_i1033"></sub>, а
+также найти наибольшее давление в контакте.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Рассмотрим в этой связи напряженно-деформированное состояние
+полупространства <sub><img width="18" height="18" src="chap3_2.files/image018.gif" v:shapes="_x0000_i1034"></sub>,
+нагруженного давлением <sub><img width="26" height="22" src="chap3_2.files/image020.gif" v:shapes="_x0000_i1035"></sub><span class="hcp13"> </span>(рис. 3.2.2). При приложении нагрузки в
+некоторой точке этого полупространства с координатами <sub><img width="38" height="22" src="chap3_2.files/image022.gif" v:shapes="_x0000_i1036"></sub><span class="hcp13"> </span>окрестные участки перемещаются.</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:169.75pt;mso-element-frame-height:
+189.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+page;mso-element-anchor-horizontal:margin;mso-element-top:72.25pt'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=238 height=252
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="252" class="hcp7">
+  <p class=MsoNormal align=center style='text-align:center;mso-element:frame;
+  mso-element-frame-width:169.75pt;mso-element-frame-height:189.25pt;
+  mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:margin;mso-element-top:72.25pt'><span class="hcp6"><img width="227" height="202" src="chap3_2.files/image024.gif" v:shapes="_x0000_i1037"></span></p>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  mso-element:frame;mso-element-frame-width:169.75pt;mso-element-frame-height:
+  189.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:margin;mso-element-top:72.25pt'><span class="hcp6">Рис. 3.2.2</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Введем обозначение <sub><img width="92" height="48" src="chap3_2.files/image026.gif" v:shapes="_x0000_i1038"></sub>.
+Величина перемещения точки с координатами <sub><img width="44" height="26" src="chap3_2.files/image028.gif" v:shapes="_x0000_i1039"></sub><span class="hcp13"> </span>в соответствии с теорией упругости равна</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp2"><img width="204" height="50" src="chap3_2.files/image030.gif" v:shapes="_x0000_i1040"></span></sub><span class="hcp2">.<span class="hcp13">                        </span>(3.2.1)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Давление в зоне контакта, как было указано выше,
+распределено по эллиптическому закону (рис. 3.2.2</span><span lang="EN-US" class="hcp12">b</span><span class="hcp2">),</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="202" height="31" src="chap3_2.files/image032.gif" v:shapes="_x0000_i1041"></span></sub><span class="hcp2">,<span class="hcp13">                          </span>(3.2.2)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">где <sub><img width="24" height="22" src="chap3_2.files/image034.gif" v:shapes="_x0000_i1042"></sub>&nbsp;–
+наибольшее контактное давление, соответствующее точке <sub><img width="86" height="26" src="chap3_2.files/image036.gif" v:shapes="_x0000_i1043"></sub>.
+Тогда поле перемещений можно рассчитать интегрированием выражения (3.2.1) после
+подстановки в него закона изменения текущих напряжений (3.2.2). В результате получаем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp2"><img width="286" height="46" src="chap3_2.files/image038.gif" v:shapes="_x0000_i1044"></span></sub><span class="hcp2">, <span class="hcp14">  </span><span class="hcp13">              </span>(3.2.3)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">где</span></p>
+
+<p class=Bookbody align=center style='margin-bottom:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><sub><span class="hcp2"><img width="135" height="50" src="chap3_2.files/image040.gif" v:shapes="_x0000_i1045"></span></sub><span class="hcp2">;</span> <sub><span lang="EN-US" class="hcp12"><img width="88" height="50" src="chap3_2.files/image042.gif" v:shapes="_x0000_i1046"></span></sub><span class="hcp2">;</span><sub><span lang="EN-US" class="hcp12"><img width="94" height="39" src="chap3_2.files/image044.gif" v:shapes="_x0000_i1047"></span></sub><span class="hcp2">; <sub><img width="139" height="46" src="chap3_2.files/image046.gif" v:shapes="_x0000_i1048"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Если в контакте находятся два тела известной кривизны, можно
+показать, что координаты <sub><img width="18" height="24" src="chap3_2.files/image048.gif" v:shapes="_x0000_i1049"></sub><span class="hcp13"> </span>(<sub><img width="48" height="20" src="chap3_2.files/image050.gif" v:shapes="_x0000_i1050"></sub>&nbsp;–
+номер тела в контакте) точек поверхностей контактирующих тел удовлетворяют
+уравнению</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;text-align:right;
+text-indent:21.25pt;line-height:normal'><sub><span class="hcp2"><img width="118" height="52" src="chap3_2.files/image052.gif" v:shapes="_x0000_i1051"></span></sub><span class="hcp2">.<span class="hcp9">                                             </span>
+(3.2.4)</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:134.5pt;mso-element-frame-height:
+171.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+page;mso-element-anchor-horizontal:margin;mso-element-top:72.25pt'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=191 height=228
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="228" class="hcp7">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal;mso-element:frame;mso-element-frame-width:134.5pt;
+  mso-element-frame-height:171.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:margin;
+  mso-element-top:72.25pt'><span class="hcp2"><img width="169" height="219" src="chap3_2.files/image054.gif" v:shapes="_x0000_i1052"></span></p>
+  <p class=Bookbody align=center style='text-align:center;line-height:normal;
+  mso-element:frame;mso-element-frame-width:134.5pt;mso-element-frame-height:
+  171.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:margin;mso-element-top:72.25pt'><span class="hcp2">Рис. 3.2.3</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Здесь <sub><img width="24" height="26" src="chap3_2.files/image056.gif" v:shapes="_x0000_i1053"></sub><span class="hcp13"> </span>и <sub><img width="26" height="26" src="chap3_2.files/image058.gif" v:shapes="_x0000_i1054"></sub>&nbsp;–
+радиусы кривизны поверхностей контактирующих тел, причем первый индекс
+соответствует номеру тела в контакте, второй&nbsp;– номеру радиуса кривизны в
+двух взаимно перпендикулярный плоскостях (рис. 3.2.3).</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Будем считать, что уравнения поверхностей (3.2.4) задаются в
+одной и той же декартовой системе координат <sub><img width="38" height="18" src="chap3_2.files/image060.gif" v:shapes="_x0000_i1055"></sub>.
+Понимая под <sub><img width="14" height="18" src="chap3_2.files/image062.gif" v:shapes="_x0000_i1056"></sub><span class="hcp13"> </span>расстояние, на которое сближаются центры
+контактирующих тел, запишем соотношение, выражающее равенство сумм текущих
+координат произвольной точки поверхности до и после приложения нагрузки:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp2"><img width="149" height="22" src="chap3_2.files/image064.gif" v:shapes="_x0000_i1057"></span></sub><span class="hcp2">.<span class="hcp13">                 </span>(3.2.5)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Точки <sub><img width="74" height="22" src="chap3_2.files/image066.gif" v:shapes="_x0000_i1058"></sub><span class="hcp13"> </span>не попадают в зону контакта и потому не
+являются предметом данного рассмотрения. Очевидно также и то, что семейство
+кривых равных расстояний, для которых выполняется равенство <sub><img width="98" height="22" src="chap3_2.files/image068.gif" v:shapes="_x0000_i1059"></sub>,
+есть семейство подобных эллипсов вида</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp2"><img width="316" height="48" src="chap3_2.files/image070.gif" v:shapes="_x0000_i1060"></span></sub><span class="hcp2">,<span class="hcp13">         </span>(3.2.6)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">где <sub><img width="22" height="26" src="chap3_2.files/image072.gif" v:shapes="_x0000_i1061"></sub><span class="hcp13"> </span>(<sub><img width="58" height="22" src="chap3_2.files/image074.gif" v:shapes="_x0000_i1062"></sub>)&nbsp;–
+радиусы кривизны поверхностей контактирующих тел (рис. 3.2.3), а параметры <sub><img width="16" height="18" src="chap3_2.files/image076.gif" v:shapes="_x0000_i1063"></sub><span class="hcp13"> </span>и <sub><img width="16" height="18" src="chap3_2.files/image078.gif" v:shapes="_x0000_i1064"></sub><span class="hcp13"> </span>подлежат определению. Для этого подставим в
+(3.2.5) выражения (3.2.3) и (3.2.6), что дает</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="338" height="50" src="chap3_2.files/image080.gif" v:shapes="_x0000_i1065"></span></sub><span class="hcp2">,<span class="hcp13">      </span>(3.2.7)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">где <sub><img width="106" height="48" src="chap3_2.files/image082.gif" v:shapes="_x0000_i1066"></sub>.
+Приравнивая в правой и левой частях (3.2.7) коэффициенты при одинаковых
+степенях <sub><img width="18" height="26" src="chap3_2.files/image084.gif" v:shapes="_x0000_i1067"></sub>и <sub><img width="14" height="18" src="chap3_2.files/image086.gif" v:shapes="_x0000_i1068"></sub>, получаем
+для определения <sub><img width="40" height="26" src="chap3_2.files/image088.gif" v:shapes="_x0000_i1069"></sub><span class="hcp13"> </span>и <sub><img width="14" height="18" src="chap3_2.files/image090.gif" v:shapes="_x0000_i1070"></sub><span class="hcp13"> </span>систему трех уравнений:</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:12.0pt;text-align:right;
+text-indent:21.25pt;line-height:normal'><sub><span class="hcp2"><img width="126" height="120" src="chap3_2.files/image092.gif" v:shapes="_x0000_i1071"></span></sub><span class="hcp2"><span class="hcp15">                                </span><span class="hcp13">     </span>(3.2.8)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Кроме того, система (3.2.8) должна быть дополнена уравнением
+равновесия, которое в принятых обозначениях записывается в виде</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;text-align:right;
+text-indent:21.25pt;line-height:normal'><sub><span class="hcp2"><img width="236" height="42" src="chap3_2.files/image094.gif" v:shapes="_x0000_i1072"></span></sub><span class="hcp2">.<span style='mso-tab-count:2'>               </span><span class="hcp13">       </span>(3.2.9)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">где <sub><img width="18" height="16" src="chap3_2.files/image096.gif" v:shapes="_x0000_i1073"></sub>&nbsp;–
+полная нормальная сила в контакте. Вычисляя интегралы в (3.2.9) и решая его
+относительно наибольшего контактного давления<sub><img width="24" height="22" src="chap3_2.files/image098.gif" v:shapes="_x0000_i1074"></sub>
+(при <sub><img width="86" height="26" src="chap3_2.files/image099.gif" v:shapes="_x0000_i1075"></sub>), получаем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="88" height="41" src="chap3_2.files/image101.gif" v:shapes="_x0000_i1076"></span></sub><span class="hcp2">.<span class="hcp13">                                               </span>(3.2.10)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Для записи остальных параметров, характеризующих контактное
+взаимодействие, введем следующие обозначения: <sub><img width="67" height="26" src="chap3_2.files/image103.gif" v:shapes="_x0000_i1077"></sub>&nbsp;–
+главная кривизна соприкасающихся тел в начальной точке касания (кривизна
+считается положительной, если ее центр находится в точке, расположенной внутри
+рассматриваемой детали, и отрицательной в противном случае); <sub><img width="142" height="48" src="chap3_2.files/image105.gif" v:shapes="_x0000_i1078"></sub>&nbsp;–
+параметр материалов контактирующих деталей. Тогда имеем</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="138" height="64" src="chap3_2.files/image107.gif" v:shapes="_x0000_i1079"></span></sub><span class="hcp2">;<span class="hcp13">        </span><sub><img width="136" height="64" src="chap3_2.files/image109.gif" v:shapes="_x0000_i1080"></sub>;</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="178" height="56" src="chap3_2.files/image111.gif" v:shapes="_x0000_i1081"></span></sub><span class="hcp2">.<span class="hcp13">                                   </span>(3.2.11)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Здесь <sub><img width="176" height="48" src="chap3_2.files/image113.gif" v:shapes="_x0000_i1082"></sub>; <sub><img width="46" height="26" src="chap3_2.files/image115.gif" v:shapes="_x0000_i1083"></sub><span class="hcp13"> </span>и <sub><img width="20" height="24" src="chap3_2.files/image117.gif" v:shapes="_x0000_i1084"></sub>&nbsp;–
+величины, определяемые геометрией контактирующих поверхностей, значения которых
+(табл. 3.2.1) зависят от некоторого параметра <sub><img width="14" height="18" src="chap3_2.files/image119.gif" v:shapes="_x0000_i1085"></sub>. В
+том случае, когда центры кривизны контактирующих тел лежат в одной плоскости,
+этот параметр равен</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="77" height="46" src="chap3_2.files/image121.gif" v:shapes="_x0000_i1086"></span></sub><span class="hcp2">;<span class="hcp13">        </span><sub><img width="112" height="41" src="chap3_2.files/image123.gif" v:shapes="_x0000_i1087"></sub>;<span class="hcp13">      </span><sub><img width="114" height="41" src="chap3_2.files/image125.gif" v:shapes="_x0000_i1088"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span style='font-size:10.0pt;
+mso-bidi-font-size:11.0pt;font-family:Arial;letter-spacing:.1pt'>Подставляя <sub><img width="12" height="14" src="chap3_2.files/image126.gif" v:shapes="_x0000_i1089"></sub><span class="hcp13"> </span>и <sub><img width="12" height="18" src="chap3_2.files/image127.gif" v:shapes="_x0000_i1090"></sub><span class="hcp13"> </span>из (3.2.11) в (3.2.10), для наибольшего
+давления <sub><img width="24" height="22" src="chap3_2.files/image129.gif" v:shapes="_x0000_i1091"></sub><span class="hcp13"> </span>получаем</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:21.25pt;line-height:normal'><sub><span class="hcp2"><img width="198" height="82" src="chap3_2.files/image131.gif" v:shapes="_x0000_i1092"></span></sub><span class="hcp2">.<span class="hcp13">                                </span>(3.2.12)</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+4.0pt;margin-left:0cm'><span style='font-family:Arial;letter-spacing:.2pt;
+mso-bidi-font-weight:bold'>Таблица</span> <span style='font-family:Arial;
+mso-bidi-font-weight:bold'>3.2.1.</span> <b class="hcp11"><span class="hcp6">Параметры контактного взаимодействия</span></b></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='margin-left:5.4pt;
+ border-collapse:collapse;border:none;mso-border-alt:solid windowtext .75pt;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width=66 style='width:49.6pt;border:solid windowtext .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><sub><span class="hcp6"><img width="14" height="18" src="chap3_2.files/image133.gif" v:shapes="_x0000_i1093"></span></sub></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp16">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><sub><span class="hcp6"><img width="18" height="22" src="chap3_2.files/image135.gif" v:shapes="_x0000_i1094"></span></sub></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp16">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><sub><span class="hcp6"><img width="18" height="22" src="chap3_2.files/image137.gif" v:shapes="_x0000_i1095"></span></sub></p>
+  </td>
+  <td width=66 style='width:49.65pt;border-top:solid windowtext .75pt;
+  border-left:none;border-bottom:solid windowtext .75pt;border-right:none;
+  mso-border-left-alt:solid windowtext .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><sub><span class="hcp6"><img width="18" height="22" src="chap3_2.files/image139.gif" v:shapes="_x0000_i1096"></span></sub></p>
+  </td>
+  <td width=66 style='width:49.6pt;border:solid windowtext .75pt;border-left:
+  double windowtext 2.25pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><sub><span class="hcp6"><img width="14" height="18" src="chap3_2.files/image140.gif" v:shapes="_x0000_i1097"></span></sub></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp16">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><sub><span class="hcp6"><img width="18" height="22" src="chap3_2.files/image141.gif" v:shapes="_x0000_i1098"></span></sub></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp16">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><sub><span class="hcp6"><img width="18" height="22" src="chap3_2.files/image142.gif" v:shapes="_x0000_i1099"></span></sub></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp16">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><sub><span class="hcp6"><img width="18" height="22" src="chap3_2.files/image143.gif" v:shapes="_x0000_i1100"></span></sub></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="66" style="width:49.6pt;" class="hcp17">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,01923</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">1,013</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9873</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9999</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp20">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,7673</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">2,141</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,5665</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,8168</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="66" style="width:49.6pt;" class="hcp17">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,06087</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">1,042</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9606</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9992</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp20">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,8166</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">2,381</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,5325</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,7775</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="66" style="width:49.6pt;" class="hcp17">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,1075</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">1,076</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9318</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9974</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp20">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,8441</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">2,557</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,5114</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,7509</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="66" style="width:49.6pt;" class="hcp17">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,1602</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">1,117</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9005</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9942</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp20">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,8741</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">2,805</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,4858</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,7163</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="66" style="width:49.6pt;" class="hcp17">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,2207</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">1,168</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,8660</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9889</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp20">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9077</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">3,199</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,4524</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,6675</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="66" style="width:49.6pt;" class="hcp17">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,2913</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">1,233</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,8271</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9804</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp20">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9150</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">3,311</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,4442</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,6549</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="66" style="width:49.6pt;" class="hcp17">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,3755</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">1,322</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,7822</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9667</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp20">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9225</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">3,441</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,4352</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,6409</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="66" style="width:49.6pt;" class="hcp17">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,4795</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">1,456</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,7278</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9432</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp20">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9303</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">3,594</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,4253</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,6251</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="66" style="width:49.6pt;" class="hcp17">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,5036</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">1,491</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,7152</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9366</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp20">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9383</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">3,781</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,4142</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,6071</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="66" style="width:49.6pt;" class="hcp17">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,5291</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">1,532</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,7019</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9290</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp20">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9467</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">4,014</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,4014</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,5860</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="66" style="width:49.6pt;" class="hcp17">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,5560</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">1,578</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,6876</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9203</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp20">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9556</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">4,320</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,3864</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,5608</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="66" style="width:49.6pt;" class="hcp17">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,5848</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">1,631</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,6723</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9102</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp20">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9649</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">4,750</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,3680</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,5292</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="66" style="width:49.6pt;" class="hcp17">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,6155</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">1,693</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,6557</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,8983</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp20">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9749</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">5,432</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,3436</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,4864</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="66" style="width:49.6pt;" class="hcp17">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,6486</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">1,768</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,6374</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,8841</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp20">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9861</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">6,837</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,3058</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,4186</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="66" style="width:49.6pt;" class="hcp17">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,6845</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">1,861</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,6171</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,8668</span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:none;border-left:double windowtext 2.25pt;
+  border-bottom:none;border-right:solid windowtext .75pt;mso-border-top-alt:
+  solid windowtext .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,9923</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">8,609</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,2722</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,3579</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="66" style="width:49.6pt;" class="hcp17">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,7238</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">1,979</span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,5938</span></p>
+  </td>
+  <td width="66" style="width:49.65pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center'><span class="hcp6">0,8451</span></p>
+  </td>
+  <td width=66 style='width:49.6pt;border-top:solid .75pt;border-left:double 2.25pt;
+  border-bottom:solid .5pt;border-right:solid .75pt;border-color:windowtext;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>&nbsp;<span class="hcp22"></span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp23">
+  <p class=MsoNormal>&nbsp;<span class="hcp22"></span></p>
+  </td>
+  <td width="66" style="width:49.6pt;" class="hcp23">
+  <p class=MsoNormal>&nbsp;<span class="hcp22"></span></p>
+  </td>
+  <td width=66 style='width:49.65pt;border-top:solid windowtext .75pt;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>&nbsp;<span class="hcp22"></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=Bookbody style='margin-top:12.0pt;text-indent:21.25pt;line-height:
+normal'><span class="hcp2">Из (3.2.12) видно, что
+в центре площадки контакта имеет место всестороннее объемное сжатие.
+Создаваемые при этом главные напряжения (для случая, когда контактирующие
+цилиндры изготовлены из одинаковых материалов, т.&nbsp;е. <sub><img width="86" height="22" src="chap3_2.files/image145.gif" v:shapes="_x0000_i1101"></sub><span class="hcp13"> </span>и <sub><img width="86" height="22" src="chap3_2.files/image147.gif" v:shapes="_x0000_i1102"></sub>)
+равны</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp2"><img width="122" height="44" src="chap3_2.files/image149.gif" v:shapes="_x0000_i1103"></span></sub><span class="hcp2"><span class="hcp13"> </span>;<span class="hcp13">       </span><sub><img width="126" height="44" src="chap3_2.files/image151.gif" v:shapes="_x0000_i1104"></sub>;<span class="hcp13">       </span><sub><img width="70" height="22" src="chap3_2.files/image153.gif" v:shapes="_x0000_i1105"></sub><span class="hcp13"> </span>,<span class="hcp13">  </span><span class="hcp13">  </span>(3.2.13)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">где <sub><img width="58" height="22" src="chap3_2.files/image155.gif" v:shapes="_x0000_i1106"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">В качестве примера рассмотрим точечный контакт двух шаров
+радиусами <sub><img width="14" height="22" src="chap3_2.files/image157.gif" v:shapes="_x0000_i1107"></sub><span class="hcp13"> </span>и <sub><img width="16" height="22" src="chap3_2.files/image159.gif" v:shapes="_x0000_i1108"></sub>.
+При этом эллиптическая площадка распределения давления становится круговой, а
+формулы (3.2.10) приобретают вид</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="178" height="50" src="chap3_2.files/image161.gif" v:shapes="_x0000_i1109"></span></sub><span class="hcp2">; <sub><img width="178" height="52" src="chap3_2.files/image163.gif" v:shapes="_x0000_i1110"></sub>.<span class="hcp14">  </span><span class="hcp13">    
+</span>(3.2.14)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Наибольшее давление в контакте равно</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;text-align:right;
+text-indent:21.25pt;line-height:normal'><sub><span class="hcp2"><img width="185" height="58" src="chap3_2.files/image165.gif" v:shapes="_x0000_i1111"></span></sub><span class="hcp2">.<span class="hcp15">                            </span>
+(3.2.15)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Заметим, что если при контакте один из шариков находится
+внутри другого, то вместо суммы <sub><img width="41" height="22" src="chap3_2.files/image167.gif" v:shapes="_x0000_i1112"></sub><span class="hcp13"> </span>следует брать разность <sub><img width="48" height="26" src="chap3_2.files/image169.gif" v:shapes="_x0000_i1113"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">В частном случае контакта сферической и плоской поверхностей
+один из радиусов, например <sub><img width="16" height="22" src="chap3_2.files/image171.gif" v:shapes="_x0000_i1114"></sub>,
+обращается в бесконечность, <sub><img width="54" height="24" src="chap3_2.files/image173.gif" v:shapes="_x0000_i1115"></sub>, а
+другой <sub><img width="44" height="24" src="chap3_2.files/image175.gif" v:shapes="_x0000_i1116"></sub>.
+Тогда формулы (3.2.14)&nbsp;– (3.2.15) видоизменяются как</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="137" height="34" src="chap3_2.files/image177.gif" v:shapes="_x0000_i1117"></span></sub><span class="hcp2">;<span class="hcp13">     </span><sub><img width="115" height="43" src="chap3_2.files/image179.gif" v:shapes="_x0000_i1118"></sub>;<span class="hcp13">    </span><sub><img width="159" height="52" src="chap3_2.files/image181.gif" v:shapes="_x0000_i1119"></sub>.<span class="hcp13">   </span>(3.2.16)</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp11"><span class="hcp2">Случай линейного контакта.</span></b> <span class="hcp2">Случай линейного контакта двух цилиндров рассматривается в
+предположении, что один из радиусов кривизны каждой из контактирующих
+поверхностей стремится к бесконечности, например, <sub><img width="62" height="22" src="chap3_2.files/image183.gif" v:shapes="_x0000_i1120"></sub>, <sub><img width="62" height="22" src="chap3_2.files/image185.gif" v:shapes="_x0000_i1121"></sub>.
+Обозначим оставшиеся радиусы кривизны как <sub><img width="58" height="22" src="chap3_2.files/image187.gif" v:shapes="_x0000_i1122"></sub>, <sub><img width="60" height="22" src="chap3_2.files/image189.gif" v:shapes="_x0000_i1123"></sub>,
+тогда <sub><img width="48" height="14" src="chap3_2.files/image191.gif" v:shapes="_x0000_i1124"></sub>.
+Далее предположим, что в этом случае распределение нормального давления
+подчиняется не эллипсоидальному закону, а имеет вид</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp2"><img width="138" height="42" src="chap3_2.files/image193.gif" v:shapes="_x0000_i1125"></span></sub><span class="hcp2">.<span class="hcp13">                                      </span>(3.2.17)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Тогда величина наибольшего удельного давления, определяемая
+интегрирования уравнения равновесия, равна</span></p>
+
+<p class=Bookbody align=right style='text-align:right;line-height:normal'><sub><span class="hcp2"><img width="67" height="46" src="chap3_2.files/image195.gif" v:shapes="_x0000_i1126"></span></sub><span class="hcp2">,<span class="hcp13">                                                </span>(3.2.18)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">где <sub><img width="11" height="18" src="chap3_2.files/image197.gif" v:shapes="_x0000_i1127"></sub>–
+длина контактной линии, а <sub><img width="12" height="18" src="chap3_2.files/image199.gif" v:shapes="_x0000_i1128"></sub>&nbsp;–
+полуширина площадки контакта, равная</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp2"><img width="160" height="54" src="chap3_2.files/image201.gif" v:shapes="_x0000_i1129"></span></sub><span class="hcp2">. <span class="hcp14">          </span><span class="hcp13">                          </span>(3.2.19)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Подстановка (3.2.19) в (3.2.18) приводит к следующему
+значению максимального удельного давления на площадке:</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:21.25pt;line-height:normal'><sub><span class="hcp2"><img width="168" height="54" src="chap3_2.files/image203.gif" v:shapes="_x0000_i1130"></span></sub><span class="hcp2">.<span class="hcp13">                                     </span>(3.2.20)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">В (3.2.19) и (3.2.20) знак принимается в случае сжатия, если
+цилиндр радиуса <sub><img width="18" height="22" src="chap3_2.files/image205.gif" v:shapes="_x0000_i1131"></sub><span class="hcp13"> </span>контактирует с цилиндрической впадиной
+радиуса <sub><img width="54" height="22" src="chap3_2.files/image207.gif" v:shapes="_x0000_i1132"></sub><span class="hcp13"> </span>(т.&nbsp;е. для внутреннего контакта). В
+остальных случаях следует брать знак +.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">При контакте цилиндра с плоской поверхностью полагаем <sub><img width="116" height="26" src="chap3_2.files/image209.gif" v:shapes="_x0000_i1133"></sub>,
+тогда из (3.2.19) и (3.2.20) следует, что</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;text-align:right;
+text-indent:21.25pt;line-height:normal'><sub><span class="hcp2"><img width="134" height="52" src="chap3_2.files/image211.gif" v:shapes="_x0000_i1134"></span></sub><span class="hcp2">;<span class="hcp13">        </span><sub><img width="154" height="54" src="chap3_2.files/image213.gif" v:shapes="_x0000_i1135"></sub>.<span class="hcp13">       </span>(3.2.21)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Заметим, что все приведенные выше формулы получены при
+условии пренебрежения собственными объемными деформациями контактирующих тел. Учет
+этого вида деформаций приведет к некоторому изменению картины распределения
+контактных напряжений, особенно на краях. Реальную картину напряженного состояния
+можно рассчитать методом конечных элементов.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Актуальной проблемой для практики является задача расчета
+перемещений в контакте двух цилиндров с параллельными осями. В этом случае
+имеем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="406" height="50" src="chap3_2.files/image215.gif" v:shapes="_x0000_i1136"></span></sub><span class="hcp2">. (3.2.22)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Если контактирующие цилиндры изготовлены из одинаковых
+материалов, для которых <sub><img width="86" height="22" src="chap3_2.files/image216.gif" v:shapes="_x0000_i1137"></sub><span class="hcp13"> </span>и <sub><img width="86" height="22" src="chap3_2.files/image217.gif" v:shapes="_x0000_i1138"></sub>, то
+формула (3.2.22) несколько упрощается:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp2"><img width="234" height="48" src="chap3_2.files/image219.gif" v:shapes="_x0000_i1139"></span></sub><span class="hcp2">.<span class="hcp13">                       </span><span class="hcp13">   </span>(3.2.23)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Напряжения, которые возникают внутри участвующих в контакте
+деталей, можно описать аналитическими функциями, но для практического
+использования достаточно рассмотреть лишь одну точку, а именно ту, в которой
+давление достигает максимальной величины. В этой точке напряжения на
+поверхности контакта равны</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp2"><img width="104" height="26" src="chap3_2.files/image221.gif" v:shapes="_x0000_i1140"></span></sub><span class="hcp2">;<span class="hcp13">     </span><sub><img width="86" height="24" src="chap3_2.files/image223.gif" v:shapes="_x0000_i1141"></sub>.<span class="hcp13">                          </span>(3.2.24)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Согласно гипотезе прочности для максимальных касательных
+напряжений (см. главу 2.7), разрушение детали наступает вследствие
+возникновения напряжения, равного или превышающего наибольшее напряжение
+сдвига, которое, как показали вычисления, имеет место на глубине <sub><img width="64" height="20" src="chap3_2.files/image225.gif" v:shapes="_x0000_i1142"></sub><span class="hcp13"> </span>и равно <sub><img width="86" height="24" src="chap3_2.files/image227.gif" v:shapes="_x0000_i1143"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">В заключение отметим, что рассмотренные выше задачи
+контактного взаимодействия тел имеют частный характер. Для комплексного анализа
+напряженного и деформированного состояний в контакте необходимо использовать
+известные численные методы.</span></p>
+
+</div>
+
+<div placeholder id="footer" style="width:100%;" class="hcp1">
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			border-bottom-color: #000080;
+			border-bottom-style: Ridge;
+			border-bottom-width: 2px;
+			font-size: 10pt;">&nbsp;</p>
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			font-size: 8pt;">&#169; 
+ 2007 Copyright &nbsp;&#1053;&#1058;&#1062; 
+ &#1040;&#1055;&#1052;</p>
+</div>
+</body>
+</html>

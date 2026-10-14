@@ -1,0 +1,498 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="File-List" href="./chap2_3.files/filelist.xml">
+<link rel="Edit-Time-Data" href="./chap2_3.files/editdata.mso">
+<title>Глава 2.3. Геометрические характеристики поперечных сечений</title><style>
+<!--
+p.MsoNormal { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoNormal { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoNormal { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+h1 { margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; mso-outline-level:1; font-size:14.0pt; font-family:Arial; }
+p.MsoIndex1 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+li.MsoIndex1 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+div.MsoIndex1 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+p.MsoToc1 { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 415.55pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+li.MsoToc1 { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 415.55pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+div.MsoToc1 { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 415.55pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+p.MsoHeader { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoHeader { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoHeader { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.MsoBodyText2 { margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoBodyText2 { margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoBodyText2 { margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.UG1bodytext { mso-style-name:UG1 body text; margin:0cm; margin-bottom:.0001pt; text-indent:21.3pt; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.UG1bodytext { mso-style-name:UG1 body text; margin:0cm; margin-bottom:.0001pt; text-indent:21.3pt; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.UG1bodytext { mso-style-name:UG1 body text; margin:0cm; margin-bottom:.0001pt; text-indent:21.3pt; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; line-height:90%; mso-pagination:none; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; line-height:90%; mso-pagination:none; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; line-height:90%; mso-pagination:none; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.Paragraphtitle { mso-style-name:Paragraph title; mso-style-parent:Book_body; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-align:center; line-height:90%; mso-pagination:none; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; font-style:italic; mso-bidi-font-style:normal; }
+li.Paragraphtitle { mso-style-name:Paragraph title; mso-style-parent:Book_body; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-align:center; line-height:90%; mso-pagination:none; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; font-style:italic; mso-bidi-font-style:normal; }
+div.Paragraphtitle { mso-style-name:Paragraph title; mso-style-parent:Book_body; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-align:center; line-height:90%; mso-pagination:none; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; font-style:italic; mso-bidi-font-style:normal; }
+div.Section1 { page:Section1; }
+-->
+</style><style title="hcp" type="text/css">
+<!--
+div.hcp1 { position:relative; }
+span.hcp2 { mso-bidi-font-family:Arial; }
+b.hcp3 { mso-bidi-font-weight:normal; }
+span.hcp4 { mso-spacerun:yes; }
+i.hcp5 { mso-bidi-font-style:normal; }
+span.hcp6 { font-family:Symbol; mso-ascii-font-family:Arial; mso-hansi-font-family:Arial; mso-bidi-font-family:Arial; mso-char-type:symbol; mso-symbol-font-family:Symbol; }
+span.hcp7 { mso-char-type:symbol; mso-symbol-font-family:Symbol; }
+table.hcp8 { border-collapse:collapse; mso-padding-alt:0cm 5.4pt 0cm 5.4pt; }
+td.hcp9 { padding:0cm 5.4pt 0cm 5.4pt; }
+span.hcp10 { mso-tab-count:1; }
+span.hcp11 { mso-tab-count:4; }
+span.hcp12 { mso-bidi-font-family:Arial; letter-spacing:.2pt; }
+-->
+</style>
+</head>
+<body lang="RU" style="tab-interval:35.4pt">
+<div placeholder id="header" style="width:100%;" class="hcp1">
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			background-color: #d8e8f9;
+			margin-left: 0px;"><img src="head_for_help.jpg"
+									x-maintain-ratio=TRUE
+									style="border: none;
+											width: 1000px;
+											height: 50px;
+											float: none;
+											border-style: none;
+											border-style: none;"
+									width=1000
+									height=50
+									border=0></p>
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			border-top-color: #000080;
+			border-top-width: 2px;
+			border-top-style: Ridge;
+			margin-left: 0px;">&nbsp;</p>
+</div>
+<div class=Section1>
+
+<h1><span style='color:navy;mso-bidi-font-weight:normal'>Глава 2.3.
+Геометрические характеристики поперечных сечений</span></h1>
+
+<p class=Bookbody style='text-indent:21.25pt;line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<p class=Bookbody style='text-indent:21.25pt;line-height:normal'><span class="hcp2">Для дальнейшего рассмотрения необходимо
+ввести некоторые геометрические характеристики плоских фигур, которые играют
+важную роль при выполнении расчетов на прочность при изгибе и кручении, а также
+при вычислении деформаций и т. д.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp3"><span class="hcp2">Статические
+моменты и моменты инерции плоских фигур.</span></b> <span class="hcp2">Если на поверхности плоской геометрической фигуры площади <sub><img width="16" height="16" src="chap2_3.files/image002.gif" v:shapes="_x0000_i1025"></sub><span class="hcp4"> </span>выделить элементарную площадку <sub><img width="22" height="16" src="chap2_3.files/image004.gif" v:shapes="_x0000_i1026"></sub>(рис.
+2.3.1), то можно определить <i class="hcp5">статические
+моменты</i> и <i class="hcp5">моменты инерции</i>этой фигуры
+относительно осей<span class="hcp4">  </span><sub><img width="14" height="14" src="chap2_3.files/image006.gif" v:shapes="_x0000_i1027"></sub><span class="hcp4"> </span>и <sub><img width="14" height="18" src="chap2_3.files/image008.gif" v:shapes="_x0000_i1028"></sub>.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><b class="hcp3"><span class="hcp2">1.
+Статический момент площади</span></b></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Под<span style='letter-spacing:2.0pt'>статическим
+моментом площади</span> относительно некоторой оси понимается сумма
+произведений площадей элементарных площадок на расстояния от центров их тяжести
+до соответствующей оси:</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp6"><span class="hcp7">·</span></span>
+<span class="hcp2">статический момент площади
+относительно оси <sub><img width="14" height="14" src="chap2_3.files/image010.gif" v:shapes="_x0000_i1029"></sub></span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="72" height="41" src="chap2_3.files/image012.gif" v:shapes="_x0000_i1030"></span></sub><span class="hcp2">;</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp6"><span class="hcp7">·</span></span>
+<span class="hcp2">статический момент площади
+относительно оси <sub><img width="14" height="18" src="chap2_3.files/image014.gif" v:shapes="_x0000_i1031"></sub></span></p>
+
+<p class=Bookbody align=right style='text-align:right;line-height:normal'><span class="hcp2"><span class="hcp4">            
+</span><sub><img width="72" height="41" src="chap2_3.files/image016.gif" v:shapes="_x0000_i1032"></sub>.<span class="hcp4">                                                 
+</span>(2.3.1)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Если известны статические моменты <sub><img width="22" height="22" src="chap2_3.files/image018.gif" v:shapes="_x0000_i1033"></sub><span class="hcp4"> </span>и <sub><img width="22" height="26" src="chap2_3.files/image020.gif" v:shapes="_x0000_i1034"></sub><span class="hcp4"> </span>относительно осей <sub><img width="14" height="14" src="chap2_3.files/image022.gif" v:shapes="_x0000_i1035"></sub><span class="hcp4"> </span>и <sub><img width="14" height="18" src="chap2_3.files/image024.gif" v:shapes="_x0000_i1036"></sub>, то
+можно рассчитать значения статических моментов <sub><img width="26" height="24" src="chap2_3.files/image026.gif" v:shapes="_x0000_i1037"></sub><span class="hcp4"> </span>и <sub><img width="26" height="26" src="chap2_3.files/image028.gif" v:shapes="_x0000_i1038"></sub><span class="hcp4"> </span>относительно осей <sub><img width="18" height="24" src="chap2_3.files/image030.gif" v:shapes="_x0000_i1039"></sub><span class="hcp4"> </span>и <sub><img width="18" height="24" src="chap2_3.files/image032.gif" v:shapes="_x0000_i1040"></sub>,
+смещенных на расстояния <sub><img width="12" height="18" src="chap2_3.files/image034.gif" v:shapes="_x0000_i1041"></sub><span class="hcp4"> </span>и <sub><img width="12" height="14" src="chap2_3.files/image036.gif" v:shapes="_x0000_i1042"></sub><span class="hcp4"> </span>соответственно (рис. 2.3.2).</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<div align=center>
+
+<table border="0" cellspacing="0" cellpadding="0" class="hcp8">
+ <tr>
+  <td width="272" valign="bottom" style="width:203.8pt;" class="hcp9">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="168" height="175" src="chap2_3.files/image038.gif" v:shapes="_x0000_i1043"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2">Рис. 2.3.1</span></p>
+  </td>
+  <td width="272" valign="bottom" style="width:203.85pt;" class="hcp9">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="201" height="187" src="chap2_3.files/image040.gif" v:shapes="_x0000_i1044"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2">Рис. 2.3.2</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'>&nbsp;</p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Координаты текущей точки в смещенной системе
+координат имеют вид</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp2"><img width="70" height="22" src="chap2_3.files/image042.gif" v:shapes="_x0000_i1045"></span></sub><span class="hcp2">;<span class="hcp4">     
+</span><sub><img width="70" height="22" src="chap2_3.files/image044.gif" v:shapes="_x0000_i1046"></sub>.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">По определению (2.3.1) статические моменты <sub><img width="26" height="24" src="chap2_3.files/image045.gif" v:shapes="_x0000_i1047"></sub><span class="hcp4"> </span>и <sub><img width="26" height="26" src="chap2_3.files/image047.gif" v:shapes="_x0000_i1048"></sub><span class="hcp4"> </span>равны</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+line-height:normal'><span class="hcp2"><span class="hcp4"> </span><span style='mso-tab-count:2'>             </span><span class="hcp4"> </span><sub><img width="294" height="82" src="chap2_3.files/image049.gif" v:shapes="_x0000_i1049"></sub><span class="hcp10">        </span><span class="hcp4">              </span>(2.3.2)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Полученный результат (2.3.2) позволяет
+сформулировать следующее определение: статический момент площади фигуры
+относительно оси, смещенной параллельно исходной, равен разности статического
+момента относительно исходной оси и произведения площади этой фигуры на
+расстояние переноса.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Оси, проходящие через центр тяжести,
+называются <i class="hcp5">центральными.</i>Очевидно, что
+статические моменты площади фигуры относительно центральных осей равны нулю.
+Если координаты центра тяжести относительно некоторой произвольной системы
+координат обозначить через <sub><img width="50" height="26" src="chap2_3.files/image051.gif" v:shapes="_x0000_i1050"></sub>, то
+из равенства нулю статического момента имеем<span class="hcp4"> 
+</span><sub><img width="60" height="22" src="chap2_3.files/image053.gif" v:shapes="_x0000_i1051"></sub>,<span class="hcp4">   </span><sub><img width="60" height="26" src="chap2_3.files/image055.gif" v:shapes="_x0000_i1052"></sub>,
+так что</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp2"><img width="54" height="42" src="chap2_3.files/image057.gif" v:shapes="_x0000_i1053"></span></sub><span class="hcp2">;<span class="hcp4">             </span><sub><img width="54" height="44" src="chap2_3.files/image059.gif" v:shapes="_x0000_i1054"></sub>.<span class="hcp4">                                 </span>(2.3.3)</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp3"><span class="hcp2">2.
+Момент инерции площади</span></b></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span
+style='mso-bidi-font-family:Arial;letter-spacing:2.0pt'>Моментом инерции
+площади</span> <span class="hcp2">относительно оси
+называется сумма произведений площадей элементарных площадок на квадрат
+расстояний от их центров тяжести до соответствующей оси. Тогда выражения для
+момента инерции относительно оси можно записать в виде:</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp6"><span class="hcp7">·</span></span>
+<span class="hcp2">момент инерции площади относительно
+оси <sub><img width="14" height="14" src="chap2_3.files/image060.gif" v:shapes="_x0000_i1055"></sub></span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="77" height="41" src="chap2_3.files/image062.gif" v:shapes="_x0000_i1056"></span></sub><span class="hcp2">;</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp6"><span class="hcp7">·</span></span>
+<span class="hcp2">момент инерции площади относительно
+оси <sub><img width="14" height="18" src="chap2_3.files/image064.gif" v:shapes="_x0000_i1057"></sub></span></p>
+
+<p class=Bookbody align=right style='text-align:right;line-height:normal'><span class="hcp2"><span class="hcp4"> </span><sub><img width="77" height="41" src="chap2_3.files/image066.gif" v:shapes="_x0000_i1058"></sub>.<span class="hcp11">                                        </span><span class="hcp4">       </span>(2.3.4)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Под центробежным моментом площади сечения <sub><img width="24" height="26" src="chap2_3.files/image068.gif" v:shapes="_x0000_i1059"></sub><span class="hcp4"> </span>относительно осей <sub><img width="14" height="14" src="chap2_3.files/image069.gif" v:shapes="_x0000_i1060"></sub><span class="hcp4"> </span>и <sub><img width="14" height="18" src="chap2_3.files/image070.gif" v:shapes="_x0000_i1061"></sub><span class="hcp4"> </span>понимают момент инерции, равный</span></p>
+
+<p class=Bookbody align=right style='text-align:right;line-height:normal'><sub><span class="hcp2"><img width="82" height="41" src="chap2_3.files/image072.gif" v:shapes="_x0000_i1062"></span></sub><span class="hcp2">.<span class="hcp11">                                        </span></span>
+<span class="hcp2"><span class="hcp4">     </span>(2.3.5)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Момент инерции относительно начала координат
+называется <i class="hcp5">полярным моментом</i> и определяется
+по формуле</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><sub><span class="hcp2"><img width="78" height="41" src="chap2_3.files/image074.gif" v:shapes="_x0000_i1063"></span></sub><span class="hcp2">,<span class="hcp4">                                                 </span>(2.3.6)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">где <sub><img width="14" height="18" src="chap2_3.files/image076.gif" v:shapes="_x0000_i1064"></sub><span class="hcp4"> </span>– расстояние от начала координат до текущей
+точки. Так как <sub><img width="82" height="24" src="chap2_3.files/image078.gif" v:shapes="_x0000_i1065"></sub>, то
+выражение (2.3.6) принимает вид</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="162" height="41" src="chap2_3.files/image080.gif" v:shapes="_x0000_i1066"></span></sub><span class="hcp2">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">или, с учетом (2.3.4),</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+line-height:normal'><sub><span class="hcp2"><img width="77" height="26" src="chap2_3.files/image082.gif" v:shapes="_x0000_i1067"></span></sub><span class="hcp2">.<span class="hcp4">                                                    </span>(2.3.7)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Таким образом, согласно (2.3.7) полярный
+момент инерции равен сумме осевых моментов инерции относительно взаимно перпендикулярных
+осей. При повороте осей полярный момент не меняется, следовательно, остается
+постоянной и сумма осевых моментов, т. е.</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="162" height="26" src="chap2_3.files/image084.gif" v:shapes="_x0000_i1068"></span></sub><span class="hcp2">.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><b class="hcp3"><span class="hcp12">Геометрические характеристики практически важных сечений.</span></b>
+<span class="hcp12">Рассчитаем моменты
+инерции некоторых наиболее часто встречающихся на практике сечений.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">1. Моменты инерции относительно осей
+симметрии для <i class="hcp5">прямоугольника</i> со
+сторонами <sub><img width="12" height="18" src="chap2_3.files/image086.gif" v:shapes="_x0000_i1069"></sub><span class="hcp4"> </span>и <sub><img width="14" height="18" src="chap2_3.files/image088.gif" v:shapes="_x0000_i1070"></sub><span class="hcp4"> </span>находим, выделяя на расстоянии <sub><img width="14" height="18" src="chap2_3.files/image090.gif" v:shapes="_x0000_i1071"></sub><span class="hcp4"> </span>элементарную прямоугольную площадку толщиной <sub><img width="20" height="22" src="chap2_3.files/image092.gif" v:shapes="_x0000_i1072"></sub><span class="hcp4"> </span>(рис. 2.3.3). Тогда</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="196" height="50" src="chap2_3.files/image094.gif" v:shapes="_x0000_i1073"></span></sub><span class="hcp2">;<span class="hcp4">       
+</span><sub><img width="62" height="44" src="chap2_3.files/image096.gif" v:shapes="_x0000_i1074"></sub>.<span class="hcp10">        </span><span class="hcp4">               </span>(2.3.8)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">2. Осевой момент для <i class="hcp5">круглого сечения</i> радиуса <sub><img width="16" height="16" src="chap2_3.files/image098.gif" v:shapes="_x0000_i1075"></sub><span class="hcp4"> </span>(рис. 2.3.4) легко рассчитать через полярный,
+который, в свою очередь, находится аналогично рассмотренному выше случаю: выделяем
+на расстоянии <sub><img width="14" height="18" src="chap2_3.files/image100.gif" v:shapes="_x0000_i1076"></sub><span class="hcp4"> </span>элементарное кольцо толщиной <sub><img width="22" height="22" src="chap2_3.files/image102.gif" v:shapes="_x0000_i1077"></sub><span class="hcp4"> </span>с площадью <sub><img width="82" height="22" src="chap2_3.files/image104.gif" v:shapes="_x0000_i1078"></sub><span class="hcp4"> </span>и суммируем в соответствии с (2.3.6), что
+дает</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="242" height="50" src="chap2_3.files/image106.gif" v:shapes="_x0000_i1079"></span></sub><span class="hcp2">.</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">Тогда, обозначив <sub><img width="62" height="16" src="chap2_3.files/image108.gif" v:shapes="_x0000_i1080"></sub>,
+имеем</span></p>
+
+<p class=Bookbody align=right style='text-align:right;line-height:normal'><sub><span class="hcp2"><img width="142" height="44" src="chap2_3.files/image110.gif" v:shapes="_x0000_i1081"></span></sub><span class="hcp2">.<span class="hcp4">                                           </span>(2.3.9)</span></p>
+
+<div align=center>
+
+<table border="0" cellspacing="0" cellpadding="0" class="hcp8">
+ <tr>
+  <td width="146" valign="bottom" style="width:109.6pt;" class="hcp9">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="132" height="156" src="chap2_3.files/image112.gif" v:shapes="_x0000_i1082"><br>
+  Рис. 2.3.3<b class="hcp3"></b></span></p>
+  </td>
+  <td width="175" valign="bottom" style="width:130.95pt;" class="hcp9">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="142" height="172" src="chap2_3.files/image114.gif" v:shapes="_x0000_i1083"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2">Рис. 2.3.4<b class="hcp3"></b></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><b class="hcp3"><span class="hcp2">&nbsp;</span></b></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><b class="hcp3"><span class="hcp2">Моменты
+инерции при преобразовании системы координат.</span></b> <span class="hcp2">Рассмотрим изменения моментов инерции при параллельном
+переносе осей и их повороте на угол <sub><img width="16" height="14" src="chap2_3.files/image116.gif" v:shapes="_x0000_i1084"></sub>.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">1. Если оси координат, проходящие через
+центр тяжести сечения <sub><img width="50" height="26" src="chap2_3.files/image117.gif" v:shapes="_x0000_i1085"></sub>,
+перемещаются параллельно, то координаты текущей точки в новой системе координат
+равны <sub><img width="42" height="22" src="chap2_3.files/image119.gif" v:shapes="_x0000_i1086"></sub><span class="hcp4"> </span>и <sub><img width="41" height="22" src="chap2_3.files/image121.gif" v:shapes="_x0000_i1087"></sub><span class="hcp4"> </span>(рис. 2.3.5). Тогда осевой момент<span class="hcp4">  </span><sub><img width="18" height="22" src="chap2_3.files/image123.gif" v:shapes="_x0000_i1088"></sub><span class="hcp4"> </span>принимает вид</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="290" height="36" src="chap2_3.files/image125.gif" v:shapes="_x0000_i1089"></span></sub><span class="hcp2"><span class="hcp4">       
+</span><span class="hcp4">         </span>(2.3.10)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">Так как в соответствии с определениями
+(2.3.1) и (2.3.4)</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp2"><img width="82" height="41" src="chap2_3.files/image127.gif" v:shapes="_x0000_i1090"></span></sub><span class="hcp2">;<span class="hcp4">       
+</span><sub><img width="102" height="41" src="chap2_3.files/image129.gif" v:shapes="_x0000_i1091"></sub>;<span class="hcp4">       </span><sub><img width="60" height="38" src="chap2_3.files/image131.gif" v:shapes="_x0000_i1092"></sub>,<span class="hcp4">                  </span>(2.3.11)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">то в результате из (2.3.10) с учетом
+(2.3.11) получаем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp2"><img width="98" height="28" src="chap2_3.files/image133.gif" v:shapes="_x0000_i1093"></span></sub><span class="hcp2">.<span class="hcp4">                                               </span>(2.3.12)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Аналогично для центробежного момента<span class="hcp4">  </span><sub><img width="22" height="26" src="chap2_3.files/image135.gif" v:shapes="_x0000_i1094"></sub><span class="hcp4"> </span>имеем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp2"><img width="422" height="41" src="chap2_3.files/image137.gif" v:shapes="_x0000_i1095"></span></sub><span class="hcp2">.<span class="hcp4">  
+</span>(2.3.13)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">Поскольку</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="92" height="41" src="chap2_3.files/image139.gif" v:shapes="_x0000_i1096"></span></sub><span class="hcp2">;<span class="hcp4">     
+</span><sub><img width="102" height="41" src="chap2_3.files/image141.gif" v:shapes="_x0000_i1097"></sub>;<span class="hcp4">     </span><sub><img width="102" height="41" src="chap2_3.files/image143.gif" v:shapes="_x0000_i1098"></sub>,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">то<span class="hcp4"> 
+</span>выражение<span class="hcp4">  </span>(2.3.13)<span class="hcp4">  </span>переписывается как</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp2"><img width="118" height="26" src="chap2_3.files/image145.gif" v:shapes="_x0000_i1099"></span></sub><span class="hcp2">.<span class="hcp4">                                           </span>(2.3.14)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">2. При повороте осей на угол <sub><img width="16" height="14" src="chap2_3.files/image146.gif" v:shapes="_x0000_i1100"></sub><span class="hcp4"> </span>координаты произвольной точки в повернутой
+системе координат <sub><img width="34" height="18" src="chap2_3.files/image148.gif" v:shapes="_x0000_i1101"></sub><span class="hcp4"> </span>равны (рис. 2.3.6)</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp2"><img width="134" height="22" src="chap2_3.files/image150.gif" v:shapes="_x0000_i1102"></span></sub><span class="hcp2">;<span class="hcp4">     
+</span><sub><img width="134" height="22" src="chap2_3.files/image152.gif" v:shapes="_x0000_i1103"></sub>.<span class="hcp4">                        </span>(2.3.15)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<div align=center>
+
+<table border="0" cellspacing="0" cellpadding="0" class="hcp8">
+ <tr>
+  <td width="236" valign="bottom" style="width:176.75pt;" class="hcp9">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="214" height="205" src="chap2_3.files/image154.gif" v:shapes="_x0000_i1104"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2">Рис. 2.3.5</span></p>
+  </td>
+  <td width="246" valign="bottom" style="width:184.3pt;" class="hcp9">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="170" height="175" src="chap2_3.files/image156.gif" v:shapes="_x0000_i1105"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2">Рис. 2.3.6</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Угол <sub><img width="16" height="14" src="chap2_3.files/image157.gif" v:shapes="_x0000_i1106"></sub><span class="hcp4"> </span>считается положительным, если поворот осей выполняется
+против часовой стрелки. Используя формулы преобразования координат<span class="hcp4">  </span>(2.3.15),<span class="hcp4"> 
+</span>для осевого момента <sub><img width="20" height="26" src="chap2_3.files/image159.gif" v:shapes="_x0000_i1107"></sub><span class="hcp4"> </span>запишем</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="487" height="38" src="chap2_3.files/image161.gif" v:shapes="_x0000_i1108"></span></sub><span class="hcp2">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">или</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp2"><img width="238" height="26" src="chap2_3.files/image163.gif" v:shapes="_x0000_i1109"></span></sub><span class="hcp2">.<span class="hcp4">                             </span>(2.3.16)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">По аналогии с (2.3.16) имеем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp2"><img width="236" height="26" src="chap2_3.files/image165.gif" v:shapes="_x0000_i1110"></span></sub><span class="hcp2">.<span class="hcp4">                             </span>(2.3.17)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Для практических расчетов вместо (2.3.16) – (2.3.17)
+удобнее использовать иную форму записи, которая получается при проведении
+тождественных тригонометрических преобразований с помощью формул <sub><img width="158" height="24" src="chap2_3.files/image167.gif" v:shapes="_x0000_i1111"></sub>, <sub><img width="154" height="24" src="chap2_3.files/image169.gif" v:shapes="_x0000_i1112"></sub>:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="272" height="90" src="chap2_3.files/image171.gif" v:shapes="_x0000_i1113"></span></sub><span class="hcp2"><span class="hcp4">                       </span>(2.3.18)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Аналогично для центробежного<span class="hcp4">  </span>момента<span class="hcp4"> 
+</span><sub><img width="32" height="26" src="chap2_3.files/image173.gif" v:shapes="_x0000_i1114"></sub><span class="hcp4"> </span>можно написать</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="306" height="88" src="chap2_3.files/image175.gif" v:shapes="_x0000_i1115"></span></sub><span class="hcp2">.<span class="hcp4">                     </span>(2.3.19)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><i class="hcp5"><span class="hcp2">Главными</span></i>
+<span class="hcp2">назовем оси, в направлении которых
+центробежный момент равен нулю. Приравнивая нулю правую часть выражения
+(2.3.19), можно определить угол наклона<span class="hcp4"> 
+</span>главных осей <sub><img width="22" height="22" src="chap2_3.files/image177.gif" v:shapes="_x0000_i1116"></sub>:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="106" height="50" src="chap2_3.files/image179.gif" v:shapes="_x0000_i1117"></span></sub><span class="hcp2">.<span class="hcp4">                                  </span><span class="hcp4">          </span>(2.3.20)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">В результате решения трансцендентного
+уравнения (2.3.20) получаем два значения угла с разницей в <sub><img width="32" height="18" src="chap2_3.files/image181.gif" v:shapes="_x0000_i1118"></sub>, следовательно,
+главных осей две, и они взаимно перпендикулярны.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Можно найти угол поворота осей, при котором
+осевой момент инерции <sub><img width="20" height="26" src="chap2_3.files/image182.gif" v:shapes="_x0000_i1119"></sub>максимален,
+для чего необходимо приравнять нулю производную от этого момента:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp2"><img width="257" height="44" src="chap2_3.files/image184.gif" v:shapes="_x0000_i1120"></span></sub><span class="hcp2">.<span class="hcp4">                        </span>(2.3.21)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Оказывается, что результаты решения
+уравнений (2.3.20) и (2.3.21) совпадают. Таким образом, главными можно считать
+такие оси, относительно которых осевые моменты инерции достигают экстремальных
+(максимального и минимального) значений.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Моменты инерции относительно главных осей
+называются <i class="hcp5">главными моментами инерции</i>.
+Определим значения этих моментов. Обозначим через <sub><img width="16" height="22" src="chap2_3.files/image186.gif" v:shapes="_x0000_i1121"></sub><span class="hcp4"> </span>экстремальное значение осевого момента
+инерции <sub><img width="22" height="26" src="chap2_3.files/image188.gif" v:shapes="_x0000_i1122"></sub><span class="hcp4"> </span>и запишем (2.3.18)<span class="hcp4">  </span>в виде</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp2"><img width="268" height="44" src="chap2_3.files/image190.gif" v:shapes="_x0000_i1123"></span></sub><span class="hcp2">.<span class="hcp4">    </span></span><span class="hcp4"> </span><span class="hcp2"><span class="hcp4">                 </span>(2.3.22)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Подставляя в (2.3.22) значение центробежного
+момента <sub><img width="22" height="26" src="chap2_3.files/image192.gif" v:shapes="_x0000_i1124"></sub><span class="hcp4"> </span>из<span class="hcp4"> 
+</span>(2.3.20), получаем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp2"><span class="hcp4">           </span><sub><img width="187" height="44" src="chap2_3.files/image194.gif" v:shapes="_x0000_i1125"></sub><span class="hcp4"> </span><span style='mso-tab-count:3'>                                   </span><span class="hcp4">  </span>(2.3.23)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Далее воспользуемся известной из
+тригонометрии формулой <sub><img width="160" height="46" src="chap2_3.files/image196.gif" v:shapes="_x0000_i1126"></sub>,
+которая с учетом<span class="hcp4">  </span>(2.3.20) записывается
+как</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="250" height="46" src="chap2_3.files/image198.gif" v:shapes="_x0000_i1127"></span></sub><span class="hcp2">.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Тогда согласно (2.3.23) окончательное
+выражение для определения экстремальных значений <sub><img width="30" height="22" src="chap2_3.files/image200.gif" v:shapes="_x0000_i1128"></sub><span class="hcp4"> </span>и<span class="hcp4"> 
+</span>момента инерции <sub><img width="22" height="26" src="chap2_3.files/image201.gif" v:shapes="_x0000_i1129"></sub><span class="hcp4"> </span>приобретает вид:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp2"><img width="246" height="110" src="chap2_3.files/image203.gif" v:shapes="_x0000_i1130"></span></sub><span class="hcp2"><span class="hcp4">                          </span>(2.3.2</span><span lang=EN-US
+style='mso-bidi-font-family:Arial;mso-ansi-language:EN-US'>4</span><span class="hcp2">)</span></p>
+
+</div>
+
+<div placeholder id="footer" style="width:100%;" class="hcp1">
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			border-bottom-color: #000080;
+			border-bottom-style: Ridge;
+			border-bottom-width: 2px;
+			font-size: 10pt;">&nbsp;</p>
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			font-size: 8pt;">&#169; 
+ 2007 Copyright &nbsp;&#1053;&#1058;&#1062; 
+ &#1040;&#1055;&#1052;</p>
+</div>
+</body>
+</html>

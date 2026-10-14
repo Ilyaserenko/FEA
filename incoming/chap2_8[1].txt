@@ -1,0 +1,666 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="File-List" href="./chap2_8.files/filelist.xml">
+<link rel="Edit-Time-Data" href="./chap2_8.files/editdata.mso">
+<title>Глава 2.8. Расчет толстостенных цилиндрических тел и тонкостенных
+осесимметричных оболочек</title><style>
+<!--
+p.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+h1 { margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; mso-outline-level:1; font-size:14.0pt; font-family:Arial; }
+p.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 233.85pt right 467.75pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 233.85pt right 467.75pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 233.85pt right 467.75pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.Section1 { page:Section1; }
+ol { margin-bottom:0cm; }
+ul { margin-bottom:0cm; }
+-->
+</style><style title="hcp" type="text/css">
+<!--
+div.hcp1 { position:relative; }
+b.hcp2 { mso-bidi-font-weight:normal; }
+span.hcp3 { font-size:10.0pt; font-family:Arial; letter-spacing:-.1pt; }
+span.hcp4 { font-size:10.0pt; font-family:Arial; }
+span.hcp5 { mso-spacerun:yes; }
+table.hcp6 { border-collapse:collapse; mso-padding-alt:0cm 5.4pt 0cm 5.4pt; }
+td.hcp7 { padding:0cm 5.4pt 0cm 5.4pt; }
+span.hcp8 { font-family:Arial; }
+i.hcp9 { mso-bidi-font-style:normal; }
+span.hcp10 { mso-tab-count:1; }
+span.hcp11 { font-size:10.0pt; font-family:Arial; mso-ansi-language:EN-US; }
+td.hcp12 { padding-top:0cm; padding-right:9.0pt; padding-bottom:0cm; padding-left:9.0pt; }
+span.hcp13 { font-size:10.0pt; font-family:Arial; letter-spacing:-.2pt; }
+td.hcp14 { padding-top:0cm; padding-right:9.05pt; padding-bottom:0cm; padding-left:9.05pt; }
+span.hcp15 { letter-spacing:2.0pt; mso-bidi-font-style:italic; }
+span.hcp16 { font-family:Symbol; }
+span.hcp17 { font:7.0pt "Times New Roman"; }
+-->
+</style>
+</head>
+<body lang="RU" style="tab-interval:36.0pt">
+<div placeholder id="header" style="width:100%;" class="hcp1">
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			background-color: #d8e8f9;
+			margin-left: 0px;"><img src="head_for_help.jpg"
+									x-maintain-ratio=TRUE
+									style="border: none;
+											width: 1000px;
+											height: 50px;
+											float: none;
+											border-style: none;
+											border-style: none;"
+									width=1000
+									height=50
+									border=0></p>
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			border-top-color: #000080;
+			border-top-width: 2px;
+			border-top-style: Ridge;
+			margin-left: 0px;">&nbsp;</p>
+</div>
+<div class=Section1>
+
+<h1><span style='color:navy;mso-bidi-font-weight:normal'>Глава 2.8. Расчет
+толстостенных цилиндрических тел и тонкостенных осесимметричных оболочек</span></h1>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp2"><span class="hcp3">&nbsp;</span></b></p>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp2"><span class="hcp3">Расчет
+напряженно-деформированного состояния толстостенных цилиндров.</span></b> <span class="hcp3">Одной из важных
+задач теории напряженно-деформированных состояний является расчет
+осесимметричных цилиндрических тел при нагружении постоянным распределенным давлением,
+действующим как по наружной, так и по внутренней поверхностям. Такой случай нагружения
+не может быть рассчитан с помощью описанных ранее методов, а требует
+специального подхода.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Рассмотрим однородное толстостенное цилиндрическое тело
+произвольных размеров, нагруженное осесимметричной радиальной внешней
+нагрузкой. После приложения нагрузки каждая точка тела перемещается, причем из
+соображений симметрии ясно, что эти перемещения будут происходить в радиальных
+плоскостях. Состояние после нагружения удобно наблюдать на примере деформации
+элемента цилиндра радиуса <sub><img width="14" height="18" src="chap2_8.files/image002.gif" v:shapes="_x0000_i1025"></sub><span class="hcp5"> </span>и толщины <sub><img width="22" height="22" src="chap2_8.files/image004.gif" v:shapes="_x0000_i1026"></sub><span class="hcp5"> </span>(рис. 2.8.1). Радиальное перемещение произвольной
+точки <sub><img width="16" height="18" src="chap2_8.files/image006.gif" v:shapes="_x0000_i1027"></sub><span class="hcp5"> </span>обозначим через <sub><img width="12" height="14" src="chap2_8.files/image008.gif" v:shapes="_x0000_i1028"></sub>. В
+принятой нами расчетной модели перемещение <sub><img width="12" height="14" src="chap2_8.files/image009.gif" v:shapes="_x0000_i1029"></sub><span class="hcp5"> </span>зависит только от текущего радиуса цилиндра <sub><img width="14" height="18" src="chap2_8.files/image010.gif" v:shapes="_x0000_i1030"></sub>.
+Если после приложения внешней нагрузки радиус <sub><img width="14" height="18" src="chap2_8.files/image012.gif" v:shapes="_x0000_i1031"></sub><span class="hcp5"> </span>получает приращение <sub><img width="14" height="14" src="chap2_8.files/image014.gif" v:shapes="_x0000_i1032"></sub><span class="hcp5"> </span>(т. е. точка <sub><img width="16" height="18" src="chap2_8.files/image015.gif" v:shapes="_x0000_i1033"></sub><span class="hcp5"> </span>перемещается на расстояние <sub><img width="14" height="14" src="chap2_8.files/image016.gif" v:shapes="_x0000_i1034"></sub><span class="hcp5"> </span>и переходит в точку <sub><img width="20" height="18" src="chap2_8.files/image018.gif" v:shapes="_x0000_i1035"></sub>),
+то отрезок <sub><img width="48" height="22" src="chap2_8.files/image020.gif" v:shapes="_x0000_i1036"></sub><span class="hcp5"> </span>– приращение <sub><img width="44" height="18" src="chap2_8.files/image022.gif" v:shapes="_x0000_i1037"></sub><span class="hcp5"> </span>(точка <sub><img width="16" height="18" src="chap2_8.files/image024.gif" v:shapes="_x0000_i1038"></sub><span class="hcp5"> </span>перемещается на расстояние <sub><img width="44" height="18" src="chap2_8.files/image025.gif" v:shapes="_x0000_i1039"></sub><span class="hcp5"> </span>и переходит в точку <sub><img width="20" height="18" src="chap2_8.files/image027.gif" v:shapes="_x0000_i1040"></sub>).
+Тогда радиальное удлинение <sub><img width="18" height="22" src="chap2_8.files/image029.gif" v:shapes="_x0000_i1041"></sub><span class="hcp5"> </span>рассматриваемого элемента равно</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:2.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><span class="hcp4"><span class="hcp5"> </span><sub><img width="58" height="44" src="chap2_8.files/image031.gif" v:shapes="_x0000_i1042"></sub>,<span class="hcp5">                                                          </span>(2.8.1)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">а относительное удлинение длины
+окружности&nbsp;–</span></p>
+
+<p class=Bookbody align=right style='margin-top:2.0pt;margin-right:0cm;
+margin-bottom:2.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp4"><span class="hcp5"> </span><sub><img width="170" height="46" src="chap2_8.files/image033.gif" v:shapes="_x0000_i1043"></sub>.<span
+style='mso-tab-count:3'>                            </span><span class="hcp5">              </span>(2.8.2)</span></p>
+
+<div align=center>
+
+<table border="0" cellspacing="0" cellpadding="0" class="hcp6">
+ <tr>
+  <td width="228" valign="bottom" style="width:170.85pt;" class="hcp7">
+  <p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp4"><img width="172" height="175" src="chap2_8.files/image035.gif" v:shapes="_x0000_i1044"></span></p>
+  <p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp4">Рис.
+  2.8.1</span></p>
+  </td>
+  <td width="227" valign="bottom" style="width:6.0cm;" class="hcp7">
+  <p class=MsoNormal align=center style='text-align:center;mso-element:frame;
+  mso-element-frame-width:207.2pt;mso-element-frame-height:162.25pt;mso-element-frame-hspace:
+  9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:
+  page;mso-element-left:218.75pt;mso-element-top:459.25pt'><span class="hcp8"><img width="152" height="194" src="chap2_8.files/image037.gif" v:shapes="_x0000_i1045"></span></p>
+  <p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp4">Рис.
+  2.8.2</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;text-indent:36.0pt'><span class="hcp8">Для нахождения зависимостей между возникающими
+напряжениями рассмотрим равновесие выделенного элемента объема цилиндра с
+размерами <sub><img width="50" height="24" src="chap2_8.files/image039.gif" v:shapes="_x0000_i1046"></sub><span class="hcp5"> </span>и <sub><img width="34" height="22" src="chap2_8.files/image041.gif" v:shapes="_x0000_i1047"></sub><span class="hcp5"> </span>(рис. 2.8.2). Касательные напряжения в осевых
+и поперечных сечениях цилиндра вследствие осевой симметрии отсутствуют, поэтому
+остаются только нормальные (или <i class="hcp9">окружные</i>)
+<i class="hcp9"><sub><img width="20" height="22" src="chap2_8.files/image043.gif" v:shapes="_x0000_i1048"></sub></i><span class="hcp5"> </span>и<span class="hcp5">  </span><i class="hcp9">радиальные</i> <sub><img width="22" height="22" src="chap2_8.files/image045.gif" v:shapes="_x0000_i1049"></sub><span class="hcp5"> </span>напряжения. Спроецировав все действующие на
+выделенный элемент силовые факторы на радиальное направление, можно записать
+уравнение равновесия:</span><span style='font-size:12.0pt'></span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="362" height="26" src="chap2_8.files/image047.gif" v:shapes="_x0000_i1050"></span></sub><span class="hcp4">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">откуда</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="138" height="46" src="chap2_8.files/image049.gif" v:shapes="_x0000_i1051"></span></sub><span class="hcp4">,<span class="hcp5">                                            </span>(2.8.3)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">или</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp4"><img width="113" height="46" src="chap2_8.files/image051.gif" v:shapes="_x0000_i1052"></span></sub><span class="hcp4">.<span class="hcp5">                                              </span>(2.8.4)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Напомним, что мы рассматриваем случай, когда напряжения
+сдвига отсутствуют, следовательно,<span class="hcp5">  </span><sub><img width="22" height="22" src="chap2_8.files/image052.gif" v:shapes="_x0000_i1053"></sub><span class="hcp5"> </span>и <sub><img width="20" height="22" src="chap2_8.files/image054.gif" v:shapes="_x0000_i1054"></sub><span class="hcp5"> </span>являются главными напряжениями. </span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Закон Гука (2.2.6) для случая двухосного растяжения
+записывается в виде</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="122" height="41" src="chap2_8.files/image056.gif" v:shapes="_x0000_i1055"></span></sub><span class="hcp4">;<span class="hcp5">        </span><sub><img width="122" height="41" src="chap2_8.files/image058.gif" v:shapes="_x0000_i1056"></sub>,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">так что после очевидных
+преобразований с учетом (2.8.1) и (2.8.2) получаем</span></p>
+
+<p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="162" height="48" src="chap2_8.files/image060.gif" v:shapes="_x0000_i1057"></span></sub><span class="hcp4">;</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp4"><img width="158" height="48" src="chap2_8.files/image062.gif" v:shapes="_x0000_i1058"></span></sub><span class="hcp4">.<span class="hcp10">        </span><span class="hcp5">                   </span><span class="hcp10">     </span><span class="hcp5">      </span>(2.8.5)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Подставляя в (2.8.4) значения напряжений <sub><img width="20" height="22" src="chap2_8.files/image064.gif" v:shapes="_x0000_i1059"></sub><span class="hcp5"> </span>и <sub><img width="18" height="22" src="chap2_8.files/image066.gif" v:shapes="_x0000_i1060"></sub><span class="hcp5"> </span>из (2.8.5), приходим к следующему
+дифференциальному уравнению для расчета деформаций:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="139" height="46" src="chap2_8.files/image068.gif" v:shapes="_x0000_i1061"></span></sub><span class="hcp4">.<span class="hcp5">                                         </span>(2.8.6)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Уравнение (2.8.6) может быть переписано как</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;text-align:center;
+text-indent:21.25pt;line-height:normal'><sub><span class="hcp4"><img width="116" height="48" src="chap2_8.files/image070.gif" v:shapes="_x0000_i1062"></span></sub><span class="hcp4">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">или</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp4"><img width="134" height="48" src="chap2_8.files/image072.gif" v:shapes="_x0000_i1063"></span></sub><span class="hcp4">.<span class="hcp5">                                      </span>(2.8.7)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Решением (2.8.7) является функция радиального перемещения <sub><img width="12" height="14" src="chap2_8.files/image074.gif" v:shapes="_x0000_i1064"></sub><span class="hcp5"> </span>вида</span></p>
+
+<p class=Bookbody align=right style='text-align:right;line-height:normal'><sub><span class="hcp4"><img width="92" height="46" src="chap2_8.files/image076.gif" v:shapes="_x0000_i1065"></span></sub><span class="hcp4">,<span class="hcp5">  
+</span><span class="hcp10">  </span><span class="hcp5">                                          </span>(2.8.8)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">где <sub><img width="18" height="22" src="chap2_8.files/image078.gif" v:shapes="_x0000_i1066"></sub><span class="hcp5"> </span>и <sub><img width="20" height="22" src="chap2_8.files/image080.gif" v:shapes="_x0000_i1067"></sub><span class="hcp5"> </span>–&nbsp;постоянные интегрирования, значения
+которых в каждом конкретном случае определяются из граничных условий.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Найденную в (2.8.8) функцию <sub><img width="12" height="14" src="chap2_8.files/image081.gif" v:shapes="_x0000_i1068"></sub><span class="hcp5"> </span>можно использовать для расчета напряжений.
+Подставив (2.8.8) в (2.8.5), получим</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><sub><span class="hcp4"><img width="256" height="48" src="chap2_8.files/image083.gif" v:shapes="_x0000_i1069"></span></sub><span class="hcp4">;</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp4"><img width="254" height="48" src="chap2_8.files/image085.gif" v:shapes="_x0000_i1070"></span></sub><span class="hcp4">.</span><span lang="EN-US" class="hcp11"><span class="hcp10">        </span><span class="hcp5">    
+</span><span class="hcp10">       </span></span><span lang=EN-US
+style='mso-ansi-language:EN-US'><span class="hcp5"> </span></span><span class="hcp4"><span class="hcp5">     </span>(2.8.9)</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:172.0pt;mso-element-frame-height:
+191.75pt;mso-element-frame-hspace:9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:
+paragraph;mso-element-anchor-horizontal:margin;mso-element-top:37.85pt'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=241 height=256
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="256" class="hcp12">
+  <p class=MsoNormal align=center style='text-align:center;mso-element:frame;
+  mso-element-frame-width:172.0pt;mso-element-frame-height:191.75pt;mso-element-frame-hspace:
+  9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:margin;mso-element-top:37.85pt'><span class="hcp8"><img width="225" height="228" src="chap2_8.files/image087.gif" v:shapes="_x0000_i1071"></span></p>
+  <p class=MsoNormal align=center style='margin-top:4.0pt;text-align:center;
+  mso-element:frame;mso-element-frame-width:172.0pt;mso-element-frame-height:
+  191.75pt;mso-element-frame-hspace:9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:margin;mso-element-top:37.85pt'><span class="hcp8">Рис. 2.8.3</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp2"><span class="hcp4">Задача Ляме. </span></b><span class="hcp4">Рассмотрим
+толстостенный цилиндр с внутренним и внешним радиусами <sub><img width="12" height="22" src="chap2_8.files/image089.gif" v:shapes="_x0000_i1072"></sub><span class="hcp5"> </span>и <sub><img width="14" height="22" src="chap2_8.files/image091.gif" v:shapes="_x0000_i1073"></sub>,
+нагруженный одновременно внутренним и внешним<span class="hcp5"> 
+</span>давлениями <sub><img width="18" height="22" src="chap2_8.files/image093.gif" v:shapes="_x0000_i1074"></sub><span class="hcp5"> </span>и <sub><img width="18" height="22" src="chap2_8.files/image095.gif" v:shapes="_x0000_i1075"></sub><span class="hcp5"> </span>(рис. 2.8.3). Задача определения
+напряженно-деформированного состояния такого цилиндра называется <i class="hcp9">задачей Ляме</i>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp13">Граничные условия для напряжений в этом
+случае можно записать в следующем виде:</span></p>
+
+<p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="113" height="24" src="chap2_8.files/image097.gif" v:shapes="_x0000_i1076"></span></sub><span class="hcp4">; <sub><img width="118" height="24" src="chap2_8.files/image099.gif" v:shapes="_x0000_i1077"></sub>,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">откуда постоянные интегрирования с
+учетом (2.8.9) равны</span></p>
+
+<p class=Bookbody align=center style='margin-bottom:4.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><sub><span class="hcp4"><img width="154" height="48" src="chap2_8.files/image101.gif" v:shapes="_x0000_i1078"></span></sub><span class="hcp4">;</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp4"><img width="184" height="48" src="chap2_8.files/image103.gif" v:shapes="_x0000_i1079"></span></sub><span class="hcp4">.<span class="hcp5"> 
+</span>(2.8.10)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Подстановка (2.8.10) в (2.8.9) и
+(2.8.8) дает</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><span class="hcp4"><span class="hcp5">         </span><sub><img width="214" height="48" src="chap2_8.files/image105.gif" v:shapes="_x0000_i1080"></sub>;</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="214" height="48" src="chap2_8.files/image107.gif" v:shapes="_x0000_i1081"></span></sub><span class="hcp4">.<span class="hcp10">      </span><span class="hcp5">                    </span>(2.8.11)</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><span class="hcp4"><span class="hcp5">              </span><sub><img width="304" height="48" src="chap2_8.files/image109.gif" v:shapes="_x0000_i1082"></sub>.<span class="hcp5">         </span><span class="hcp5">    </span>(2.8.12)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Рассмотрим ряд частных решений, представляющих интерес для
+практики проектирования.</span></p>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp2"><i class="hcp9"><span class="hcp4">1. Цилиндр нагружен только внутренним давлением.</span></i></b>
+<span class="hcp4">Для указанного варианта
+нагружения справедливы следующие граничные условия:</span></p>
+
+<p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="110" height="24" src="chap2_8.files/image111.gif" v:shapes="_x0000_i1083"></span></sub><span class="hcp4">;<span class="hcp5">       </span><sub><img width="100" height="24" src="chap2_8.files/image113.gif" v:shapes="_x0000_i1084"></sub>.</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">Тогда (2.8.11) переписывается в виде</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><b class="hcp2"><sub><span class="hcp4"><img width="146" height="50" src="chap2_8.files/image115.gif" v:shapes="_x0000_i1085"></span></sub></b><span class="hcp4">;<b class="hcp2"><span class="hcp5">      </span><sub><img width="144" height="50" src="chap2_8.files/image117.gif" v:shapes="_x0000_i1086"></sub></b>.<span class="hcp5">              </span>(2.8.13)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">На рис. 2.8.4 показан график изменения радиальных и окружных
+напряжений по толщине цилиндра. Из графика видно, что наибольших значений
+окружное напряжение достигает в точках внутренней поверхности радиуса <sub><img width="12" height="22" src="chap2_8.files/image119.gif" v:shapes="_x0000_i1087"></sub>:</span></p>
+
+<p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><b class="hcp2"><sub><span class="hcp4"><img width="118" height="48" src="chap2_8.files/image121.gif" v:shapes="_x0000_i1088"></span></sub></b><span class="hcp4">.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">При этом радиальное напряжение, как следует из (2.8.13),
+равно <sub><img width="77" height="24" src="chap2_8.files/image123.gif" v:shapes="_x0000_i1089"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Так как расчет статической прочности следует выполнять для
+наиболее нагруженных точек, то условие прочности по теории максимальных
+касательных напряжений (2.7.23) записывается в виде</span></p>
+
+<p class=Bookbody align=right style='margin-top:2.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="326" height="48" src="chap2_8.files/image125.gif" v:shapes="_x0000_i1090"></span></sub><span class="hcp4">.<span class="hcp5">            </span>(2.8.14)</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:21.3pt'><b class="hcp2"><i class="hcp9"><span class="hcp8">2. Цилиндр нагружен только внешним давлением.</span></i></b>
+<span class="hcp8">Граничные условия в этом случае имеют вид</span></p>
+
+<p class=Bookbody align=center style='margin-bottom:4.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><sub><span class="hcp4"><img width="98" height="24" src="chap2_8.files/image127.gif" v:shapes="_x0000_i1091"></span></sub><span class="hcp4">;<span class="hcp5">         </span><sub><img width="112" height="24" src="chap2_8.files/image129.gif" v:shapes="_x0000_i1092"></sub>,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">так что из (2.8.11) следует</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp4"><img width="158" height="50" src="chap2_8.files/image131.gif" v:shapes="_x0000_i1093"></span></sub><span class="hcp4">;<span class="hcp5">     </span><sub><img width="156" height="50" src="chap2_8.files/image133.gif" v:shapes="_x0000_i1094"></sub>.<span class="hcp5">               </span>(2.8.15)</span></p>
+
+<div style='mso-element:frame;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:margin;
+mso-element-top:459.25pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 align=left>
+ <tr>
+  <td valign="top" align="left" class="hcp14">
+  <p class=MsoNormal align=center style='text-align:center;mso-element:frame;
+  mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:margin;mso-element-top:459.25pt;
+  mso-height-rule:exactly'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Из приведенных на рис. 2.8.5 графиков изменения напряжений <sub><img width="22" height="22" src="chap2_8.files/image135.gif" v:shapes="_x0000_i1095"></sub><span class="hcp5">  </span>и <sub><img width="20" height="22" src="chap2_8.files/image137.gif" v:shapes="_x0000_i1096"></sub><span class="hcp5"> </span>по толщине цилиндра видно, что эквивалентное
+напряжение <sub><img width="90" height="22" src="chap2_8.files/image139.gif" v:shapes="_x0000_i1097"></sub><span class="hcp5"> </span>достигает наибольшего значения на внутренней
+поверхности цилиндра, т. е. при <sub><img width="41" height="22" src="chap2_8.files/image141.gif" v:shapes="_x0000_i1098"></sub>.
+Величина этого напряжения, согласно гипотезе наибольших касательных напряжений
+(2.7.23), определяется по формуле</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp4"><img width="226" height="50" src="chap2_8.files/image143.gif" v:shapes="_x0000_i1099"></span></sub><span class="hcp4">.<span class="hcp5">                             </span>(2.8.16)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">&nbsp;</span></p>
+
+<div align=center>
+
+<table border="0" cellspacing="0" cellpadding="0" class="hcp6">
+ <tr>
+  <td width="272" valign="bottom" style="width:203.8pt;" class="hcp7">
+  <p class=MsoNormal align=center style='text-align:center'><span class="hcp8"><img width="216" height="200" src="chap2_8.files/image145.gif" v:shapes="_x0000_i1100"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp4">Рис.
+  2.8.5</span></p>
+  </td>
+  <td width="230" valign="bottom" style="width:172.6pt;" class="hcp7">
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center'><span class="hcp8"><img width="220" height="180" src="chap2_8.files/image147.gif" v:shapes="_x0000_i1101"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp4">Рис.
+  2.8.4</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Полученное выражение (2.8.16) полностью совпадает с
+результатом аналогичного расчета (2.8.14), проведенного для случая нагружения
+внутренним давлением.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">В том случае, если радиус внутреннего отверстия <sub><img width="40" height="22" src="chap2_8.files/image149.gif" v:shapes="_x0000_i1102"></sub><span class="hcp5"> </span>(т. е. толстостенный цилиндр превращается в
+сплошной вал), то, как следует из (2.8.16), напряжения в цилиндре будут
+распределены равномерно:</span></p>
+
+<p class=Bookbody align=center style='margin-bottom:4.0pt;text-align:center;
+text-indent:21.25pt;line-height:normal'><sub><span class="hcp4"><img width="94" height="24" src="chap2_8.files/image151.gif" v:shapes="_x0000_i1103"></span></sub><span class="hcp4">.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp2"><span class="hcp13">Расчет напряженно-деформированного состояния
+составных цилиндров.</span></b> <span class="hcp13">Этот случай интересен прежде всего с точки зрения рассмотрения
+соединения деталей с натягом (см. далее главу 4.2). При такой сборке внешний
+диаметр одной из сопрягаемых деталей (вала) больше диаметра отверстия другой
+детали. Соединения с натягом широко используются для сборки деталей,
+представляющих собой тела вращения.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Процесс сборки такого соединения связан с созданием натяга <sub><img width="14" height="18" src="chap2_8.files/image153.gif" v:shapes="_x0000_i1104"></sub><span class="hcp5"> </span>за счет деформаций сопряженных деталей. Присвоим
+внутренней детали индекс 1, а наружной&nbsp;– <sub><img width="14" height="18" src="chap2_8.files/image155.gif" v:shapes="_x0000_i1105"></sub>.
+Тогда натяг равен разности</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp4"><img width="74" height="22" src="chap2_8.files/image157.gif" v:shapes="_x0000_i1106"></span></sub><span class="hcp4">,<span class="hcp5">                                             </span>(2.8.17)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">где <sub><img width="18" height="22" src="chap2_8.files/image159.gif" v:shapes="_x0000_i1107"></sub><span class="hcp5"> </span>– увеличение радиуса отверстия; <sub><img width="16" height="22" src="chap2_8.files/image161.gif" v:shapes="_x0000_i1108"></sub><span class="hcp5"> </span>– уменьшение радиуса вала.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">После сборки на контактирующих поверхностях появляется
+давление, абсолютную величину которого обозначим через <sub><img width="20" height="24" src="chap2_8.files/image163.gif" v:shapes="_x0000_i1109"></sub>.
+Перемещение <sub><img width="16" height="22" src="chap2_8.files/image165.gif" v:shapes="_x0000_i1110"></sub><span class="hcp5"> </span>определяется по формуле (2.8.12), если
+положить в ней <sub><img width="175" height="24" src="chap2_8.files/image167.gif" v:shapes="_x0000_i1111"></sub>.
+Аналогично при вычисления <sub><img width="18" height="22" src="chap2_8.files/image169.gif" v:shapes="_x0000_i1112"></sub><span class="hcp5"> </span>делаем замену<span class="hcp5">  </span><sub><img width="174" height="24" src="chap2_8.files/image171.gif" v:shapes="_x0000_i1113"></sub>.
+Тогда, предполагая, что сопрягаемые детали изготовлены из одинакового
+материала, получаем</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="216" height="126" src="chap2_8.files/image173.gif" v:shapes="_x0000_i1114"></span></sub><span class="hcp4">.<span class="hcp5">                             </span>(2.8.18)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Вычисляя далее значение <sub><img width="14" height="22" src="chap2_8.files/image175.gif" v:shapes="_x0000_i1115"></sub><span class="hcp5"> </span>подстановкой (2.8.18) в (2.8.17) и выражая
+оттуда <sub><img width="20" height="24" src="chap2_8.files/image177.gif" v:shapes="_x0000_i1116"></sub>,
+находим</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="192" height="50" src="chap2_8.files/image179.gif" v:shapes="_x0000_i1117"></span></sub><span class="hcp4">. <span class="hcp10">          </span><span class="hcp5">                    </span>(2.8.19)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">В том случае, когда детали изготавливаются из различных
+материалов, формула (2.8.19) приобретает вид</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal'><sub><span lang="EN-US" class="hcp11"><img width="184" height="46" src="chap2_8.files/image181.gif" v:shapes="_x0000_i1118"></span></sub><span class="hcp4">,<span class="hcp5">                                  </span>(2.8.20)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">где</span></p>
+
+<p class=Bookbody align=center style='margin-bottom:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><sub><span class="hcp4"><img width="118" height="48" src="chap2_8.files/image183.gif" v:shapes="_x0000_i1119"></span></sub><span class="hcp4">;<span class="hcp5">      </span><sub><img width="122" height="48" src="chap2_8.files/image185.gif" v:shapes="_x0000_i1120"></sub>.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp2"><span class="hcp4">Расчет напряженно-деформированного состояния тонкостенных
+осесимметричных оболочек.</span></b> <span class="hcp4">Под <span class="hcp15">оболочкой</span>
+<span style='letter-spacing:.2pt'>понимается тело, одно из измерений которого
+(толщина) значительно <i class="hcp9">меньше</i> двух
+других (сравним: брусом, как известно, называется тело, одно из измерений
+которого, а именно длина, значительно <i class="hcp9">больше</i>
+двух других). Геометрическое место точек, равноотстоящих от наружной и
+внутренней поверхностей оболочки, носит название <i class="hcp9">срединной поверхности</i>. Если срединная поверхность является
+плоскостью, то оболочка превращается</span> в <span class="hcp15">пластину</span>.</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:126.45pt;mso-element-frame-height:
+180.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+page;mso-element-anchor-horizontal:margin;mso-element-top:432.25pt'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=181 height=240
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="240" class="hcp14">
+  <p class=MsoNormal style='margin-top:6.0pt;text-align:justify;mso-element:
+  frame;mso-element-frame-width:126.45pt;mso-element-frame-height:180.25pt;
+  mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:margin;mso-element-top:432.25pt'><span class="hcp8"><img width="162" height="184" src="chap2_8.files/image187.gif" v:shapes="_x0000_i1121"></span></p>
+  <p class=MsoNormal align=center style='margin-top:18.0pt;text-align:center;
+  mso-element:frame;mso-element-frame-width:126.45pt;mso-element-frame-height:
+  180.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:margin;mso-element-top:432.25pt'><span class="hcp8">Рис. 2.8.6</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span style='font-size:10.0pt;
+font-family:Arial;letter-spacing:.1pt'>Геометрия оболочки определяется формой
+срединной поверхности и законом изменения толщины этой оболочки. На практике
+все оболочки имеют, как правило, постоянную толщину, малую по сравнению с наименьшим
+радиусом кривизны поверхности. Тонкостенные оболочки можно рассматривать как
+противоположный предельный случай относительно толстостенных цилиндров. В
+частности, <i class="hcp9">осесимметричной тонкостенной </i>называется
+оболочка, имеющая форму тела вращения, толщина которой пренебрежимо мала по
+сравнению с радиусами кривизны ее внешней и внутренней поверхностей. Примерами
+машиностроительных объектов, моделируемых при расчете тонкостенными
+оболочечными конструкциями, являются различного рода резервуары, котлы, баки,
+цистерны, газгольдеры, многие строительные сооружения и др. Важной особенностью
+таких оболочек является то, что действующие на их внутреннюю поверхность
+силовые факторы перпендикулярны этой поверхности и симметричны относительно оси
+оболочки. В этой связи при расчете, так же как и для толстостенных цилиндров,
+можно пренебречь деформациями изгиба поверхности оболочки. Такая теория,
+построенная в предположении отсутствия изгиба оболочки, называется <i class="hcp9">безмоментной теорией</i>. Отличие от случая
+толстостенного цилиндра будет состоять в том, что напряжения по толщине стенки
+оболочки распределены <i class="hcp9">равномерно</i>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Следует отметить, что на практике часто приходится иметь
+дело с недостаточно тонкими оболочками или с оболочками, имеющими локальные
+изломы, жесткие закрепления, точки приложения сосредоточенных сил и моментов. В
+окрестностях таких мест, разумеется, возникает изгиб, однако по мере удаления
+от них изгибные деформации быстро затухают, поэтому вдали от мест локальных
+возмущений расчет оболочки допустимо производить при указанных выше предположениях.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Рассмотрим тонкостенную осесимметричную оболочку толщины <sub><img width="14" height="18" src="chap2_8.files/image189.gif" v:shapes="_x0000_i1122"></sub>,
+подвергающуюся действию внутреннего давления <sub><img width="16" height="18" src="chap2_8.files/image191.gif" v:shapes="_x0000_i1123"></sub>,
+перпендикулярного ее поверхности (рис. 2.8.6). Введем некоторые определения:</span></p>
+
+<p class=Bookbody style='margin-left:42.55pt;text-indent:-21.25pt;line-height:
+normal;mso-list:l0 level1 lfo2;tab-stops:list 42.55pt 64.35pt'><span class="hcp16">·<span class="hcp17">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp4">ось
+оболочки&nbsp;– ось поверхности вращения;</span></p>
+
+<p class=Bookbody style='margin-left:42.55pt;text-indent:-21.25pt;line-height:
+normal;mso-list:l0 level1 lfo2;tab-stops:list 42.55pt 64.35pt'><span class="hcp16">·<span class="hcp17">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp4">меридиональная
+плоскость&nbsp;– плоскость, проходящая через ось оболочки;</span></p>
+
+<p class=Bookbody style='margin-left:42.55pt;text-indent:-21.25pt;line-height:
+normal;mso-list:l0 level1 lfo2;tab-stops:list 42.55pt 64.35pt'><span class="hcp16">·<span class="hcp17">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp4">окружная
+плоскость&nbsp;– плоскость, перпендикулярная оси оболочки;</span></p>
+
+<p class=Bookbody style='margin-left:42.55pt;text-indent:-21.25pt;line-height:
+normal;mso-list:l0 level1 lfo2;tab-stops:list 42.55pt 64.35pt'><span class="hcp16">·<span class="hcp17">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp4">меридиональное
+сечение&nbsp;– сечение оболочки меридиональной плоскостью;</span></p>
+
+<p class=Bookbody style='margin-left:42.55pt;text-indent:-21.25pt;line-height:
+normal;mso-list:l0 level1 lfo2;tab-stops:list 42.55pt 64.35pt'><span class="hcp16">·<span class="hcp17">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp4">окружное
+сечение&nbsp;– сечение оболочки конической поверхностью, нормальной к ее
+срединной поверхности, вершина которой лежит на оси;</span></p>
+
+<p class=Bookbody style='margin-left:42.55pt;text-indent:-21.25pt;line-height:
+normal;mso-list:l0 level1 lfo2;tab-stops:list 42.55pt 64.35pt'><span class="hcp16">·<span class="hcp17">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp4">меридиан&nbsp;–
+линия пересечения срединной поверхности с осевой плоскостью.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Выделим из оболочки бесконечно малый элемент <sub><img width="26" height="18" src="chap2_8.files/image193.gif" v:shapes="_x0000_i1124"></sub>двумя
+парами бесконечно близких меридиональных и окружных конических сечений. Будем
+считать, что при нагружении оболочки на гранях этого элемента появляются
+нормальные <i class="hcp9">меридиональное напряжение</i>
+(направленное по дуге меридиана) <sub><img width="22" height="24" src="chap2_8.files/image195.gif" v:shapes="_x0000_i1125"></sub><span class="hcp5"> </span>и<span class="hcp5">  </span><i class="hcp9">окружное напряжение</i> <sub><img width="18" height="24" src="chap2_8.files/image197.gif" v:shapes="_x0000_i1126"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Для нахождения зависимостей между возникающими напряжениями
+исследуем равновесие выделенного элемента (рис 2.8.7). На рисунке приняты
+следующие обозначения: точки <sub><img width="50" height="22" src="chap2_8.files/image199.gif" v:shapes="_x0000_i1127"></sub><span class="hcp5"> </span>и <sub><img width="18" height="18" src="chap2_8.files/image201.gif" v:shapes="_x0000_i1128"></sub>,
+принадлежащие срединной поверхности, равноудалены от наружной и внутренней поверхностей
+оболочки; <sub><img width="126" height="26" src="chap2_8.files/image203.gif" v:shapes="_x0000_i1129"></sub>&nbsp;–
+радиус кривизны дуги меридиана срединной поверхности <sub><img width="48" height="18" src="chap2_8.files/image205.gif" v:shapes="_x0000_i1130"></sub>;<span class="hcp5">  </span><sub><img width="116" height="26" src="chap2_8.files/image207.gif" v:shapes="_x0000_i1131"></sub><span class="hcp5"> </span>– радиус кривизны нормального сечения,
+перпендикулярного к дуге меридиана (равный отрезку нормали к срединной
+поверхности, заключенному между этой поверхностью и осью оболочки); <sub><img width="20" height="18" src="chap2_8.files/image209.gif" v:shapes="_x0000_i1132"></sub><span class="hcp5"> </span>и <sub><img width="24" height="18" src="chap2_8.files/image211.gif" v:shapes="_x0000_i1133"></sub><span class="hcp5"> </span>– центры кривизны меридиана и лежащего на оси
+окружного сечения соответственно; <sub><img width="22" height="22" src="chap2_8.files/image213.gif" v:shapes="_x0000_i1134"></sub><span class="hcp5"> </span>и <sub><img width="26" height="22" src="chap2_8.files/image215.gif" v:shapes="_x0000_i1135"></sub><span class="hcp5"> </span>– площади граней <sub><img width="28" height="18" src="chap2_8.files/image217.gif" v:shapes="_x0000_i1136"></sub><span class="hcp5"> </span>(<sub><img width="26" height="18" src="chap2_8.files/image219.gif" v:shapes="_x0000_i1137"></sub>) и <sub><img width="26" height="18" src="chap2_8.files/image221.gif" v:shapes="_x0000_i1138"></sub><span class="hcp5"> </span>(<sub><img width="26" height="18" src="chap2_8.files/image223.gif" v:shapes="_x0000_i1139"></sub>).</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:338.45pt;mso-element-frame-height:
+172.55pt;mso-element-frame-hspace:9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:
+paragraph;mso-element-anchor-horizontal:margin;mso-element-top:30.45pt'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=463 height=230
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="230" class="hcp12">
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  mso-element:frame;mso-element-frame-width:338.45pt;mso-element-frame-height:
+  172.55pt;mso-element-frame-hspace:9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:margin;mso-element-top:30.45pt'><span class="hcp8"><img width="346" height="199" src="chap2_8.files/image225.gif" v:shapes="_x0000_i1140"></span></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-element:frame;
+  mso-element-frame-width:338.45pt;mso-element-frame-height:172.55pt;
+  mso-element-frame-hspace:9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:margin;mso-element-top:30.45pt'><span class="hcp8">Рис. 2.8.7</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Ясно, что вследствие осевой симметрии самой оболочки и
+приложенной к ней нагрузки на боковых гранях <sub><img width="26" height="18" src="chap2_8.files/image226.gif" v:shapes="_x0000_i1141"></sub><span class="hcp5"> </span>и <sub><img width="26" height="18" src="chap2_8.files/image227.gif" v:shapes="_x0000_i1142"></sub>, параллельных
+меридиональным плоскостям, касательное напряжение отсутствует – на этих гранях действуют
+только нормальные (окружные) напряжения <sub><img width="18" height="24" src="chap2_8.files/image228.gif" v:shapes="_x0000_i1143"></sub>.
+Что же касается граней <sub><img width="26" height="18" src="chap2_8.files/image229.gif" v:shapes="_x0000_i1144"></sub><span class="hcp5"> </span>и <sub><img width="28" height="18" src="chap2_8.files/image231.gif" v:shapes="_x0000_i1145"></sub>, то
+на них в соответствии с законом парности напряжений касательные напряжения
+также равны нулю, и, следовательно, эти грани испытывают действие лишь
+меридиональных напряжений <sub><img width="22" height="24" src="chap2_8.files/image232.gif" v:shapes="_x0000_i1146"></sub>.
+Кроме того, к рассматриваемому элементу оболочки приложено внутреннее давление <sub><img width="16" height="18" src="chap2_8.files/image233.gif" v:shapes="_x0000_i1147"></sub>,
+перпендикулярное поверхности <sub><img width="48" height="18" src="chap2_8.files/image235.gif" v:shapes="_x0000_i1148"></sub>.
+Это давление постоянно во всех точках поверхности оболочек, заполненных газом,
+и меняется в направлении меридиана в случае жидкого наполнителя.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Уравнение равновесия выделенного бесконечно малого элемента
+оболочки в проекциях на нормаль к<span class="hcp5"> 
+</span>срединной поверхности <sub><img width="48" height="18" src="chap2_8.files/image236.gif" v:shapes="_x0000_i1149"></sub>,
+как следует из рис. 2.8.7, имеет вид</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp4"><img width="334" height="42" src="chap2_8.files/image238.gif" v:shapes="_x0000_i1150"></span></sub><span class="hcp4">.<span class="hcp10">     </span><span class="hcp5">      </span>(2.8.21)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Поскольку углы <sub><img width="31" height="42" src="chap2_8.files/image240.gif" v:shapes="_x0000_i1151"></sub><span class="hcp5"> </span>и <sub><img width="34" height="42" src="chap2_8.files/image242.gif" v:shapes="_x0000_i1152"></sub><span class="hcp5"> </span>малы, то их синусы можно заменить значениями
+самих углов, так что</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="140" height="46" src="chap2_8.files/image244.gif" v:shapes="_x0000_i1153"></span></sub><span class="hcp4">;<span class="hcp5">       </span><sub><img width="150" height="46" src="chap2_8.files/image246.gif" v:shapes="_x0000_i1154"></sub>.<span class="hcp10">   </span><span class="hcp5">        
+</span>(2.8.22)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Подстановка (2.8.22) в (2.8.21) после несложных
+преобразований приводит к так называемому <i class="hcp9">уравнению
+Лапласа</i>:</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp4"><img width="92" height="46" src="chap2_8.files/image248.gif" v:shapes="_x0000_i1155"></span></sub><span class="hcp4">. <span class="hcp10">           </span><span class="hcp5">   </span><span style='mso-tab-count:2'>                     </span><span class="hcp5">         </span>(2.8.23)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Уравнение Лапласа (2.8.23) содержит две неизвестные величины
+– напряжения <sub><img width="22" height="24" src="chap2_8.files/image249.gif" v:shapes="_x0000_i1156"></sub><span class="hcp5"> </span>и <sub><img width="18" height="24" src="chap2_8.files/image250.gif" v:shapes="_x0000_i1157"></sub>,
+поэтому определить эти напряжения можно, лишь привлекая дополнительные
+соотношения. В качестве таковых допустимо использовать, например, уравнение
+равновесия части оболочки, отсеченной перпендикулярной к меридианам конической
+поверхностью. Однако в некоторых частных случаях задача может быть решена
+только на основе соотношения (2.8.23). Так, если сферическая оболочка радиуса <sub><img width="16" height="18" src="chap2_8.files/image252.gif" v:shapes="_x0000_i1158"></sub><span class="hcp5"> </span>наполнена газом, то вследствие центральной
+симметрии самой оболочки и действующей на нее нагрузки имеют место равенства</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="86" height="24" src="chap2_8.files/image254.gif" v:shapes="_x0000_i1159"></span></sub><span class="hcp4">;<span class="hcp5">   
+</span><span class="hcp5">    </span><sub><img width="56" height="24" src="chap2_8.files/image256.gif" v:shapes="_x0000_i1160"></sub>,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">так что из уравнения (2.8.23)
+получаем</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="98" height="41" src="chap2_8.files/image258.gif" v:shapes="_x0000_i1161"></span></sub><span class="hcp4"><span class="hcp5"> </span>.<span class="hcp5">                                          </span></span><span class="hcp5"> </span><span class="hcp4"><span class="hcp5"> </span>(2.8.24)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">В цилиндрической или конической оболочках меридиан является
+прямой линией, радиус кривизны которой, как известно, бесконечен, <sub><img width="60" height="24" src="chap2_8.files/image260.gif" v:shapes="_x0000_i1162"></sub>,
+так что</span></p>
+
+<p class=Bookbody align=center style='text-align:center;line-height:normal'><sub><span class="hcp4"><img width="86" height="24" src="chap2_8.files/image262.gif" v:shapes="_x0000_i1163"></span></sub><span class="hcp4">, <sub><img width="50" height="24" src="chap2_8.files/image264.gif" v:shapes="_x0000_i1164"></sub><span class="hcp5">     </span>и<span class="hcp5">   
+</span><sub><img width="67" height="42" src="chap2_8.files/image266.gif" v:shapes="_x0000_i1165"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">В общем случае оболочки произвольной формы ее расчет следует
+проводить методом конечным элементов.</span></p>
+
+<p class=Bookbody style='line-height:normal'>&nbsp;</p>
+
+</div>
+
+<div placeholder id="footer" style="width:100%;" class="hcp1">
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			border-bottom-color: #000080;
+			border-bottom-style: Ridge;
+			border-bottom-width: 2px;
+			font-size: 10pt;">&nbsp;</p>
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			font-size: 8pt;">&#169; 
+ 2007 Copyright &nbsp;&#1053;&#1058;&#1062; 
+ &#1040;&#1055;&#1052;</p>
+</div>
+</body>
+</html>

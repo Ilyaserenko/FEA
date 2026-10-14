@@ -1,0 +1,1251 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="File-List" href="./chap2_4.files/filelist.xml">
+<link rel="Edit-Time-Data" href="./chap2_4.files/editdata.mso">
+<title>Глава 2.4. Сдвиг и кручение</title><style>
+<!--
+p.MsoNormal { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoNormal { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoNormal { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+h1 { mso-style-next:Обычный; margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; text-indent:23.75pt; mso-pagination:widow-orphan; page-break-after:avoid; mso-outline-level:1; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-bidi-font-family:Times New Roman; mso-font-kerning:14.0pt; mso-bidi-font-weight:normal; }
+p.MsoIndex1 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+li.MsoIndex1 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+div.MsoIndex1 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+p.MsoToc1 { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 415.55pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+li.MsoToc1 { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 415.55pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+div.MsoToc1 { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 415.55pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+p.MsoHeader { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoHeader { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoHeader { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.MsoTitle { margin:0cm; margin-bottom:.0001pt; text-align:center; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.MsoTitle { margin:0cm; margin-bottom:.0001pt; text-align:center; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.MsoTitle { margin:0cm; margin-bottom:.0001pt; text-align:center; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.MsoSubtitle { margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.MsoSubtitle { margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.MsoSubtitle { margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.25pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.25pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.25pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:8.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:8.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:8.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.Paragraphtitle { mso-style-name:Paragraph title; mso-style-parent:Book_body; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-align:center; line-height:90%; mso-pagination:none; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; font-style:italic; mso-bidi-font-style:normal; }
+li.Paragraphtitle { mso-style-name:Paragraph title; mso-style-parent:Book_body; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-align:center; line-height:90%; mso-pagination:none; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; font-style:italic; mso-bidi-font-style:normal; }
+div.Paragraphtitle { mso-style-name:Paragraph title; mso-style-parent:Book_body; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-align:center; line-height:90%; mso-pagination:none; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; font-style:italic; mso-bidi-font-style:normal; }
+div.Section1 { page:Section1; }
+-->
+</style><style title="hcp" type="text/css">
+<!--
+div.hcp1 { position:relative; }
+b.hcp2 { mso-bidi-font-weight:normal; }
+span.hcp3 { font-size:10.0pt; font-family:Arial; }
+i.hcp4 { mso-bidi-font-style:normal; }
+span.hcp5 { mso-spacerun:yes; }
+span.hcp6 { mso-tab-count:2; }
+span.hcp7 { mso-bidi-font-family:Arial; }
+span.hcp8 { mso-bidi-font-family:Arial; mso-ansi-language:EN-US; }
+span.hcp9 { mso-tab-count:3; }
+span.hcp10 { mso-ansi-language:EN-US; }
+td.hcp11 { padding-top:0cm; padding-right:7.1pt; padding-bottom:0cm; padding-left:7.1pt; }
+span.hcp12 { font-size:9.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; }
+span.hcp13 { mso-tab-count:1; }
+span.hcp14 { font-size:10.0pt; font-family:Arial; letter-spacing:-.2pt; }
+span.hcp15 { font-size:10.0pt; font-family:Arial; mso-ansi-language:EN-US; }
+span.hcp16 { letter-spacing:2.0pt; mso-bidi-font-style:italic; }
+table.hcp17 { border-collapse:collapse; mso-padding-alt:0cm 5.4pt 0cm 5.4pt; }
+td.hcp18 { padding:0cm 5.4pt 0cm 5.4pt; }
+td.hcp19 { border:solid windowtext .75pt; border-left:none; mso-border-left-alt:solid windowtext .75pt; padding:0cm 5.35pt 0cm 5.35pt; }
+td.hcp20 { border:solid windowtext .75pt; border-top:none; mso-border-top-alt:solid windowtext .75pt; padding:0cm 5.35pt 0cm 5.35pt; }
+td.hcp21 { border-top:none; border-left:none; border-bottom:solid windowtext .75pt; border-right:solid windowtext .75pt; mso-border-top-alt:solid windowtext .75pt; mso-border-left-alt:solid windowtext .75pt; padding:0cm 5.35pt 0cm 5.35pt; }
+td.hcp22 { padding-top:0cm; padding-right:9.05pt; padding-bottom:0cm; padding-left:9.05pt; }
+span.hcp23 { font-size:10.0pt; font-family:Arial; letter-spacing:.2pt; }
+-->
+</style>
+</head>
+<body lang="RU" style="tab-interval:35.4pt">
+<div placeholder id="header" style="width:100%;" class="hcp1">
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			background-color: #d8e8f9;
+			margin-left: 0px;"><img src="head_for_help.jpg"
+									x-maintain-ratio=TRUE
+									style="border: none;
+											width: 1000px;
+											height: 50px;
+											float: none;
+											border-style: none;
+											border-style: none;"
+									width=1000
+									height=50
+									border=0></p>
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			border-top-color: #000080;
+			border-top-width: 2px;
+			border-top-style: Ridge;
+			margin-left: 0px;">&nbsp;</p>
+</div>
+<div class=Section1>
+
+<h1 style='text-indent:0cm;page-break-after:auto'><span style='mso-bidi-font-size:
+14.0pt;mso-bidi-font-family:Arial;color:navy;mso-font-kerning:18.0pt'>Глава
+2.4. Сдвиг и кручение</span></h1>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp2"><span class="hcp3">&nbsp;</span></b></p>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp2"><span class="hcp3">Сдвиг.</span></b> <span
+style='font-size:10.0pt;font-family:Arial;letter-spacing:2.0pt;mso-bidi-font-weight:
+bold;mso-bidi-font-style:italic'>Сдвигом</span> <span class="hcp3">называется вид нагружения, при котором в поперечных сечениях
+действует только поперечная сила, приводящая к сдвигу частей тела друг относительно
+друга вдоль линии действия этой силы. Такая перерезывающая сила может быть,
+например, результирующей двух одинаковых по величине и противоположных по
+направлению бесконечно близко расположенных сил, которые вызывают срез тела по
+сечению, находящемуся между ними. Если при этом на гранях выделенного
+элементарного объема (параллелепипеда) возникают только касательные напряжения <sub><img width="14" height="14" src="chap2_4.files/image002.gif" v:shapes="_x0000_i1025"></sub>, то
+такое напряженное состояние называется <i class="hcp4">чистым
+сдвигом</i>. В этом состоянии длины ребер элементарного параллелепипеда остаются
+неизменными, а углы между первоначально прямыми боковыми гранями меняются на
+угол <sub><img width="14" height="18" src="chap2_4.files/image004.gif" v:shapes="_x0000_i1026"></sub>,
+называемый <i class="hcp4">относительным сдвигом</i>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Эксперименты, проведенные на брусьях с различными
+поперечными сечениями, показали наличие линейной зависимости касательных напряжений
+сдвига <sub><img width="14" height="14" src="chap2_4.files/image005.gif" v:shapes="_x0000_i1027"></sub><span class="hcp5"> </span>от угла поворота <sub><img width="14" height="18" src="chap2_4.files/image007.gif" v:shapes="_x0000_i1028"></sub>.
+Такая зависимость справедлива при отсутствии пластических деформаций и может
+быть интерпретирована как закон Гука, записанный для случая сдвига:</span></p>
+
+<p class=Bookbody align=right style='text-align:right;line-height:normal'><sub><span class="hcp3"><img width="50" height="20" src="chap2_4.files/image009.gif" v:shapes="_x0000_i1029"></span></sub><span class="hcp3">. <span class="hcp6">              </span><span class="hcp5">                                            </span>(2.4.1)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Здесь <sub><img width="18" height="18" src="chap2_4.files/image011.gif" v:shapes="_x0000_i1030"></sub>–
+модуль сдвига, или модуль упругости кручения, который, как будет показано ниже,
+связан с модулями упругости <sub><img width="16" height="18" src="chap2_4.files/image013.gif" v:shapes="_x0000_i1031"></sub><span class="hcp5"> </span>и <sub><img width="16" height="18" src="chap2_4.files/image015.gif" v:shapes="_x0000_i1032"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span class="hcp7"><img width="497" height="177" src="chap2_4.files/image017.gif" v:shapes="_x0000_i1033"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">a)<span class="hcp9">                                 </span><span class="hcp5">       </span></span><span lang="EN-US" class="hcp10"><span class="hcp5"> </span></span><span lang="EN-US" class="hcp8">b)<span class="hcp9">                         </span><span class="hcp5">       </span></span><span lang="EN-US" class="hcp10"><span class="hcp5"> </span></span><span lang="EN-US" class="hcp8">c)</span><span lang="EN-US" class="hcp10"></span></p>
+
+<p class=MsoNormal align=center style='margin-top:2.0pt;text-align:center;
+text-indent:0cm'><span class="hcp7">Рис. 2.4.1</span></p>
+
+<p class=MsoNormal align=center style='margin-top:2.0pt;text-align:center;
+text-indent:0cm'>&nbsp;</p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Рассмотрим испытывающий чистый сдвиг элемент в виде
+вырезанной из пластины трехгранной призмы (рис. 2.4.1а). На гранях призмы
+действуют напряжения, которые можно разложить на две составляющие: нормальную к
+грани&nbsp;– <i class="hcp4">нормальное</i> напряжение и
+касательную – <i class="hcp4">касательное</i>. В свою
+очередь, касательное напряжение тоже можно разложить на две составляющие,
+параллельные координатным осям. В результате на каждой грани действуют по три
+напряжения, для обозначения которых используется два индекса. Первый индекс
+указывает ось, вдоль которой направлена внешняя нормаль к площадке, а второй –
+ось, параллельно которой направлен вектор напряжения. Так как в обозначениях
+нормальных напряжений присутствуют два одинаковых индекса, обычно оставляют
+один из них.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Определим нормальное <sub><img width="24" height="24" src="chap2_4.files/image019.gif" v:shapes="_x0000_i1034"></sub><span class="hcp5"> </span>и<span class="hcp5"> 
+</span>касательное <sub><img width="22" height="24" src="chap2_4.files/image021.gif" v:shapes="_x0000_i1035"></sub><span class="hcp5"> </span>напряжения, действующие на площадке, нормаль
+к которой составляет угол <sub><img width="16" height="14" src="chap2_4.files/image023.gif" v:shapes="_x0000_i1036"></sub><span class="hcp5"> </span>с осью ОХ (рис. 2.4.1b). Если площадь этой
+площадки обозначить через<sub><img width="22" height="24" src="chap2_4.files/image025.gif" v:shapes="_x0000_i1037"></sub>, то
+площадь ее проекции на направление оси <sub><img width="14" height="14" src="chap2_4.files/image027.gif" v:shapes="_x0000_i1038"></sub><span class="hcp5"> </span>равна<sub><img width="58" height="22" src="chap2_4.files/image029.gif" v:shapes="_x0000_i1039"></sub>, а
+на перпендикулярное направление – <sub><img width="60" height="22" src="chap2_4.files/image031.gif" v:shapes="_x0000_i1040"></sub>.
+Спроецировав все силы на направление нормали к наклонной площадке (рис.
+2.4.1b), из условия равновесия получаем</span></p>
+
+<p class=Bookbody align=center style='margin-top:4.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="283" height="26" src="chap2_4.files/image033.gif" v:shapes="_x0000_i1041"></span></sub><span class="hcp3">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">или</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+line-height:normal'><span class="hcp3"><span class="hcp5"> </span><sub><img width="103" height="26" src="chap2_4.files/image035.gif" v:shapes="_x0000_i1042"></sub>.<span
+style='mso-tab-count:4'>                                    </span> (2.4.2)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">При проецировании на ось, перпендикулярную к направлению
+нормали, имеем</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="228" height="26" src="chap2_4.files/image037.gif" v:shapes="_x0000_i1043"></span></sub><span class="hcp3">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">откуда</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="102" height="26" src="chap2_4.files/image039.gif" v:shapes="_x0000_i1044"></span></sub><span class="hcp3">.<span class="hcp5">                                                   </span>(2.4.3)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Из (2.4.3) видно, что касательные напряжения на площадках,
+наклоненных под углом <sub><img width="32" height="18" src="chap2_4.files/image041.gif" v:shapes="_x0000_i1045"></sub>,
+равны нулю. Таким образом, этот угол определяет положение главных площадок. Как
+отмечено в главе 2.2, напряжения главных площадок называются главными.
+Обозначим их по мере убывания как <sub><img width="42" height="22" src="chap2_4.files/image043.gif" v:shapes="_x0000_i1046"></sub><span class="hcp5"> </span>и <sub><img width="20" height="24" src="chap2_4.files/image045.gif" v:shapes="_x0000_i1047"></sub><span class="hcp5"> </span>(рис. 2.4.1с). Эти напряжения взаимно
+перпендикулярны и для нашего случая равны</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="190" height="26" src="chap2_4.files/image047.gif" v:shapes="_x0000_i1048"></span></sub><span class="hcp3"><span class="hcp5">                               </span>(2.4.4)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Из (2.4.4) следует, что чистый сдвиг представляет собой
+такое напряженное состояние, при котором первое и третье главные напряжения
+равны по величине, но противоположны по знаку, а второе главное напряжение равняется
+нулю.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Записывая закон Гука (2.4.1) применительно к условиям
+чистого сдвига, можно вычислить модуль сдвига <sub><img width="18" height="16" src="chap2_4.files/image049.gif" v:shapes="_x0000_i1049"></sub>.
+Для этого рассмотрим деформацию квадратного элемента со стороной <sub><img width="12" height="14" src="chap2_4.files/image051.gif" v:shapes="_x0000_i1050"></sub><span class="hcp5"> </span>при чистом сдвиге (рис. 2.4.2). Очевидно, что
+касательные напряжения вызовут перемещение его верхней грани на величину <sub><img width="24" height="18" src="chap2_4.files/image053.gif" v:shapes="_x0000_i1051"></sub>.
+Если угловое смещение обозначить через <sub><img width="22" height="24" src="chap2_4.files/image055.gif" v:shapes="_x0000_i1052"></sub>, то
+для малых угловых деформаций имеем</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:169.55pt;mso-element-frame-height:
+152.2pt;mso-element-frame-hspace:7.1pt;mso-element-wrap:around;mso-element-anchor-vertical:
+paragraph;mso-element-anchor-horizontal:page;mso-element-left:328.05pt;
+mso-element-top:.05pt'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=235 height=203
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="203" class="hcp11">
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm;
+  mso-element:frame;mso-element-frame-width:169.55pt;mso-element-frame-height:
+  152.2pt;mso-element-frame-hspace:7.1pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:page;mso-element-left:328.05pt;
+  mso-element-top:.05pt'><span class="hcp7"><img width="213" height="179" src="chap2_4.files/image057.gif" v:shapes="_x0000_i1053"></span></p>
+  <p class=MsoNormal align=center style='margin-top:4.0pt;text-align:center;
+  text-indent:0cm;mso-element:frame;mso-element-frame-width:169.55pt;
+  mso-element-frame-height:152.2pt;mso-element-frame-hspace:7.1pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  page;mso-element-left:328.05pt;mso-element-top:.05pt'><span class="hcp7">Рис. 2.4.2</span><span class="hcp12"></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="68" height="26" src="chap2_4.files/image059.gif" v:shapes="_x0000_i1054"></span></sub><span class="hcp3">.<span class="hcp13">      </span><span class="hcp5">              </span>(2.4.5)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Из геометрических соображений ясно, что <sub><img width="142" height="62" src="chap2_4.files/image061.gif" v:shapes="_x0000_i1055"></sub>,<span class="hcp5">  </span>или, с учетом (2.4.5),</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp3"><span class="hcp5"> </span><sub><img width="94" height="28" src="chap2_4.files/image063.gif" v:shapes="_x0000_i1056"></sub>.<span class="hcp5">               </span>(2.4.6)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Относительное удлинение <sub><img width="30" height="22" src="chap2_4.files/image065.gif" v:shapes="_x0000_i1057"></sub><span class="hcp5"> </span>отрезка <sub><img width="26" height="18" src="chap2_4.files/image067.gif" v:shapes="_x0000_i1058"></sub><span class="hcp5"> </span>согласно (2.2.1) и рис. 2.4.2 связано с
+абсолютным удлинением <sub><img width="34" height="22" src="chap2_4.files/image069.gif" v:shapes="_x0000_i1059"></sub><span class="hcp5"> </span>соотношением <sub><img width="30" height="22" src="chap2_4.files/image070.gif" v:shapes="_x0000_i1060"></sub>=<sub><img width="90" height="46" src="chap2_4.files/image072.gif" v:shapes="_x0000_i1061"></sub>,
+так что <sub><img width="104" height="26" src="chap2_4.files/image074.gif" v:shapes="_x0000_i1062"></sub>.
+Тогда угловое смещение <sub><img width="22" height="24" src="chap2_4.files/image076.gif" v:shapes="_x0000_i1063"></sub><span class="hcp5"> </span>с помощью<span class="hcp5"> 
+</span>(2.4.6) вычисляется как</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="68" height="24" src="chap2_4.files/image078.gif" v:shapes="_x0000_i1064"></span></sub><span class="hcp3">.<span class="hcp5">                                                      </span>(2.4.7)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Для того чтобы определить относительное удлинение <sub><img width="26" height="22" src="chap2_4.files/image080.gif" v:shapes="_x0000_i1065"></sub>,
+необходимо рассмотреть элементарную площадку, две грани которой параллельны <sub><img width="26" height="18" src="chap2_4.files/image081.gif" v:shapes="_x0000_i1066"></sub>, т.
+е. главную площадку, на гранях которой будут действовать только нормальные напряжения.
+Относительное удлинение в случае нормального нагружения в соответствии с
+обобщенным законом Гука (2.2.6) имеет вид</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="158" height="50" src="chap2_4.files/image083.gif" v:shapes="_x0000_i1067"></span></sub><span class="hcp3">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">а применительно к нашему случаю
+можно записать</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="362" height="26" src="chap2_4.files/image085.gif" v:shapes="_x0000_i1068"></span></sub><span class="hcp3">.<span class="hcp13">   </span><span class="hcp5">      </span>(2.4.8)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">С учетом (2.4.8) выражение (2.2.6) для относительной
+деформации переписывается как</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+line-height:normal'><sub><span class="hcp3"><img width="96" height="41" src="chap2_4.files/image087.gif" v:shapes="_x0000_i1069"></span></sub><span class="hcp3">.<span class="hcp5">                   </span><span class="hcp5">                             </span>(2.4.9)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Подставляя (2.4.9) в (2.4.7), после несложных преобразований
+получаем формулу для расчета касательных напряжений</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="113" height="44" src="chap2_4.files/image089.gif" v:shapes="_x0000_i1070"></span></sub><span class="hcp3">.<span class="hcp5">                                           </span>(2.4.10)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Сравнивая (2.4.10) с законом Гука для случая сдвига (2.4.1),
+находим</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="86" height="44" src="chap2_4.files/image091.gif" v:shapes="_x0000_i1071"></span></sub><span class="hcp3">,<span class="hcp5">                                                </span>(2.4.11)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">а (2.4.10) преобразуется к виду</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="247" height="26" src="chap2_4.files/image093.gif" v:shapes="_x0000_i1072"></span></sub><span class="hcp3"><span class="hcp5">                           </span>(2.4.12)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Таким образом, на основании проведенного расчета можно
+сделать вывод о том, что с целью получения общих зависимостей закон Гука
+(2.2.6), сформулированный для чистого растяжения (сжатия), следует дополнить
+описывающими чистый сдвиг зависимостями (2.4.12), в которых модуль упругости <sub><img width="18" height="16" src="chap2_4.files/image094.gif" v:shapes="_x0000_i1073"></sub><span class="hcp5"> </span>связан с модулем упругости <sub><img width="16" height="18" src="chap2_4.files/image095.gif" v:shapes="_x0000_i1074"></sub><span class="hcp5"> </span>и коэффициентом Пуассона <sub><img width="16" height="18" src="chap2_4.files/image097.gif" v:shapes="_x0000_i1075"></sub><span class="hcp5"> </span>соотношением (2.4.11).</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;line-height:normal'><b class="hcp2"><span class="hcp3">Кручение</span></b><span class="hcp3">. <span
+style='letter-spacing:2.0pt;mso-bidi-font-weight:bold;mso-bidi-font-style:italic'>Кручением</span>
+называется такой вид деформации, при котором в поперечных сечениях бруса
+возникает только крутящий момент <sub><img width="24" height="24" src="chap2_4.files/image099.gif" v:shapes="_x0000_i1076"></sub>, а
+остальные силовые факторы (нормальная и поперечная силы и изгибающий момент) равны
+нулю. Кручение элемента конструкции происходит при нагружении его внешними
+моментами вращения (парами сил) <sub><img width="14" height="18" src="chap2_4.files/image101.gif" v:shapes="_x0000_i1077"></sub>,
+плоскости действия которых нормальны по отношению к продольной оси этого
+элемента.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Для определения крутящего момента в заданном сечении
+применяется метод сечений (глава 2.1), с помощью которого легко установить
+общее правило: величина внутреннего крутящего момента в любом сечении бруса
+произвольной поперечной конфигурации равна алгебраической сумме внешних
+моментов вращения <sub><img width="14" height="18" src="chap2_4.files/image102.gif" v:shapes="_x0000_i1078"></sub>,
+лежащих по одну сторону от рассматриваемого сечения. В связи с этим возникает
+необходимость определиться со знаками моментов. Принято считать, что если
+крутящий момент направлен против часовой стрелки относительно конца внешней к
+сечению нормали, то он положителен.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp14">Расчет бруса на кручение заключается в
+нахождении возникающих в нем напряжений и угловых перемещений в зависимости от
+приложенных силовых факторов. При этом решение задачи кручения в значительной
+степени зависит от формы поперечного сечения бруса. Строго говоря,
+аналитический расчет бруса на кручение может быть проведен только для
+небольшого класса относительно простых поперечных сечений, в общем же случае
+требуется привлечение численных методов.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;line-height:normal'><b class="hcp2"><span class="hcp3">Кручение брусьев круглого поперечного сечения.</span></b> <span class="hcp3">Под <i class="hcp4">круглым</i> будем понимать сечение, внешняя и внутренняя границы которого
+являются концентрическими окружностями.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span style='font-size:10.0pt;
+mso-bidi-font-size:11.0pt;font-family:Arial;letter-spacing:.2pt'>Теория
+кручения брусьев круглого поперечного сечения основывается на следующих
+предположениях: поперечные сечения бруса, которые были плоскими до
+закручивания, остаются таковыми и после (гипотеза плоских сечений); каждое из
+сечений лишь поворачивается в своей плоскости на некоторый угол как единое
+целое, причем углы поворота для различных сечений будут различными; а радиусы
+поперечных сечений при деформации не искривляются и не изменяют длину.</span></p>
+
+<p class=Bookbody style='line-height:normal'>&nbsp;</p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp3"><img width="417" height="173" src="chap2_4.files/image104.gif" v:shapes="_x0000_i1079"></span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><span lang="EN-US" class="hcp15">a)<span style='mso-tab-count:5'>                                                        </span></span><span lang="EN-US" class="hcp10"> </span><span lang="EN-US" class="hcp15">b)</span><span lang="EN-US" class="hcp10"></span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp3">Рис</span><span lang="EN-US" class="hcp15">.
+2.4.3</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><span lang="EN-US" class="hcp10">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Рассмотрим брус в виде трубы круглого поперечного сечения
+толщиной <sub><img width="14" height="18" src="chap2_4.files/image106.gif" v:shapes="_x0000_i1080"></sub><span class="hcp5"> </span>(рис. 2.4.3а), жестко заделанный одним концом
+и нагруженный моментом вращения <sub><img width="14" height="16" src="chap2_4.files/image108.gif" v:shapes="_x0000_i1081"></sub><span class="hcp5"> </span>на другом. Действие момента вращения приводит
+к закручиванию бруса по длине на угол <sub><img width="14" height="18" src="chap2_4.files/image109.gif" v:shapes="_x0000_i1082"></sub>.
+Вырежем мысленно элемент бруса abdc. Возникающие при этом в сечении касательные
+напряжения <sub><img width="14" height="14" src="chap2_4.files/image111.gif" v:shapes="_x0000_i1083"></sub><span class="hcp5"> </span>можно считать равномерно распределенными по
+его поверхности. На рис. 2.4.3b приведена картина касательных напряжений,
+действующих на гранях выделенного элемента abdc (первый индекс в обозначении
+напряжений указывает на направление оси действия вектора напряжения). Так как
+выделенный элемент находится в равновесии, то сумма моментов сил относительно
+начала координат должна равняться нулю, а именно</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="166" height="26" src="chap2_4.files/image113.gif" v:shapes="_x0000_i1084"></span></sub><span class="hcp3">.<span class="hcp9">                            </span>
+(2.4.13)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">Из (2.4.13) следует, что</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="84" height="24" src="chap2_4.files/image115.gif" v:shapes="_x0000_i1085"></span></sub><span class="hcp3">.<span class="hcp5">   
+</span><span class="hcp9">                                 </span><span class="hcp5">  </span>(2.4.14)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Полученное выражение (2.4.14)
+говорит о том, что возникающие на взаимно перпендикулярных площадках касательные
+напряжения равны между собой по величине и направлены таким образом, что
+вызывают появление моментов противоположных знаков. Это простое правило
+получило название<span class="hcp5">  </span><i class="hcp4">закона парности касательных напряжений.</i></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Проведя два поперечных сечения, выделим из трубы с внешним
+радиусом <sub><img width="12" height="14" src="chap2_4.files/image117.gif" v:shapes="_x0000_i1086"></sub><span class="hcp5"> </span>участок длиной <sub><img width="20" height="18" src="chap2_4.files/image119.gif" v:shapes="_x0000_i1087"></sub>.
+Угол закручивания поперечного сечения обозначим через <sub><img width="24" height="22" src="chap2_4.files/image121.gif" v:shapes="_x0000_i1088"></sub><span class="hcp5"> </span>(рис. 2.4.4). При приложении момента вращения
+точка <sub><img width="12" height="18" src="chap2_4.files/image123.gif" v:shapes="_x0000_i1089"></sub><span class="hcp5"> </span>переместится в положение <sub><img width="18" height="18" src="chap2_4.files/image125.gif" v:shapes="_x0000_i1090"></sub>.
+Тогда из геометрических соображений получаем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="70" height="22" src="chap2_4.files/image127.gif" v:shapes="_x0000_i1091"></span></sub><span class="hcp3">. <span class="hcp13">    </span><span class="hcp5">     </span><span class="hcp9">                              </span><span class="hcp5">        </span>(2.4.15)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Вводя в рассмотрение <span class="hcp16">относительный угол
+закручивания единицы длины</span> <sub><img width="14" height="18" src="chap2_4.files/image129.gif" v:shapes="_x0000_i1092"></sub>,
+равный <sub><img width="54" height="41" src="chap2_4.files/image131.gif" v:shapes="_x0000_i1093"></sub>,
+из<span class="hcp5">  </span>(2.4.15) имеем</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+line-height:normal'><sub><span class="hcp3"><img width="56" height="22" src="chap2_4.files/image133.gif" v:shapes="_x0000_i1094"></span></sub><span class="hcp3">.<span class="hcp5">       </span><span class="hcp5">                 </span><span class="hcp6">             </span><span class="hcp5">            </span>(2.4.16)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">На рис. 2.4.5 изображена кривая зависимости напряжения
+сдвига от угла относительного сдвига <sub><img width="14" height="18" src="chap2_4.files/image134.gif" v:shapes="_x0000_i1095"></sub>,
+построенная для случая испытания упруго-пластичных материалов. Здесь на
+начальном участке нагружения, также как и при растяжении, сохраняется линейная
+зависимость. Точка <sub><img width="16" height="18" src="chap2_4.files/image136.gif" v:shapes="_x0000_i1096"></sub><span class="hcp5"> </span>называется</span> <span style='font-size:
+10.0pt;mso-bidi-font-size:11.0pt;font-family:Arial;letter-spacing:2.0pt;
+mso-bidi-font-style:italic'>пределом пропорциональност</span><span
+style='font-size:10.0pt;font-family:Arial;mso-bidi-font-style:italic'>и</span><span class="hcp3">. Координата точки <sub><img width="16" height="18" src="chap2_4.files/image138.gif" v:shapes="_x0000_i1097"></sub><span class="hcp5"> </span>по вертикали соответствует <i class="hcp4">пределу текучести</i>; затем следует участок
+резкого возрастания пластических деформаций, приводящих к разрушению, характер
+которого аналогичен <i class="hcp4">срезу</i>. Величину <span class="hcp16">предела текучести</span>
+при кручении обозначим (по аналогии с растяжением) как <sub><img width="18" height="22" src="chap2_4.files/image140.gif" v:shapes="_x0000_i1098"></sub>, а
+величину <span class="hcp16">предела
+прочности</span> – как <sub><img width="18" height="24" src="chap2_4.files/image142.gif" v:shapes="_x0000_i1099"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp2"><span class="hcp3">&nbsp;</span></b></p>
+
+<div align=center>
+
+<table border="0" cellspacing="0" cellpadding="0" class="hcp17">
+ <tr>
+  <td width="236" valign="bottom" style="width:176.75pt;" class="hcp18">
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span class="hcp7"><img width="213" height="160" src="chap2_4.files/image144.gif" v:shapes="_x0000_i1100"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">Рис.
+  2.4.5<b class="hcp2"></b></span></p>
+  </td>
+  <td width="156" valign="bottom" style="width:116.95pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  text-indent:0cm'><span class="hcp7"><img width="130" height="157" src="chap2_4.files/image146.gif" v:shapes="_x0000_i1101"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">Рис.
+  2.4.4<b class="hcp2"></b></span></p>
+  </td>
+  <td width="197" valign="bottom" style="width:147.4pt;" class="hcp18">
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm;
+  mso-element:frame;mso-element-frame-width:162.75pt;mso-element-frame-height:
+  158.35pt;mso-element-frame-hspace:7.05pt;mso-element-wrap:auto;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:page;mso-element-left:328.05pt;
+  mso-element-top:.05pt'><span class="hcp7"><img width="187" height="179" src="chap2_4.files/image148.gif" v:shapes="_x0000_i1102"></span></p>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  text-indent:0cm'><span class="hcp7">Рис. 2.4.6</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp2"><span class="hcp3">&nbsp;</span></b></p>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp2"><span class="hcp3">Расчет прочности
+круглого сплошного бруса.</span></b> <span class="hcp3">Рассмотрим брус круглого поперечного сечения радиуса <sub><img width="12" height="14" src="chap2_4.files/image149.gif" v:shapes="_x0000_i1103"></sub><span class="hcp5"> </span>(рис. 2.4.6), который закручивается внешним
+моментом <sub><img width="16" height="18" src="chap2_4.files/image151.gif" v:shapes="_x0000_i1104"></sub>.
+Двумя концентрическими поверхностями с радиусами <sub><img width="16" height="18" src="chap2_4.files/image153.gif" v:shapes="_x0000_i1105"></sub><span class="hcp5"> </span>и <sub><img width="50" height="22" src="chap2_4.files/image155.gif" v:shapes="_x0000_i1106"></sub><span class="hcp5"> </span>выделим из бруса элементарное кольцо.
+Касательные напряжения, действующие на этой площадке, обозначим через <sub><img width="20" height="26" src="chap2_4.files/image157.gif" v:shapes="_x0000_i1107"></sub>.
+Тогда элементарный крутящий момент <sub><img width="32" height="24" src="chap2_4.files/image159.gif" v:shapes="_x0000_i1108"></sub><span class="hcp5"> </span>равен</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="122" height="26" src="chap2_4.files/image161.gif" v:shapes="_x0000_i1109"></span></sub><span class="hcp3">.<span class="hcp6">                </span>
+(2.4.17)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Интегрируя (2.4.17) по радиусу в пределах от <sub><img width="14" height="18" src="chap2_4.files/image163.gif" v:shapes="_x0000_i1110"></sub><span class="hcp5"> </span>до <sub><img width="12" height="14" src="chap2_4.files/image165.gif" v:shapes="_x0000_i1111"></sub>,
+получаем значение крутящего момента внутренних сил, уравновешенного внешним
+моментом вращения:</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="122" height="50" src="chap2_4.files/image167.gif" v:shapes="_x0000_i1112"></span></sub><span class="hcp3">.<span class="hcp13">    </span><span class="hcp5">               </span>(2.4.18)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Для дальнейших вычислений необходимо заметить, что из закона
+Гука (2.4.1) и определения относительного угла закручивания (2.4.16) следует
+линейная зависимость касательных напряжений <sub><img width="20" height="26" src="chap2_4.files/image168.gif" v:shapes="_x0000_i1113"></sub><span class="hcp5"> </span>от расстояния до центра круга, а именно</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="120" height="50" src="chap2_4.files/image170.gif" v:shapes="_x0000_i1114"></span></sub><span class="hcp3">,<span class="hcp5">                                 </span><span class="hcp5">           </span>(2.4.19)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">где<span class="hcp5"> 
+</span><sub><img width="58" height="24" src="chap2_4.files/image172.gif" v:shapes="_x0000_i1115"></sub><span class="hcp5"> </span>– расстояние от центра до наиболее удаленной
+точки поперечного сечения, а<span class="hcp5">  </span><sub><img width="32" height="22" src="chap2_4.files/image174.gif" v:shapes="_x0000_i1116"></sub><span class="hcp5"> </span>– наибольшее значение касательных напряжений.
+Тогда при подстановке (2.4.19) в (2.4.18) получаем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp3"><img width="134" height="50" src="chap2_4.files/image176.gif" v:shapes="_x0000_i1117"></span></sub><span class="hcp3">.<span class="hcp5">                                          </span>(2.4.20)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Подынтегральное выражение в правой части (2.4.20) может быть
+записано в виде суммы произведений площади каждой из элементарных площадок на
+квадрат расстояния от ее центра тяжести до оси:</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+line-height:normal'><sub><span class="hcp3"><img width="130" height="50" src="chap2_4.files/image178.gif" v:shapes="_x0000_i1118"></span></sub><span class="hcp3">,<span class="hcp5">                                         </span>(2.4.21)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">где <sub><img width="16" height="16" src="chap2_4.files/image180.gif" v:shapes="_x0000_i1119"></sub><span class="hcp5"> </span>– площадь поперечного сечения
+рассматриваемого бруса.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Согласно (2.3.6) правая часть соотношения (2.4.21)
+представляет собой полярный момент инерции<sub><img width="18" height="26" src="chap2_4.files/image182.gif" v:shapes="_x0000_i1120"></sub>,
+который играет важную роль в расчетах на прочность. С учетом этого
+обстоятельства формула<span class="hcp5">  </span>(2.4.20)<span class="hcp5">  </span>принимает вид</span></p>
+
+<p class=Bookbody align=right style='text-align:right;line-height:normal'><sub><span class="hcp3"><img width="88" height="42" src="chap2_4.files/image184.gif" v:shapes="_x0000_i1121"></span></sub><span class="hcp3">.<span class="hcp5">                                                  </span>(2.4.22)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Если ввести в рассмотрение понятие <span class="hcp16">полярного момента сопротивления</span> <sub><img width="22" height="26" src="chap2_4.files/image186.gif" v:shapes="_x0000_i1122"></sub>,
+равного</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+line-height:normal'><sub><span class="hcp3"><img width="110" height="48" src="chap2_4.files/image188.gif" v:shapes="_x0000_i1123"></span></sub><span class="hcp3">,<span class="hcp5">                                           </span>(2.4.23)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">то наибольшее значение касательного
+напряжения <sub><img width="32" height="22" src="chap2_4.files/image189.gif" v:shapes="_x0000_i1124"></sub><span class="hcp5"> </span>согласно (2.4.22) и (2.4.23) можно определить
+как</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+line-height:normal'><sub><span class="hcp3"><img width="194" height="50" src="chap2_4.files/image191.gif" v:shapes="_x0000_i1125"></span></sub><span class="hcp3">.<span class="hcp5">                              </span>(2.4.24)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Попутно с помощью (2.4.5) и (2.4.24) можно записать
+выражение для относительного угла закручивания <sub><img width="14" height="18" src="chap2_4.files/image193.gif" v:shapes="_x0000_i1126"></sub>:</span></p>
+
+<p class=MsoNormal align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:23.8pt'><sub><span class="hcp7"><img width="170" height="48" src="chap2_4.files/image195.gif" v:shapes="_x0000_i1127"></span></sub><span class="hcp7">.<span class="hcp5">                                  </span>(2.4.25)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Зная величину наибольшего касательного напряжения <sub><img width="32" height="22" src="chap2_4.files/image196.gif" v:shapes="_x0000_i1128"></sub>,
+легко записать <b class="hcp2"><i class="hcp4">условие прочности</i></b> для случая чистого сдвига:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="62" height="22" src="chap2_4.files/image198.gif" v:shapes="_x0000_i1129"></span></sub><span class="hcp3">,<span class="hcp5">           </span><span class="hcp13">        </span><span class="hcp5">                           </span>(2.4.26)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">где <sub><img width="18" height="22" src="chap2_4.files/image200.gif" v:shapes="_x0000_i1130"></sub><span class="hcp5"> </span>– допускаемое касательное напряжение.
+Значение этого напряжения может быть выражено через нормальное главное напряжение,
+подсчитанное в соответствии с одной из гипотез прочности (см. главу 2.7).</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">В заключение приведем выражения для полярных моментов
+сопротивления и инерции практически важных сечений (рис. 2.4.7a–c).</span></p>
+
+<p class=Bookbody style='margin-left:21.3pt;text-indent:0cm;line-height:normal'><span class="hcp3">1. Круг сплошного поперечного
+сечения диаметром <sub><img width="18" height="16" src="chap2_4.files/image202.gif" v:shapes="_x0000_i1131"></sub><span class="hcp5"> </span>(рис. 2.4.7a):</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="70" height="44" src="chap2_4.files/image204.gif" v:shapes="_x0000_i1132"></span></sub><span lang="EN-US" class="hcp15">;<span class="hcp5">       </span></span><sub><span class="hcp3"><img width="66" height="44" src="chap2_4.files/image206.gif" v:shapes="_x0000_i1133"></span></sub><span lang="EN-US" class="hcp15"><span class="hcp5"> </span>.<span class="hcp5">                           </span>(2.4.27)</span><span class="hcp3"></span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span class="hcp8"><span class="hcp5"> </span></span><span class="hcp7"><img width="98" height="128" src="chap2_4.files/image208.gif" v:shapes="_x0000_i1134"></span><span lang="EN-US" class="hcp8"><span class="hcp5">        </span></span><span class="hcp7"><img width="126" height="135" src="chap2_4.files/image210.gif" v:shapes="_x0000_i1135"></span><span lang="EN-US" class="hcp8"><span class="hcp5">           </span></span><span class="hcp7"><img width="111" height="123" src="chap2_4.files/image212.gif" v:shapes="_x0000_i1136"></span><span lang="EN-US" class="hcp10"></span></p>
+
+<p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+text-indent:0cm'><span lang="EN-US" class="hcp8">a)<span class="hcp5">                                            </span>b)<span class="hcp5">                                      </span>c)</span><span lang="EN-US" class="hcp10"></span></p>
+
+<p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+text-indent:0cm'><span class="hcp7">Рис. 2.4.7</span></p>
+
+<p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+text-indent:0cm'>&nbsp;</p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">2. Круглое поперечное сечение диаметра <sub><img width="18" height="16" src="chap2_4.files/image213.gif" v:shapes="_x0000_i1137"></sub><span class="hcp5"> </span>с отверстием диаметром <sub><img width="14" height="18" src="chap2_4.files/image215.gif" v:shapes="_x0000_i1138"></sub>(рис.&nbsp;2.4.7b):</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+line-height:normal'><sub><span class="hcp3"><img width="142" height="56" src="chap2_4.files/image217.gif" v:shapes="_x0000_i1139"></span></sub><span class="hcp3">;<span class="hcp5">       </span><sub><img width="108" height="44" src="chap2_4.files/image219.gif" v:shapes="_x0000_i1140"></sub>.<span class="hcp13">    </span><span class="hcp5">              </span>(2.4.28)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">3. Тонкостенный цилиндр толщиной <sub><img width="14" height="18" src="chap2_4.files/image221.gif" v:shapes="_x0000_i1141"></sub><span class="hcp5"> </span>и диаметром <sub><img width="18" height="16" src="chap2_4.files/image223.gif" v:shapes="_x0000_i1142"></sub><span class="hcp5"> </span>(рис. 2.4.7c):</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp3"><img width="77" height="44" src="chap2_4.files/image225.gif" v:shapes="_x0000_i1143"></span></sub><span class="hcp3">;<span class="hcp5">     </span><sub><img width="74" height="44" src="chap2_4.files/image227.gif" v:shapes="_x0000_i1144"></sub>.<span class="hcp5">                                  </span>(2.4.29)</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span class="hcp7">Напомним, что согласно (2.3.9) для произвольных круглых сечений
+имеет<span class="hcp5">     </span>место равенство</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:6.0pt;text-align:center;
+text-indent:23.8pt'><sub><span class="hcp7"><img width="162" height="26" src="chap2_4.files/image229.gif" v:shapes="_x0000_i1145"></span></sub><span class="hcp7">.</span></p>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp2"><span class="hcp14">Кручение
+круглых брусьев переменного поперечного сечения при произвольном нагружении и
+закреплении.</span></b> <span class="hcp14">Для расчета напряженно&nbsp;– деформированного состояния
+бруса переменного круглого сечения необходимо знать величины крутящих моментов
+в каждом его сечении, т. е. построить эпюры этих моментов аналогично тому, как
+это было сделано в случае центрального растяжения (сжатия).</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">В качестве примера рассмотрим нагружение ступенчатого вала
+переменного круглого поперечного сечения группой моментов вращения. На рис.
+2.4.8 изображены эпюры крутящих моментов и наибольших касательных напряжений, построенные
+методом сечений (отметим, что поддерживающие вал опоры не оказывают влияния на
+характер и величины моментов кручения). По известному закону распределения
+моментов и геометрическим размерам вала легко рассчитать углы закручивания и их
+изменение по длине вала.</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'>&nbsp;</p>
+
+<div align=center>
+
+<table border="0" cellspacing="0" cellpadding="0" class="hcp17">
+ <tr>
+  <td width="272" valign="bottom" style="width:203.8pt;" class="hcp18">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3"><img width="242" height="266" src="chap2_4.files/image231.gif" v:shapes="_x0000_i1146"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">Рис.
+  2.4.8</span></p>
+  </td>
+  <td width="272" valign="bottom" style="width:203.85pt;" class="hcp18">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3"><img width="212" height="250" src="chap2_4.files/image233.gif" v:shapes="_x0000_i1147"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">Рис.
+  2.4.9</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>&nbsp;</p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Задача построения эпюр крутящих моментов несколько
+усложняется, когда нагруженная конструкция является статически неопределимой.
+Примером такого случая нагружения является жестко закрепленный на обоих концах
+брус круглого поперечного сечения (рис. 2.4.9). Для того чтобы рассчитать
+напряженное состояние бруса, необходимо определить реактивные моменты <sub><img width="22" height="22" src="chap2_4.files/image235.gif" v:shapes="_x0000_i1148"></sub><span class="hcp5"> </span>и <sub><img width="24" height="22" src="chap2_4.files/image237.gif" v:shapes="_x0000_i1149"></sub>,
+возникающие в жестких заделках. В качестве первого уравнения, как обычно,
+выступает уравнение равновесия, а именно</span></p>
+
+<p class=Bookbody align=center style='margin-bottom:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="142" height="22" src="chap2_4.files/image239.gif" v:shapes="_x0000_i1150"></span></sub><span class="hcp3">.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Второе уравнение представляет собой условие совместности
+деформаций, которое отражает тот факт, что поворот сечения в заделке
+отсутствует:</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="330" height="46" src="chap2_4.files/image241.gif" v:shapes="_x0000_i1151"></span></sub><span class="hcp3">.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Учитывая, что полярные моменты инерции сечений
+рассматриваемого бруса связаны, согласно (2.4.27), соотношением <sub><img width="74" height="26" src="chap2_4.files/image243.gif" v:shapes="_x0000_i1152"></sub>,
+окончательно из уравнений равновесия и совместности деформаций получаем</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="77" height="41" src="chap2_4.files/image245.gif" v:shapes="_x0000_i1153"></span></sub><span class="hcp3">;<span class="hcp5">        </span><sub><img width="72" height="41" src="chap2_4.files/image247.gif" v:shapes="_x0000_i1154"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp2"><span class="hcp3">Кручение брусьев
+произвольной геометрической формы.</span></b> <span class="hcp3">Механизм кручения сильно усложняется, если поперечное
+сечение не является круглым. Описанные выше методы расчета не могут быть
+применены к решению задач кручения брусьев произвольной формы. Так, гипотеза плоских
+сечений, согласно которой сечения после деформации остаются плоскими, в случае
+кручения брусьев некруглого поперечного сечения оказывается неприменимой,
+поскольку на самом деле эти сечения искривляются – возникает так называемое явление
+<i class="hcp4">депланации</i>. Для депланации характерно
+то, что одни волокна бруса удлиняются, в то время как другие – укорачиваются. </span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">&nbsp;</span></p>
+
+<div align=center>
+
+<table border=0 cellspacing=0 cellpadding=0 style='margin-left:5.8pt;
+ border-collapse:collapse;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width="119" valign="top" style="width:89.55pt;" class="hcp18">
+  <p class=Bookbody style='text-indent:0cm;line-height:normal'><span lang="EN-US" class="hcp15">a)<span class="hcp5">  </span></span><span class="hcp3"><img width="81" height="161" src="chap2_4.files/image249.gif" v:shapes="_x0000_i1155"></span><span lang="EN-US" class="hcp15"></span></p>
+  </td>
+  <td width="272" valign="top" style="width:203.85pt;" class="hcp18">
+  <p class=Bookbody style='text-indent:0cm;line-height:normal'><span lang="EN-US" class="hcp15">b)
+  <img width="226" height="163" src="chap2_4.files/image251.gif" v:shapes="_x0000_i1156"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="391" colspan="2" valign="top" style="width:293.4pt;" class="hcp18">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">Рис</span><span lang="EN-US" class="hcp15">.
+  2.4.10</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span lang="EN-US" class="hcp10">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Возникающие трудности при корректном описании кручения
+брусьев произвольной геометрической формы приводит к тому, что аналитические
+решения получены применительно к ограниченному классу задач и носят частный
+характер. Только численные методы, такие как метод конечных разностей, метод
+конечных элементов (МКЭ) и другие, могут быть эффективно использованы для
+расчета кручения любых по сложности поперечных сечений. Наиболее
+распространенным из них является МКЭ. С его помощью, например, выполнен расчет
+касательных напряжений для прямоугольного поперечного сечения (рис. 2.4.10</span><span lang="EN-US" class="hcp15">a</span><span class="hcp3">).</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Задача расчета напряжений при кручении прямоугольного
+сечения является крайне важной, поэтому приведем здесь некоторые результаты ее
+решения, полученные методами теории упругости.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3"><span class="hcp5"> </span>Рассмотрим сечение в
+форме прямоугольника со сторонами <sub><img width="14" height="18" src="chap2_4.files/image253.gif" v:shapes="_x0000_i1157"></sub><span class="hcp5"> </span>и <sub><img width="14" height="18" src="chap2_4.files/image255.gif" v:shapes="_x0000_i1158"></sub>,<span class="hcp5">  </span><sub><img width="38" height="18" src="chap2_4.files/image257.gif" v:shapes="_x0000_i1159"></sub><span class="hcp5"> </span>(рис. 2.4.10</span><span lang="EN-US" class="hcp15">a</span><span class="hcp3">). Можно показать, что наибольшие
+касательные напряжения возникают в серединах длинных сторон прямоугольника. По
+абсолютной величине эти напряжения равны</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp3"><span class="hcp5">       </span><sub><img width="78" height="46" src="chap2_4.files/image259.gif" v:shapes="_x0000_i1160"></sub>,<span class="hcp13">        </span><span class="hcp5">                                        </span>(2.4.30)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">где <sub><img width="68" height="26" src="chap2_4.files/image261.gif" v:shapes="_x0000_i1161"></sub>–
+момент сопротивления прямоугольника кручению, <sub><img width="14" height="14" src="chap2_4.files/image263.gif" v:shapes="_x0000_i1162"></sub><span class="hcp5"> </span>– некоторая константа, зависящая от геометрии
+задачи (см. далее).</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Напряжения в серединах коротких сторон находятся по формуле</span></p>
+
+<p class=Bookbody align=right style='text-align:right;line-height:normal'><sub><span lang="EN-US" class="hcp15"><img width="96" height="26" src="chap2_4.files/image265.gif" v:shapes="_x0000_i1163"></span></sub><span class="hcp3">.<span class="hcp13">   </span></span>
+<span class="hcp3"><span class="hcp5">                                          </span>(2.4.31)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Подчеркнем, что здесь изменение касательных напряжений по
+сечению имеет нелинейный характер.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Относительный угол закручивания согласно (2.4.25) может быть
+записан как</span></p>
+
+<p class=Bookbody align=right style='text-align:right;line-height:normal'><sub><span lang="EN-US" class="hcp15"><img width="58" height="46" src="chap2_4.files/image267.gif" v:shapes="_x0000_i1164"></span></sub><span class="hcp3">,<span class="hcp5">                                                   </span>(2.4.32)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">где <sub><img width="16" height="24" src="chap2_4.files/image269.gif" v:shapes="_x0000_i1165"></sub><span class="hcp5"> </span>– момент инерции прямоугольника при кручении,
+<sub><img width="62" height="26" src="chap2_4.files/image271.gif" v:shapes="_x0000_i1166"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Числовые коэффициенты <sub><img width="32" height="22" src="chap2_4.files/image273.gif" v:shapes="_x0000_i1167"></sub><span class="hcp5"> </span>и <sub><img width="16" height="18" src="chap2_4.files/image275.gif" v:shapes="_x0000_i1168"></sub><span class="hcp5"> </span>зависят только от отношения сторон<span class="hcp5">  </span>прямоугольника <sub><img width="31" height="18" src="chap2_4.files/image277.gif" v:shapes="_x0000_i1169"></sub><span class="hcp5"> </span>(таблица 2.4.1).</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+4.0pt;margin-left:0cm;text-indent:0cm'><span style='mso-bidi-font-family:Arial;
+letter-spacing:2.0pt;mso-bidi-font-weight:bold'>Таблица</span> <span
+style='mso-bidi-font-family:Arial;mso-bidi-font-weight:bold'>2.4.1.</span><b class="hcp2"><span class="hcp7"><span class="hcp5">  </span>Коэффициенты</span></b> <sub><span class="hcp7"><img width="40" height="26" src="chap2_4.files/image279.gif" v:shapes="_x0000_i1170"></span></sub><span class="hcp7"><span class="hcp5">  </span>и <sub><img width="16" height="18" src="chap2_4.files/image280.gif" v:shapes="_x0000_i1171"></sub></span></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='margin-left:5.35pt;
+ border-collapse:collapse;border:none;mso-border-alt:solid windowtext .75pt;
+ mso-padding-alt:0cm 5.35pt 0cm 5.35pt'>
+ <tr style='height:20.25pt'>
+  <td width=59 style='width:44.1pt;border:solid windowtext .75pt;padding:0cm 5.35pt 0cm 5.35pt;
+  height:20.25pt'>
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><sub><span class="hcp7"><img width="26" height="14" src="chap2_4.files/image282.gif" v:shapes="_x0000_i1172"></span></sub></p>
+  </td>
+  <td width="59" style="width:44.1pt; height:20.25pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">1</span></p>
+  </td>
+  <td width="59" style="width:44.1pt; height:20.25pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">2</span></p>
+  </td>
+  <td width="59" style="width:44.1pt; height:20.25pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">3</span></p>
+  </td>
+  <td width="59" style="width:44.1pt; height:20.25pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">4</span></p>
+  </td>
+  <td width="59" style="width:44.1pt; height:20.25pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">6</span></p>
+  </td>
+  <td width="59" style="width:44.1pt; height:20.25pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">8</span></p>
+  </td>
+  <td width="59" style="width:44.1pt; height:20.25pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">10</span></p>
+  </td>
+  <td width="59" style="width:44.1pt; height:20.25pt;" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><sub><span class="hcp7"><img width="16" height="11" src="chap2_4.files/image284.gif" v:shapes="_x0000_i1173"></span></sub></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="59" style="width:44.1pt;" class="hcp20">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><sub><span class="hcp7"><img width="16" height="14" src="chap2_4.files/image286.gif" v:shapes="_x0000_i1174"></span></sub></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">0,208</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">0,246</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">0,267</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">0,282</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">0,299</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">0,307</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">0,313</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp7">1/3</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="59" style="width:44.1pt;" class="hcp20">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><sub><span class="hcp7"><img width="12" height="18" src="chap2_4.files/image288.gif" v:shapes="_x0000_i1175"></span></sub></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">0,140</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">0,229</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">0,263</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">0,281</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">0,299</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">0,307</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp8">0,313</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp7">1/3</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="59" style="width:44.1pt;" class="hcp20">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><sub><span class="hcp7"><img width="14" height="18" src="chap2_4.files/image290.gif" v:shapes="_x0000_i1176"></span></sub></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp7">1,000</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp7">0,795</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp7">0,753</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp7">0,745</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp7">0,743</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp7">0,742</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp7">0,742</span></p>
+  </td>
+  <td width="59" style="width:44.1pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp7">0,742</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Полученные численные и аналитические результаты позволили
+установить аналогию между характерами распределения касательных напряжений и
+скоростей потока жидкости, циркулирующего внутри контура, ограничивающего
+сечение. Такая аналогия получила название <i class="hcp4">гидродинамической.</i>
+Согласно этой аналогии линии равных касательных напряжений <i class="hcp4">(изолинии)</i> при кручении бруса некруглого поперечного сечения
+совпадают с изолиниями скоростей циркулирующего потока жидкости. Особенно
+удобно использовать гидродинамическую аналогию для расчета контуров малой
+толщины (рис. 2.4.11). Как следует из полученных результатов, касательные
+напряжения параллельны контуру поперечного сечения. Это можно доказать строго,
+не прибегая к методам конечно-элементного анализа.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Наибольший практический интерес представляет случай
+бесконечно узкого прямоугольника,<span class="hcp5">  </span><sub><img width="46" height="18" src="chap2_4.files/image292.gif" v:shapes="_x0000_i1177"></sub>.
+При этом, как следует из таблицы 2.4.1,</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:171.2pt;mso-element-frame-height:
+126.35pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+page;mso-element-anchor-horizontal:page;mso-element-left:85.45pt;mso-element-top:
+579.35pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=240 height=168
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="168" class="hcp22">
+  <p class=Bookbody align=center style='margin-top:6.0pt;text-align:center;
+  text-indent:0cm;line-height:150%;mso-element:frame;mso-element-frame-width:
+  171.2pt;mso-element-frame-height:126.35pt;mso-element-frame-hspace:9.05pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:
+  page;mso-element-left:85.45pt;mso-element-top:579.35pt;mso-height-rule:exactly'><span class="hcp3"><img width="223" height="135" src="chap2_4.files/image294.gif" v:shapes="_x0000_i1178"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  mso-pagination:widow-orphan;mso-element:frame;mso-element-frame-width:171.2pt;
+  mso-element-frame-height:126.35pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:page;
+  mso-element-left:85.45pt;mso-element-top:579.35pt;mso-height-rule:exactly'><span class="hcp14">Рис. 2.4.11</span><span
+  style='font-size:9.0pt;mso-bidi-font-size:10.0pt;letter-spacing:-.2pt'></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp3"><span class="hcp5"> </span><sub><img width="86" height="46" src="chap2_4.files/image296.gif" v:shapes="_x0000_i1179"></sub>;<span class="hcp5">    </span></span><span class="hcp5"> </span><sub><span lang="EN-US" class="hcp15"><img width="70" height="46" src="chap2_4.files/image298.gif" v:shapes="_x0000_i1180"></span></sub><span class="hcp3">.<span class="hcp5">   
+</span>(2.4.33)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp14">В качестве примера приведем результаты
+выполненного с помощью МКЭ расчета касательных напряжений в сечении, состоящем
+из одного контура толщиной <sub><img width="14" height="18" src="chap2_4.files/image300.gif" v:shapes="_x0000_i1181"></sub>,
+нагруженного внешним моментом вращения</span> <sub><span lang=EN-US
+style='font-size:10.0pt;font-family:Arial;letter-spacing:-.2pt;mso-ansi-language:
+EN-US'><img width="14" height="18" src="chap2_4.files/image301.gif" v:shapes="_x0000_i1182"></span></sub><span class="hcp14"><span class="hcp5"> </span>(рис. 2.4.11). Этот контур можно
+рассматривать как совокупность тонких прямоугольников толщины <sub><img width="14" height="18" src="chap2_4.files/image303.gif" v:shapes="_x0000_i1183"></sub>, каждый
+из которых, как показывает анализ, действует независимо друг от друга. Поэтому
+формула для расчета касательных напряжений (2.4.33) остается справедливой, если
+сделать замену<span class="hcp5">  </span><sub><img width="40" height="18" src="chap2_4.files/image305.gif" v:shapes="_x0000_i1184"></sub>, <sub><img width="14" height="18" src="chap2_4.files/image307.gif" v:shapes="_x0000_i1185"></sub><span class="hcp5"> </span>= <sub><img width="11" height="18" src="chap2_4.files/image309.gif" v:shapes="_x0000_i1186"></sub>,
+где <sub><img width="98" height="24" src="chap2_4.files/image311.gif" v:shapes="_x0000_i1187"></sub>&nbsp;–
+сумма длин прямоугольников:</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="86" height="42" src="chap2_4.files/image313.gif" v:shapes="_x0000_i1188"></span></sub><span class="hcp3">;<span class="hcp5">      </span></span><sub><span lang="EN-US" class="hcp15"><img width="68" height="42" src="chap2_4.files/image315.gif" v:shapes="_x0000_i1189"></span></sub><span class="hcp3">.</span> <span class="hcp3"><span class="hcp5">                               </span>(2.4.34)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Схематически расчетная модель представлена на рис. 2.4.12.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Если сечение состоит из двух и более контуров (например, на
+рис. 2.4.13 изображено сечение, состоящее из трех контуров), то задача
+становится статически неопределимой. Для нахождения моментов каждого из
+контуров следует записать уравнение совместности деформаций. Пусть <sub><img width="26" height="24" src="chap2_4.files/image317.gif" v:shapes="_x0000_i1190"></sub>&nbsp;–
+крутящий момент, воспринимаемый <sub><img width="11" height="16" src="chap2_4.files/image319.gif" v:shapes="_x0000_i1191"></sub>-м
+контуром. Тогда уравнение равновесия для поперечного сечения, состоящего из <sub><img width="14" height="14" src="chap2_4.files/image321.gif" v:shapes="_x0000_i1192"></sub><span class="hcp5"> </span>контуров, записывается как</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="86" height="46" src="chap2_4.files/image323.gif" v:shapes="_x0000_i1193"></span></sub><span class="hcp3">. <span class="hcp9">                                   </span><span class="hcp5">                   </span>(2.4.35)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">&nbsp;</span></p>
+
+<div align=center>
+
+<table border="0" cellspacing="0" cellpadding="0" class="hcp17">
+ <tr>
+  <td width="307" valign="bottom" style="width:230.2pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:12.0pt;text-align:center;
+  text-indent:0cm'><span class="hcp7"><img width="293" height="149" src="chap2_4.files/image325.gif" v:shapes="_x0000_i1194"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">Рис.
+  2.4.12</span></p>
+  </td>
+  <td width="202" valign="bottom" style="width:151.6pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  text-indent:0cm'><span class="hcp7"><img width="164" height="147" src="chap2_4.files/image327.gif" v:shapes="_x0000_i1195"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">Рис.
+  2.4.13</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Уравнение совместности деформаций представляет собой
+равенство углов закручивания каждого из контуров, составляющих поперечное
+сечение. При этом можно утверждать, что относительный угол закручивания <sub><img width="14" height="22" src="chap2_4.files/image329.gif" v:shapes="_x0000_i1196"></sub><span class="hcp5"> </span>для каждого из контуров есть величина постоянная.
+Тогда</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="302" height="46" src="chap2_4.files/image331.gif" v:shapes="_x0000_i1197"></span></sub><span class="hcp3">.<span class="hcp5">   
+</span><span class="hcp13">  </span><span class="hcp5">            </span>(2.4.36)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">С учетом уравнения совместности деформаций (2.4.36) и
+уравнения равновесия (2.4.35) имеем</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="94" height="46" src="chap2_4.files/image333.gif" v:shapes="_x0000_i1198"></span></sub><span class="hcp3">.<span class="hcp5">                                         </span>(2.4.37)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Выражая из (2.4.37) значение <sub><img width="14" height="18" src="chap2_4.files/image335.gif" v:shapes="_x0000_i1199"></sub><span class="hcp5">  </span>и сравнивая его с (2.4.36), находим</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="84" height="67" src="chap2_4.files/image337.gif" v:shapes="_x0000_i1200"></span></sub><span class="hcp3">.<span class="hcp5">             </span><span class="hcp6">                        </span><span class="hcp5">                  </span>(2.4.38)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Наибольшие касательные напряжения внутри контура, как
+следует из (2.4.30), (2.4.34) и (2.4.38) с учетом того, что в принятой модели <sub><img width="78" height="24" src="chap2_4.files/image339.gif" v:shapes="_x0000_i1201"></sub>,
+равны</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="182" height="66" src="chap2_4.files/image341.gif" v:shapes="_x0000_i1202"></span></sub><span class="hcp3">.<span class="hcp5">                                </span>(2.4.39)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Практический интерес представляет случай, при котором
+толщина каждого из контуров одинакова и равна <sub><img width="14" height="18" src="chap2_4.files/image342.gif" v:shapes="_x0000_i1203"></sub>,
+тогда из (2.4.39) получаем</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="102" height="67" src="chap2_4.files/image344.gif" v:shapes="_x0000_i1204"></span></sub><span class="hcp3">.<span class="hcp5">                                            </span>(2.4.40)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span style='font-size:10.0pt;
+font-family:Arial;letter-spacing:.1pt'>Необходимо отметить, что рассмотренный
+выше метод решения задачи кручения тонкостенного незамкнутого профиля в чистом
+виде использовать для замкнутого контура нельзя, поскольку характер
+распределения касательных напряжений в этом случае принципиально другой. В
+замкнутом контуре касательные напряжения можно считать постоянными по толщине и
+направленными по касательной к средней линии контура сечения</span><span class="hcp3">.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Вырежем из замкнутого контура элемент размером <sub><img width="20" height="18" src="chap2_4.files/image345.gif" v:shapes="_x0000_i1205"></sub><span class="hcp5"> </span>и рассмотрим его равновесие (рис. 2.4.14).
+Поскольку сумма проекций сил в направлении оси <sub><img width="12" height="14" src="chap2_4.files/image347.gif" v:shapes="_x0000_i1206"></sub><span class="hcp5"> </span>должна быть равна нулю, то</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="126" height="22" src="chap2_4.files/image349.gif" v:shapes="_x0000_i1207"></span></sub><span class="hcp3">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">откуда</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="170" height="26" src="chap2_4.files/image351.gif" v:shapes="_x0000_i1208"></span></sub><span class="hcp3">.<sub><img width="12" height="22" src="chap2_4.files/image353.gif" v:shapes="_x0000_i1209"></sub></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Так как внешний момент вращения должен быть уравновешен
+суммой моментов от распределенных по контуру касательных напряжений, то можно
+написать</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="114" height="30" src="chap2_4.files/image355.gif" v:shapes="_x0000_i1210"></span></sub><span class="hcp3">,<span class="hcp6">                  </span><span class="hcp5">   </span><span class="hcp13">         </span><span class="hcp5">      </span><span class="hcp13">      </span><span class="hcp5"> </span>(2.4.41)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">где <sub><img width="14" height="18" src="chap2_4.files/image357.gif" v:shapes="_x0000_i1211"></sub>&nbsp;–
+расстояние от центра тяжести фигуры до текущего участка профиля. Произведение<sub><img width="32" height="24" src="chap2_4.files/image359.gif" v:shapes="_x0000_i1212"></sub> в
+подинтегральном выражении представляет собой удвоенную площадь треугольника
+(рис. 2.4.15), так что <sub><img width="68" height="30" src="chap2_4.files/image361.gif" v:shapes="_x0000_i1213"></sub>&nbsp;–
+удвоенная площадь фигуры, ограниченной контуром сечения. Окончательное
+выражение для расчета касательных напряжений, как следует из (2.4.41), имеет
+следующий вид:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="58" height="46" src="chap2_4.files/image363.gif" v:shapes="_x0000_i1214"></span></sub><span class="hcp3">.<span class="hcp13">        </span></span>
+<span class="hcp3"><span class="hcp5">    </span></span><span class="hcp5"> </span><span class="hcp3"><span class="hcp5">                                     </span>(2.4.42)</span></p>
+
+<div align=center>
+
+<table border=0 cellspacing=0 cellpadding=0 style='margin-left:32.8pt;
+ border-collapse:collapse;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width="220" valign="bottom" style="width:165.05pt;" class="hcp18">
+  <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+  margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp7"><img width="186" height="130" src="chap2_4.files/image365.gif" v:shapes="_x0000_i1215"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">Рис.
+  2.4.14<b class="hcp2"></b></span></p>
+  </td>
+  <td width="302" valign="bottom" style="width:8.0cm;" class="hcp18">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3"><img width="288" height="125" src="chap2_4.files/image367.gif" v:shapes="_x0000_i1216"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">Рис.
+  2.4.15<b class="hcp2"></b></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><b class="hcp2"><span class="hcp3">&nbsp;</span></b></p>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp2"><span class="hcp3">Потенциальная энергия
+деформации при кручении.</span></b> <span class="hcp3">Так как элементарная потенциальная энергия деформации <sub><img width="26" height="18" src="chap2_4.files/image369.gif" v:shapes="_x0000_i1217"></sub><span class="hcp5"> </span>равна работе внешних сил, то ее числовое
+значение равно площади под линейным участком кривой (рис. 2.4.16):</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:108.85pt;mso-element-frame-height:
+148.25pt;mso-element-frame-hspace:7.1pt;mso-element-wrap:around;mso-element-anchor-vertical:
+paragraph;mso-element-anchor-horizontal:page;mso-element-left:93.9pt;
+mso-element-top:.05pt'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=154 height=198
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="198" class="hcp11">
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm;
+  mso-element:frame;mso-element-frame-width:108.85pt;mso-element-frame-height:
+  148.25pt;mso-element-frame-hspace:7.1pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:page;mso-element-left:93.9pt;
+  mso-element-top:.05pt'><span class="hcp7"><img width="113" height="169" src="chap2_4.files/image371.gif" v:shapes="_x0000_i1218"></span></p>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  text-indent:0cm;mso-element:frame;mso-element-frame-width:108.85pt;
+  mso-element-frame-height:148.25pt;mso-element-frame-hspace:7.1pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  page;mso-element-left:93.9pt;mso-element-top:.05pt'><span class="hcp7">Рис. 2.4.16</span><span class="hcp12"></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="139" height="50" src="chap2_4.files/image373.gif" v:shapes="_x0000_i1219"></span></sub><span class="hcp3">.<span class="hcp5">                      </span>(2.4.43)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Для определения полной потенциальной энергии тела необходимо
+просуммировать энергии элементарных объемов (2.4.43):</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="76" height="41" src="chap2_4.files/image375.gif" v:shapes="_x0000_i1220"></span></sub><span class="hcp3">.<span class="hcp13">    </span><span class="hcp5">                            </span>(2.4.44)</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;line-height:normal'><b class="hcp2"><span class="hcp23">Кручение цилиндрической пружины растяжения (сжатия).</span></b>
+<span class="hcp23">Примером
+детали, напряженное состояние которой определяется кручением, является
+цилиндрическая пружина растяжения (сжатия). На рис. 2.4.17 изображена пружина
+круглого поперечного сечения диаметром <sub><img width="14" height="18" src="chap2_4.files/image377.gif" v:shapes="_x0000_i1221"></sub><span class="hcp5"> </span>с числом витков <sub><img width="12" height="14" src="chap2_4.files/image379.gif" v:shapes="_x0000_i1222"></sub>. Рассмотрим
+состояние равновесия этой пружины. Можно утверждать, что в соответствии с
+методом сечений момент, вызванный приложением внешней осевой нагрузки, должен
+быть уравновешен крутящим моментом выделенного сечения. Очевидно, что
+величина<span class="hcp5">  </span>крутящего момента сечения <sub><img width="24" height="24" src="chap2_4.files/image381.gif" v:shapes="_x0000_i1223"></sub><span class="hcp5"> </span>не зависит от координаты этого сечения и<span class="hcp5">  </span>равна</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:122.45pt;mso-element-frame-height:
+114.8pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+page;mso-element-anchor-horizontal:page;mso-element-left:373.05pt;mso-element-top:
+72.25pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=175 height=153
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="153" class="hcp22">
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm;
+  mso-element:frame;mso-element-frame-width:122.45pt;mso-element-frame-height:
+  114.8pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:373.05pt;mso-element-top:
+  72.25pt;mso-height-rule:exactly'><span class="hcp7"><img width="145" height="133" src="chap2_4.files/image383.gif" v:shapes="_x0000_i1224"></span></p>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm;
+  mso-element:frame;mso-element-frame-width:122.45pt;mso-element-frame-height:
+  114.8pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:373.05pt;mso-element-top:
+  72.25pt;mso-height-rule:exactly'><span class="hcp7">Рис.
+  2.4.17</span><span class="hcp12"></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp3"><img width="110" height="24" src="chap2_4.files/image385.gif" v:shapes="_x0000_i1225"></span></sub><span class="hcp3">,<span class="hcp5">                               </span>(2.4.45)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">где <sub><img width="18" height="16" src="chap2_4.files/image387.gif" v:shapes="_x0000_i1226"></sub>&nbsp;–
+диаметр пружины.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp23">Если пренебречь наличием усилий
+поперечного сдвига и учесть, что полярный момент для круглого поперечного
+сечения определяется по формуле (2.4.27), то, согласно (2.4.43), потенциальная
+энергия деформации имеет вид</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp3"><img width="340" height="50" src="chap2_4.files/image389.gif" v:shapes="_x0000_i1227"></span></sub><span class="hcp3">.<span class="hcp5">                </span>(2.4.46)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">С другой стороны, энергия деформации пружины равна работе
+внешних сил, <sub><img width="54" height="22" src="chap2_4.files/image391.gif" v:shapes="_x0000_i1228"></sub>.
+Обозначив через <sub><img width="14" height="18" src="chap2_4.files/image392.gif" v:shapes="_x0000_i1229"></sub><span class="hcp5">  </span>осадку пружины, для работы внешних сил
+запишем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp3"><img width="77" height="41" src="chap2_4.files/image394.gif" v:shapes="_x0000_i1230"></span></sub><span class="hcp3">.<span class="hcp5">                                      </span><span class="hcp5">         </span>(2.4.47)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Приравнивая правые части (2.4.46) и (2.4.47), получим</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="110" height="48" src="chap2_4.files/image396.gif" v:shapes="_x0000_i1231"></span></sub><span class="hcp3">,</span></p>
+
+<p class=Bookbody align=left style='text-align:left;text-indent:0cm;line-height:
+normal'><span class="hcp3">откуда</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><span class="hcp3"><span class="hcp5"> </span><sub><img width="77" height="48" src="chap2_4.files/image398.gif" v:shapes="_x0000_i1232"></sub>.<span class="hcp5">                                               
+</span>(2.4.48)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3"><span class="hcp5"> </span>Выражение (2.4.48)
+для расчета осадки пружины представляет большой практический интерес, так как пружины
+такого вида широко применяются в практике проектирования механических систем.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Очевидно, что касательные напряжения в поперечном сечении
+пружины в основном определяются крутящим моментом (2.4.45). Наибольшие
+касательные напряжения <sub><img width="30" height="22" src="chap2_4.files/image400.gif" v:shapes="_x0000_i1233"></sub><span class="hcp5"> </span>можно определить с помощью (2.4.24) и
+(2.4.27), а именно</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="118" height="46" src="chap2_4.files/image402.gif" v:shapes="_x0000_i1234"></span></sub><span class="hcp3">.<span class="hcp5">                                         </span>(2.4.49)</span></p>
+
+</div>
+
+<div placeholder id="footer" style="width:100%;" class="hcp1">
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			border-bottom-color: #000080;
+			border-bottom-style: Ridge;
+			border-bottom-width: 2px;
+			font-size: 10pt;">&nbsp;</p>
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			font-size: 8pt;">&#169; 
+ 2007 Copyright &nbsp;&#1053;&#1058;&#1062; 
+ &#1040;&#1055;&#1052;</p>
+</div>
+</body>
+</html>

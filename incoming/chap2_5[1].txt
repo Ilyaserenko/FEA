@@ -1,0 +1,767 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="File-List" href="./chap2_5.files/filelist.xml">
+<link rel="Edit-Time-Data" href="./chap2_5.files/editdata.mso">
+<title>Глава 2.5. Изгиб</title><style>
+<!--
+p.MsoNormal { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoNormal { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoNormal { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+h1 { margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; mso-outline-level:1; font-size:14.0pt; font-family:Arial; }
+p.MsoIndex1 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+li.MsoIndex1 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+div.MsoIndex1 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+p.MsoToc1 { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 415.55pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+li.MsoToc1 { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 415.55pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+div.MsoToc1 { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 415.55pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+p.MsoHeader { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 233.85pt right 467.75pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoHeader { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 233.85pt right 467.75pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoHeader { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 233.85pt right 467.75pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.UG1bodytext { mso-style-name:UG1 body text; margin:0cm; margin-bottom:.0001pt; text-indent:21.3pt; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.UG1bodytext { mso-style-name:UG1 body text; margin:0cm; margin-bottom:.0001pt; text-indent:21.3pt; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.UG1bodytext { mso-style-name:UG1 body text; margin:0cm; margin-bottom:.0001pt; text-indent:21.3pt; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.Section1 { page:Section1; }
+-->
+</style><style title="hcp" type="text/css">
+<!--
+div.hcp1 { position:relative; }
+span.hcp2 { font-size:10.0pt; font-family:Arial; letter-spacing:2.0pt; mso-bidi-font-weight:bold; mso-bidi-font-style:italic; }
+span.hcp3 { font-size:10.0pt; font-family:Arial; letter-spacing:-.2pt; }
+span.hcp4 { mso-spacerun:yes; }
+span.hcp5 { font-size:10.0pt; font-family:Arial; }
+b.hcp6 { mso-bidi-font-weight:normal; }
+i.hcp7 { mso-bidi-font-style:normal; }
+table.hcp8 { border-collapse:collapse; mso-padding-alt:0cm 5.4pt 0cm 5.4pt; }
+td.hcp9 { padding:0cm 5.4pt 0cm 5.4pt; }
+span.hcp10 { font-size:10.0pt; font-family:Arial; mso-ansi-language:EN-US; }
+span.hcp11 { mso-bidi-font-family:Arial; }
+span.hcp12 { mso-bidi-font-family:Arial; mso-ansi-language:EN-US; }
+span.hcp13 { mso-tab-count:1; }
+span.hcp14 { font-size:10.0pt; font-family:Arial; letter-spacing:.2pt; }
+span.hcp15 { font-size:10.0pt; font-family:Arial; letter-spacing:.1pt; }
+span.hcp16 { font-size:10.0pt; mso-bidi-font-size:11.0pt; font-family:Arial; }
+td.hcp17 { padding-top:0cm; padding-right:9.05pt; padding-bottom:0cm; padding-left:9.05pt; }
+span.hcp18 { mso-tab-count:3; }
+span.hcp19 { font-size:9.0pt; mso-bidi-font-size:10.0pt; }
+span.hcp20 { mso-tab-count:2; }
+span.hcp21 { font-size:10.0pt; mso-bidi-font-size:11.0pt; font-family:Arial; letter-spacing:-.2pt; }
+span.hcp22 { letter-spacing:.2pt; }
+span.hcp23 { font-size:10.0pt; mso-bidi-font-size:11.0pt; font-family:Arial; letter-spacing:.2pt; }
+-->
+</style>
+</head>
+<body lang="RU" style="tab-interval:35.4pt">
+<div placeholder id="header" style="width:100%;" class="hcp1">
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			background-color: #d8e8f9;
+			margin-left: 0px;"><img src="head_for_help.jpg"
+									x-maintain-ratio=TRUE
+									style="border: none;
+											width: 1000px;
+											height: 50px;
+											float: none;
+											border-style: none;
+											border-style: none;"
+									width=1000
+									height=50
+									border=0></p>
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			border-top-color: #000080;
+			border-top-width: 2px;
+			border-top-style: Ridge;
+			margin-left: 0px;">&nbsp;</p>
+</div>
+<div class=Section1>
+
+<h1><span style='color:navy;mso-bidi-font-weight:normal'>Глава 2.5. Изгиб</span><span
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt'></span></h1>
+
+<p class=Bookbody style='text-indent:21.25pt;line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<p class=Bookbody style='text-indent:21.25pt;line-height:normal'><span class="hcp2">Изгибом </span><span class="hcp3">называется вид деформации, при котором
+под действием силовых факторов, вызывающих поперечное смещение оси бруса,
+наблюдается изменение кривизны его продольной оси. В результате продольные слои
+бруса нагружаются неравномерно: одни из них увеличивают первоначальную длину
+(удлиняются), в то время как другие – уменьшают (укорачиваются). На рис. 2.5.1
+приведен пример одного из бесчисленного множества таких нагружений. Здесь брус
+нагружается действующими в разных плоскостях распределенными силами <sub><img width="16" height="22" src="chap2_5.files/image002.gif" v:shapes="_x0000_i1025"></sub><span class="hcp4"> </span>и <sub><img width="18" height="22" src="chap2_5.files/image004.gif" v:shapes="_x0000_i1026"></sub>,
+поперечной сосредоточенной силой <sub><img width="16" height="18" src="chap2_5.files/image006.gif" v:shapes="_x0000_i1027"></sub><span class="hcp4"> </span>и внешним моментом изгиба <sub><img width="22" height="18" src="chap2_5.files/image008.gif" v:shapes="_x0000_i1028"></sub>.</span><span class="hcp5"></span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp6"><span class="hcp5">Внутренние силовые факторы.</span></b><span class="hcp5"> Вследствие изгиба в любом поперечном сечении бруса
+возникают напряжения, которые в общем случае представляют собой результат
+совместного действия поперечных (касательных) сил <sub><img width="22" height="24" src="chap2_5.files/image010.gif" v:shapes="_x0000_i1029"></sub>и <sub><img width="22" height="26" src="chap2_5.files/image012.gif" v:shapes="_x0000_i1030"></sub>,
+нормальной силы <sub><img width="18" height="18" src="chap2_5.files/image014.gif" v:shapes="_x0000_i1031"></sub>, а
+также моментов изгиба <sub><img width="31" height="24" src="chap2_5.files/image016.gif" v:shapes="_x0000_i1032"></sub><span class="hcp4"> </span>и <sub><img width="31" height="26" src="chap2_5.files/image018.gif" v:shapes="_x0000_i1033"></sub><span class="hcp4"> </span>(рис. 2.5.2). Как обычно, внутренние силовые
+факторы находятся методом сечений (см. главы 2.1 – 2.4), в соответствии с
+которым абсолютные значения соответствующих проекций внутренних и внешних
+силовых факторов считаются равными между собой.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Силы будем считать положительными, если они направлены вдоль
+координатных осей. Положительные направления моментов изгиба соответствуют
+правосторонней системе координат. Согласно этому, за положительное направление
+момента относительно оси принимаем такое его направление, при котором поворот
+системы координат выполняется против часовой стрелки относительно конца орта
+рассматриваемой оси. </span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Сдвигающие нагрузки <sub><img width="22" height="24" src="chap2_5.files/image020.gif" v:shapes="_x0000_i1034"></sub><span class="hcp4"> </span>и <sub><img width="22" height="26" src="chap2_5.files/image022.gif" v:shapes="_x0000_i1035"></sub><span class="hcp4"> </span>вызывают напряжения, величинами которых на
+практике можно пренебречь по сравнению с напряжениями от других силовых
+факторов. Основными при таком нагружении, как правило, являются напряжения,
+появляющиеся из-за действия моментов изгиба. Брус, у которого вследствие
+действия внешних нагрузок возникают в основном напряжения изгиба, как уже
+упоминалось во введении, называется <i class="hcp7">балкой</i>.
+Балками можно моделировать отдельные детали и элементы металлоконструкций.
+Плоскость, в которой лежит изогнутая ось балки, называется <i class="hcp7">плоскостью изгиба</i>, а плоскость действия силовых факторов – <i class="hcp7">плоскостью нагружения</i>. Если плоскости
+нагружения и изгиба совпадают, то имеет место <i class="hcp7">плоский прямой изгиб</i> (в противном случае изгиб считается <i class="hcp7">неплоским</i>).</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Следует отметить, что механическая
+конструкция способна воспринимать внешнюю нагрузку, только если на нее наложены
+связи, выполненные в форме опор.</span><span class="hcp5"></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">&nbsp;</span></p>
+
+<div align=center>
+
+<table border="0" cellspacing="0" cellpadding="0" class="hcp8">
+ <tr>
+  <td width="207" valign="bottom" style="width:155.6pt;" class="hcp9">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span lang="EN-US" class="hcp10"><img width="184" height="91" src="chap2_5.files/image024.gif" v:shapes="_x0000_i1036"></span><span class="hcp5"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp5">Рис.
+  2.5.1</span></p>
+  </td>
+  <td width="208" valign="bottom" style="width:155.9pt;" class="hcp9">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span lang="EN-US" class="hcp10"><img width="179" height="162" src="chap2_5.files/image026.gif" v:shapes="_x0000_i1037"></span><span class="hcp5"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp5">Рис.
+  2.5.2</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Наличие опор при расчетах заменяется реакциями, которые
+зависят от вида этих опор.<span class="hcp4">  </span>Как<span class="hcp4">  </span>правило,<span class="hcp4"> 
+</span>встречаются следующие варианты закрепления балок: жесткая заделка (рис.
+2.5.3</span><span lang="EN-US" class="hcp10">a</span><span class="hcp5">), неподвижная опора (рис. 2.5.3</span><span lang="EN-US" class="hcp10">b</span><span class="hcp5">), подвижная в осевом направлении
+опора (рис. 2.5.3</span><span lang="EN-US" class="hcp10">c</span><span class="hcp5">) и т. д.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span class="hcp11"><img width="302" height="101" src="chap2_5.files/image028.gif" v:shapes="_x0000_i1038"></span></p>
+
+<p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+text-indent:35.45pt;line-height:150%'><span lang="EN-US" class="hcp12">a)<span class="hcp4">                      </span>b) <span class="hcp13">       </span><span class="hcp4">               </span>c)</span></p>
+
+<p class=Bookbody align=center style='text-align:center;line-height:normal'><span class="hcp5">Рис. 2.5.3</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp14">Жесткая заделка исключает любую
+подвижность, а число степеней свободы при этом становится равным нулю. Неподвижная
+опора ограничивает линейные перемещения, допуская угловые. Шарнирно-подвижная
+опора, кроме угловых, допускает также перемещения в направлении оси балки.
+Любое ограничение перемещения в плоском случае нагружения вызывает появлений
+либо реактивных силы <sub><img width="22" height="22" src="chap2_5.files/image030.gif" v:shapes="_x0000_i1041"></sub><span class="hcp4"> </span>и <sub><img width="20" height="22" src="chap2_5.files/image032.gif" v:shapes="_x0000_i1042"></sub>,
+либо реактивного момента <sub><img width="28" height="22" src="chap2_5.files/image034.gif" v:shapes="_x0000_i1043"></sub>,
+величины которых можно определить из уравнений статики. Если число неизвестных
+реакций превышает число статических уравнений равновесия, т. е. балка
+статически неопределима, то следует добавить еще условие совместности
+деформаций.</span><span class="hcp5"></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Внешние силовые факторы, приложенные к балке, могут быть
+представлены в виде: сосредоточенных сил; сил, распределенных по длине или по площади;
+сосредоточенных либо распределенных моментов изгиба, а иногда и вращения.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp14">В качестве примера рассмотрим один из
+простейших случаев нагружения: двухопорная балка длиной <sub><img width="11" height="18" src="chap2_5.files/image036.gif" v:shapes="_x0000_i1044"></sub>,
+один конец которой неподвижен, а другой закреплен шарнирно, нагружается сосредоточенной
+силой <sub><img width="16" height="18" src="chap2_5.files/image038.gif" v:shapes="_x0000_i1045"></sub><span class="hcp4"> </span>(рис. 2.5.4a). Неизвестные внутренние силовые
+факторы, действующие в текущем сечении, определим методом сечений. Для этого
+мысленно разрежем балку в месте расположения рассматриваемого сечения
+нормальной к оси плоскостью и рассмотрим равновесие одной из образовавшихся
+частей, заменяя действие другой внутренними силовыми факторами.</span><span class="hcp5"></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp15">Построим графики зависимости внутренних
+силовых факторов от координаты расположения поперечного сечения (эпюры).
+Отметим, что эпюра моментов традиционно изображается со стороны сжатых слоев
+балки.</span><span class="hcp5"></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp16">Очевидно (рис. 2.5.4а), что
+нагружение балки представляет собой систему параллельных сил, для которой
+справедливы статические уравнения равновесия. Первое уравнение получается как
+результат суммирования активных и реактивных сил (в общем случае их количество
+равно <sub><img width="14" height="18" src="chap2_5.files/image040.gif" v:shapes="_x0000_i1046"></sub>), а
+второе представляет собой уравнение моментов этих сил относительно одной из
+опор, например, опоры <sub><img width="16" height="18" src="chap2_5.files/image042.gif" v:shapes="_x0000_i1047"></sub>:</span><span class="hcp5"></span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:172.75pt;mso-element-frame-height:
+274.45pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+page;mso-element-anchor-horizontal:page;mso-element-left:1.85pt;mso-element-top:
+63.25pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=242 height=366
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="366" class="hcp17">
+  <p class=MsoNormal align=center style='margin-right:4.7pt;text-align:center;
+  text-indent:0cm;mso-element:frame;mso-element-frame-width:172.75pt;
+  mso-element-frame-height:274.45pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:page;
+  mso-element-left:1.85pt;mso-element-top:63.25pt;mso-height-rule:exactly'><span class="hcp11"><img width="234" height="335" src="chap2_5.files/image044.gif" v:shapes="_x0000_i1185"></span></p>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:38.25pt;
+  margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:center;
+  text-indent:1.0cm;mso-element:frame;mso-element-frame-width:172.75pt;
+  mso-element-frame-height:274.45pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:page;
+  mso-element-left:1.85pt;mso-element-top:63.25pt;mso-height-rule:exactly'><span class="hcp11">Рис. 2.5.4</span><span style='font-size:
+  9.0pt;mso-bidi-font-size:10.0pt;font-family:"Times New Roman"'></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp5"><span class="hcp4"> </span><sub><img width="64" height="46" src="chap2_5.files/image046.gif" v:shapes="_x0000_i1048"></sub>;<span class="hcp4">        </span><sub><img width="70" height="46" src="chap2_5.files/image048.gif" v:shapes="_x0000_i1049"></sub>,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp5">или, в нашем случае,</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp5"><img width="90" height="22" src="chap2_5.files/image050.gif" v:shapes="_x0000_i1050"></span></sub><span class="hcp5">;<span class="hcp13">            </span><span class="hcp4">        </span><sub><img width="86" height="22" src="chap2_5.files/image052.gif" v:shapes="_x0000_i1051"></sub>.<span class="hcp4">                                </span>(2.5.1)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Решив систему (2.5.1), найдем реакции в опорах:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp5"><img width="62" height="41" src="chap2_5.files/image054.gif" v:shapes="_x0000_i1052"></span></sub><span class="hcp5">;<span class="hcp4">        </span><sub><img width="62" height="41" src="chap2_5.files/image056.gif" v:shapes="_x0000_i1053"></sub>.<span class="hcp18">                                  </span><span class="hcp4">      </span>(2.5.2)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Если за начало координат принять точку <sub><img width="16" height="18" src="chap2_5.files/image058.gif" v:shapes="_x0000_i1054"></sub>, то
+момент изгиба в сечении балки, расположенном на расстоянии <sub><img width="12" height="14" src="chap2_5.files/image060.gif" v:shapes="_x0000_i1055"></sub>, с
+учетом (2.5.2) имеет вид</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp5"><img width="98" height="41" src="chap2_5.files/image062.gif" v:shapes="_x0000_i1056"></span></sub><span class="hcp5">,<span class="hcp4">       </span><sub><img width="126" height="41" src="chap2_5.files/image064.gif" v:shapes="_x0000_i1057"></sub>,<span class="hcp4">     </span><sub><img width="62" height="16" src="chap2_5.files/image066.gif" v:shapes="_x0000_i1058"></sub>;</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp5"><img width="136" height="41" src="chap2_5.files/image068.gif" v:shapes="_x0000_i1059"></span></sub><span class="hcp5">,<span class="hcp4"> 
+</span></span></p>
+
+<p class=Bookbody align=right style='margin-bottom:12.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp5"><img width="266" height="44" src="chap2_5.files/image070.gif" v:shapes="_x0000_i1060"></span></sub><span class="hcp5">,<span class="hcp4">  
+</span><sub><img width="86" height="18" src="chap2_5.files/image072.gif" v:shapes="_x0000_i1061"></sub>.<span class="hcp13"> </span><span class="hcp4">        </span>(2.5.3)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Полученные результаты (2.5.3) позволяют построить эпюры
+поперечных сил <sub><img width="41" height="26" src="chap2_5.files/image074.gif" v:shapes="_x0000_i1062"></sub><span class="hcp4"> </span>и моментов изгиба <sub><img width="50" height="24" src="chap2_5.files/image076.gif" v:shapes="_x0000_i1063"></sub><span class="hcp4"> </span>(рис. 2.5.4b–c).</span></p>
+
+<p class=Bookbody style='line-height:normal'>&nbsp;</p>
+
+<p class=Bookbody align=center style='text-align:center;line-height:normal'><span class="hcp5"><img width="327" height="118" src="chap2_5.files/image078.gif" v:shapes="_x0000_i1064"></span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:21.25pt'><span class="hcp5">Рис. 2.5.5</span><span class="hcp19"></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;text-indent:0cm'><span
+style='mso-bidi-font-size:12.0pt;mso-bidi-font-family:Arial'>Используем метод
+сечений для расчета внутренних силовых факторов в случае действия
+распределенной нагрузки <sub><img width="12" height="18" src="chap2_5.files/image080.gif" v:shapes="_x0000_i1065"></sub><span class="hcp4"> </span>(рис. 2.5.5). Уравнения статики для
+выделенного элемента можно представить в виде</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp5"><img width="176" height="26" src="chap2_5.files/image082.gif" v:shapes="_x0000_i1066"></span></sub><span class="hcp5">;</span></p>
+
+<p class=Bookbody align=right style='margin-top:0cm;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:7.1pt;text-align:right;text-indent:-7.1pt;
+line-height:normal'><sub><span class="hcp5"><img width="322" height="41" src="chap2_5.files/image084.gif" v:shapes="_x0000_i1067"></span></sub><span class="hcp5">. <span class="hcp20">                       </span><span class="hcp4">  </span>(2.5.4)</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:0cm'><span class="hcp11">Если пренебречь в (2.5.4) величинами второго
+порядка малости, получим</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp5"><img width="70" height="46" src="chap2_5.files/image086.gif" v:shapes="_x0000_i1068"></span></sub><span class="hcp5">;<span class="hcp4">       </span><sub><img width="76" height="42" src="chap2_5.files/image088.gif" v:shapes="_x0000_i1069"></sub>.<span class="hcp4">                                </span>(2.5.5)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">С помощью дифференциальных уравнений (2.5.5) можно провести
+полный анализ изгиба балки (бруса).</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp6"><span class="hcp5">Напряжения, вызванные изгибом.</span></b><span class="hcp5"> Задача расчета бруса, нагруженного моментами изгиба, в
+общем случае достаточно сложна, но решение сильно упрощается, если использовать
+применительно к изгибу <i class="hcp7">гипотезу плоских
+сечений</i>. Предположим, что взаимное влияние слоев в поперечном направлении
+отсутствует, оси координат совпадают с направлением главных осей, а начало
+системы координат&nbsp; с – положением центра тяжести сечения. Согласно
+гипотезе плоских сечений поперечные сечения после деформации (параллельного смещения
+сечения на расстояние <sub><img width="20" height="22" src="chap2_5.files/image090.gif" v:shapes="_x0000_i1070"></sub><span class="hcp4"> </span>и дальнейшего поворота в двух плоскостях на
+углы <sub><img width="22" height="22" src="chap2_5.files/image092.gif" v:shapes="_x0000_i1071"></sub><span class="hcp4"> </span>и <sub><img width="22" height="26" src="chap2_5.files/image094.gif" v:shapes="_x0000_i1072"></sub><span class="hcp4"> </span>относительно осей <sub><img width="18" height="18" src="chap2_5.files/image096.gif" v:shapes="_x0000_i1073"></sub><span class="hcp4"> </span>и <sub><img width="14" height="18" src="chap2_5.files/image098.gif" v:shapes="_x0000_i1074"></sub><span class="hcp4"> </span>соответственно) остаются плоскими, а перемещение
+<sub><img width="24" height="26" src="chap2_5.files/image100.gif" v:shapes="_x0000_i1075"></sub><span class="hcp4">  </span>произвольной точки сечения с координатами <sub><img width="38" height="26" src="chap2_5.files/image102.gif" v:shapes="_x0000_i1076"></sub><span class="hcp4"> </span>равно</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp5"><img width="139" height="26" src="chap2_5.files/image104.gif" v:shapes="_x0000_i1077"></span></sub><span class="hcp5">.<span class="hcp13">    </span><span class="hcp4">                                       
+</span>(2.5.6)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Если в поперечном сечении присутствует только изгибающий
+момент, то нагружение называется <b class="hcp6"><i class="hcp7">чистым изгибом</i></b> (рис. 2.5.6). В
+частном случае плоского чистого изгиба из (2.5.6) имеем</span></p>
+
+<p class=MsoNormal align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:23.8pt'><sub><span class="hcp11"><img width="68" height="26" src="chap2_5.files/image106.gif" v:shapes="_x0000_i1078"></span></sub><span class="hcp11">.<span class="hcp4">                                                       </span>(2.5.7)</span></p>
+
+<div align=center>
+
+<table border="0" cellspacing="0" cellpadding="0" class="hcp8">
+ <tr>
+  <td width="272" valign="bottom" style="width:203.8pt;" class="hcp9">
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span class="hcp11"><img width="179" height="109" src="chap2_5.files/image108.gif" v:shapes="_x0000_i1079"></span></p>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span class="hcp11">Рис. 2.5.6</span></p>
+  </td>
+  <td width="272" valign="bottom" style="width:203.85pt;" class="hcp9">
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp12"><img width="276" height="182" src="chap2_5.files/image110.gif" v:shapes="_x0000_i1080"></span><span class="hcp11"></span></p>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span class="hcp11">Рис. 2.5.7</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp14">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp14">Рассмотрим этот случай более подробно.
+Выделим участок бруса площадью <sub><img width="16" height="18" src="chap2_5.files/image112.gif" v:shapes="_x0000_i1081"></sub>, на
+котором действует только изгибающий момент <sub><img width="31" height="24" src="chap2_5.files/image114.gif" v:shapes="_x0000_i1082"></sub>.
+Выделенный элемент после приложения внешнего момента деформируется (рис.
+2.5.7). При этом внешние волокна бруса растягиваются, а нижние сжимаются, т. е.
+мы имеем дело с плоским нагружением.</span><span class="hcp5"></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Ось бруса, вдоль которой волокна не меняют длины после
+нагружения, называется <i class="hcp7">нейтральной осью</i>.
+Остается предположить, что положение нейтральных осей совпадает с направлением
+главных. Определить значение наибольших нормальных напряжений можно из
+уравнения равновесия отсеченной части. Для этого на расстоянии <sub><img width="14" height="18" src="chap2_5.files/image116.gif" v:shapes="_x0000_i1083"></sub><span class="hcp4"> </span>выделяем элемент площадью <sub><img width="24" height="18" src="chap2_5.files/image118.gif" v:shapes="_x0000_i1084"></sub>,
+расположенный перпендикулярно оси бруса, на который будут действовать только
+нормальные напряжения <sub><img width="26" height="24" src="chap2_5.files/image120.gif" v:shapes="_x0000_i1085"></sub>.
+Расстояние <sub><img width="14" height="18" src="chap2_5.files/image121.gif" v:shapes="_x0000_i1086"></sub><span class="hcp4"> </span>представляет собой длину перпендикуляра,
+опущенного из текущей точки до рассматриваемой оси. Элементарный момент
+площадки относительно оси записывается в виде</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp5"><img width="103" height="26" src="chap2_5.files/image123.gif" v:shapes="_x0000_i1087"></span></sub><span class="hcp5">.<span class="hcp4">                                        </span>(2.5.8)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Для того чтобы получить полный момент внутренних сил,
+необходимо просуммировать элементарные моменты (2.5.8):</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp5"><img width="92" height="38" src="chap2_5.files/image125.gif" v:shapes="_x0000_i1088"></span></sub><span class="hcp5">.<span class="hcp13">           </span><span class="hcp4">                              </span>(2.5.9)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Если наибольшее нормальное напряжение <sub><img width="41" height="22" src="chap2_5.files/image127.gif" v:shapes="_x0000_i1089"></sub><span class="hcp4"> </span>возникает на расстоянии <sub><img width="31" height="22" src="chap2_5.files/image129.gif" v:shapes="_x0000_i1090"></sub>, то
+согласно гипотезе плоских сечений имеем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp5"><img width="90" height="48" src="chap2_5.files/image131.gif" v:shapes="_x0000_i1091"></span></sub><span class="hcp5">.<span class="hcp18">                                   </span><span class="hcp4">   </span>(2.5.10)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Уравнение равновесия (2.5.9) с учетом (2.5.10) принимает вид</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp5"><img width="103" height="46" src="chap2_5.files/image133.gif" v:shapes="_x0000_i1092"></span></sub><span class="hcp5">,<span class="hcp4">                                        </span>(2.5.11)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp5">где <sub><img width="77" height="41" src="chap2_5.files/image135.gif" v:shapes="_x0000_i1093"></sub><span class="hcp4"> </span>– осевой момент инерции (2.3.4) выделенного
+сечения.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Если ввести в рассмотрение осевой момент сопротивления,
+равный</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp5"><span class="hcp4">   </span><sub><img width="112" height="46" src="chap2_5.files/image137.gif" v:shapes="_x0000_i1094"></sub>,<span class="hcp4">                                     </span>(2.5.12)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp5">то из (2.5.11) получаем
+окончательное выражение для максимальных напряжений, возникающих под действием
+момента <sub><img width="31" height="24" src="chap2_5.files/image139.gif" v:shapes="_x0000_i1095"></sub>:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp5"><img width="84" height="46" src="chap2_5.files/image141.gif" v:shapes="_x0000_i1096"></span></sub><span class="hcp5">.<span class="hcp4">                                           </span>(2.5.13)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">По аналогии с (2.5.12) – (2.5.13) можно записать выражение
+для наибольших напряжений при приложении<span class="hcp4"> 
+</span>момента <sub><img width="31" height="26" src="chap2_5.files/image143.gif" v:shapes="_x0000_i1097"></sub>, а
+именно</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp5"><img width="88" height="50" src="chap2_5.files/image145.gif" v:shapes="_x0000_i1098"></span></sub><span class="hcp5">;<span class="hcp4">        </span><sub><img width="116" height="46" src="chap2_5.files/image147.gif" v:shapes="_x0000_i1099"></sub>.<span class="hcp4">                      </span>(2.5.14)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">В общем случае нагружения нормальное напряжение в текущей
+точке поперечного сечения определяется по формуле</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp5"><img width="166" height="50" src="chap2_5.files/image149.gif" v:shapes="_x0000_i1100"></span></sub><span class="hcp5">. <span class="hcp20">               </span><span class="hcp4">               </span>(2.5.15)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">В заключение заметим, что методы решения, основанные на
+гипотезе плоских сечений, дают удовлетворительные результаты для широкого круга
+инженерных приложений. Если же требуется проводить более точные расчеты,
+включая и расчеты местных напряжений, то следует использовать методы теории
+упругости (см. далее главу 3.1).</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:175.05pt;mso-element-frame-height:
+232.35pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+page;mso-element-anchor-horizontal:page;mso-element-left:8.0pt;mso-element-top:
+550.85pt'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=245 height=310
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="310" class="hcp17">
+  <p class=MsoNormal align=right style='margin-top:6.0pt;text-align:right;
+  text-indent:0cm;mso-element:frame;mso-element-frame-width:175.05pt;
+  mso-element-frame-height:232.35pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:page;
+  mso-element-left:8.0pt;mso-element-top:550.85pt'><span lang="EN-US" class="hcp12"><img width="226" height="274" src="chap2_5.files/image151.gif" v:shapes="_x0000_i1258"></span><span class="hcp11"></span></p>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  text-indent:0cm;mso-element:frame;mso-element-frame-width:175.05pt;
+  mso-element-frame-height:232.35pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:page;
+  mso-element-left:8.0pt;mso-element-top:550.85pt'><span class="hcp11"><span class="hcp4">   </span>Рис. 2.5.8</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp6"><span class="hcp21">Дифференциальное уравнение
+изогнутой оси бруса.</span></b><span class="hcp5">
+</span><span class="hcp21">В качестве примера рассмотрим брус, один конец
+которого жестко закреплен, а к другому приложен момент изгиба <sub><img width="22" height="18" src="chap2_5.files/image153.gif" v:shapes="_x0000_i1259"></sub><span class="hcp4"> </span>(рис. 2.5.6), что соответствует случаю
+чистого изгиба. Деформированное состояние бруса изображено на рис. 2.5.8. Если
+первоначальная длина выделенного элемента <sub><img width="20" height="18" src="chap2_5.files/image155.gif" v:shapes="_x0000_i1260"></sub>, то
+растянутые слои, находящиеся на расстоянии <sub><img width="14" height="18" src="chap2_5.files/image157.gif" v:shapes="_x0000_i1261"></sub><span class="hcp4"> </span>от нейтральной оси, получат удлинение <sub><img width="30" height="18" src="chap2_5.files/image159.gif" v:shapes="_x0000_i1262"></sub>.
+Величину напряжения, возникающего при этом удлинении, можно определить с
+помощью закона Гука (2.1.2):</span><span class="hcp5"></span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp5"><img width="80" height="41" src="chap2_5.files/image161.gif" v:shapes="_x0000_i1263"></span></sub><span class="hcp5">,<span class="hcp4">                      </span>(2.5.16)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp5">причем из рисунка видно, что</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp5"><img width="162" height="24" src="chap2_5.files/image163.gif" v:shapes="_x0000_i1264"></span></sub><span class="hcp5">,<span class="hcp4">     </span>(2.5.17)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp14">где <sub><img width="22" height="22" src="chap2_5.files/image165.gif" v:shapes="_x0000_i1265"></sub><span class="hcp4"> </span>– радиус кривизны оси. Подставляя (2.5.17) в
+(2.5.16) и учитывая (2.5.13), запишем выражение для определения кривизны <sub><img width="24" height="22" src="chap2_5.files/image167.gif" v:shapes="_x0000_i1266"></sub>:</span><span class="hcp5"></span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp5"><img width="110" height="46" src="chap2_5.files/image169.gif" v:shapes="_x0000_i1267"></span></sub><span class="hcp5">.<span class="hcp13">       </span><span class="hcp4">       </span>(2.5.18)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Аналогично для <sub><img width="24" height="26" src="chap2_5.files/image171.gif" v:shapes="_x0000_i1268"></sub><span class="hcp4"> </span>имеем</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp5"><img width="110" height="50" src="chap2_5.files/image173.gif" v:shapes="_x0000_i1269"></span></sub><span class="hcp5">.<span class="hcp4">               </span>(2.5.19)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">С другой стороны, из дифференциальной геометрии известно,
+что кривизна линии <sub><img width="18" height="18" src="chap2_5.files/image175.gif" v:shapes="_x0000_i1270"></sub><span class="hcp4"> </span>связана с поперечным перемещением<span class="hcp4">  </span><sub><img width="14" height="14" src="chap2_5.files/image177.gif" v:shapes="_x0000_i1271"></sub><span class="hcp4"> </span>(прогибом) формулой</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp5"><img width="130" height="44" src="chap2_5.files/image179.gif" v:shapes="_x0000_i1272"></span></sub><span class="hcp5">.<span class="hcp4">                                      </span>(2.5.20)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp14">Для малых деформаций (а все полученные
+выше решения справедливы для случая упругого деформирования, когда при малых перемещениях
+пластические деформации отсутствуют) величиной <sub><img width="24" height="20" src="chap2_5.files/image181.gif" v:shapes="_x0000_i1273"></sub><span class="hcp4"> </span>по сравнению с единицей можно пренебречь,
+тогда</span><span class="hcp5"></span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:21.25pt;line-height:normal'><sub><span class="hcp5"><img width="77" height="44" src="chap2_5.files/image183.gif" v:shapes="_x0000_i1274"></span></sub><span class="hcp5">.<span class="hcp4">                                              </span>(2.5.21)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Подставляя (2.5.21) в (2.5.18) – (2.5.19), получим уравнение
+изогнутой оси бруса:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp5"><img width="86" height="48" src="chap2_5.files/image185.gif" v:shapes="_x0000_i1275"></span></sub><span class="hcp5">;<span class="hcp4">      </span><sub><img width="88" height="52" src="chap2_5.files/image187.gif" v:shapes="_x0000_i1276"></sub>.<span class="hcp4">                             </span>(2.5.22)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Радиус кривизны линейно связан с величиной угла поворота
+сечения <sub><img width="14" height="18" src="chap2_5.files/image189.gif" v:shapes="_x0000_i1277"></sub>. В
+общем случае углы поворота сечений равны</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp5"><img width="96" height="46" src="chap2_5.files/image191.gif" v:shapes="_x0000_i1278"></span></sub><span class="hcp5">;<span class="hcp4">     </span><sub><img width="96" height="50" src="chap2_5.files/image193.gif" v:shapes="_x0000_i1279"></sub>.<span class="hcp4">                          </span>(2.5.23)</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp6"><span class="hcp16">Косой изгиб.</span></b><span class="hcp5"> </span><span class="hcp16">Рассмотренные до сих пор варианты изгиба относились к
+случаю так называемого <i class="hcp7">прямого изгиба</i>,
+при котором внешний момент совпадал по направлению с одной из главных осей
+поперечного сечения. В случае, если это условие не выполняется, изгиб
+называется <i class="hcp7">косым</i>. При<span class="hcp4">  </span>косом изгибе внешний момент необходимо
+представить в виде проекций на направление главных осей, а расчеты прочности
+следует выполнять так же, как и для случая прямого изгиба.</span><span class="hcp5"></span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;line-height:normal'><b class="hcp6"><span class="hcp14">Внецентренное нагружение.</span></b><span class="hcp5"> <span class="hcp22">К
+задаче прямого изгиба можно свести и задачу расчета бруса, нагруженного внецентренной
+нагрузкой растяжения&nbsp;– сжатия. <i class="hcp7">Внецентренным</i>
+называется такой случай осевого нагружения, когда точка приложения осевой силы
+не совпадает с центром тяжести стыка. При этом осевую нагрузку можно перенести
+в центр тяжести сечения и добавить к ней, по правилам механики, изгибающий
+момент. Далее следует разложить момент на составляющие относительно главных
+осей, что и сводит задачу внецентренного нагружения к расчету прямого изгиба.</span></span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp6"><span class="hcp5">Касательные напряжения от поперечных сил.</span></b><span class="hcp5"> Проведенное выше рассмотрение основывалось
+на предположении, что в поперечных сечениях бруса возникают только нормальные напряжения.
+Это предположение совершенно справедливо при чистом изгибе, однако в отдельных
+случаях, в частности, при поперечном изгибе, пренебрежение поперечной нагрузкой
+может привести к существенным погрешностям, что вынуждает учитывать и
+касательные напряжения.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Рассмотрим брус при поперечном изгибе. Выделим элемент
+объема толщиной <sub><img width="20" height="18" src="chap2_5.files/image195.gif" v:shapes="_x0000_i1123"></sub><span class="hcp4"> </span>и текущей шириной <sub><img width="12" height="18" src="chap2_5.files/image197.gif" v:shapes="_x0000_i1124"></sub><span class="hcp4"> </span>и приложим к нему сдвигающую силу <sub><img width="22" height="26" src="chap2_5.files/image199.gif" v:shapes="_x0000_i1125"></sub><span class="hcp4"> </span>(рис. 2.5.9).</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">&nbsp;</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm'><span class="hcp5"><img width="456" height="181" src="chap2_5.files/image201.gif" v:shapes="_x0000_i1126"></span><span lang="EN-US" class="hcp10"></span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp5">Рис. 2.5.9</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp15">Очевидно, что по закону парности
+касательных напряжений величины напряжений сдвига в поперечном и продольных
+сечениях равны. Для расчета нормальных <sub><img width="16" height="14" src="chap2_5.files/image203.gif" v:shapes="_x0000_i1127"></sub><span class="hcp4"> </span>и касательных <sub><img width="14" height="14" src="chap2_5.files/image205.gif" v:shapes="_x0000_i1128"></sub><span class="hcp4"> </span>напряжений мысленно разделим этот элемент на две
+части продольным сечением, расположенным на расстоянии <sub><img width="14" height="18" src="chap2_5.files/image207.gif" v:shapes="_x0000_i1129"></sub><span class="hcp4"> </span>от нейтрального слоя, и рассмотрим равновесие
+одной из отсеченных частей, площадь которой равна <sub><img width="20" height="22" src="chap2_5.files/image209.gif" v:shapes="_x0000_i1130"></sub>.
+Равнодействующая нормальных сил <sub><img width="22" height="24" src="chap2_5.files/image211.gif" v:shapes="_x0000_i1131"></sub>в
+левом сечении выделенной части элемента равна</span><span class="hcp5"></span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp5"><img width="88" height="41" src="chap2_5.files/image213.gif" v:shapes="_x0000_i1132"></span></sub><span class="hcp5">.<span class="hcp4">             </span><span class="hcp4">                           </span>(2.5.24)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp5">Учитывая, что согласно (2.5.15)
+можно записать</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;text-align:center;
+text-indent:35.45pt;line-height:normal'><sub><span class="hcp5"><img width="70" height="46" src="chap2_5.files/image215.gif" v:shapes="_x0000_i1133"></span></sub><span class="hcp5">,<span class="hcp13">     </span></span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp5">из (2.5.24) получаем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp5"><span class="hcp4">               </span><sub><img width="178" height="50" src="chap2_5.files/image217.gif" v:shapes="_x0000_i1134"></sub>,<span class="hcp4">                              </span>(2.5.25)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp5">где <sub><img width="14" height="18" src="chap2_5.files/image219.gif" v:shapes="_x0000_i1135"></sub><span class="hcp4"> </span>– текущая ордината площадки <sub><img width="22" height="18" src="chap2_5.files/image221.gif" v:shapes="_x0000_i1136"></sub>, а
+выражение <sub><img width="84" height="40" src="chap2_5.files/image223.gif" v:shapes="_x0000_i1137"></sub><span class="hcp4"> </span>представляет собой статический момент площади
+поперечного сечения отсеченной части фигуры относительно нейтральной оси.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Аналогично для равнодействующей нормальных сил в левом
+сечении имеем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp5"><img width="300" height="46" src="chap2_5.files/image225.gif" v:shapes="_x0000_i1138"></span></sub><span class="hcp5">.<span class="hcp4">             </span>(2.5.26)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Разность этих сил уравновешивается касательными силами,
+возникающими в продольном сечении выделенного элемента. Если предположить, что
+касательные напряжения распределены по ширине сечения <sub><img width="14" height="18" src="chap2_5.files/image227.gif" v:shapes="_x0000_i1139"></sub><span class="hcp4"> </span>равномерно, то</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp5"><img width="106" height="46" src="chap2_5.files/image229.gif" v:shapes="_x0000_i1140"></span></sub><span class="hcp5">,<span class="hcp4">                                       </span>(2.5.27)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp23">откуда с учетом (2.5.5) окончательно получаем так называемую <i class="hcp7">формулу Журавского:</i></span><span class="hcp5"></span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp5"><img width="72" height="48" src="chap2_5.files/image231.gif" v:shapes="_x0000_i1141"></span></sub><span class="hcp5">. <span class="hcp4">            </span><span class="hcp13">   </span><span class="hcp4">                 </span><span class="hcp13">       </span><span class="hcp4">     </span>(2.5.28)</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:216.2pt;mso-element-frame-height:
+144.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+page;mso-element-anchor-horizontal:page;mso-element-left:3.0cm;mso-element-top:
+468.25pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=300 height=192
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="192" class="hcp17">
+  <p class=Bookbody align=center style='margin-top:6.0pt;text-align:center;
+  text-indent:0cm;mso-element:frame;mso-element-frame-width:216.2pt;mso-element-frame-height:
+  144.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:3.0cm;mso-element-top:
+  468.25pt;mso-height-rule:exactly'><span class="hcp5"><img width="244" height="153" src="chap2_5.files/image233.gif" v:shapes="_x0000_i1281"></span></p>
+  <p class=Bookbody align=center style='margin-top:12.0pt;text-align:center;
+  text-indent:0cm;mso-element:frame;mso-element-frame-width:216.2pt;mso-element-frame-height:
+  144.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:3.0cm;mso-element-top:
+  468.25pt;mso-height-rule:exactly'><span class="hcp5">Рис. 2.5.10</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Используем соотношение (2.5.28) для
+расчета распределения касательных напряжений по высоте бруса прямоугольного
+поперечного сечения площадью <sub><img width="48" height="18" src="chap2_5.files/image235.gif" v:shapes="_x0000_i1144"></sub>,
+нагруженного действующей вдоль оси <sub><img width="14" height="18" src="chap2_5.files/image237.gif" v:shapes="_x0000_i1145"></sub><span class="hcp4"> </span>поперечной силой <sub><img width="22" height="26" src="chap2_5.files/image239.gif" v:shapes="_x0000_i1146"></sub><span class="hcp4"> </span>(рис. 2.5.10). Для точек, имеющих текущие
+ординаты <sub><img width="14" height="18" src="chap2_5.files/image241.gif" v:shapes="_x0000_i1147"></sub>, имеем</span><span class="hcp5"></span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp5"><img width="111" height="46" src="chap2_5.files/image243.gif" v:shapes="_x0000_i1148"></span></sub><span class="hcp5">;<span class="hcp4">       </span><sub><img width="58" height="41" src="chap2_5.files/image245.gif" v:shapes="_x0000_i1149"></sub>.<span class="hcp4">                            </span>(2.5.29)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">После подстановки (2.5.29) в (2.5.28) находим</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp5"><img width="128" height="50" src="chap2_5.files/image247.gif" v:shapes="_x0000_i1150"></span></sub><span class="hcp5">.<span class="hcp4">                                       </span>(2.5.30)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Из (2.5.30) видно, что наибольшие касательные напряжения
+имеют место на нейтральной линии (при <sub><img width="38" height="20" src="chap2_5.files/image249.gif" v:shapes="_x0000_i1151"></sub>),</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp5"><img width="122" height="44" src="chap2_5.files/image251.gif" v:shapes="_x0000_i1152"></span></sub><span class="hcp5">,<span class="hcp13">    </span><span class="hcp4">                                     </span>(2.5.31)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp5">где <sub><img width="60" height="44" src="chap2_5.files/image253.gif" v:shapes="_x0000_i1153"></sub><span class="hcp4"> </span>– среднее значение касательного напряжения.</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:137.7pt;mso-element-frame-height:
+186.85pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+page;mso-element-anchor-horizontal:page;mso-element-left:328.05pt;mso-element-top:
+72.25pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=196 height=249
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="249" class="hcp17">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  mso-element:frame;mso-element-frame-width:137.7pt;mso-element-frame-height:
+  186.85pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:328.05pt;mso-element-top:
+  72.25pt;mso-height-rule:exactly'><span lang="EN-US" class="hcp10"><img width="170" height="217" src="chap2_5.files/image255.gif" v:shapes="_x0000_i1288"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  mso-element:frame;mso-element-frame-width:137.7pt;mso-element-frame-height:
+  186.85pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:328.05pt;mso-element-top:
+  72.25pt;mso-height-rule:exactly'><span lang="EN-US" class="hcp10">&nbsp;</span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  mso-element:frame;mso-element-frame-width:137.7pt;mso-element-frame-height:
+  186.85pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:328.05pt;mso-element-top:
+  72.25pt;mso-height-rule:exactly'><span class="hcp5">Рис. 2.5.11</span><span class="hcp19"></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp23">Формула
+Журавского (2.5.28) применима также для определения касательных напряжений в тонкостенных
+брусьях незамкнутого профиля (тонкостенным будем считать сечение, для которого
+отношение периметра <sub><img width="10" height="18" src="chap2_5.files/image257.gif" v:shapes="_x0000_i1156"></sub><span class="hcp4"> </span>к толщине <sub><img width="14" height="18" src="chap2_5.files/image259.gif" v:shapes="_x0000_i1157"></sub><span class="hcp4"> </span>удовлетворяет неравенству <sub><img width="58" height="18" src="chap2_5.files/image261.gif" v:shapes="_x0000_i1158"></sub>). В
+этом случае касательные напряжения направлены по касательной к средней линии
+контура. Можно считать, что по толщине контура они не меняются. В остальном
+методы расчета касательных напряжений не отличаются от методов, описанных выше.</span><span class="hcp5"></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp14">В качестве примера рассмотрим
+тонкостенный незамкнутый профиль, который изгибается относительно оси <sub><img width="14" height="14" src="chap2_5.files/image263.gif" v:shapes="_x0000_i1159"></sub><span class="hcp4"> </span>под действием вертикальной поперечной силы <sub><img width="22" height="26" src="chap2_5.files/image265.gif" v:shapes="_x0000_i1160"></sub>,
+параллельной оси <sub><img width="14" height="18" src="chap2_5.files/image267.gif" v:shapes="_x0000_i1161"></sub>.
+Картина распределения касательных напряжений по длине тонкостенного незамкнутого
+сечения, рассчитанная с помощью (2.5.28), показана на рис. 2.5.11. Видно, что
+наибольшие напряжения, равные</span><span class="hcp5"></span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp5"><img width="128" height="48" src="chap2_5.files/image269.gif" v:shapes="_x0000_i1162"></span></sub><span class="hcp5">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp5">возникают в местах, расположенных на
+нейтральной оси в непосредственной близости к центру тяжести.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp6"><span class="hcp14">Энергия деформации при чистом изгибе.</span></b><span class="hcp5"> <span class="hcp22">Так
+как внешний момент вызывает поворот сечения элемента бруса, то он совершает
+некоторую работу, величина которой, по закону сохранения энергии, равна
+накопленной внутренними силами энергии деформации: </span></span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp5"><img width="118" height="41" src="chap2_5.files/image271.gif" v:shapes="_x0000_i1163"></span></sub><span class="hcp5">;<span class="hcp4">       </span><sub><img width="118" height="41" src="chap2_5.files/image273.gif" v:shapes="_x0000_i1164"></sub>.<span class="hcp4">                   </span>(2.5.32)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Энергия деформации изгиба получается суммированием энергий
+участков длины бруса с учетом (2.5.23):</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp5"><img width="12" height="22" src="chap2_5.files/image275.gif" v:shapes="_x0000_i1165"></span></sub><span class="hcp5"><span class="hcp4"> 
+</span><sub><img width="156" height="52" src="chap2_5.files/image277.gif" v:shapes="_x0000_i1166"></sub>.<span class="hcp4">                                 </span><span class="hcp4">      </span>(2.5.33)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp5">Здесь <sub><img width="11" height="18" src="chap2_5.files/image279.gif" v:shapes="_x0000_i1167"></sub><span class="hcp4"> </span>– длина рассматриваемого участка.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">В общем случае к элементу бруса кроме моментов изгиба могут
+быть приложены поперечные силы, вызывающие касательные напряжения сдвига.
+Значения этих напряжений обычно много меньше по сравнению с нормальными, и
+потому в инженерной практике их наличием пренебрегают.</span></p>
+
+</div>
+
+<div placeholder id="footer" style="width:100%;" class="hcp1">
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			border-bottom-color: #000080;
+			border-bottom-style: Ridge;
+			border-bottom-width: 2px;
+			font-size: 10pt;">&nbsp;</p>
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			font-size: 8pt;">&#169; 
+ 2007 Copyright &nbsp;&#1053;&#1058;&#1062; 
+ &#1040;&#1055;&#1052;</p>
+</div>
+</body>
+</html>

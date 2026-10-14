@@ -1,0 +1,450 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="File-List" href="./chap1_3.files/filelist.xml">
+<link rel="Edit-Time-Data" href="./chap1_3.files/editdata.mso">
+<title>Глава 1.3. Надежность механических систем</title><style>
+<!--
+p.MsoNormal { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoNormal { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoNormal { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+h1 { margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; mso-outline-level:1; font-size:14.0pt; font-family:Arial; }
+p.MsoIndex1 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+li.MsoIndex1 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+div.MsoIndex1 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+p.MsoToc1 { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 415.55pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+li.MsoToc1 { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 415.55pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+div.MsoToc1 { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 415.55pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+p.MsoHeader { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoHeader { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoHeader { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.UG1bodytext { mso-style-name:UG1 body text; margin:0cm; margin-bottom:.0001pt; text-indent:21.3pt; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.UG1bodytext { mso-style-name:UG1 body text; margin:0cm; margin-bottom:.0001pt; text-indent:21.3pt; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.UG1bodytext { mso-style-name:UG1 body text; margin:0cm; margin-bottom:.0001pt; text-indent:21.3pt; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; line-height:90%; mso-pagination:none; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; line-height:90%; mso-pagination:none; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; line-height:90%; mso-pagination:none; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.Paragraphtitle { mso-style-name:Paragraph title; mso-style-parent:Book_body; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-align:center; line-height:90%; mso-pagination:none; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; font-style:italic; mso-bidi-font-style:normal; }
+li.Paragraphtitle { mso-style-name:Paragraph title; mso-style-parent:Book_body; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-align:center; line-height:90%; mso-pagination:none; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; font-style:italic; mso-bidi-font-style:normal; }
+div.Paragraphtitle { mso-style-name:Paragraph title; mso-style-parent:Book_body; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-align:center; line-height:90%; mso-pagination:none; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; font-style:italic; mso-bidi-font-style:normal; }
+p.BookChapter { mso-style-name:Book_Chapter; mso-style-parent:Book_SubPart; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookChapter { mso-style-name:Book_Chapter; mso-style-parent:Book_SubPart; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookChapter { mso-style-name:Book_Chapter; mso-style-parent:Book_SubPart; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.Section1 { page:Section1; }
+-->
+</style><style title="hcp" type="text/css">
+<!--
+div.hcp1 { position:relative; }
+b.hcp2 { mso-bidi-font-weight:normal; }
+span.hcp3 { mso-bidi-font-family:Arial; }
+i.hcp4 { mso-bidi-font-style:normal; }
+span.hcp5 { letter-spacing:2.0pt; mso-bidi-font-style:italic; }
+span.hcp6 { mso-spacerun:yes; }
+span.hcp7 { mso-bidi-font-family:Arial; mso-ansi-language:EN-US; }
+span.hcp8 { mso-bidi-font-family:Arial; mso-bidi-font-weight:bold; }
+span.hcp9 { mso-tab-count:2; }
+td.hcp10 { padding:0cm 5.4pt 0cm 5.4pt; }
+-->
+</style>
+</head>
+<body lang="RU" style="tab-interval:35.4pt">
+<div placeholder id="header" style="width:100%;" class="hcp1">
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			background-color: #d8e8f9;
+			margin-left: 0px;"><img src="head_for_help.jpg"
+									x-maintain-ratio=TRUE
+									style="border: none;
+											width: 1000px;
+											height: 50px;
+											float: none;
+											border-style: none;
+											border-style: none;"
+									width=1000
+									height=50
+									border=0></p>
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			border-top-color: #000080;
+			border-top-width: 2px;
+			border-top-style: Ridge;
+			margin-left: 0px;">&nbsp;</p>
+</div>
+<div class=Section1>
+
+<h1><span style='color:navy;mso-bidi-font-weight:normal'>Глава 1.3. Надежность
+механических систем</span></h1>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><b class="hcp2"><span class="hcp3">&nbsp;</span></b></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><b class="hcp2"><span class="hcp3">Надежность
+и ее оценка.</span></b> <span class="hcp3">Под</span> <span
+style='mso-bidi-font-size:11.0pt;mso-bidi-font-family:Arial;letter-spacing:
+2.0pt;mso-bidi-font-weight:bold;mso-bidi-font-style:italic'>надежность</span><span
+style='mso-bidi-font-family:Arial;mso-bidi-font-weight:bold;mso-bidi-font-style:
+italic'>ю</span><span class="hcp3">, как уже упоминалось
+во введении, понимают свойство объекта сохранять выходные характеристики в
+установленных пределах в течение заданного промежутка времени. Изучением
+количественных соотношений при расчете надежности занимается <i class="hcp4">теория надежности</i>. Основой этой теории
+является эксперимент.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Рассмотрим, к примеру, результат испытаний
+на прочность образцов, работающих в условиях переменного нагружения. Очевидно,
+время работы до разрушения для каждого из образцов различно, и его можно
+рассматривать как случайное событие. Время работы до отказа называется <span class="hcp5">наработкой до отказ</span><span
+style='mso-bidi-font-style:italic'>а</span>. Пусть <sub><img width="14" height="18" src="chap1_3.files/image002.gif" v:shapes="_x0000_i1025"></sub><span class="hcp6"> </span>– случайная величина, обозначающая время
+наработки до отказа. Если за выделенный промежуток времени <sub><img width="20" height="18" src="chap1_3.files/image004.gif" v:shapes="_x0000_i1026"></sub><span class="hcp6"> </span>разрушилось <sub><img width="16" height="24" src="chap1_3.files/image006.gif" v:shapes="_x0000_i1027"></sub><span class="hcp6"> </span>образцов из общего количества <sub><img width="18" height="16" src="chap1_3.files/image008.gif" v:shapes="_x0000_i1028"></sub>,
+то, согласно (1.1.1), вероятность разрушения за выделенный промежуток времени
+равна <b class="hcp2"><sub><img width="52" height="42" src="chap1_3.files/image010.gif" v:shapes="_x0000_i1029"></sub></b>.
+Пусть <sub><img width="34" height="22" src="chap1_3.files/image012.gif" v:shapes="_x0000_i1030"></sub><span class="hcp6"> </span>– плотность вероятности отказа (функция отказов).
+Вероятность отказа в течение промежутка времени от <sub><img width="14" height="24" src="chap1_3.files/image014.gif" v:shapes="_x0000_i1031"></sub><span class="hcp6"> </span>до <sub><img width="11" height="14" src="chap1_3.files/image016.gif" v:shapes="_x0000_i1032"></sub>,
+как следует из (1.1.2), равна площади под кривой плотности (рис. 1.1.2):</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><b class="hcp2"><sub><span class="hcp3"><img width="154" height="52" src="chap1_3.files/image018.gif" v:shapes="_x0000_i1033"></span></sub></b><span class="hcp3">.<span class="hcp6">                                     </span>(1.3.1)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Вероятность того, что система выйдет из
+строя к моменту времени <sub><img width="11" height="14" src="chap1_3.files/image019.gif" v:shapes="_x0000_i1034"></sub>,
+т.&nbsp;е. функция распределения наработки до отказа <sub><img width="32" height="26" src="chap1_3.files/image021.gif" v:shapes="_x0000_i1035"></sub>,
+имеет вид:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><b class="hcp2"><sub><span class="hcp3"><img width="170" height="50" src="chap1_3.files/image023.gif" v:shapes="_x0000_i1036"></span></sub></b><span class="hcp3">.<span class="hcp6">                                   </span>(1.3.2)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Ясно, что если <sub><img width="44" height="16" src="chap1_3.files/image025.gif" v:shapes="_x0000_i1037"></sub>, то
+<b class="hcp2"><sub><img width="126" height="50" src="chap1_3.files/image027.gif" v:shapes="_x0000_i1038"></sub></b>.
+Вероятность безотказной работы <sub><img width="32" height="20" src="chap1_3.files/image029.gif" v:shapes="_x0000_i1039"></sub><span class="hcp6"> </span>(т. е. вероятность того, что система будет
+выполнять требуемую функцию в заданный момент времени <sub><img width="11" height="14" src="chap1_3.files/image030.gif" v:shapes="_x0000_i1040"></sub>) определим
+как</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><b class="hcp2"><sub><span class="hcp3"><img width="324" height="50" src="chap1_3.files/image032.gif" v:shapes="_x0000_i1041"></span></sub></b><span class="hcp3">.<b class="hcp2"><span class="hcp6">             </span>(</b>1.3.3)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal;mso-pagination:
+lines-together'><span class="hcp3">Вероятность отказа в
+данный промежуток времени <sub><img width="42" height="26" src="chap1_3.files/image034.gif" v:shapes="_x0000_i1042"></sub><span class="hcp6"> </span>с помощью (1.3.1), (1.3.2) и (1.3.3) можно
+выразить либо через функцию распределения <sub><img width="34" height="22" src="chap1_3.files/image036.gif" v:shapes="_x0000_i1043"></sub>:</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:21.3pt;
+line-height:normal;mso-pagination:lines-together'><sub><span class="hcp3"><img width="394" height="52" src="chap1_3.files/image038.gif" v:shapes="_x0000_i1044"></span></sub><span class="hcp3">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">либо через вероятность безотказной работы <sub><img width="32" height="22" src="chap1_3.files/image040.gif" v:shapes="_x0000_i1045"></sub>:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="380" height="52" src="chap1_3.files/image042.gif" v:shapes="_x0000_i1046"></span></sub><span class="hcp3">.<span class="hcp6">        
+</span>(1.3.4)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Частота появления отказа <sub><img width="48" height="26" src="chap1_3.files/image044.gif" v:shapes="_x0000_i1047"></sub><span class="hcp6"> </span>в некотором промежутке времени <sub><img width="42" height="26" src="chap1_3.files/image045.gif" v:shapes="_x0000_i1048"></sub><span class="hcp6"> </span>называется<span class="hcp5">интенсивностью отказов</span> в указанном
+интервале. Интенсивность отказов вычисляется по формуле</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:8.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><b class="hcp2"><sub><span class="hcp3"><img width="150" height="46" src="chap1_3.files/image047.gif" v:shapes="_x0000_i1049"></span></sub></b><span class="hcp3">.<b class="hcp2"><span class="hcp6">                                           </span></b></span><span class="hcp6"> </span><span class="hcp3">(1.3.5)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Если обозначить <sub><img width="42" height="26" src="chap1_3.files/image049.gif" v:shapes="_x0000_i1050"></sub>и <sub><img width="68" height="22" src="chap1_3.files/image051.gif" v:shapes="_x0000_i1051"></sub>, то
+мгновенное значение интенсивности отказов <sub><img width="28" height="26" src="chap1_3.files/image053.gif" v:shapes="_x0000_i1052"></sub><span class="hcp6"> </span>определяется как предел интенсивности отказов
+(1.3.5) при стремлении к нулю интервала<sub><img width="20" height="18" src="chap1_3.files/image055.gif" v:shapes="_x0000_i1053"></sub>:</span></p>
+
+<p class=Bookbody align=right style='margin-top:8.0pt;margin-right:0cm;
+margin-bottom:8.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><span class="hcp3"><span class="hcp6"> </span><sub><img width="300" height="46" src="chap1_3.files/image057.gif" v:shapes="_x0000_i1054"></sub>.<span class="hcp6">                </span>(1.3.6)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">Учитывая, что согласно (1.3.3) справедливо
+равенство</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp3"><img width="102" height="42" src="chap1_3.files/image059.gif" v:shapes="_x0000_i1055"></span></sub><span class="hcp3">,<span class="hcp6">                                          </span><span class="hcp6">        </span>(1.3.7)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">для мгновенной интенсивности отказов (1.3.6)
+имеем</span></p>
+
+<p class=Bookbody align=right style='margin-top:8.0pt;margin-right:0cm;
+margin-bottom:8.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp3"><img width="78" height="44" src="chap1_3.files/image061.gif" v:shapes="_x0000_i1056"></span></sub><span class="hcp3">.<span class="hcp6">                                                      </span>(1.3.8)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Умножив обе части выражения (1.3.8) на <sub><img width="18" height="18" src="chap1_3.files/image063.gif" v:shapes="_x0000_i1057"></sub>и
+принимая во внимание (1.3.7), перепишем его в виде <sub><img width="108" height="44" src="chap1_3.files/image065.gif" v:shapes="_x0000_i1058"></sub>,
+что при дальнейшем интегрировании позволяет получить фундаментальную
+зависимость теории надежности:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><span class="hcp3"><span class="hcp6"> </span><sub><img width="144" height="54" src="chap1_3.files/image067.gif" v:shapes="_x0000_i1059"></sub>.<span class="hcp6">                                          
+</span>(1.3.9)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">В статистическом плане под интенсивностью
+отказа понимают отношение числа отказов <sub><img width="16" height="22" src="chap1_3.files/image069.gif" v:shapes="_x0000_i1060"></sub><span class="hcp6"> </span>за малый промежуток времени к числу
+работоспособных объектов <sub><img width="22" height="24" src="chap1_3.files/image071.gif" v:shapes="_x0000_i1061"></sub>, т.
+е. <sub><img width="82" height="46" src="chap1_3.files/image073.gif" v:shapes="_x0000_i1062"></sub>.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">График интенсивности отказов как функции
+времени имеет характерный вид (рис. 1.3.1). Эта кривая условно может быть
+разделена на три участка. Начальному периоду времени (интервал</span> <b class="hcp2"><span lang="EN-US" class="hcp7">I</span></b><span class="hcp3">, от <sub><img width="14" height="22" src="chap1_3.files/image075.gif" v:shapes="_x0000_i1063"></sub><span class="hcp6"> </span>до <sub><img width="14" height="22" src="chap1_3.files/image077.gif" v:shapes="_x0000_i1064"></sub>)
+свойственно наличие ранних отказов из-за производственных дефектов и дефектов
+внутренней структуры материалов. Участок</span> <b class="hcp2"><span lang="EN-US" class="hcp7">II</span></b><span lang=EN-US> </span><span class="hcp3">(промежуток от <sub><img width="14" height="22" src="chap1_3.files/image078.gif" v:shapes="_x0000_i1065"></sub><span class="hcp6"> </span>до <sub><img width="14" height="22" src="chap1_3.files/image080.gif" v:shapes="_x0000_i1066"></sub>)
+описывает режим нормальной эксплуатации. Равновероятный отказ на этом участке
+может быть вызван, например, недопустимым условием нагружения. На третьем
+участке</span> <b class="hcp2"><span lang="EN-US" class="hcp7">III</span></b><span class="hcp3">, от <sub><img width="14" height="22" src="chap1_3.files/image081.gif" v:shapes="_x0000_i1067"></sub><span class="hcp6"> </span>до <sub><img width="10" height="16" src="chap1_3.files/image083.gif" v:shapes="_x0000_i1068"></sub>,
+интенсивность отказов возрастает за счет разрушений, вызванных усталостью,
+износом, старением и т. д.</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp3"><img width="179" height="101" src="chap1_3.files/image085.jpg" v:shapes="_x0000_i1069"></span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp3">Рис. 1.3.1</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp2"><span class="hcp3">Статистические
+законы надежности</span></b><span class="hcp8">.</span><b class="hcp2"><span class="hcp3"> </span></b><span class="hcp3">Статистической
+характеристикой работы изделия до разрушения может служить введенная выше
+функция распределения наработки до отказа <sub><img width="34" height="22" src="chap1_3.files/image087.gif" v:shapes="_x0000_i1070"></sub>.
+Для нахождения функции распределения, адекватно описывающей рассматриваемое
+явление, обычно проводят ряд наблюдений за поведением объекта в процессе его
+эксплуатации и обобщают полученную об отказах информацию методами
+математической статистики. С теоретической точки зрения функций, которые
+соответствуют результатам наблюдений, может быть бесчисленное множество. Однако
+накопленный практический материал выделяет из них ряд наиболее значимых с точки
+зрения их распространенности в теории надежности. К их числу относятся <i class="hcp4">показательное (экспоненциальное) распределение,
+нормальное распределение</i> и <i class="hcp4">распределение
+Вейбулла</i> (гл. 1.1).</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">При показательном распределении (график
+плотности отказов такого распределения приведен на рис. 1.1.5) функция
+плотности имеет вид (1.1.16), так что в соответствии с (1.3.3) вероятность
+безотказной работы определяется как</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp3"><img width="234" height="50" src="chap1_3.files/image089.gif" v:shapes="_x0000_i1071"></span></sub><span class="hcp3">. <span class="hcp9">               </span><span class="hcp6">     </span>(1.3.10)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Формулу (1.3.10) можно интерпретировать
+следующим образом: если рассматриваемый объект проработал без отказа в течение
+некоторого промежутка времени <sub><img width="14" height="22" src="chap1_3.files/image090.gif" v:shapes="_x0000_i1072"></sub>, то
+вероятность безотказной работы в последующее время (при <sub><img width="38" height="22" src="chap1_3.files/image092.gif" v:shapes="_x0000_i1073"></sub>) задается
+выражением</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp3"><img width="206" height="24" src="chap1_3.files/image094.gif" v:shapes="_x0000_i1074"></span></sub><span class="hcp3">.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Очевидно, что интенсивность отказов при этом
+постоянна и с учетом (1.3.8) и (1.3.10) равна</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><span class="hcp3"><span class="hcp6"> </span><sub><img width="102" height="44" src="chap1_3.files/image096.gif" v:shapes="_x0000_i1075"></sub>. <span class="hcp9">                     </span><span class="hcp6">                 </span>(1.3.11)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Из (1.3.11) следует, что экспоненциальный
+закон надежности для описания над</span><span lang="EN-US" class="hcp7">e</span><span class="hcp3">жности
+машин и механизмов справедлив только в том случае, если интенсивность их
+отказов постоянна, т. е. в режиме нормальной эксплуатации (участок</span> <b class="hcp2"><span lang="EN-US" class="hcp7">II</span></b><span lang=EN-US> </span><span class="hcp3">рис. 1.3.2). Для постепенных отказов (т. е.
+связанных с износом в широком смысле слова –</span> <span class="hcp3">участок</span> <b class="hcp2"><span lang="EN-US" class="hcp7">III</span></b><span
+lang=EN-US> </span><span class="hcp3">кривой 1.3.2) требуются
+такие законы распределения времени безотказной работы, в соответствии с
+которыми плотность вероятности вначале небольшая, затем резко возрастает и
+далее спадает до нуля из-за уменьшения числа работоспособных элементов. Такими
+законами являются, например, нормальное распределение (1.1.19) и распределение
+Вейбулла (1.1.27).</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Нормальное распределение (1.1.19) наиболее широко
+применяется на практике, поскольку оно в значительной степени универсально.
+Дело в том, что, как уже упоминалось ранее, любая случайная величина
+подчиняется нормальному закону распределения, если на ее изменение оказывают
+влияние многие приблизительно равнозначные факторы, причем чем таких факторов
+больше, тем точнее нормальное распределение приближается к реальному поведению
+случайной величины.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">При нормальном распределении вероятность
+попадания случайной величины в промежуток <sub><img width="44" height="28" src="chap1_3.files/image098.gif" v:shapes="_x0000_i1076"></sub><span class="hcp6"> </span>рассчитывается по формуле (1.1.23),</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp3"><img width="266" height="50" src="chap1_3.files/image100.gif" v:shapes="_x0000_i1077"></span></sub><span class="hcp3">, <span class="hcp9">                   </span><span class="hcp6"> </span>(1.3.12)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">где <sub><img width="38" height="20" src="chap1_3.files/image102.gif" v:shapes="_x0000_i1078"></sub><span class="hcp6"> </span>– функция Лапласа (1.1.22), <sub><img width="18" height="22" src="chap1_3.files/image104.gif" v:shapes="_x0000_i1079"></sub><span class="hcp6"> </span>– среднее значение времени. Для расчета
+вероятности безотказной работы в (1.3.12) следует положить <sub><img width="40" height="22" src="chap1_3.files/image106.gif" v:shapes="_x0000_i1080"></sub>, <sub><img width="54" height="22" src="chap1_3.files/image108.gif" v:shapes="_x0000_i1081"></sub>. Тогда
+с помощью (1.3.12), табл. 1.1.1 и (1.3.3) получаем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="146" height="56" src="chap1_3.files/image110.gif" v:shapes="_x0000_i1082"></span></sub><span class="hcp3">. <span style='mso-tab-count:1'>         </span><span class="hcp6">                          </span>(1.3.13)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Следует отметить, что для описания задач
+надежности распределения довольно часто используется и распределение Вейбулла
+(1.1.27). Пользуясь (1.3.2), (1.3.3) и (1.1.27), можно показать, что для <sub><img width="36" height="18" src="chap1_3.files/image112.gif" v:shapes="_x0000_i1083"></sub></span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="74" height="22" src="chap1_3.files/image114.gif" v:shapes="_x0000_i1084"><img width="90" height="54" src="chap1_3.files/image116.gif" v:shapes="_x0000_i1085"></span></sub><span class="hcp3"><span class="hcp6"> </span>;<span class="hcp6">        </span><sub><img width="114" height="50" src="chap1_3.files/image118.gif" v:shapes="_x0000_i1086"></sub>.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp2"><span class="hcp3">Статистические
+модели надежности</span></b><span class="hcp8">.</span> <span class="hcp3">Так как любая
+механическая система состоит из комбинации собранных в единое целое объектов,
+то надежность этой совокупности оказывается отличной от надежности составляющих
+ее элементов. Если сложная механическая система моделируется цепочкой из <sub><img width="14" height="14" src="chap1_3.files/image120.gif" v:shapes="_x0000_i1087"></sub><span class="hcp6"> </span>последовательно расположенных элементов (рис.
+1.3.2), то вероятность безотказной работы <sub><img width="38" height="22" src="chap1_3.files/image122.gif" v:shapes="_x0000_i1088"></sub><span class="hcp6"> </span>системы в целом равна, по теореме умножения
+вероятностей, произведению</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="106" height="46" src="chap1_3.files/image124.gif" v:shapes="_x0000_i1089"></span></sub><span class="hcp3">,<span class="hcp6">                                           </span>(1.3.14)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">где <sub><img width="36" height="22" src="chap1_3.files/image126.gif" v:shapes="_x0000_i1090"></sub><span class="hcp6"> </span>– вероятность безотказной работы текущего <sub><img width="10" height="18" src="chap1_3.files/image128.gif" v:shapes="_x0000_i1091"></sub>-го элемента
+из цепочки. Это означает, что при низкой надежности составляющих надежность
+сложной системы крайне низка.</span></p>
+
+<p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp3"><img width="258" height="29" src="chap1_3.files/image130.gif" v:shapes="_x0000_i1092"></span></p>
+
+<p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp3">Рис. 1.3.2</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Для системы из параллельно установленных
+элементов (рис. 1.3.3) характерно то, что выход ее из строя возможен только при
+условии выхода из строя всех составляющих ее элементов. Вероятность отказа
+такой системы равна произведению вероятностей отказа составляющих ее элементов:</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="12" height="22" src="chap1_3.files/image132.gif" v:shapes="_x0000_i1093"><img width="72" height="46" src="chap1_3.files/image134.gif" v:shapes="_x0000_i1094"></span></sub><span class="hcp3">,<span class="hcp6">                                                       </span>(1.3.15)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">а вероятность безотказной работы вычисляется
+по формуле</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp3"><img width="126" height="46" src="chap1_3.files/image136.gif" v:shapes="_x0000_i1095"></span></sub><span class="hcp3">.<span class="hcp6">                                               </span>(1.3.16)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Если система состоит из совокупности
+последовательно и параллельно соединенных элементов (рис. 1.3.4), вероятность
+безотказной работы также определяется по сформулированным выше правилам. При
+этом участки только последовательно и только параллельно соединенных элементов
+объединяются в более крупные структуры, для каждой из которых рассчитывают
+вероятность безотказной работы по формулам (1.3.15) и (1.3.16) соответственно.
+Поэтапное укрупнение структур позволяет, в конечном итоге, получить значение
+вероятности безотказной работы системы в целом.</span></p>
+
+<table border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width="272" valign="bottom" style="width:203.8pt;" class="hcp10">
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  text-indent:0cm'><span class="hcp3"><img width="121" height="130" src="chap1_3.files/image138.gif" v:shapes="_x0000_i1096"></span></p>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  text-indent:0cm'><span class="hcp3">Рис. 1.3.3</span></p>
+  </td>
+  <td width="272" valign="bottom" style="width:203.85pt;" class="hcp10">
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  text-indent:0cm'><span class="hcp3"><img width="203" height="106" src="chap1_3.files/image140.gif" v:shapes="_x0000_i1097"></span></p>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  text-indent:0cm'><span class="hcp3">Рис. 1.3.4</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp2"><span class="hcp3">Расчет
+запаса прочности с учетом параметров надежности.</span></b> <span class="hcp3">Определение величин допустимых напряжений
+при расчетах на статическую прочность и особенно выносливость всегда сопряжено
+с необходимостью статистической обработки в связи с рассеянием. Это объясняется
+тем, что структура испытуемого материала неоднородна и имеет многочисленные
+дефекты кристаллической решетки, механообработки и т. д. Расчет прочности при
+этом ведется по предельному напряжению <sub><img width="28" height="22" src="chap1_3.files/image142.gif" v:shapes="_x0000_i1098"></sub>,
+которое представляет собой среднее значение напряжения <sub><img width="30" height="22" src="chap1_3.files/image144.gif" v:shapes="_x0000_i1099"></sub>,
+полученное в результате лабораторных испытаний. Величину рассеяния будем
+характеризовать средним квадратичным отклонением <sub><img width="28" height="22" src="chap1_3.files/image146.gif" v:shapes="_x0000_i1100"></sub>.
+Предположим, что наибольшее из действующих напряжение <sub><img width="16" height="14" src="chap1_3.files/image148.gif" v:shapes="_x0000_i1101"></sub><span class="hcp6"> </span>имеет рассеяние, подчиненное закону
+нормального распределения (1.3.13), с величиной среднего квадратичного
+отклонения <sub><img width="16" height="18" src="chap1_3.files/image150.gif" v:shapes="_x0000_i1102"></sub>. Рассеяние
+напряжений для различных однотипных деталей может быть вызвано погрешностями
+формы, чистоты обработки поверхности, неоднородностью механических свойств
+материала и т. д. Тогда выражение для функции плотности вероятности предельных
+напряжений согласно (1.1.19) имеет вид</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><b class="hcp2"><i class="hcp4"><sub><span class="hcp3"><img width="282" height="58" src="chap1_3.files/image152.gif" v:shapes="_x0000_i1103"></span></sub></i></b><span class="hcp3">,<span class="hcp6">                      </span>(1.3.17)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">а для фактических напряжений –</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><b class="hcp2"><i class="hcp4"><sub><span class="hcp3"><img width="232" height="56" src="chap1_3.files/image154.gif" v:shapes="_x0000_i1104"></span></sub></i></b><span class="hcp3">.<span class="hcp6">                              </span>(1.3.18)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Очевидно, что разрушение наступает в том
+случае, когда предельное напряжение окажется либо меньше фактического, либо
+равным ему, т. е. если разность <sub><img width="28" height="26" src="chap1_3.files/image156.gif" v:shapes="_x0000_i1105"></sub><span class="hcp6"> </span>этих напряжений будет меньше нуля: <sub><img width="122" height="24" src="chap1_3.files/image158.gif" v:shapes="_x0000_i1106"></sub>.
+Поскольку разность двух случайных величин, каждая из которых описывается
+законом нормального распределения, представляет собой новую случайную нормально
+распределенную случайную величину с математическим ожиданием <sub><img width="28" height="26" src="chap1_3.files/image160.gif" v:shapes="_x0000_i1107"></sub><span class="hcp6"> </span>и средним квадратичным отклонением <sub><img width="28" height="26" src="chap1_3.files/image162.gif" v:shapes="_x0000_i1108"></sub>, то
+согласно (1.1.14) и (1.1.15) получаем</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp3"><img width="100" height="26" src="chap1_3.files/image164.gif" v:shapes="_x0000_i1109"></span></sub><span class="hcp3"><span class="hcp6"> </span>; <sub><img width="124" height="30" src="chap1_3.files/image166.gif" v:shapes="_x0000_i1110"></sub>.<span class="hcp6">                            </span>(1.3.19)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Плотность распределения величины<sub><img width="30" height="26" src="chap1_3.files/image168.gif" v:shapes="_x0000_i1111"></sub>,
+аналогично (1.3.17) и (1.3.18), записывается как</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:21.25pt;
+line-height:normal'><b class="hcp2"><i class="hcp4"><span class="hcp3"><span class="hcp6"> </span><sub><img width="280" height="64" src="chap1_3.files/image170.gif" v:shapes="_x0000_i1112"></sub></span></i></b><span class="hcp3">.<span class="hcp6">                      </span>(1.3.20)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Если в выражении (1.3.20) положить <sub><img width="54" height="26" src="chap1_3.files/image172.gif" v:shapes="_x0000_i1113"></sub>, то
+квантиль такого распределения будет иметь вид</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+text-indent:21.25pt;line-height:normal'><sub><span class="hcp3"><img width="130" height="54" src="chap1_3.files/image174.gif" v:shapes="_x0000_i1114"></span></sub><span class="hcp3">.<span class="hcp6">                                         </span>(1.3.21)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Если ввести следующие коэффициенты: <span class="hcp5">запаса (безопасности)</span>
+при заданной надежности <sub><img width="58" height="42" src="chap1_3.files/image176.gif" v:shapes="_x0000_i1115"></sub>,<span class="hcp5">вариации прочности</span>
+<sub><img width="106" height="26" src="chap1_3.files/image178.gif" v:shapes="_x0000_i1116"></sub><span class="hcp6"> </span>и <span class="hcp5">вариации напряжения</span> <sub><img width="70" height="24" src="chap1_3.files/image180.gif" v:shapes="_x0000_i1117"></sub>, то
+выражение (1.3.21) можно записать в форме</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="126" height="52" src="chap1_3.files/image182.gif" v:shapes="_x0000_i1118"></span></sub><span class="hcp3">.</span></p>
+
+</div>
+
+<div placeholder id="footer" style="width:100%;" class="hcp1">
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			border-bottom-color: #000080;
+			border-bottom-style: Ridge;
+			border-bottom-width: 2px;
+			font-size: 10pt;">&nbsp;</p>
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			font-size: 8pt;">&#169; 
+ 2007 Copyright &nbsp;&#1053;&#1058;&#1062; 
+ &#1040;&#1055;&#1052;</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="File-List" href="./chap3_4_2.files/filelist.xml">
+<link rel="Edit-Time-Data" href="./chap3_4_2.files/editdata.mso">
+<title>Вынужденные колебания</title><style>
+<!--
+p.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+h1 { mso-style-next:Обычный; margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; page-break-after:avoid; mso-outline-level:1; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-bidi-font-family:Times New Roman; mso-font-kerning:14.0pt; mso-bidi-font-weight:normal; }
+p.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.UnindentCentered { mso-style-name:Unindent Centered; margin:0cm; margin-bottom:.0001pt; text-align:center; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.UnindentCentered { mso-style-name:Unindent Centered; margin:0cm; margin-bottom:.0001pt; text-align:center; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.UnindentCentered { mso-style-name:Unindent Centered; margin:0cm; margin-bottom:.0001pt; text-align:center; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookMath { mso-style-name:Book_Math; mso-style-parent:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:right; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.BookMath { mso-style-name:Book_Math; mso-style-parent:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:right; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.BookMath { mso-style-name:Book_Math; mso-style-parent:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:right; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.Section1 { page:Section1; }
+-->
+</style><style title="hcp" type="text/css">
+<!--
+div.hcp1 { position:relative; }
+span.hcp2 { font-size:10.0pt; font-family:Arial; letter-spacing:.2pt; }
+i.hcp3 { mso-bidi-font-style:normal; }
+span.hcp4 { font-size:10.0pt; font-family:Arial; }
+span.hcp5 { mso-text-raise:-3.0pt; }
+span.hcp6 { mso-spacerun:yes; }
+span.hcp7 { mso-text-raise:-6.0pt; }
+span.hcp8 { mso-text-raise:-7.0pt; }
+span.hcp9 { mso-text-raise:-5.0pt; }
+span.hcp10 { font-size:10.0pt; font-family:Arial; mso-text-raise:-14.0pt; }
+span.hcp11 { mso-tab-count:2; }
+span.hcp12 { mso-tab-count:3; }
+b.hcp13 { mso-bidi-font-weight:normal; }
+span.hcp14 { font-size:10.0pt; font-family:Arial; mso-text-raise:-7.0pt; }
+span.hcp15 { mso-tab-count:1; }
+span.hcp16 { mso-text-raise:-2.0pt; }
+span.hcp17 { font-family:Arial; }
+span.hcp18 { font-size:10.0pt; font-family:Arial; mso-text-raise:-16.0pt; }
+span.hcp19 { font-size:10.0pt; font-family:Arial; mso-text-raise:-17.0pt; }
+span.hcp20 { font-size:10.0pt; font-family:Arial; mso-text-raise:-5.0pt; }
+span.hcp21 { mso-text-raise:-15.0pt; }
+span.hcp22 { mso-text-raise:-12.0pt; }
+span.hcp23 { letter-spacing:2.0pt; mso-bidi-font-style:italic; }
+span.hcp24 { font-size:10.0pt; font-family:Arial; mso-ansi-language:EN-US; }
+span.hcp25 { font-size:10.0pt; font-family:Arial; mso-text-raise:-30.0pt; }
+-->
+</style>
+</head>
+<body lang="RU" style="tab-interval:36.0pt">
+<div placeholder id="header" style="width:100%;" class="hcp1">
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			background-color: #d8e8f9;
+			margin-left: 0px;"><img src="head_for_help.jpg"
+									x-maintain-ratio=TRUE
+									style="border: none;
+											width: 1000px;
+											height: 50px;
+											float: none;
+											border-style: none;
+											border-style: none;"
+									width=1000
+									height=50
+									border=0></p>
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			border-top-color: #000080;
+			border-top-width: 2px;
+			border-top-style: Ridge;
+			margin-left: 0px;">&nbsp;</p>
+</div>
+<div class=Section1>
+
+<h1 align=left style='text-align:left;text-indent:0cm;page-break-after:auto'><span
+style='mso-bidi-font-size:14.0pt;mso-bidi-font-family:Arial;color:navy;
+mso-font-kerning:18.0pt'>3.4.2. Вынужденные колебания</span><span
+style='font-size:10.0pt;mso-bidi-font-family:Arial'></span></h1>
+
+<p class=Bookbody style='text-indent:21.25pt;line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<p class=Bookbody style='text-indent:21.25pt;line-height:normal'><span class="hcp2">Как указывалось
+выше, <i class="hcp3">вынужденные колебания</i>
+обуславливаются действием <i class="hcp3">внешних
+возмущений</i>. Если система воспринимает действие внешнего возмущения, то дифференциальные
+уравнения движения перестают быть однородными. В качестве внешнего возмущения
+могут выступать силы, приложенные к сосредоточенным массам системы, или кинематические
+параметры, приложенные к некоторой части системы. В любом случае, независимо от
+конкретной физической природы, возмущение является явной функцией времени.</span><span class="hcp4"></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Рассмотрим движение линейной колебательной системы без
+затухания с <span class="hcp5"><img width="12" height="15" src="chap3_4_2.files/image002.gif" v:shapes="_x0000_i1025"></span><span class="hcp6"> </span>степенями свободы под действием внешних сил.
+Обозначим через <span class="hcp7"><img width="88" height="24" src="chap3_4_2.files/image004.gif" v:shapes="_x0000_i1026"></span><span class="hcp6"> </span>обобщенные вынуждающие силы, соответствующие
+обобщенным координатам <span class="hcp7"><img width="80" height="24" src="chap3_4_2.files/image006.gif" v:shapes="_x0000_i1027"></span>,
+причем <span class="hcp8"><img width="75" height="25" src="chap3_4_2.files/image008.gif" v:shapes="_x0000_i1028"></span>,
+<span class="hcp9"><img width="81" height="21" src="chap3_4_2.files/image010.gif" v:shapes="_x0000_i1029"></span>.
+Тогда в общем случае уравнения движения с учетом (3.4.11) будут выглядеть как</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;line-height:normal'><span class="hcp10"><img width="151" height="45" src="chap3_4_2.files/image012.gif" v:shapes="_x0000_i1030"></span><span class="hcp4">, <span class="hcp9"><img width="81" height="21" src="chap3_4_2.files/image013.gif" v:shapes="_x0000_i1031"></span>,<span class="hcp11">                       </span> (3.4.43)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">а в прямой форме&nbsp;–</span></p>
+
+<p class=BookMath style='margin-bottom:6.0pt;line-height:normal'><span class="hcp10"><img width="137" height="45" src="chap3_4_2.files/image015.gif" v:shapes="_x0000_i1032"></span><span class="hcp4">, <span class="hcp9"><img width="81" height="21" src="chap3_4_2.files/image016.gif" v:shapes="_x0000_i1033"></span>.<span class="hcp12">                           </span> (3.4.44)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Решение систем (3.4.43) и (3.4.44)
+целиком определяется видом вынуждающей силы. Общим для любого решения является
+то обстоятельство, что вследствие неучтенного, но неизбежного сопротивления те
+колебания, которые происходят с собственной частотой, постепенно затухают. По
+прошествии некоторого времени в системе будут присутствовать только движения,
+совершаемые с частотой вынуждающей силы – так называемые <i class="hcp3">установившиеся вынужденные колебания</i>.</span><span class="hcp4"></span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp13"><span class="hcp4">Гармонические вынуждающие силы.</span></b><span class="hcp4"> Предположим, что обобщенные вынуждающие силы изменяются по
+гармоническому закону</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><b class="hcp13"><span class="hcp14"><img width="132" height="25" src="chap3_4_2.files/image018.gif" v:shapes="_x0000_i1034"></span></b><b class="hcp13"><span class="hcp4">,</span></b><span class="hcp4"> <span class="hcp9"><img width="81" height="21" src="chap3_4_2.files/image019.gif" v:shapes="_x0000_i1035"></span>,<span class="hcp11">                </span><span class="hcp6">           </span>(3.4.45)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">т.&nbsp;е. имеют одинаковые частоты
+и начальные фазы, но различные амплитуды. Будем рассматривать <i class="hcp3">установившееся</i> движение. Тогда частное
+решение (3.4.43) с правой частью вида (3.4.45) имеет вид</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><span class="hcp14"><img width="129" height="25" src="chap3_4_2.files/image021.gif" v:shapes="_x0000_i1036"></span><span class="hcp4">, <span class="hcp9"><img width="81" height="21" src="chap3_4_2.files/image022.gif" v:shapes="_x0000_i1037"></span>.<span class="hcp6">                            </span>(3.4.46)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Подставляя (3.4.46) в дифференциальные уравнения (3.4.43),
+получим систему <span class="hcp5"><img width="12" height="15" src="chap3_4_2.files/image024.gif" v:shapes="_x0000_i1038"></span><span class="hcp6"> </span>алгебраических уравнений для определения
+амплитуд <span class="hcp8"><img width="20" height="25" src="chap3_4_2.files/image026.gif" v:shapes="_x0000_i1039"></span>:</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><span class="hcp10"><img width="169" height="45" src="chap3_4_2.files/image028.gif" v:shapes="_x0000_i1040"></span><span class="hcp4">, <span class="hcp9"><img width="81" height="21" src="chap3_4_2.files/image029.gif" v:shapes="_x0000_i1041"></span>,<span class="hcp11">                   </span> (3.4.47)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">а подстановка в (3.4.44) дает</span></p>
+
+<p class=BookMath style='margin-bottom:6.0pt;line-height:normal'><span class="hcp10"><img width="173" height="45" src="chap3_4_2.files/image031.gif" v:shapes="_x0000_i1042"></span><span class="hcp4">, <span class="hcp9"><img width="81" height="21" src="chap3_4_2.files/image032.gif" v:shapes="_x0000_i1043"></span>.<span class="hcp11">                  </span> (3.4.48)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Заметим, что точно такие же результаты получаются, если
+гармонический закон изменения обобщенных сил и частных решений представлять в
+виде <span class="hcp9"><img width="60" height="23" src="chap3_4_2.files/image034.gif" v:shapes="_x0000_i1044"></span>,
+а не <span class="hcp9"><img width="77" height="23" src="chap3_4_2.files/image036.gif" v:shapes="_x0000_i1045"></span>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Наиболее просто системы (3.4.47)&nbsp;– (3.4.48) решаются
+непосредственно алгебраическими методами, а именно: с помощью формул Крамера
+(если их определители отличны от нуля), методом Гаусса или любым другим известным
+в теории линейных алгебраических систем методом. Однако физически более
+наглядным является другой способ, заключающийся в разложении искомых амплитуд
+по собственным формам соответствующей однородной задачи. Приведем здесь без вывода
+частное решение системы (3.4.48), записанное в виде разложения по <i class="hcp3">нормированным</i> собственным формам:</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><span style='font-size:10.0pt;font-family:
+Arial;mso-text-raise:-15.0pt'><img width="189" height="48" src="chap3_4_2.files/image038.gif" v:shapes="_x0000_i1046"></span><span class="hcp4">, <span class="hcp9"><img width="81" height="21" src="chap3_4_2.files/image040.gif" v:shapes="_x0000_i1047"></span>,<span class="hcp15">  </span><span class="hcp6">            
+</span>(3.4.49)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">где <span style='mso-text-raise:
+-14.0pt'><img width="91" height="45" src="chap3_4_2.files/image042.gif" v:shapes="_x0000_i1048"></span>,
+<span class="hcp9"><img width="77" height="21" src="chap3_4_2.files/image044.gif" v:shapes="_x0000_i1049"></span>;
+<span class="hcp8"><img width="21" height="25" src="chap3_4_2.files/image046.gif" v:shapes="_x0000_i1050"></span>&nbsp;–
+нормированные амплитуды <span class="hcp5"><img width="12" height="17" src="chap3_4_2.files/image048.gif" v:shapes="_x0000_i1051"></span>-ой
+собственной формы, <span class="hcp9"><img width="81" height="21" src="chap3_4_2.files/image050.gif" v:shapes="_x0000_i1052"></span>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Выражение (3.4.49) позволяет сделать несколько выводов относительно
+характера колебаний в зависимости от соотношения между собственными частотами
+системы и частотой вынуждающей силы. Так, если частота <span class="hcp16"><img width="17" height="17" src="chap3_4_2.files/image052.gif" v:shapes="_x0000_i1053"></span><span class="hcp6"> </span>вынуждающей силы совпадает с одной из
+собственных частот системы, например <span class="hcp7"><img width="19" height="24" src="chap3_4_2.files/image054.gif" v:shapes="_x0000_i1054"></span>,
+соответствующий член разложения (3.4.49) с течением времени неограниченно
+возрастает – наблюдается явление <i class="hcp3">резонанса</i>.
+Частота возмущающей силы называется в этом случае <i class="hcp3">критической</i>. Возможен и противоположный случай, когда при
+определенных значениях <span class="hcp16"><img width="17" height="17" src="chap3_4_2.files/image055.gif" v:shapes="_x0000_i1055"></span><span class="hcp6"> </span>достигается отсутствие колебаний, соответствующих
+выбранной координате, т. к. их амплитуды обращаются в нуль. Такое явление называется
+<i class="hcp3">анти-резонансом.</i> Если частота возмущающей
+силы близка к одной из собственных частот системы, то отвечающий ей член в
+разложении (3.4.49) значительно превышает все остальные. Конфигурация системы
+при этом почти совпадает с соответствующей собственной формой, а сами колебания
+почти точно воспроизводят форму одного из собственных главных колебаний.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">В качестве примера рассмотрим колебательную систему с двумя
+степенями свободы, на одну из масс которой действует гармоническая вынуждающая
+сила <span class="hcp5"><img width="57" height="19" src="chap3_4_2.files/image057.gif" v:shapes="_x0000_i1056"></span><span class="hcp6"> </span>(рис. 3.4.4). Как и ранее, за обобщенные
+координаты примем отклонения грузов от положения равновесия, <span class="hcp9"><img width="104" height="23" src="chap3_4_2.files/image059.gif" v:shapes="_x0000_i1057"></span>.
+Дифференциальные уравнения движения рассматриваемой системы имеют вид</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:164.7pt;mso-element-frame-height:
+95.55pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+page;mso-element-anchor-horizontal:page;mso-element-left:337.05pt;mso-element-top:
+72.25pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=232 height=127
+ align=left>
+ <tr>
+  <td valign=top align=left height=127 style='padding-top:0cm;padding-right:
+  9.05pt;padding-bottom:0cm;padding-left:9.05pt'>
+  <p class=MsoNormal style='text-align:justify;mso-element:frame;mso-element-frame-width:
+  164.7pt;mso-element-frame-height:95.55pt;mso-element-frame-hspace:9.05pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:
+  page;mso-element-left:337.05pt;mso-element-top:72.25pt;mso-height-rule:exactly'><span class="hcp17"><img width="215" height="95" src="chap3_4_2.files/image061.gif" v:shapes="_x0000_i1058"></span></p>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  mso-element:frame;mso-element-frame-width:164.7pt;mso-element-frame-height:
+  95.55pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:337.05pt;mso-element-top:
+  72.25pt;mso-height-rule:exactly'><span class="hcp17">Рис. 3.4.4</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:9.0pt;
+margin-left:0cm;line-height:normal'><span class="hcp18"><img width="244" height="51" src="chap3_4_2.files/image063.gif" v:shapes="_x0000_i1059"></span><span class="hcp4"><span class="hcp6">                            </span>(3.4.50)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Подставляя в (3.4.50) частное решение (3.4.46), получаем
+следующую систему алгебраических уравнений для определения амплитуд <span class="hcp9"><img width="19" height="23" src="chap3_4_2.files/image065.gif" v:shapes="_x0000_i1060"></span><span class="hcp6"> </span>и <span class="hcp9"><img width="20" height="23" src="chap3_4_2.files/image067.gif" v:shapes="_x0000_i1061"></span>:</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><span class="hcp19"><img width="327" height="53" src="chap3_4_2.files/image069.gif" v:shapes="_x0000_i1062"></span><span class="hcp4"><span class="hcp6">                </span>(3.4.51)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Определитель <span class="hcp16"><img width="17" height="17" src="chap3_4_2.files/image071.gif" v:shapes="_x0000_i1063"></span><span class="hcp6"> </span>системы (3.4.51) равен</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><span class="hcp19"><img width="271" height="53" src="chap3_4_2.files/image073.gif" v:shapes="_x0000_i1064"></span><span class="hcp4">.<span class="hcp11">               </span><span class="hcp6">      </span><span class="hcp6">   </span>(3.4.52)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Если определитель <span class="hcp16"><img width="17" height="17" src="chap3_4_2.files/image074.gif" v:shapes="_x0000_i1065"></span><span class="hcp6"> </span>из (3.4.52) отличен от нуля, решение (3.4.51)
+можно найти по формулам Крамера:</span></p>
+
+<p class=BookMath style='margin-bottom:12.0pt;line-height:normal'><span
+style='font-size:10.0pt;font-family:Arial;mso-text-raise:-34.0pt'><img width="295" height="99" src="chap3_4_2.files/image076.gif" v:shapes="_x0000_i1066"></span><span class="hcp4"><span class="hcp15">          </span><span class="hcp6">            </span>(3.4.53)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Из (3.4.53) следует, что резонанс в рассматриваемой системе
+наступает при условии</span></p>
+
+<p class=BookMath style='margin-bottom:8.0pt;line-height:normal'><span class="hcp20"><img width="12" height="23" src="chap3_4_2.files/image078.gif" v:shapes="_x0000_i1067"><img width="256" height="24" src="chap3_4_2.files/image080.gif" v:shapes="_x0000_i1068"></span><span class="hcp4">,<span class="hcp11">                </span>
+(3.4.54)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span
+style='font-size:10.0pt;font-family:Arial;letter-spacing:-.1pt'>которое
+определяет два резонансных значения частоты возмущающей силы, равных
+собственным частотам <span class="hcp9"><img width="20" height="23" src="chap3_4_2.files/image082.gif" v:shapes="_x0000_i1069"></span><span class="hcp6"> </span>и <span class="hcp9"><img width="21" height="23" src="chap3_4_2.files/image084.gif" v:shapes="_x0000_i1070"></span><span class="hcp6"> </span>системы. Антирезонанс наступает при условии</span><span class="hcp4"></span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><span class="hcp20"><img width="101" height="24" src="chap3_4_2.files/image086.gif" v:shapes="_x0000_i1071"></span><span class="hcp4">,<span class="hcp6">                                            </span>(3.4.55)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">откуда частота антирезонанса <span class="hcp21"><img width="68" height="47" src="chap3_4_2.files/image088.gif" v:shapes="_x0000_i1072"></span>.
+При этой частоте колебания, соответствующие первой координате, полностью отсутствуют,
+а максимальное значение второй координаты согласно (3.4.53) равно <span class="hcp21"><img width="61" height="45" src="chap3_4_2.files/image090.gif" v:shapes="_x0000_i1073"></span>.
+Полученный результат иллюстрирует принципиальную возможность подавления
+нежелательных колебаний. Рассмотренный пример можно трактовать следующим образом:
+введением в систему специально подобранной дополнительной массы <span class="hcp9"><img width="21" height="23" src="chap3_4_2.files/image092.gif" v:shapes="_x0000_i1074"></span>,
+такой что <span class="hcp22"><img width="63" height="43" src="chap3_4_2.files/image094.gif" v:shapes="_x0000_i1075"></span>,
+удалось устранить колебания основной части системы – массы <span class="hcp9"><img width="20" height="23" src="chap3_4_2.files/image096.gif" v:shapes="_x0000_i1076"></span>.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp13"><span class="hcp4">Произвольные вынуждающие силы.</span></b><span class="hcp4"></span></p>
+
+<p class=Bookbody style='line-height:normal'><b><i class="hcp3"><span class="hcp2">а)
+действие произвольной вынуждающей силы на линейную систему с одной степенью
+свободы</span></i></b><i class="hcp3"><span class="hcp2">.</span></i><span class="hcp4"> <span style='letter-spacing:.2pt'>Дифференциальное
+уравнение задачи о вынужденных колебаниях линейной системы с одной степенью
+свободы согласно (3.4.43) имеет вид</span></span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;text-align:center;
+text-indent:-7.1pt;line-height:normal'><span class="hcp4"><span class="hcp6"> </span><span class="hcp9"><img width="97" height="21" src="chap3_4_2.files/image098.gif" v:shapes="_x0000_i1077"></span>,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">или</span></p>
+
+<p class=BookMath style='margin-bottom:6.0pt;line-height:normal'><span class="hcp4"><span class="hcp6"> </span><span class="hcp22"><img width="103" height="41" src="chap3_4_2.files/image100.gif" v:shapes="_x0000_i1078"></span>,<span class="hcp11">                    </span> <span class="hcp15">           </span><span class="hcp6">           </span>(3.4.56)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">где <span class="hcp22"><img width="52" height="41" src="chap3_4_2.files/image102.gif" v:shapes="_x0000_i1079"></span><span class="hcp6"> </span>– квадрат собственной частоты системы.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Как известно из теории линейных дифференциальных уравнений,
+общее решение уравнения (3.4.56) есть <i class="hcp3">сумма
+общего решения соответствующего однородного уравнения</i> (т.&nbsp;е. уравнения
+с нулевой правой частью) <i class="hcp3">и некоторого частного
+решения уравнения</i> (3.4.56). Общее решение однородного уравнения</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><span class="hcp20"><img width="80" height="24" src="chap3_4_2.files/image104.gif" v:shapes="_x0000_i1080"></span><span class="hcp4"></span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">имеет вид</span></p>
+
+<p class=BookMath style='margin-bottom:6.0pt;line-height:normal'><span class="hcp4"><span class="hcp6"> </span><span class="hcp9"><img width="112" height="23" src="chap3_4_2.files/image106.gif" v:shapes="_x0000_i1081"></span>,<span class="hcp15">      </span><span class="hcp6">                                    </span>(3.4.57)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">где постоянные амплитуда <span class="hcp16"><img width="16" height="17" src="chap3_4_2.files/image108.gif" v:shapes="_x0000_i1082"></span><span class="hcp6"> </span>и начальная фаза <span class="hcp9"><img width="15" height="17" src="chap3_4_2.files/image110.gif" v:shapes="_x0000_i1083"></span><span class="hcp6"> </span>определяются из начальных условий. Если
+начальные условия таковы, что <span class="hcp7"><img width="63" height="24" src="chap3_4_2.files/image112.gif" v:shapes="_x0000_i1084"></span><span class="hcp6"> </span>и <span class="hcp7"><img width="63" height="24" src="chap3_4_2.files/image114.gif" v:shapes="_x0000_i1085"></span>,
+то</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><span class="hcp18"><img width="117" height="56" src="chap3_4_2.files/image116.gif" v:shapes="_x0000_i1086"></span><span class="hcp4">; <span class="hcp21"><img width="104" height="48" src="chap3_4_2.files/image118.gif" v:shapes="_x0000_i1087"></span>.<span class="hcp11">              </span> (3.4.58)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Частное решение (3.4.56) может быть
+получено классическим способом, а именно известным <i class="hcp3">методом вариации произвольных постоянных</i>. Но на практике этот метод
+не нашел большого применения. Дело в том, что аналитически задачу вынужденных
+колебаний системы удается решить только для чрезвычайно узкого круга систем с
+несколькими степенями свободы, а для численного решения гораздо удобнее другие
+методы, например, <i class="hcp3">операционный</i> [2, с.
+272]. Суть этого метода заключается в следующем: зная решение уравнения
+(3.4.56) при какой-то одной <i class="hcp3">известной</i>
+правой части, можно отыскать его решение при <i class="hcp3">любой</i> другой правой части с помощью интегрирования. Применим этот
+метод к рассматриваемой задаче.</span><span class="hcp4"></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Пусть в некоторый момент времени <span class="hcp5"><img width="35" height="16" src="chap3_4_2.files/image120.gif" v:shapes="_x0000_i1088"></span><span class="hcp6"> </span>к системе приложен мгновенный обобщенный
+импульс <span class="hcp7"><img width="20" height="24" src="chap3_4_2.files/image122.gif" v:shapes="_x0000_i1089"></span>,
+так что <span class="hcp22"><img width="140" height="43" src="chap3_4_2.files/image124.gif" v:shapes="_x0000_i1090"></span>.
+Тогда решение уравнения (3.4.56) при <span class="hcp5"><img width="35" height="16" src="chap3_4_2.files/image126.gif" v:shapes="_x0000_i1091"></span><span class="hcp6"> </span>согласно (3.4.56) и (3.4.57) имеет вид</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><span style='font-size:10.0pt;font-family:
+Arial;mso-text-raise:-12.0pt'><img width="228" height="41" src="chap3_4_2.files/image128.gif" v:shapes="_x0000_i1092"></span><span class="hcp4">.<span class="hcp12">                          </span>
+(3.4.59)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Функция <span class="hcp9"><img width="44" height="23" src="chap3_4_2.files/image130.gif" v:shapes="_x0000_i1093"></span>,
+описывающая движение, вызванное действием единичного импульса, называется <span class="hcp23">импульсной реакцией</span>
+системы или <span style='letter-spacing:2.0pt'>функцией отклика.</span></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Если теперь перейти к произвольной вынуждающей силе,
+рассматривая ее как бесконечную последовательность элементарных импульсов,
+т.&nbsp;е. положив <span class="hcp7"><img width="85" height="24" src="chap3_4_2.files/image132.gif" v:shapes="_x0000_i1094"></span>,
+и просуммировать влияние всех этих импульсов, при <i class="hcp3">нулевых начальных условиях</i> получим</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><span class="hcp18"><img width="180" height="51" src="chap3_4_2.files/image134.gif" v:shapes="_x0000_i1095"></span><span class="hcp4">.<span class="hcp11">                   </span>
+<span class="hcp15">           </span><span class="hcp6"> </span>(3.4.60)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Интеграл типа (3.4.60) называется <i class="hcp3">интегралом Дюамеля</i>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><b><i class="hcp3"><span lang="EN-US" class="hcp24">b</span></i></b><b><i class="hcp3"><span class="hcp4">) действие произвольной вынуждающей
+силы на линейную систему с <span class="hcp5"><img width="12" height="15" src="chap3_4_2.files/image136.gif" v:shapes="_x0000_i1096"></span><span class="hcp6"> </span>степенями свободы</span></i></b><i class="hcp3"><span class="hcp4">.</span></i><span class="hcp4"> Если действующие
+на многомассовую колебательную систему вынуждающие силы изменяются не по
+гармоническому закону, то в общем случае решение задачи о движении такой системы
+удобнее всего проводить <i class="hcp3">методом
+разложения по собственным формам колебаний</i>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Считаем, что предварительно найдены собственные частоты <span class="hcp7"><img width="19" height="24" src="chap3_4_2.files/image138.gif" v:shapes="_x0000_i1097"></span><span class="hcp6"> </span>и коэффициенты собственных форм <span class="hcp7"><img width="21" height="24" src="chap3_4_2.files/image140.gif" v:shapes="_x0000_i1098"></span>.
+Разложим вектор перемещений <span class="hcp9"><img width="19" height="23" src="chap3_4_2.files/image142.gif" v:shapes="_x0000_i1099"></span><span class="hcp6"> </span>по собственным формам колебаний <span class="hcp7"><img width="21" height="24" src="chap3_4_2.files/image143.gif" v:shapes="_x0000_i1100"></span>,
+представляя его в виде суммы</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><span class="hcp10"><img width="92" height="45" src="chap3_4_2.files/image145.gif" v:shapes="_x0000_i1101"></span><span class="hcp4">,<span class="hcp15">            </span><span class="hcp6">                                                     
+</span>(3.4.61)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">где <span class="hcp7"><img width="17" height="24" src="chap3_4_2.files/image147.gif" v:shapes="_x0000_i1102"></span>&nbsp;–
+<span class="hcp23">нормальные
+координаты</span><i class="hcp3">.</i> Тогда система
+(3.4.44) после некоторых преобразований (подробнее с ними можно ознакомиться,
+например, в [29]; здесь приводится только окончательный результат) записывается
+в виде</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><span class="hcp4"><span class="hcp6"> </span><span class="hcp8"><img width="104" height="27" src="chap3_4_2.files/image149.gif" v:shapes="_x0000_i1103"></span>,
+<span class="hcp9"><img width="81" height="21" src="chap3_4_2.files/image151.gif" v:shapes="_x0000_i1104"></span>,<span class="hcp6">                                 </span>(3.4.62)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">где <span class="hcp8"><img width="21" height="27" src="chap3_4_2.files/image153.gif" v:shapes="_x0000_i1105"></span>&nbsp;–
+<span class="hcp23">приведенные
+вынуждающие сил</span>ы, <span style='letter-spacing:-.2pt'>вычисляемые по
+формулам</span></span></p>
+
+<p class=BookMath style='margin-bottom:4.0pt;line-height:normal'><span class="hcp25"><img width="100" height="88" src="chap3_4_2.files/image155.gif" v:shapes="_x0000_i1106"></span><span class="hcp4">,<span class="hcp6">      </span><span class="hcp9"><img width="81" height="21" src="chap3_4_2.files/image156.gif" v:shapes="_x0000_i1107"></span>.<span class="hcp6">                        </span>(3.4.63)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Поскольку каждое из независимых уравнений (3.4.62) описывает
+колебание некоторой системы с <i class="hcp3">одной</i>
+степенью свободы, то дальнейшее решение сводится к интегралу Дюамеля (3.4.60).</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Рассмотрим в качестве примера хорошо знакомую систему на
+рис. 3.4.1</span><span lang="EN-US" class="hcp24">a</span><span class="hcp4">, положив, как раньше, <span class="hcp9"><img width="104" height="23" src="chap3_4_2.files/image157.gif" v:shapes="_x0000_i1108"></span>;
+<span class="hcp9"><img width="183" height="23" src="chap3_4_2.files/image159.gif" v:shapes="_x0000_i1109"></span><span class="hcp6"> </span>Собственные частоты и собственные формы этой системы,
+как уже было найдено, определяются формулами (3.4.29) – (3.4.30). Пусть теперь
+на левый груз этой системы действует вынуждающая сила вида</span></p>
+
+<p class=Bookbody align=center style='margin-bottom:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><b class="hcp13"><span class="hcp20"><img width="100" height="24" src="chap3_4_2.files/image161.gif" v:shapes="_x0000_i1110"></span></b><span class="hcp4">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">где <span class="hcp16"><img width="17" height="17" src="chap3_4_2.files/image163.gif" v:shapes="_x0000_i1111"></span><span class="hcp6"> </span>и <span class="hcp9"><img width="13" height="17" src="chap3_4_2.files/image165.gif" v:shapes="_x0000_i1112"></span>&nbsp;–
+известные константы. Приведенные вынуждающие силы согласно (3.4.63) равны</span></p>
+
+<p class=Bookbody align=center style='margin-bottom:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><span style='font-size:10.0pt;font-family:
+Arial;mso-text-raise:-31.0pt'><img width="247" height="91" src="chap3_4_2.files/image167.gif" v:shapes="_x0000_i1113"></span><span class="hcp4"></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Уравнения движения (3.4.62) приобретают вид</span></p>
+
+<p class=Bookbody align=center style='margin-bottom:6.0pt;text-align:center;
+text-indent:21.25pt;line-height:normal'><span class="hcp25"><img width="217" height="88" src="chap3_4_2.files/image169.gif" v:shapes="_x0000_i1114"></span><span class="hcp4"></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Решаем эти уравнения с помощью интеграла Дюамеля (3.4.60).
+Положив <span class="hcp21"><img width="63" height="45" src="chap3_4_2.files/image171.gif" v:shapes="_x0000_i1115"></span><span class="hcp6"> </span><span class="hcp9"><img width="44" height="21" src="chap3_4_2.files/image173.gif" v:shapes="_x0000_i1116"></span>,
+получаем</span></p>
+
+<p class=Bookbody align=center style='margin-bottom:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><span style='font-size:10.0pt;font-family:
+Arial;mso-text-raise:-36.0pt'><img width="379" height="104" src="chap3_4_2.files/image175.gif" v:shapes="_x0000_i1117"></span><span class="hcp4"></span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">Наконец, законы движения <span class="hcp7"><img width="68" height="25" src="chap3_4_2.files/image177.gif" v:shapes="_x0000_i1118"></span>,
+как следует из (3.4.61), записываются как</span></p>
+
+<p class=Bookbody align=center style='margin-top:4.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><span class="hcp18"><img width="131" height="51" src="chap3_4_2.files/image179.gif" v:shapes="_x0000_i1119"></span><span class="hcp4"></span></p>
+
+</div>
+
+<div placeholder id="footer" style="width:100%;" class="hcp1">
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			border-bottom-color: #000080;
+			border-bottom-style: Ridge;
+			border-bottom-width: 2px;
+			font-size: 10pt;">&nbsp;</p>
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			font-size: 8pt;">&#169; 
+ 2007 Copyright &nbsp;&#1053;&#1058;&#1062; 
+ &#1040;&#1055;&#1052;</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,720 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="File-List" href="./chap3_4_1.files/filelist.xml">
+<link rel="Edit-Time-Data" href="./chap3_4_1.files/editdata.mso">
+<title>Свободные колебания</title><style>
+<!--
+p.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+h1 { mso-style-next:Обычный; margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; page-break-after:avoid; mso-outline-level:1; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-bidi-font-family:Times New Roman; mso-font-kerning:14.0pt; mso-bidi-font-weight:normal; }
+p.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.UnindentCentered { mso-style-name:Unindent Centered; margin:0cm; margin-bottom:.0001pt; text-align:center; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.UnindentCentered { mso-style-name:Unindent Centered; margin:0cm; margin-bottom:.0001pt; text-align:center; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.UnindentCentered { mso-style-name:Unindent Centered; margin:0cm; margin-bottom:.0001pt; text-align:center; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookMath { mso-style-name:Book_Math; mso-style-parent:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:right; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.BookMath { mso-style-name:Book_Math; mso-style-parent:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:right; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.BookMath { mso-style-name:Book_Math; mso-style-parent:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:right; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.Section1 { page:Section1; }
+-->
+</style><style title="hcp" type="text/css">
+<!--
+div.hcp1 { position:relative; }
+span.hcp2 { font-size:10.0pt; mso-bidi-font-size:11.0pt; font-family:Arial; }
+span.hcp3 { font-size:10.0pt; font-family:Arial; }
+b.hcp4 { mso-bidi-font-weight:normal; }
+i.hcp5 { mso-bidi-font-style:normal; }
+td.hcp6 { padding:0cm 5.4pt 0cm 5.4pt; }
+span.hcp7 { font-size:10.0pt; font-family:Arial; mso-ansi-language:EN-US; }
+span.hcp8 { mso-text-raise:-5.0pt; }
+span.hcp9 { mso-spacerun:yes; }
+span.hcp10 { font-size:10.0pt; mso-bidi-font-size:11.0pt; font-family:Arial; mso-ansi-language:EN-US; }
+span.hcp11 { font-size:10.0pt; font-family:Arial; mso-text-raise:-5.0pt; }
+span.hcp12 { mso-tab-count:2; }
+span.hcp13 { mso-tab-count:3; }
+span.hcp14 { mso-text-raise:-12.0pt; }
+span.hcp15 { font-size:10.0pt; font-family:Arial; mso-text-raise:-16.0pt; }
+span.hcp16 { mso-text-raise:-3.0pt; }
+span.hcp17 { letter-spacing:2.0pt; mso-bidi-font-style:italic; }
+span.hcp18 { mso-text-raise:-7.0pt; }
+span.hcp19 { mso-text-raise:-6.0pt; }
+span.hcp20 { letter-spacing:2.0pt; }
+span.hcp21 { font-size:10.0pt; font-family:Arial; mso-text-raise:-7.0pt; }
+span.hcp22 { mso-text-raise:-2.0pt; }
+span.hcp23 { font-size:10.0pt; font-family:Arial; mso-text-raise:-34.0pt; }
+span.hcp24 { mso-text-raise:-34.0pt; }
+span.hcp25 { mso-tab-count:1; }
+span.hcp26 { mso-tab-count:4; }
+span.hcp27 { font-size:10.0pt; font-family:Arial; mso-text-raise:-14.0pt; }
+span.hcp28 { font-size:10.0pt; font-family:Arial; mso-text-raise:-36.0pt; }
+span.hcp29 { font-family:Arial; mso-ansi-language:EN-US; }
+span.hcp30 { font-family:Arial; }
+span.hcp31 { font-size:10.0pt; font-family:Arial; mso-text-raise:-17.0pt; }
+span.hcp32 { font-size:10.0pt; font-family:Arial; mso-text-raise:-15.0pt; }
+span.hcp33 { font-size:10.0pt; font-family:Arial; mso-text-raise:-12.0pt; }
+-->
+</style>
+</head>
+<body lang="RU" style="tab-interval:36.0pt">
+<div placeholder id="header" style="width:100%;" class="hcp1">
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			background-color: #d8e8f9;
+			margin-left: 0px;"><img src="head_for_help.jpg"
+									x-maintain-ratio=TRUE
+									style="border: none;
+											width: 1000px;
+											height: 50px;
+											float: none;
+											border-style: none;
+											border-style: none;"
+									width=1000
+									height=50
+									border=0></p>
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			border-top-color: #000080;
+			border-top-width: 2px;
+			border-top-style: Ridge;
+			margin-left: 0px;">&nbsp;</p>
+</div>
+<div class=Section1>
+
+<h1 align=left style='text-align:left;text-indent:0cm;page-break-after:auto'><span
+style='mso-bidi-font-size:14.0pt;mso-bidi-font-family:Arial;color:navy;
+mso-font-kerning:18.0pt'>3.4.1. Свободные колебания линейных систем с
+несколькими степенями свободы</span><span style='font-size:10.0pt;mso-bidi-font-family:
+Arial'></span></h1>
+
+<p class=Bookbody style='margin-top:4.0pt;line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<p class=Bookbody style='margin-top:4.0pt;line-height:normal'><span class="hcp2">Свободные
+колебания в чистом виде встречаются в механических системах не слишком часто.
+Тем не менее их изучение очень важно, так как именно характеристики свободных
+колебаний, такие как собственные частоты и собственные формы, полностью
+определяют индивидуальные физические и динамические свойства механической
+системы и имеют важнейшее значение при анализе вынужденных колебаний.</span><span class="hcp3"></span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp4"><span class="hcp3">Дифференциальное уравнение колебательного движения. </span></b><span class="hcp3">Существует несколько способов
+составления дифференциальных уравнений колебательного движения. Наиболее общим
+из них является метод <i class="hcp5">уравнений Лагранжа</i>
+[4, 29]. Однако, как это часто бывает с общими методами, во многих задачах о
+колебаниях его применение неоправданно громоздко, и удобнее пользоваться более
+непосредственными приемами. Рассмотрим один из таких способов, называемый <i class="hcp5">прямым методом</i> записи уравнения движения
+(существует также и <i class="hcp5">обратный метод,</i>
+но здесь он рассматриваться не будет). Согласно этому методу, составляющие
+систему тела трактуются как свободные материальные точки (или твердые тела),
+находящиеся под действием восстанавливающих сил, выражаемых через обобщенные
+координаты. Для этих материальных точек (твердых тел) и записываются дифференциальные
+уравнения движения.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><span class="hcp3">&nbsp;</span></p>
+
+<div align=center>
+
+<table border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width="272" valign="bottom" style="width:203.8pt;" class="hcp6">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">а)</span><span lang="EN-US" class="hcp7"><img width="223" height="96" src="chap3_4_1.files/image002.gif" v:shapes="_x0000_i1025"></span><span class="hcp2"></span></p>
+  </td>
+  <td width="226" valign="bottom" style="width:169.5pt;" class="hcp6">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span lang="EN-US" class="hcp7">b</span><span class="hcp3">)</span><span lang="EN-US" class="hcp7"><img width="197" height="87" src="chap3_4_1.files/image004.gif" v:shapes="_x0000_i1026"></span><span class="hcp2"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="498" colspan="2" valign="bottom" style="width:373.3pt;" class="hcp6">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">Рис.
+  3.4.1</span><span class="hcp2"></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Основное дифференциальное
+уравнение свободных колебаний консервативных упругих линейных систем с несколькими
+степенями свободы, составленное прямым способом, рассмотрим на примере системы,
+состоящей из двух грузов с массами <span class="hcp8"><img width="20" height="23" src="chap3_4_1.files/image006.gif" v:shapes="_x0000_i1027"></span><span class="hcp9"> </span>и <span class="hcp8"><img width="21" height="23" src="chap3_4_1.files/image008.gif" v:shapes="_x0000_i1028"></span>,
+соединенных двумя упругими пружинами с жесткостями <span class="hcp8"><img width="21" height="23" src="chap3_4_1.files/image010.gif" v:shapes="_x0000_i1029"></span><span class="hcp9"> </span>и <span class="hcp8"><img width="21" height="23" src="chap3_4_1.files/image012.gif" v:shapes="_x0000_i1030"></span><span class="hcp9"> </span>(рис. 3.4.1</span><span lang="EN-US" class="hcp10">a</span><span class="hcp2">). Эта система обладает двумя степенями свободы. При
+движении грузов происходит деформирование упругих элементов системы. Если грузы
+перемещаются на расстояния <span class="hcp8"><img width="16" height="23" src="chap3_4_1.files/image014.gif" v:shapes="_x0000_i1031"></span><span class="hcp9"> </span>и <span class="hcp8"><img width="19" height="23" src="chap3_4_1.files/image016.gif" v:shapes="_x0000_i1032"></span><span class="hcp9"> </span>от положения равновесия, в котором пружины не
+деформированы, то удлинения пружин в процессе движения равны <span class="hcp8"><img width="148" height="23" src="chap3_4_1.files/image018.gif" v:shapes="_x0000_i1033"></span>.
+Деформации пружин вызваны возникновением реактивных сил упругости <span class="hcp8"><img width="19" height="23" src="chap3_4_1.files/image020.gif" v:shapes="_x0000_i1034"></span><span class="hcp9"> </span>и <span class="hcp8"><img width="20" height="23" src="chap3_4_1.files/image022.gif" v:shapes="_x0000_i1035"></span>,
+определяемых удлинениями <span class="hcp8"><img width="23" height="23" src="chap3_4_1.files/image024.gif" v:shapes="_x0000_i1036"></span><span class="hcp9"> </span>и <span class="hcp8"><img width="25" height="23" src="chap3_4_1.files/image026.gif" v:shapes="_x0000_i1037"></span>(рис.
+3.4.1</span><span lang="EN-US" class="hcp10">b</span><span class="hcp2">):</span><span class="hcp3"></span></p>
+
+<p class=Bookbody align=right style='margin-top:2.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp11"><img width="67" height="23" src="chap3_4_1.files/image028.gif" v:shapes="_x0000_i1038"></span><span class="hcp3">;<span class="hcp9">        </span><span class="hcp8"><img width="112" height="23" src="chap3_4_1.files/image030.gif" v:shapes="_x0000_i1039"></span>.<span class="hcp12">                 </span><span class="hcp9">           </span>(3.4.1)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Дифференциальные уравнения движения грузов в соответствии со
+вторым законом Ньютона имеют вид</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><span class="hcp11"><img width="12" height="23" src="chap3_4_1.files/image032.gif" v:shapes="_x0000_i1040"></span><span
+style='font-size:10.0pt;font-family:Arial;mso-text-raise:-23.0pt'><img width="121" height="69" src="chap3_4_1.files/image034.gif" v:shapes="_x0000_i1041"></span><span class="hcp3"><span class="hcp13">                           </span><span class="hcp9">                  </span>(3.4.2)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Здесь, как обычно, точкой обозначается производная по
+времени, т.&nbsp;е. <span class="hcp14"><img width="111" height="44" src="chap3_4_1.files/image036.gif" v:shapes="_x0000_i1042"></span><span class="hcp9"> </span>и т.&nbsp;д. Подставляя в (3.4.2) выражение
+для реакций со стороны упругих элементов (3.4.1), получаем</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><span class="hcp11"><img width="12" height="23" src="chap3_4_1.files/image037.gif" v:shapes="_x0000_i1043"></span><span class="hcp15"><img width="180" height="51" src="chap3_4_1.files/image039.gif" v:shapes="_x0000_i1044"></span><span class="hcp3"><span class="hcp9">                                     </span>(3.4.3)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Как видно из формулы (3.4.3), на осадку пружины влияет
+перемещение соседнего участка. Если перейти к локальной системе координат, то в
+общем виде деформационное состояние системы с <span class="hcp16"><img width="12" height="15" src="chap3_4_1.files/image041.gif" v:shapes="_x0000_i1045"></span><span class="hcp9"> </span>степенями свободы можно характеризовать <span class="hcp17">обобщенной координатой</span>
+<span class="hcp18"><img width="19" height="25" src="chap3_4_1.files/image043.gif" v:shapes="_x0000_i1046"></span>,
+<span class="hcp8"><img width="75" height="21" src="chap3_4_1.files/image045.gif" v:shapes="_x0000_i1047"></span>&nbsp;–
+номер координаты. В качестве обобщенных координат могут выступать, например, линейные
+перемещения при поступательном движении или угловые перемещения при
+вращательном. Для статической упругой линейной системы общего вида справедливо
+следующее фундаментальное соотношение, связывающее обобщенные координаты <span class="hcp18"><img width="19" height="25" src="chap3_4_1.files/image046.gif" v:shapes="_x0000_i1048"></span><span class="hcp9"> </span>(статические перемещения) с обобщенными
+силами <span class="hcp19"><img width="20" height="24" src="chap3_4_1.files/image048.gif" v:shapes="_x0000_i1049"></span>:</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><span style='font-size:10.0pt;font-family:
+Arial;mso-text-raise:-13.0pt'><img width="92" height="45" src="chap3_4_1.files/image050.gif" v:shapes="_x0000_i1050"></span><span class="hcp3">,<span class="hcp9">     </span><span class="hcp8"><img width="75" height="21" src="chap3_4_1.files/image052.gif" v:shapes="_x0000_i1051"></span>,<span class="hcp9">         </span><span class="hcp9">                  </span>(3.4.4)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">где <span class="hcp18"><img width="23" height="24" src="chap3_4_1.files/image054.gif" v:shapes="_x0000_i1052"></span>&nbsp;–
+<span class="hcp20">статический коэффициент влияния для
+перемещени</span>й<i class="hcp5">,</i> равный значению <span class="hcp8"><img width="13" height="20" src="chap3_4_1.files/image056.gif" v:shapes="_x0000_i1053"></span>-ой
+обобщенной координаты, соответствующему действию статически приложенной <span class="hcp16"><img width="13" height="19" src="chap3_4_1.files/image058.gif" v:shapes="_x0000_i1054"></span>-ой
+обобщенной единичной силы. Коэффициент <span class="hcp18"><img width="23" height="24" src="chap3_4_1.files/image059.gif" v:shapes="_x0000_i1055"></span><span class="hcp9"> </span>определяет перемещение или конфигурацию
+равновесного положения системы, когда к ней приложена только одна единичная
+сила <span class="hcp19"><img width="44" height="24" src="chap3_4_1.files/image061.gif" v:shapes="_x0000_i1056"></span>.
+Можно сказать и так: <span class="hcp8"><img width="13" height="20" src="chap3_4_1.files/image063.gif" v:shapes="_x0000_i1057"></span>&nbsp;–
+это номер текущей массы колебательной системы, а <span class="hcp16"><img width="13" height="19" src="chap3_4_1.files/image065.gif" v:shapes="_x0000_i1058"></span>&nbsp;–
+номер соседней массы, влияющей на деформационное состояние текущей.
+Коэффициенты влияния удовлетворяют условию симметрии,</span></p>
+
+<p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:21.25pt;
+line-height:normal'><span class="hcp21"><img width="61" height="25" src="chap3_4_1.files/image067.gif" v:shapes="_x0000_i1059"></span><span class="hcp3">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">выражающему <i class="hcp5">принцип взаимности перемещений</i>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Введя в рассмотрение матрицу-столбец (вектор) обобщенных
+координат <span class="hcp8"><img width="13" height="21" src="chap3_4_1.files/image069.gif" v:shapes="_x0000_i1060"></span>,
+матрицу-столбец обобщенных сил <span class="hcp22"><img width="17" height="21" src="chap3_4_1.files/image071.gif" v:shapes="_x0000_i1061"></span><span class="hcp9"> </span>и симметричную матрицу коэффициентов влияния
+для перемещений <span class="hcp8"><img width="23" height="23" src="chap3_4_1.files/image073.gif" v:shapes="_x0000_i1062"></span>,</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:12.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><span class="hcp23"><img width="60" height="99" src="chap3_4_1.files/image075.gif" v:shapes="_x0000_i1063"></span><span class="hcp3">;<span class="hcp9">   
+</span><span class="hcp24"><img width="65" height="99" src="chap3_4_1.files/image077.gif" v:shapes="_x0000_i1064"></span>;<span class="hcp9">   </span><span class="hcp9"> </span><span class="hcp24"><img width="203" height="99" src="chap3_4_1.files/image079.gif" v:shapes="_x0000_i1065"></span>,<span class="hcp25">   </span><span class="hcp9">  
+</span>(3.4.5)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">перепишем (3.4.4) в матричной форме,
+а именно</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><span class="hcp11"><img width="60" height="25" src="chap3_4_1.files/image081.gif" v:shapes="_x0000_i1066"></span><span class="hcp3">.<span class="hcp9">                                               </span>(3.4.6)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Разрешим уравнение (3.4.6) относительно вектора <span class="hcp22"><img width="17" height="21" src="chap3_4_1.files/image083.gif" v:shapes="_x0000_i1067"></span>.
+Для этого умножим обе его части слева на симметричную матрицу <span class="hcp8"><img width="65" height="25" src="chap3_4_1.files/image085.gif" v:shapes="_x0000_i1068"></span>,
+обратную к <span class="hcp8"><img width="23" height="23" src="chap3_4_1.files/image086.gif" v:shapes="_x0000_i1069"></span>,</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><span class="hcp23"><img width="243" height="99" src="chap3_4_1.files/image088.gif" v:shapes="_x0000_i1070"></span><span class="hcp3">.</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">Получим</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp11"><img width="59" height="25" src="chap3_4_1.files/image090.gif" v:shapes="_x0000_i1071"></span><span class="hcp3">.<span class="hcp26">                                            </span>
+(3.4.7)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Матрица <span class="hcp8"><img width="20" height="23" src="chap3_4_1.files/image092.gif" v:shapes="_x0000_i1072"></span><span class="hcp9"> </span>называется <span class="hcp17">матрицей единичных реакций</span> или <span class="hcp17">матрицей жесткост</span><span
+style='mso-bidi-font-style:italic'>и</span>. Физический смысл ее элементов <span class="hcp18"><img width="23" height="25" src="chap3_4_1.files/image094.gif" v:shapes="_x0000_i1073"></span>,
+называемых <span class="hcp20">статическими коэффициентами
+жесткост</span>и, следующий. Предположим, что на все точки рассматриваемой
+системы наложены некоторые дополнительные связи, обращающие в нуль все
+обобщенные перемещения, кроме <span class="hcp16"><img width="13" height="19" src="chap3_4_1.files/image096.gif" v:shapes="_x0000_i1074"></span>-го,
+причем равного единице, <span class="hcp19"><img width="43" height="24" src="chap3_4_1.files/image098.gif" v:shapes="_x0000_i1075"></span>.
+Тогда <span class="hcp18"><img width="56" height="25" src="chap3_4_1.files/image100.gif" v:shapes="_x0000_i1076"></span>,
+т.&nbsp;е. элемент <span class="hcp18"><img width="23" height="25" src="chap3_4_1.files/image101.gif" v:shapes="_x0000_i1077"></span><span class="hcp9"> </span>представляет собой реакцию <span class="hcp8"><img width="13" height="20" src="chap3_4_1.files/image103.gif" v:shapes="_x0000_i1078"></span>-ой
+дополнительной силы, соответствующую <span class="hcp16"><img width="13" height="19" src="chap3_4_1.files/image104.gif" v:shapes="_x0000_i1079"></span>-му
+единичному перемещению. Коэффициенты жесткости, так же как и коэффициенты
+влияния, симметричны, <span class="hcp18"><img width="56" height="25" src="chap3_4_1.files/image106.gif" v:shapes="_x0000_i1080"></span>,
+что является следствием <i class="hcp5">принципа
+взаимности сил</i>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Матрица – столбец обобщенных сил <span class="hcp22"><img width="17" height="21" src="chap3_4_1.files/image107.gif" v:shapes="_x0000_i1081"></span>,
+в свою очередь, в соответствии со вторым законом Ньютона имеет вид</span></p>
+
+<p class=BookMath style='line-height:normal'><span class="hcp11"><img width="59" height="25" src="chap3_4_1.files/image109.gif" v:shapes="_x0000_i1082"></span><span class="hcp3">,<span class="hcp26">                                            </span><span class="hcp9">       </span>(3.4.8)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">где <span class="hcp8"><img width="21" height="23" src="chap3_4_1.files/image111.gif" v:shapes="_x0000_i1083"></span><span class="hcp9"> </span>– симметричная матрица инерционных
+коэффициентов,</span></p>
+
+<p class=BookMath style='margin-bottom:6.0pt;line-height:normal'><span class="hcp23"><img width="201" height="99" src="chap3_4_1.files/image113.gif" v:shapes="_x0000_i1084"></span><span class="hcp3">.<span class="hcp9">                                 </span>(3.4.9)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Важно отметить, что при составлении системы уравнений по
+прямому способу <span class="hcp18"><img width="47" height="25" src="chap3_4_1.files/image115.gif" v:shapes="_x0000_i1085"></span><span class="hcp9"> </span>при <span class="hcp8"><img width="35" height="20" src="chap3_4_1.files/image117.gif" v:shapes="_x0000_i1086"></span>,
+т.&nbsp;е. матрица инерционных коэффициентов становится диагональной.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Соотношения (3.4.7) и (3.4.8) позволяют записать
+дифференциальное уравнение движения статической упругой линейной системы общего
+вида в форме</span></p>
+
+<p class=BookMath style='margin-top:4.0pt;line-height:normal'><span class="hcp11"><img width="95" height="25" src="chap3_4_1.files/image119.gif" v:shapes="_x0000_i1087"></span><span class="hcp3">,<span class="hcp9">                                             </span>(3.4.10)</span></p>
+
+<p class=Bookbody style='margin-bottom:4.0pt;text-indent:0cm;line-height:normal'><span class="hcp3">или<span class="hcp9">                                         </span><span style='mso-text-raise:
+-14.0pt'><img width="141" height="45" src="chap3_4_1.files/image121.gif" v:shapes="_x0000_i1088"></span>,
+<span class="hcp8"><img width="81" height="21" src="chap3_4_1.files/image123.gif" v:shapes="_x0000_i1089"></span>.<span class="hcp9">                    </span>(3.4.11)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Для прямого способа вместо (3.4.11) вследствие
+диагональности матрицы <span class="hcp8"><img width="21" height="23" src="chap3_4_1.files/image125.gif" v:shapes="_x0000_i1090"></span><span class="hcp9"> </span>имеем</span></p>
+
+<p class=BookMath style='line-height:normal'><span class="hcp27"><img width="128" height="45" src="chap3_4_1.files/image127.gif" v:shapes="_x0000_i1091"></span><span class="hcp3">, <span class="hcp8"><img width="81" height="21" src="chap3_4_1.files/image128.gif" v:shapes="_x0000_i1092"></span>.<span class="hcp25">     </span><span class="hcp9">                 </span>(3.4.12)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Уравнения (3.4.10) представляют собой систему
+дифференциальных уравнений движения, которая в развернутом виде записывается
+как</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp28"><img width="329" height="104" src="chap3_4_1.files/image130.gif" v:shapes="_x0000_i1093"></span><span lang="EN-US" class="hcp7">.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span lang="EN-US" class="hcp7">&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang="EN-US" class="hcp29">a)</span><span class="hcp30"><img width="486" height="89" src="chap3_4_1.files/image132.gif" v:shapes="_x0000_i1094"></span><span lang="EN-US" class="hcp29"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang="EN-US" class="hcp29">&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang="EN-US" class="hcp29">b) </span><span class="hcp30"><img width="432" height="90" src="chap3_4_1.files/image134.gif" v:shapes="_x0000_i1095"></span><span lang="EN-US" class="hcp29"></span></p>
+
+<p class=Bookbody align=center style='text-align:center;line-height:normal'><span class="hcp3">Рис</span><span lang="EN-US" class="hcp7">. 3.4.2</span></p>
+
+<p class=Bookbody style='line-height:normal'><span lang="EN-US" class="hcp7">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">По физической природе выражение <span class="hcp8"><img width="32" height="25" src="chap3_4_1.files/image136.gif" v:shapes="_x0000_i1096"></span><span class="hcp9"> </span>представляет собой динамическую часть общего
+усилия, действующего на элемент динамической системы, а <span class="hcp8"><img width="31" height="21" src="chap3_4_1.files/image138.gif" v:shapes="_x0000_i1097"></span><span class="hcp9"> </span>характеризует упругие свойства этой системы.
+Вид коэффициентов <span class="hcp18"><img width="20" height="25" src="chap3_4_1.files/image140.gif" v:shapes="_x0000_i1098"></span><span class="hcp9"> </span>и <span class="hcp18"><img width="19" height="25" src="chap3_4_1.files/image142.gif" v:shapes="_x0000_i1099"></span><span class="hcp9"> </span>зависит от конкретной задачи и способа записи
+дифференциального уравнения. Например, упомянутый выше прямой способ особенно
+удобен при изучении колебаний систем цепной структуры, если упругие силы легко
+выражаются через перемещения двух соседних тел.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Простейший пример колебательной механической системы с линейными
+перемещениями масс <span class="hcp8"><img width="19" height="21" src="chap3_4_1.files/image144.gif" v:shapes="_x0000_i1100"></span><span class="hcp9"> </span>приведен на рис. 3.4.2</span><span lang="EN-US" class="hcp7">a</span><span class="hcp3">. Механическая система, для которой
+характерно наличие угловых перемещений, изображена на рис. 3.4.2</span><span lang="EN-US" class="hcp7">b</span><span class="hcp3">. Перемещения, аналогичные схеме </span><span lang="EN-US" class="hcp7">b</span><span class="hcp3">, вызываются закручиванием
+валов&nbsp;– такие колебания называются <i class="hcp5">крутильными</i>.
+Если в качестве обобщенной координаты <span class="hcp18"><img width="19" height="25" src="chap3_4_1.files/image146.gif" v:shapes="_x0000_i1101"></span><span class="hcp9"> </span>рассматривать горизонтальное перемещение <span class="hcp8"><img width="13" height="20" src="chap3_4_1.files/image148.gif" v:shapes="_x0000_i1102"></span>-го
+груза в схеме на рис. 3.4.2</span><span lang="EN-US" class="hcp7">a</span><span class="hcp3"> или угловое перемещение <span class="hcp8"><img width="13" height="20" src="chap3_4_1.files/image149.gif" v:shapes="_x0000_i1103"></span>-го
+диска в схеме на рис. 3.4.2</span><span lang="EN-US" class="hcp7">b</span><span class="hcp3">, то сумма упругих сил, действующих на груз (или упругих моментов,
+действующих на диск), равна</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp21"><img width="256" height="25" src="chap3_4_1.files/image151.gif" v:shapes="_x0000_i1104"></span><span class="hcp3">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">где <span class="hcp18"><img width="35" height="25" src="chap3_4_1.files/image153.gif" v:shapes="_x0000_i1105"></span>&nbsp;–
+жесткость упругой связи, расположенной между <span class="hcp8"><img width="33" height="21" src="chap3_4_1.files/image155.gif" v:shapes="_x0000_i1106"></span>-м
+и <span class="hcp8"><img width="13" height="20" src="chap3_4_1.files/image157.gif" v:shapes="_x0000_i1107"></span>-м
+грузами (дисками); <span class="hcp18"><img width="35" height="25" src="chap3_4_1.files/image159.gif" v:shapes="_x0000_i1108"></span>&nbsp;–
+жесткость упругой связи, расположенной между <span class="hcp8"><img width="13" height="20" src="chap3_4_1.files/image160.gif" v:shapes="_x0000_i1109"></span>-м
+и <span class="hcp8"><img width="33" height="21" src="chap3_4_1.files/image162.gif" v:shapes="_x0000_i1110"></span>-м
+грузами (дисками). Матрица инерционных коэффициентов <span class="hcp8"><img width="21" height="23" src="chap3_4_1.files/image164.gif" v:shapes="_x0000_i1111"></span><span class="hcp9"> </span>видоизменяется для схемы «</span><span lang="EN-US" class="hcp7">a</span><span class="hcp3">» в диагональную матрицу масс <span class="hcp8"><img width="24" height="23" src="chap3_4_1.files/image166.gif" v:shapes="_x0000_i1112"></span>:</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><span class="hcp23"><img width="217" height="99" src="chap3_4_1.files/image168.gif" v:shapes="_x0000_i1113"></span><span class="hcp3">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">а для схемы «</span><span lang="EN-US" class="hcp7">b</span><span class="hcp3">» – в диагональную матрицу моментов
+инерции диска <span class="hcp8"><img width="20" height="23" src="chap3_4_1.files/image170.gif" v:shapes="_x0000_i1114"></span>:</span></p>
+
+<p class=BookMath style='margin-bottom:12.0pt;line-height:normal'><span class="hcp23"><img width="204" height="99" src="chap3_4_1.files/image172.gif" v:shapes="_x0000_i1115"></span><span class="hcp3">.<span class="hcp9">                                      </span>(3.4.13)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Дифференциальное уравнение движения (3.4.12) приобретает
+форму:</span></p>
+
+<p class=Bookbody style='margin-top:4.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:42.55pt;margin-bottom:.0001pt;text-indent:0cm;line-height:normal'><span class="hcp3">схема «</span><span lang="EN-US" class="hcp7">a</span><span class="hcp3">»<span class="hcp9"> 
+</span><span class="hcp25">    </span><span class="hcp9"> </span><span class="hcp18"><img width="273" height="28" src="chap3_4_1.files/image174.gif" v:shapes="_x0000_i1116"></span>;</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:0cm;margin-left:42.55pt;margin-bottom:.0001pt;text-align:right;
+text-indent:0cm;line-height:normal'><span class="hcp3">схема </span><span lang="EN-US" class="hcp7">b</span><span class="hcp3"><span class="hcp9">  </span><span class="hcp25">        </span><span class="hcp9"> </span><span class="hcp18"><img width="260" height="28" src="chap3_4_1.files/image176.gif" v:shapes="_x0000_i1117"></span>.<span class="hcp9">                    </span>(3.4.14)</span></p>
+
+<p class=Bookbody style='margin-top:12.0pt;text-indent:21.25pt;line-height:
+normal'><b class="hcp4"><span class="hcp3">Решение системы дифференциальных уравнений движения; главные
+колебания и собственные частоты. </span></b><span class="hcp3">Предположим, что обобщенные координаты выбраны таким
+образом, что они вместе с определяемыми ими перемещениями системы изменяются по
+одному и тому же гармоническому закону, с одной и той же частотой <span class="hcp16"><img width="16" height="15" src="chap3_4_1.files/image178.gif" v:shapes="_x0000_i1118"></span>.
+Система в этом случае совершает гармонические колебания, причем все ее точки
+одновременно достигают положений наибольшего отклонения и одновременно проходят
+через положения равновесия. Такие колебания называются <b class="hcp4"><i class="hcp5">главными</i></b><i class="hcp5">.</i> Предположение о том, что все
+материальные точки системы совершают колебания одной и той же частоты при
+различных амплитудах, основано на следующем очевидном обстоятельстве: только
+частота является неотъемлемым свойством системы, тогда как амплитуда зависит от
+того, как именно эта система приведена в движение внешней причиной.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Система с <span class="hcp16"><img width="12" height="15" src="chap3_4_1.files/image180.gif" v:shapes="_x0000_i1119"></span><span class="hcp9"> </span>степенями свободы в общем случае может
+совершать <span class="hcp16"><img width="12" height="15" src="chap3_4_1.files/image181.gif" v:shapes="_x0000_i1120"></span><span class="hcp9"> </span>независимых гармонических колебаний, каждому
+из которых соответствует определенное значение частоты <span class="hcp19"><img width="19" height="24" src="chap3_4_1.files/image183.gif" v:shapes="_x0000_i1121"></span>.
+Следовательно, колебательный процесс (при условии малости колебаний около
+положения устойчивого равновесия) в соответствии с принципом суперпозиции
+представляет собой <i class="hcp5">линейное наложение <span class="hcp16"><img width="12" height="15" src="chap3_4_1.files/image185.gif" v:shapes="_x0000_i1122"></span><span class="hcp9"> </span>главных гармонических колебаний.</i></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Итак, частное решение системы дифференциальных уравнений
+(3.4.11) будем искать в виде</span></p>
+
+<p class=BookMath style='margin-bottom:2.0pt;line-height:normal'><span class="hcp21"><img width="132" height="25" src="chap3_4_1.files/image187.gif" v:shapes="_x0000_i1123"></span><span class="hcp3">,<span class="hcp25">  </span>
+<span class="hcp8"><img width="81" height="21" src="chap3_4_1.files/image189.gif" v:shapes="_x0000_i1124"></span>,<span class="hcp13">                          </span> (3.4.15)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">где <span class="hcp18"><img width="20" height="25" src="chap3_4_1.files/image191.gif" v:shapes="_x0000_i1125"></span>&nbsp;–
+амплитуда <span class="hcp8"><img width="13" height="20" src="chap3_4_1.files/image193.gif" v:shapes="_x0000_i1126"></span>-го
+колебания; <span class="hcp16"><img width="16" height="15" src="chap3_4_1.files/image194.gif" v:shapes="_x0000_i1127"></span>&nbsp;–
+частота, общая для всех координат <span class="hcp18"><img width="19" height="25" src="chap3_4_1.files/image196.gif" v:shapes="_x0000_i1128"></span>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Подставляя (3.4.15) в (3.4.11), получаем систему <span class="hcp16"><img width="12" height="15" src="chap3_4_1.files/image198.gif" v:shapes="_x0000_i1129"></span><span class="hcp9"> </span>алгебраических уравнений с неизвестными <span class="hcp18"><img width="20" height="25" src="chap3_4_1.files/image199.gif" v:shapes="_x0000_i1130"></span><span class="hcp9"> </span>и <span class="hcp16"><img width="16" height="15" src="chap3_4_1.files/image200.gif" v:shapes="_x0000_i1131"></span>:</span></p>
+
+<p class=BookMath style='line-height:normal'><span class="hcp28"><img width="372" height="104" src="chap3_4_1.files/image202.gif" v:shapes="_x0000_i1132"></span><span class="hcp3">.<span class="hcp9">         </span>(3.4.16)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Система (3.4.16) однородна относительно неизвестных амплитуд
+<span class="hcp19"><img width="85" height="24" src="chap3_4_1.files/image204.gif" v:shapes="_x0000_i1133"></span>,
+следовательно, для того чтобы она имела нетривиальное (отличное от нуля)
+решение, ее определитель должен равняться нулю:</span></p>
+
+<p class=BookMath style='margin-bottom:6.0pt;line-height:normal'><span class="hcp28"><img width="296" height="104" src="chap3_4_1.files/image206.gif" v:shapes="_x0000_i1134"></span><span class="hcp3">.<span class="hcp9">                 </span>(3.4.17)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Раскрыв определитель (3.4.17), получаем алгебраическое
+уравнение <span class="hcp16"><img width="12" height="15" src="chap3_4_1.files/image208.gif" v:shapes="_x0000_i1135"></span>-ой
+степени относительно <span class="hcp16"><img width="23" height="21" src="chap3_4_1.files/image210.gif" v:shapes="_x0000_i1136"></span>,
+которое носит название <i class="hcp5">частотного</i> или
+<i class="hcp5">характеристического</i> (иногда в
+литературе можно встретить и термин <i class="hcp5">вековое
+уравнение</i>). Его корни, называемые <b class="hcp4"><i class="hcp5">собственными частотами</i></b>, определяются
+только свойствами системы и не зависят от способа приведения этой системы в
+колебательное движение. Если система совершает малые колебания около состояния
+устойчивого равновесия (т.&nbsp;е. потенциальная энергия системы положительна),
+то, как следует из теорем алгебры [14], характеристическое уравнение имеет
+ровно <span class="hcp16"><img width="12" height="15" src="chap3_4_1.files/image212.gif" v:shapes="_x0000_i1137"></span><span class="hcp9"> </span>корней, причем все они вещественны,
+положительны и в общем случае различны.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Для уравнений в прямой форме (т.&nbsp;е. типа (3.4.12))
+характеристическое уравнение (3.4.17) упрощается: оно приобретает диагональный
+вид, причем по главной диагонали располагаются члены с квадратами собственных
+частот,</span></p>
+
+<p class=BookMath style='margin-bottom:6.0pt;line-height:normal'><span class="hcp28"><img width="279" height="104" src="chap3_4_1.files/image214.gif" v:shapes="_x0000_i1138"></span><span class="hcp3">. <span class="hcp25">            </span><span class="hcp9">               </span>(3.4.18)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Запишем, например, характеристическое уравнение для системы,
+изображенной на рис. 3.4.1, положив <span class="hcp8"><img width="107" height="23" src="chap3_4_1.files/image216.gif" v:shapes="_x0000_i1139"></span>.
+Подставив в (3.4.3) решение (3.4.15), получим</span></p>
+
+<p class=BookMath style='margin-bottom:6.0pt;line-height:normal'><span class="hcp31"><img width="325" height="53" src="chap3_4_1.files/image218.gif" v:shapes="_x0000_i1140"></span><span class="hcp3"><span class="hcp9">          </span><span class="hcp9">   </span>(3.4.19)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Тогда характеристическое уравнение записывается как</span></p>
+
+<p class=Bookbody align=center style='margin-top:2.0pt;text-align:center;
+text-indent:21.25pt;line-height:normal'><span class="hcp31"><img width="265" height="53" src="chap3_4_1.files/image220.gif" v:shapes="_x0000_i1141"></span><span class="hcp3">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">или</span></p>
+
+<p class=BookMath style='margin-bottom:4.0pt;line-height:normal'><span class="hcp11"><img width="361" height="24" src="chap3_4_1.files/image222.gif" v:shapes="_x0000_i1142"></span><span class="hcp3">,<span class="hcp25">     </span>
+(3.4.20)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:Arial;letter-spacing:
+-.2pt'>и имеет два положительных корня <span class="hcp8"><img width="23" height="24" src="chap3_4_1.files/image224.gif" v:shapes="_x0000_i1143"></span><span class="hcp9"> </span>и <span class="hcp8"><img width="23" height="24" src="chap3_4_1.files/image226.gif" v:shapes="_x0000_i1144"></span>.
+Для того чтобы (3.4.20) согласовывалось с (3.4.18), нужно положить <span class="hcp8"><img width="124" height="23" src="chap3_4_1.files/image228.gif" v:shapes="_x0000_i1145"></span><span class="hcp9"> </span><span class="hcp8"><img width="233" height="23" src="chap3_4_1.files/image230.gif" v:shapes="_x0000_i1146"></span><span class="hcp9"> </span>Таким образом, матрица жесткости <span class="hcp8"><img width="20" height="23" src="chap3_4_1.files/image232.gif" v:shapes="_x0000_i1147"></span><span class="hcp9"> </span>и матрица инерционных коэффициентов <span class="hcp8"><img width="21" height="23" src="chap3_4_1.files/image234.gif" v:shapes="_x0000_i1148"></span><span class="hcp9"> </span>для рассматриваемого примера имеют вид</span><span class="hcp3"></span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:21.25pt;
+line-height:normal'><span class="hcp15"><img width="153" height="51" src="chap3_4_1.files/image236.gif" v:shapes="_x0000_i1149"></span><span class="hcp3">; <span style='mso-text-raise:-16.0pt'><img width="103" height="51" src="chap3_4_1.files/image238.gif" v:shapes="_x0000_i1150"></span>.<span class="hcp25">          </span></span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp4"><span class="hcp3">Собственные формы. </span></b><span class="hcp3">Как было показано выше, в результате решения характеристического
+уравнения (3.4.1) определяется <i class="hcp5">спектр
+собственных частот</i> рассматриваемой системы, <span class="hcp19"><img width="119" height="24" src="chap3_4_1.files/image240.gif" v:shapes="_x0000_i1151"></span><span class="hcp9"> </span>(корни принято располагать в порядке возрастания).
+Зная собственные частоты, можно перейти к решению уравнений (3.4.16). Подставив
+в (3.4.16) одно из найденных значений квадрата частоты, например <span class="hcp19"><img width="23" height="25" src="chap3_4_1.files/image242.gif" v:shapes="_x0000_i1152"></span>,
+получим систему <span class="hcp16"><img width="12" height="15" src="chap3_4_1.files/image244.gif" v:shapes="_x0000_i1153"></span><span class="hcp9"> </span>линейных однородных уравнений относительно амплитуд
+<span class="hcp19"><img width="95" height="24" src="chap3_4_1.files/image246.gif" v:shapes="_x0000_i1154"></span><span class="hcp9"> </span>(здесь первый индекс обозначает номер
+координаты, а второй&nbsp;– номер собственной частоты). Из общих свойств
+однородных систем линейных алгебраических уравнений [6, 14] следует, что ранг
+матрицы полученной системы равен <span class="hcp16"><img width="32" height="19" src="chap3_4_1.files/image248.gif" v:shapes="_x0000_i1155"></span><span class="hcp9"> </span>(так как равные корни по предположению
+отсутствуют). Это означает, что из <span class="hcp16"><img width="12" height="15" src="chap3_4_1.files/image249.gif" v:shapes="_x0000_i1156"></span><span class="hcp9"> </span>уравнений системы независимыми являются
+только <span class="hcp16"><img width="32" height="19" src="chap3_4_1.files/image250.gif" v:shapes="_x0000_i1157"></span>.
+Поскольку <span class="hcp16"><img width="32" height="19" src="chap3_4_1.files/image251.gif" v:shapes="_x0000_i1158"></span><span class="hcp9"> </span>уравнений связывают между собой <span class="hcp16"><img width="12" height="15" src="chap3_4_1.files/image252.gif" v:shapes="_x0000_i1159"></span><span class="hcp9"> </span>амплитуд, все амплитуды можно выразить через
+какую-либо одну, например, через первую, значение которой произвольно:</span></p>
+
+<p class=BookMath style='margin-bottom:4.0pt;line-height:normal'><span class="hcp32"><img width="333" height="47" src="chap3_4_1.files/image254.gif" v:shapes="_x0000_i1160"></span><span class="hcp3"><span class="hcp12">             </span><span class="hcp9"> </span>(3.4.21)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Совокупность соотношений (3.4.21) позволяет находить, таким
+образом, не сами амплитуды <span class="hcp18"><img width="23" height="25" src="chap3_4_1.files/image256.gif" v:shapes="_x0000_i1161"></span><span class="hcp9"> </span>рассматриваемой <span class="hcp16"><img width="12" height="17" src="chap3_4_1.files/image258.gif" v:shapes="_x0000_i1162"></span>-ой
+гармоники, а их относительные значения <span class="hcp18"><img width="21" height="25" src="chap3_4_1.files/image260.gif" v:shapes="_x0000_i1163"></span>,
+определенные с точностью до произвольного множителя, т.&nbsp;е. описывает
+конфигурацию системы в процессе свободных колебаний с <span class="hcp16"><img width="12" height="17" src="chap3_4_1.files/image261.gif" v:shapes="_x0000_i1164"></span>-ой
+собственной частотой. Такие конфигурации, число которых равно числу степеней
+свободы системы, характеризующие свойства самой системы и не зависящие от
+начальных условий, называются <b class="hcp4"><i class="hcp5">собственными формами</i></b>. Каждому корню
+характеристического уравнения (3.4.17) соответствует своя собственная форма
+(3.4.21). Поскольку коэффициенты собственных форм <span class="hcp18"><img width="27" height="25" src="chap3_4_1.files/image263.gif" v:shapes="_x0000_i1165"></span><span class="hcp9"> </span>вычисляются с точностью до произвольного
+множителя, можно один из коэффициентов положить равным какому-либо числу,
+например единице, а можно выбрать его таким образом, чтобы сумма квадратов
+амплитуд рассматриваемой формы равнялась единице (в этом случае форма
+называется <i class="hcp5">нормированной</i>). Если принять
+<span class="hcp19"><img width="44" height="24" src="chap3_4_1.files/image265.gif" v:shapes="_x0000_i1166"></span>,
+то <i class="hcp5">общее решение</i> уравнения (3.4.11),
+представляющее собой сумму частных, имеет вид</span></p>
+
+<p class=BookMath style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;line-height:normal'><span class="hcp27"><img width="184" height="45" src="chap3_4_1.files/image267.gif" v:shapes="_x0000_i1167"></span><span class="hcp3">, <span class="hcp8"><img width="91" height="21" src="chap3_4_1.files/image269.gif" v:shapes="_x0000_i1168"></span>,
+<span class="hcp19"><img width="44" height="24" src="chap3_4_1.files/image271.gif" v:shapes="_x0000_i1169"></span>.<span class="hcp25">           </span> (3.4.22)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Решение (3.4.22) содержит <span class="hcp16"><img width="20" height="19" src="chap3_4_1.files/image273.gif" v:shapes="_x0000_i1170"></span><span class="hcp9"> </span>произвольных постоянных (<span class="hcp16"><img width="12" height="15" src="chap3_4_1.files/image275.gif" v:shapes="_x0000_i1171"></span>
+амплитуд <span class="hcp19"><img width="21" height="24" src="chap3_4_1.files/image277.gif" v:shapes="_x0000_i1172"></span><span class="hcp9"> </span>и <span class="hcp16"><img width="12" height="15" src="chap3_4_1.files/image278.gif" v:shapes="_x0000_i1173"></span><span class="hcp9"> </span>начальных фаз <span class="hcp19"><img width="17" height="24" src="chap3_4_1.files/image280.gif" v:shapes="_x0000_i1174"></span>),
+которые находятся из начальных условий. В качестве начальных условий, как
+правило, используются значения обобщенных координат <span class="hcp19"><img width="16" height="24" src="chap3_4_1.files/image282.gif" v:shapes="_x0000_i1175"></span><span class="hcp9"> </span>и обобщенных скоростей <span class="hcp19"><img width="16" height="24" src="chap3_4_1.files/image284.gif" v:shapes="_x0000_i1176"></span><span class="hcp9"> </span>в момент времени <span class="hcp16"><img width="35" height="19" src="chap3_4_1.files/image286.gif" v:shapes="_x0000_i1177"></span>:</span></p>
+
+<p class=BookMath style='margin-top:2.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><span style='font-size:10.0pt;font-family:
+Arial;mso-text-raise:-33.0pt'><img width="177" height="96" src="chap3_4_1.files/image288.gif" v:shapes="_x0000_i1178"></span><span class="hcp3"><span class="hcp9"> </span><span class="hcp8"><img width="81" height="21" src="chap3_4_1.files/image289.gif" v:shapes="_x0000_i1179"></span>.<span class="hcp12">                  </span> (3.4.23)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Собственные формы обладают важным свойством <i class="hcp5">ортогональности</i>: если <span class="hcp19"><img width="24" height="24" src="chap3_4_1.files/image291.gif" v:shapes="_x0000_i1180"></span><span class="hcp9"> </span>и <span class="hcp19"><img width="27" height="24" src="chap3_4_1.files/image293.gif" v:shapes="_x0000_i1181"></span>&nbsp;–
+системы амплитуд, соответствующие <span class="hcp16"><img width="13" height="15" src="chap3_4_1.files/image295.gif" v:shapes="_x0000_i1182"></span>-ой
+и <span class="hcp16"><img width="17" height="15" src="chap3_4_1.files/image297.gif" v:shapes="_x0000_i1183"></span>-ой
+произвольным собственным формам, то они связаны соотношением</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><span class="hcp32"><img width="132" height="47" src="chap3_4_1.files/image299.gif" v:shapes="_x0000_i1184"></span><span class="hcp3">.<span class="hcp25">  </span><span class="hcp9">            </span><span class="hcp9">                              </span>(3.4.24)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">В том случае, когда <span class="hcp18"><img width="101" height="25" src="chap3_4_1.files/image301.gif" v:shapes="_x0000_i1185"></span>,
+т.&nbsp;е. для прямых уравнений, (3.4.24) приобретает более простой вид,</span></p>
+
+<p class=BookMath style='margin-bottom:6.0pt;line-height:normal'><span class="hcp27"><img width="107" height="45" src="chap3_4_1.files/image303.gif" v:shapes="_x0000_i1186"></span><span class="hcp3">.<span class="hcp13">                                </span><span class="hcp9">          </span>(3.4.25)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Доказательство свойства ортогональности выходит за рамки
+настоящей книги.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Введенное выше понятие собственных форм позволяет
+сформулировать важное утверждение: <i class="hcp5">любую
+форму колебаний можно разложить по собственным формам некоторой системы с <span class="hcp16"><img width="12" height="15" src="chap3_4_1.files/image305.gif" v:shapes="_x0000_i1187"></span><span class="hcp9"> </span>степенями свободы.</i> Это означает, что
+любую заданную мгновенную совокупность <span class="hcp16"><img width="12" height="15" src="chap3_4_1.files/image306.gif" v:shapes="_x0000_i1188"></span><span class="hcp9"> </span>обобщенных координат <span class="hcp19"><img width="85" height="24" src="chap3_4_1.files/image308.gif" v:shapes="_x0000_i1189"></span><span class="hcp9"> </span>можно представить линейными комбинациями вида</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><span class="hcp27"><img width="100" height="45" src="chap3_4_1.files/image310.gif" v:shapes="_x0000_i1190"></span><span class="hcp3">,<span class="hcp9">     </span><span class="hcp8"><img width="81" height="21" src="chap3_4_1.files/image312.gif" v:shapes="_x0000_i1191"></span>.<span class="hcp12">                    </span><span class="hcp9">         </span>(3.4.26)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Справедливость этого утверждения следует непосредственно из
+первых <i class="hcp5"><span class="hcp16"><img width="12" height="15" src="chap3_4_1.files/image313.gif" v:shapes="_x0000_i1192"></span><span class="hcp9"> </span></i>уравнений (3.4.23), которые только обозначениями
+отличаются от (3.4.26), и теоремы существования общего интеграла системы дифференциальных
+уравнений [34]. Коэффициенты <span class="hcp19"><img width="21" height="24" src="chap3_4_1.files/image315.gif" v:shapes="_x0000_i1193"></span><span class="hcp9"> </span>вычисляются с помощью свойства
+ортогональности (3.4.24) или (3.4.25).</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">В качестве примера найдем собственные частоты и собственные
+формы для системы, изображенной на рис. 3.4.1, приняв для простоты <span class="hcp8"><img width="183" height="23" src="chap3_4_1.files/image317.gif" v:shapes="_x0000_i1194"></span><span class="hcp9"> </span>Тогда дифференциальные уравнения (3.4.19)
+преобразуются как</span></p>
+
+<p class=BookMath style='margin-bottom:6.0pt;line-height:normal'><span class="hcp31"><img width="284" height="53" src="chap3_4_1.files/image319.gif" v:shapes="_x0000_i1195"></span><span class="hcp3">,<span class="hcp25">            </span><span class="hcp9">                 </span>(3.4.27)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">а характеристическое уравнение
+(3.4.20) –</span></p>
+
+<p class=BookMath align=center style='margin-top:6.0pt;text-align:center;
+text-indent:42.55pt;line-height:normal'><span class="hcp31"><img width="239" height="53" src="chap3_4_1.files/image321.gif" v:shapes="_x0000_i1196"></span><span class="hcp3">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">откуда</span></p>
+
+<p class=BookMath style='margin-bottom:6.0pt;line-height:normal'><span class="hcp33"><img width="147" height="44" src="chap3_4_1.files/image323.gif" v:shapes="_x0000_i1197"></span><span class="hcp3"><span class="hcp9">                                     </span>(3.4.28)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Решением биквадратного уравнения (3.4.28) являются числа <span class="hcp14"><img width="120" height="41" src="chap3_4_1.files/image325.gif" v:shapes="_x0000_i1198"></span>,
+или приближенно</span></p>
+
+<p class=BookMath style='margin-bottom:6.0pt;line-height:normal'><span class="hcp33"><img width="187" height="41" src="chap3_4_1.files/image327.gif" v:shapes="_x0000_i1199"></span><span class="hcp3">.<span class="hcp9">       </span><span class="hcp9">                     </span>(3.4.29)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Приняв <span class="hcp8"><img width="79" height="23" src="chap3_4_1.files/image329.gif" v:shapes="_x0000_i1200"></span>,
+остальные коэффициенты собственных форм определим с помощью любого из уравнений
+(3.4.27):</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:-35.45pt;line-height:normal'><span class="hcp33"><img width="148" height="44" src="chap3_4_1.files/image331.gif" v:shapes="_x0000_i1201"></span><span class="hcp3">; <span class="hcp14"><img width="163" height="44" src="chap3_4_1.files/image333.gif" v:shapes="_x0000_i1202"></span>.
+<span class="hcp25">  </span><span class="hcp9">          </span>(3.2.30)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Собственные формы приведены на рис. 3.4.3.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">В заключение запишем полученные выше соотношения в матричной
+форме. Решение уравнения (3.4.10) будем искать в виде</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><span class="hcp11"><img width="113" height="25" src="chap3_4_1.files/image335.gif" v:shapes="_x0000_i1203"></span><span class="hcp3">,<span class="hcp9">                                             </span>(3.4.31)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">где <span class="hcp22"><img width="16" height="21" src="chap3_4_1.files/image337.gif" v:shapes="_x0000_i1204"></span>&nbsp;–
+матрица-столбец амплитуд, так что <span style='mso-text-raise:-8.0pt'><img width="120" height="29" src="chap3_4_1.files/image339.gif" v:shapes="_x0000_i1205"></span>&nbsp;–
+матрица, транспонированная по отношению к <span class="hcp22"><img width="16" height="21" src="chap3_4_1.files/image341.gif" v:shapes="_x0000_i1206"></span>.
+Подставляя (3.4.31) в (3.4.10), получаем матричное уравнение</span></p>
+
+<p class=BookMath align=center style='text-align:center;line-height:normal'><span class="hcp11"><img width="131" height="25" src="chap3_4_1.files/image343.gif" v:shapes="_x0000_i1207"></span><span class="hcp3">,</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal;tab-stops:21.3pt'><span class="hcp3">или<span class="hcp9">       </span><span style='mso-tab-count:
+9'>                                                                                                            </span><span class="hcp9">  </span>(3.4.32)</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:125.1pt;mso-element-frame-height:
+125.0pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+page;mso-element-anchor-horizontal:page;mso-element-left:382.05pt;mso-element-top:
+486.25pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=179 height=167
+ align=left>
+ <tr>
+  <td valign=top align=left height=167 style='padding-top:0cm;padding-right:
+  9.05pt;padding-bottom:0cm;padding-left:9.05pt'>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  mso-element:frame;mso-element-frame-width:125.1pt;mso-element-frame-height:
+  125.0pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:382.05pt;mso-element-top:
+  486.25pt;mso-height-rule:exactly'><span class="hcp30"><img width="154" height="120" src="chap3_4_1.files/image345.gif" v:shapes="_x0000_i1208"></span></p>
+  <p class=MsoNormal align=center style='margin-top:12.0pt;text-align:center;
+  mso-element:frame;mso-element-frame-width:125.1pt;mso-element-frame-height:
+  125.0pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:382.05pt;mso-element-top:
+  486.25pt;mso-height-rule:exactly'><span class="hcp30">Рис. 3.4.3</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='margin-bottom:4.0pt;text-indent:0cm;line-height:normal'><span class="hcp3"><span class="hcp9">                                                        </span><span class="hcp8"><img width="115" height="25" src="chap3_4_1.files/image347.gif" v:shapes="_x0000_i1209"></span>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Матрица-столбец <span class="hcp22"><img width="16" height="21" src="chap3_4_1.files/image348.gif" v:shapes="_x0000_i1210"></span><span class="hcp9"> </span>отлична от нуля, если выполняется условие</span></p>
+
+<p class=BookMath style='margin-top:4.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><span class="hcp11"><img width="124" height="24" src="chap3_4_1.files/image350.gif" v:shapes="_x0000_i1211"></span><span class="hcp3">,<span class="hcp25">    </span><span class="hcp9">                       </span><span class="hcp9"> </span>(3.4.33)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">которое полностью совпадает с
+характеристическим уравнением (3.4.17). Умножим (3.4.32) слева на <span class="hcp8"><img width="32" height="25" src="chap3_4_1.files/image352.gif" v:shapes="_x0000_i1212"></span><span class="hcp9"> </span>и перенесем один из членов через знак
+равенства. Получим</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><span class="hcp11"><img width="105" height="25" src="chap3_4_1.files/image354.gif" v:shapes="_x0000_i1213"></span><span class="hcp3">.<span class="hcp9">                              </span>(3.4.34)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Из теории матриц известно, что <span class="hcp16"><img width="23" height="21" src="chap3_4_1.files/image356.gif" v:shapes="_x0000_i1214"></span><span class="hcp9"> </span>является <span class="hcp17">собственным числом</span> матрицы <span class="hcp8"><img width="60" height="25" src="chap3_4_1.files/image358.gif" v:shapes="_x0000_i1215"></span>,
+а вектор <span class="hcp22"><img width="16" height="21" src="chap3_4_1.files/image359.gif" v:shapes="_x0000_i1216"></span>&nbsp;–
+е<span class="hcp17">е собственным
+вектором.</span></span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp4"><span style='font-size:10.0pt;font-family:
+Arial;letter-spacing:.2pt'>Свободные колебания с сопротивлением.</span></b><span class="hcp3"> <span style='letter-spacing:.2pt'>Остановимся
+кратко на рассмотрении колебаний при условии действия сил сопротивления. Предположим,
+что действующие на механическую систему силы сопротивления являются линейными
+функциями обобщенных скоростей – во многих задачах механики это допущение
+оправдано. Тогда дифференциальные уравнения движения (3.4.10) принимают вид</span></span></p>
+
+<p class=BookMath style='margin-top:6.0pt;line-height:normal'><span class="hcp11"><img width="133" height="25" src="chap3_4_1.files/image361.gif" v:shapes="_x0000_i1217"></span><span class="hcp3">,<span class="hcp25">  </span><span class="hcp9">              </span><span class="hcp9">                            </span>(3.4.35)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">или</span></p>
+
+<p class=BookMath style='margin-bottom:6.0pt;line-height:normal'><span class="hcp27"><img width="191" height="45" src="chap3_4_1.files/image363.gif" v:shapes="_x0000_i1218"></span><span class="hcp3">, <span class="hcp8"><img width="81" height="21" src="chap3_4_1.files/image365.gif" v:shapes="_x0000_i1219"></span>,<span class="hcp25"> </span><span class="hcp9">                     </span>(3.4.36)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">где <span class="hcp8"><img width="20" height="23" src="chap3_4_1.files/image367.gif" v:shapes="_x0000_i1220"></span><span class="hcp9"> </span>– <i class="hcp5">матрица
+демпфирования</i>, равная</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:0cm;line-height:normal'><span class="hcp23"><img width="199" height="99" src="chap3_4_1.files/image369.gif" v:shapes="_x0000_i1221"></span><span class="hcp3">.<span class="hcp12">                     </span><span class="hcp9">              </span>(3.4.37)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Решение системы (3.4.36) ищем в виде</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><span class="hcp21"><img width="105" height="25" src="chap3_4_1.files/image371.gif" v:shapes="_x0000_i1222"></span><span class="hcp3">,<span class="hcp13">                                 </span><span class="hcp9">             </span>(3.4.38)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">причем в общем случае <span class="hcp8"><img width="16" height="17" src="chap3_4_1.files/image373.gif" v:shapes="_x0000_i1223"></span><span class="hcp9"> </span>принадлежит ко множеству комплексных чисел,
+т.&nbsp;е. <span class="hcp8"><img width="73" height="21" src="chap3_4_1.files/image375.gif" v:shapes="_x0000_i1224"></span>.
+Подстановка (3.4.38) в (3.4.36) приводит к однородной системе алгебраических
+уравнений относительно амплитуд <span class="hcp18"><img width="20" height="25" src="chap3_4_1.files/image377.gif" v:shapes="_x0000_i1225"></span>:</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><span class="hcp11"><img width="155" height="25" src="chap3_4_1.files/image379.gif" v:shapes="_x0000_i1226"></span><span class="hcp3">.<span class="hcp12">                    </span><span class="hcp9">                  </span>(3.4.39)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Далее, как обычно, для обеспечения существования
+нетривиального решения приравниваем нулю определитель системы (3.4.39), что
+дает характеристическое уравнение</span></p>
+
+<p class=BookMath style='margin-bottom:6.0pt;line-height:normal'><span class="hcp11"><img width="164" height="24" src="chap3_4_1.files/image381.gif" v:shapes="_x0000_i1227"></span><span class="hcp3">.<span class="hcp13">                              </span><span class="hcp9">       </span>(3.4.40)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Можно доказать, что если все элементы матрицы демпфирования
+(3.4.37) положительны, то вещественные части всех корней характеристического
+уравнения (3.4.40) отрицательны. Каждому вещественному отрицательному корню <span class="hcp8"><img width="59" height="24" src="chap3_4_1.files/image383.gif" v:shapes="_x0000_i1228"></span>(в
+том числе и вещественной части комплексного корня) соответствует частное
+решение вида</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><span class="hcp21"><img width="124" height="27" src="chap3_4_1.files/image385.gif" v:shapes="_x0000_i1229"></span><span class="hcp3"><span class="hcp9">                                            </span>(3.4.41)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">с вещественным значением <span class="hcp18"><img width="20" height="25" src="chap3_4_1.files/image387.gif" v:shapes="_x0000_i1230"></span>.
+Такие координаты со временем убывают, асимптотически приближаясь к нулевым значениям.
+Если все корни (3.4.40) вещественны и отрицательны, то система будет
+асимптотически приближаться к положению равновесия, совершая монотонное
+затухающее движение неколебательного характера&nbsp;– <i class="hcp5">апериодическое движение</i>. Такое движение характерно для систем с
+сильным трением. Если среди корней уравнения (3.4.40) находятся комплексно сопряженные
+вида <span class="hcp8"><img width="73" height="21" src="chap3_4_1.files/image388.gif" v:shapes="_x0000_i1231"></span>,
+<span class="hcp8"><img width="77" height="21" src="chap3_4_1.files/image390.gif" v:shapes="_x0000_i1232"></span>,
+<span class="hcp16"><img width="40" height="19" src="chap3_4_1.files/image392.gif" v:shapes="_x0000_i1233"></span>,
+то им отвечает затухающее колебательное движение</span></p>
+
+<p class=BookMath style='margin-bottom:6.0pt;line-height:normal'><span class="hcp21"><img width="241" height="25" src="chap3_4_1.files/image394.gif" v:shapes="_x0000_i1234"></span><span class="hcp3">.<span class="hcp9">                           </span>(3.4.42)</span></p>
+
+<p class=Bookbody style='text-indent:21.25pt;line-height:normal'><span class="hcp3">Общее решение системы (3.4.36)
+является результатом линейного наложения частных решений (3.4.41) и (3.4.42).</span></p>
+
+</div>
+
+<div placeholder id="footer" style="width:100%;" class="hcp1">
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			border-bottom-color: #000080;
+			border-bottom-style: Ridge;
+			border-bottom-width: 2px;
+			font-size: 10pt;">&nbsp;</p>
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			font-size: 8pt;">&#169; 
+ 2007 Copyright &nbsp;&#1053;&#1058;&#1062; 
+ &#1040;&#1055;&#1052;</p>
+</div>
+</body>
+</html>

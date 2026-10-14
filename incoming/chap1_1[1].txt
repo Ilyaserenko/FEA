@@ -1,0 +1,842 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="File-List" href="./chap1_1.files/filelist.xml">
+<link rel="Edit-Time-Data" href="./chap1_1.files/editdata.mso">
+<title>Глава 1.1. Основные статистические характеристики случайных величин</title><style>
+<!--
+p.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+li.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+div.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+h1 { margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; mso-outline-level:1; font-size:14.0pt; font-family:Arial; }
+h3 { mso-style-next:Обычный; margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; page-break-after:avoid; mso-outline-level:3; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-ansi-language:EN-US; mso-bidi-font-weight:normal; }
+h4 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-align:center; mso-pagination:widow-orphan; page-break-after:avoid; mso-outline-level:4; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-bidi-font-family:Times New Roman; font-weight:normal; }
+p.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+li.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+div.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+p.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+li.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+div.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+p.MsoTitle { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; font-weight:bold; mso-bidi-font-weight:normal; }
+li.MsoTitle { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; font-weight:bold; mso-bidi-font-weight:normal; }
+div.MsoTitle { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; font-weight:bold; mso-bidi-font-weight:normal; }
+p.1 { mso-style-name:Заголовок 1\.Заголовок Главы; mso-style-next:Обычный; margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-font-kerning:14.0pt; mso-ansi-language:EN-US; font-weight:bold; mso-bidi-font-weight:normal; }
+li.1 { mso-style-name:Заголовок 1\.Заголовок Главы; mso-style-next:Обычный; margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-font-kerning:14.0pt; mso-ansi-language:EN-US; font-weight:bold; mso-bidi-font-weight:normal; }
+div.1 { mso-style-name:Заголовок 1\.Заголовок Главы; mso-style-next:Обычный; margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-font-kerning:14.0pt; mso-ansi-language:EN-US; font-weight:bold; mso-bidi-font-weight:normal; }
+p.2 { mso-style-name:Заголовок 2\.Подзаголовок Главы; mso-style-next:Обычный; margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; page-break-after:avoid; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; font-weight:bold; mso-bidi-font-weight:normal; }
+li.2 { mso-style-name:Заголовок 2\.Подзаголовок Главы; mso-style-next:Обычный; margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; page-break-after:avoid; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; font-weight:bold; mso-bidi-font-weight:normal; }
+div.2 { mso-style-name:Заголовок 2\.Подзаголовок Главы; mso-style-next:Обычный; margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; page-break-after:avoid; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; font-weight:bold; mso-bidi-font-weight:normal; }
+p.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:19.85pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:19.85pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:19.85pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookChapter { mso-style-name:Book_Chapter; mso-style-parent:Book_SubPart; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookChapter { mso-style-name:Book_Chapter; mso-style-parent:Book_SubPart; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookChapter { mso-style-name:Book_Chapter; mso-style-parent:Book_SubPart; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookMath { mso-style-name:Book_Math; mso-style-parent:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:right; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.BookMath { mso-style-name:Book_Math; mso-style-parent:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:right; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.BookMath { mso-style-name:Book_Math; mso-style-parent:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:right; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.Paragraphtitle { mso-style-name:Paragraph title; mso-style-parent:Book_body; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-align:center; line-height:90%; mso-pagination:none; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; font-style:italic; mso-bidi-font-style:normal; }
+li.Paragraphtitle { mso-style-name:Paragraph title; mso-style-parent:Book_body; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-align:center; line-height:90%; mso-pagination:none; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; font-style:italic; mso-bidi-font-style:normal; }
+div.Paragraphtitle { mso-style-name:Paragraph title; mso-style-parent:Book_body; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-align:center; line-height:90%; mso-pagination:none; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; font-style:italic; mso-bidi-font-style:normal; }
+div.Section1 { page:Section1; }
+-->
+</style><style title="hcp" type="text/css">
+<!--
+div.hcp1 { position:relative; }
+span.hcp2 { font-size:10.0pt; font-family:Arial; letter-spacing:2.0pt; mso-bidi-font-weight:bold; mso-bidi-font-style:italic; }
+span.hcp3 { font-size:10.0pt; font-family:Arial; }
+b.hcp4 { mso-bidi-font-weight:normal; }
+i.hcp5 { mso-bidi-font-style:normal; }
+span.hcp6 { font-size:10.0pt; font-family:Arial; letter-spacing:-.1pt; }
+span.hcp7 { letter-spacing:2.0pt; mso-bidi-font-style:italic; }
+span.hcp8 { mso-spacerun:yes; }
+span.hcp9 { mso-tab-count:1; }
+span.hcp10 { mso-tab-count:3; }
+span.hcp11 { mso-bidi-font-style:italic; }
+span.hcp12 { letter-spacing:2.0pt; }
+table.hcp13 { border-collapse:collapse; mso-padding-alt:0cm 5.4pt 0cm 5.4pt; }
+td.hcp14 { padding:0cm 5.4pt 0cm 5.4pt; }
+span.hcp15 { mso-tab-count:2; }
+span.hcp16 { mso-tab-count:4; }
+span.hcp17 { font-size:10.0pt; font-family:Arial; mso-ansi-language:EN-US; }
+span.hcp18 { mso-bidi-font-family:Arial; mso-ansi-language:RU; font-weight:normal; }
+span.hcp19 { mso-ansi-language:RU; }
+span.hcp20 { font-size:10.0pt; font-family:Arial; letter-spacing:2.0pt; mso-bidi-font-weight:bold; }
+span.hcp21 { font-size:10.0pt; font-family:Arial; mso-bidi-font-weight:bold; }
+td.hcp22 { border:solid windowtext .75pt; border-left:none; mso-border-left-alt:solid windowtext .75pt; padding:0cm 3.5pt 0cm 3.5pt; }
+td.hcp23 { border-top:none; border-left:none; border-bottom:solid windowtext .75pt; border-right:solid windowtext .75pt; mso-border-top-alt:solid windowtext .75pt; mso-border-left-alt:solid windowtext .75pt; padding:0cm 3.5pt 0cm 3.5pt; }
+td.hcp24 { border:solid windowtext .75pt; border-top:none; mso-border-top-alt:solid windowtext .75pt; padding:0cm 5.4pt 0cm 5.4pt; }
+td.hcp25 { border-top:none; border-left:none; border-bottom:solid windowtext .75pt; border-right:solid windowtext .75pt; mso-border-top-alt:solid windowtext .75pt; mso-border-left-alt:solid windowtext .75pt; padding:0cm 5.4pt 0cm 5.4pt; }
+-->
+</style>
+</head>
+<body lang="RU" style="tab-interval:36.0pt">
+<div placeholder id="header" style="width:100%;" class="hcp1">
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			background-color: #d8e8f9;
+			margin-left: 0px;"><img src="head_for_help.jpg"
+									x-maintain-ratio=TRUE
+									style="border: none;
+											width: 1000px;
+											height: 50px;
+											float: none;
+											border-style: none;
+											border-style: none;"
+									width=1000
+									height=50
+									border=0></p>
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			border-top-color: #000080;
+			border-top-width: 2px;
+			border-top-style: Ridge;
+			margin-left: 0px;">&nbsp;</p>
+</div>
+<div class=Section1>
+
+<h1><span style='color:navy;mso-bidi-font-weight:normal'>Глава 1.1. Основные
+статистические характеристики случайных величин</span><span style='font-size:
+10.0pt;mso-bidi-font-size:14.0pt;letter-spacing:2.0pt;mso-bidi-font-style:italic'></span></h1>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Детерминированной </span><span class="hcp3">называется такая величина, значение
+которой постоянно и не изменяется в течение времени наблюдения за ее
+поведением. Значение <span style='letter-spacing:2.0pt;mso-bidi-font-weight:
+bold;mso-bidi-font-style:italic'>случайной</span> величины невозможно
+предсказать при единичном наблюдении. Количественные характеристики случайного
+параметра не могут быть раз и навсегда определены, так как они меняются во
+времени. Строго говоря, любая физическая величина случайна, а детерминированная
+трактовка оправдана лишь точностью выполнения расчетов.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Из вышесказанного следует, что
+большинство параметров, характеризующих работу любой механической системы,
+случайны. Тогда, используя аппарат теории <span style='letter-spacing:-.1pt'>вероятностей,
+а в более сложных случаях и аппарат теории случайных функций, можно предсказать
+и количественно описать случайные закономерности, возникающие в процессе работы
+машин и механизмов.</span></span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp4"><span class="hcp3">Основные числовые характеристики случайных величин.</span></b> <span class="hcp3">Числовые характеристики случайной
+величины определяются из анализа единичных реализаций, происходящих в период
+наблюдения за этой величиной. Наука, которая занимается методами обработки
+опытных данных, полученных в результате такого наблюдения, называется <i class="hcp5">математической статистикой</i>. Поэтому
+методы обработки случайных величин называются <i class="hcp5">статистическими</i>.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp6">Математическая
+статистика подробно анализирует поведение случайных величин. В данной главе
+приведены основные понятия теории вероятностей и математической статистики,
+которые необходимы для понимания физической сути проблем, связанных с проектированием
+машин, механизмов и конструкций.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">В простейшем случае случайное
+событие имеет два возможных исхода&nbsp;– <i class="hcp5">да</i>
+или <i class="hcp5">нет</i>. Если при большом числе испытаний
+количество благоприятных исходов равно числу неблагоприятных, то говорят, что
+случайные события <i class="hcp5">взаимно независимы</i>.
+Под <span class="hcp7">вероятностью</span></span>
+<span style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:Arial;
+letter-spacing:.1pt'>благоприятного исхода понимают отношение фактического
+числа таких исходов к полному числу испытаний. Очевидно, что вероятность
+появления одного из двух независимых случайных событий равна 1/2. Наблюдения за
+случайными событиями показали, что реализация двух последовательных
+благоприятных исходов происходит с вероятностью 1/4. Это означает, что
+вероятность сложного события, составленного из любого числа простых взаимно
+независимых, равна произведению вероятностей этих простых событий.<br>
+В теории вероятностей такой вывод формулируется как <i>теорема умножения
+вероятностей</i></span><i><span class="hcp3">.</span></i></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Соотношение, устанавливающее тем или
+иным способом связь между возможными значениями случайной величины и их вероятностями,
+называется <i class="hcp5">законом распределения</i>
+случайной величины. Закон распределения дискретной случайной величины обычно
+задается с помощью гистограммы. Каждому значению случайной величины <sub><img width="22" height="22" src="chap1_1.files/image002.gif" v:shapes="_x0000_i1025"></sub><span class="hcp8"> </span>отвечает определенная вероятность <sub><img width="16" height="22" src="chap1_1.files/image004.gif" v:shapes="_x0000_i1026"></sub>. В
+качестве примера на рис. 1.1.1 приведена гистограмма рассеяния (разброса)
+погрешности <sub><img width="18" height="16" src="chap1_1.files/image006.gif" v:shapes="_x0000_i1027"></sub><span class="hcp8"> </span>одного из линейных размеров деталей в партии,
+полученной в результате механической обработки. По горизонтальной оси
+откладываются различные возможные значения данной случайной величины, а именно
+погрешности линейного размера, а по вертикали – количество деталей, имеющих
+такую погрешность. Если в интервал <sub><img width="22" height="18" src="chap1_1.files/image008.gif" v:shapes="_x0000_i1028"></sub><span class="hcp8"> </span>попало <sub><img width="16" height="22" src="chap1_1.files/image010.gif" v:shapes="_x0000_i1029"></sub><span class="hcp8"> </span>значений случайной величины из общего
+количества <sub><img width="18" height="16" src="chap1_1.files/image012.gif" v:shapes="_x0000_i1030"></sub>, то
+вероятность <sub><img width="16" height="22" src="chap1_1.files/image013.gif" v:shapes="_x0000_i1031"></sub><span class="hcp8"> </span>появления такого значения равна</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:21.25pt;line-height:normal'><span class="hcp3"><span class="hcp8"> </span><sub><img width="50" height="41" src="chap1_1.files/image015.gif" v:shapes="_x0000_i1032"></sub>.<span class="hcp9">   </span> <span class="hcp10">                                   </span><span class="hcp8">  </span><span class="hcp9">          </span><span class="hcp8"> </span>(1.1.1)</span></p>
+
+<p class=Bookbody style='text-indent:21.25pt;line-height:normal'><span class="hcp3">Рассчитав вероятности каждого из текущих
+событий, можно получить совокупность вероятностей и также изобразить ее в виде
+гистограммы, составленной из отрезков прямых. При <sub><img width="54" height="18" src="chap1_1.files/image017.gif" v:shapes="_x0000_i1033"></sub><span class="hcp8"> </span>кусочно-линейная функция может быть заменена
+непрерывной функцией <sub><img width="38" height="22" src="chap1_1.files/image019.gif" v:shapes="_x0000_i1034"></sub>,
+называемой <span class="hcp7">функцией
+плотности вероятност</span><span class="hcp11">и</span>.
+График функции <sub><img width="38" height="22" src="chap1_1.files/image021.gif" v:shapes="_x0000_i1035"></sub>называется
+<span class="hcp12">кривой распределения</span> (рис. 1.1.2).</span></p>
+
+<div align=center>
+
+<table border="0" cellspacing="0" cellpadding="0" class="hcp13">
+ <tr>
+  <td width="296" valign="bottom" style="width:222.05pt;" class="hcp14">
+  <p class=Bookbody align=center style='text-align:center;text-indent:21.3pt;
+  line-height:normal'><span class="hcp3"><img width="254" height="134" src="chap1_1.files/image023.gif" v:shapes="_x0000_i1036"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">Рис.
+  1.1.1</span></p>
+  </td>
+  <td width="208" valign="bottom" style="width:155.7pt;" class="hcp14">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3"><img width="149" height="118" src="chap1_1.files/image025.gif" v:shapes="_x0000_i1037"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">Рис.
+  1.1.2</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='text-indent:21.25pt;line-height:normal'><span class="hcp3">Геометрически вероятность <sub><img width="98" height="28" src="chap1_1.files/image027.gif" v:shapes="_x0000_i1038"></sub><span class="hcp8"> </span>попадания случайной величины <sub><img width="18" height="16" src="chap1_1.files/image028.gif" v:shapes="_x0000_i1039"></sub><span class="hcp8"> </span>в диапазон <sub><img width="46" height="26" src="chap1_1.files/image030.gif" v:shapes="_x0000_i1040"></sub><span class="hcp8"> </span>равна площади заштрихованной криволинейной
+трапеции:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><span class="hcp3"><span class="hcp8"> </span><b class="hcp4"><sub><img width="175" height="60" src="chap1_1.files/image032.gif" v:shapes="_x0000_i1041"></sub></b>.<span class="hcp10">                               </span> (1.1.2)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Назовем <span class="hcp12">математическим ожиданием</span> (средним значением) <sub><img width="46" height="22" src="chap1_1.files/image034.gif" v:shapes="_x0000_i1042"></sub><span class="hcp8"> </span>случайной величины следующее отношение:</span></p>
+
+<p class=BookMath style='margin-bottom:6.0pt;line-height:normal'><sub><span class="hcp3"><img width="278" height="88" src="chap1_1.files/image036.gif" v:shapes="_x0000_i1043"></span></sub><span class="hcp3">, <span class="hcp15">             </span><span class="hcp8">         </span>(1.1.3)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">где <sub><img width="14" height="18" src="chap1_1.files/image038.gif" v:shapes="_x0000_i1044"></sub>&nbsp;–
+число участков разбиения интервала изменения случайной величины. Очевидно, что <sub><img width="58" height="46" src="chap1_1.files/image040.gif" v:shapes="_x0000_i1045"></sub>,
+следовательно, из (1.1.3) и (1.1.2) получаем</span></p>
+
+<p class=BookMath style='margin-top:4.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><sub><span class="hcp3"><img width="198" height="50" src="chap1_1.files/image042.gif" v:shapes="_x0000_i1046"></span></sub><span class="hcp3">.<span class="hcp8"> 
+</span><span class="hcp9">        </span><span class="hcp8">   </span><span class="hcp9">         </span><span class="hcp8">   </span><span class="hcp8">      </span>(1.1.4)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Важной характеристикой статистического распределения
+является <span class="hcp7">дисперсия</span>
+<sub><img width="42" height="20" src="chap1_1.files/image044.gif" v:shapes="_x0000_i1047"></sub>&nbsp;–
+мера отклонения случайной величины от ее математического ожидания, равная</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+line-height:normal'><sub><span class="hcp3"><img width="170" height="46" src="chap1_1.files/image046.gif" v:shapes="_x0000_i1048"></span></sub><span class="hcp3">.<span class="hcp8">   
+</span><span class="hcp9">      </span><span class="hcp8">  </span><span class="hcp9">          </span><span class="hcp8">            </span>(1.1.5)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">В интегральной форме выражение
+(1.1.5) имеет вид</span></p>
+
+<p class=BookMath style='margin-top:4.0pt;margin-right:0cm;margin-bottom:4.0pt;
+margin-left:0cm;line-height:normal'><sub><span class="hcp3"><img width="194" height="50" src="chap1_1.files/image048.gif" v:shapes="_x0000_i1049"></span></sub><span class="hcp3">.<span class="hcp15">                       </span><span class="hcp8">       </span>(1.1.6)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">При практическом применении удобно вместо дисперсии
+использовать квадратный корень из этой величины, который получил название <span class="hcp7">среднего квадратичного
+отклонения</span> <sub><span class="hcp11"><img width="36" height="22" src="chap1_1.files/image050.gif" v:shapes="_x0000_i1050"></span></sub><span class="hcp11">:</span></span></p>
+
+<p class=BookMath style='margin-bottom:4.0pt;text-indent:19.85pt;line-height:
+normal'><sub><span class="hcp3"><img width="138" height="26" src="chap1_1.files/image052.gif" v:shapes="_x0000_i1051"></span></sub><span class="hcp3">.<span class="hcp10">                              </span><span class="hcp8">     </span>(1.1.7)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Для оценки рассеяния используется также коэффициент вариации
+<sub><img width="14" height="18" src="chap1_1.files/image054.gif" v:shapes="_x0000_i1052"></sub>,</span></p>
+
+<p class=BookMath style='margin-bottom:6.0pt;text-indent:19.85pt;line-height:
+normal'><sub><span class="hcp3"><img width="72" height="44" src="chap1_1.files/image056.gif" v:shapes="_x0000_i1053"></span></sub><span class="hcp3">.<span class="hcp9">           </span><span class="hcp15">                        </span><span class="hcp8">          </span>(1.1.8)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Изменение площади под кривой распределения описывается <span class="hcp7">функцией распределения</span>
+<sub><span class="hcp11"><img width="38" height="20" src="chap1_1.files/image058.gif" v:shapes="_x0000_i1054"></span></sub><span class="hcp11">. Функция распределения случайной величины <sub><img width="18" height="16" src="chap1_1.files/image059.gif" v:shapes="_x0000_i1055"></sub><span class="hcp8"> </span>задает</span> вероятность того, что эта
+величина примет значение, меньшее некоторого заданного <sub><img width="14" height="14" src="chap1_1.files/image061.gif" v:shapes="_x0000_i1056"></sub>:</span></p>
+
+<p class=BookMath style='margin-bottom:6.0pt;text-indent:19.85pt;line-height:
+normal'><sub><span class="hcp3"><img width="196" height="56" src="chap1_1.files/image063.gif" v:shapes="_x0000_i1057"></span></sub><span class="hcp3">.<span class="hcp15">                </span><span class="hcp8">        </span>(1.1.9)</span></p>
+
+<p class=BookMath style='text-align:justify;text-indent:19.85pt;line-height:
+normal'><span class="hcp3">Из определения (1.1.9)
+ясно, что <sub><img width="34" height="22" src="chap1_1.files/image065.gif" v:shapes="_x0000_i1058"></sub><span class="hcp8"> </span>является неубывающей функцией, т.&nbsp;е. <sub><img width="98" height="28" src="chap1_1.files/image067.gif" v:shapes="_x0000_i1059"></sub><span class="hcp8"> </span>при <sub><img width="50" height="22" src="chap1_1.files/image069.gif" v:shapes="_x0000_i1060"></sub>; в
+пределах изменения случайной величины <sub><img width="18" height="18" src="chap1_1.files/image071.gif" v:shapes="_x0000_i1061"></sub><span class="hcp8"> </span>она изменяется от 0 до 1:<sub><img width="76" height="22" src="chap1_1.files/image073.gif" v:shapes="_x0000_i1062"></sub>, <sub><img width="62" height="22" src="chap1_1.files/image075.gif" v:shapes="_x0000_i1063"></sub>.</span></p>
+
+<p class=BookMath style='text-align:justify;text-indent:21.25pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:Arial;letter-spacing:.1pt'>Случайная
+величина может представлять собой совокупность более простых величин. В
+качестве примера рассмотрим контакт двух плоских деталей (рис.1.1.3). Случайным
+здесь является размер <sub><img width="16" height="18" src="chap1_1.files/image077.gif" v:shapes="_x0000_i1064"></sub>,
+полученный в результате сложения взаимно независимых случайных размеров <sub><img width="18" height="22" src="chap1_1.files/image079.gif" v:shapes="_x0000_i1065"></sub><span class="hcp8"> </span>и <sub><img width="20" height="22" src="chap1_1.files/image081.gif" v:shapes="_x0000_i1066"></sub>.
+Рассеяние линейных размеров <sub><img width="18" height="22" src="chap1_1.files/image082.gif" v:shapes="_x0000_i1067"></sub><span class="hcp8"> </span>и <sub><img width="20" height="22" src="chap1_1.files/image083.gif" v:shapes="_x0000_i1068"></sub><span class="hcp8"> </span>вызвано ошибками изготовления и может быть
+описано функциями плотности вероятности <sub><img width="42" height="22" src="chap1_1.files/image085.gif" v:shapes="_x0000_i1069"></sub><span class="hcp8"> </span>и <sub><img width="46" height="22" src="chap1_1.files/image087.gif" v:shapes="_x0000_i1070"></sub><span class="hcp8"> </span>соответственно (рис. 1.1.4). Полученный после
+контакта размер <sub><img width="16" height="18" src="chap1_1.files/image089.gif" v:shapes="_x0000_i1071"></sub><span class="hcp8"> </span>также оказывается рассеянным<br>
+и характеризуется функцией плотности <sub><img width="38" height="22" src="chap1_1.files/image091.gif" v:shapes="_x0000_i1072"></sub>,
+аргумент которой равен <sub><img width="46" height="22" src="chap1_1.files/image093.gif" v:shapes="_x0000_i1073"></sub>.
+Результат сложения можно определить прямым подсчетом. Для этого под кривой
+плотности <sub><img width="42" height="22" src="chap1_1.files/image094.gif" v:shapes="_x0000_i1074"></sub><span class="hcp8"> </span>выделяем элементарный участок <sub><img width="24" height="22" src="chap1_1.files/image096.gif" v:shapes="_x0000_i1075"></sub>.
+Число деталей из первой партии, имеющих размер <sub><img width="16" height="22" src="chap1_1.files/image098.gif" v:shapes="_x0000_i1076"></sub>,
+равно <sub><img width="76" height="22" src="chap1_1.files/image100.gif" v:shapes="_x0000_i1077"></sub>.
+Аналогично для деталей из второй партии&nbsp;– <sub><img width="82" height="22" src="chap1_1.files/image102.gif" v:shapes="_x0000_i1078"></sub><span class="hcp8"> </span>из них имеют размер <sub><img width="18" height="22" src="chap1_1.files/image104.gif" v:shapes="_x0000_i1079"></sub>.
+Вероятность того, что одновременно найдутся детали с размерами <sub><img width="16" height="22" src="chap1_1.files/image106.gif" v:shapes="_x0000_i1080"></sub><span class="hcp8"> </span>и <sub><img width="18" height="22" src="chap1_1.files/image108.gif" v:shapes="_x0000_i1081"></sub>, по
+теореме об умножении вероятностей равна произведению</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><sub><span class="hcp3"><img width="128" height="22" src="chap1_1.files/image110.gif" v:shapes="_x0000_i1082"></span></sub><span class="hcp3">.<span class="hcp16">                                       </span>
+(1.1.10)</span></p>
+
+<div align=center>
+
+<table border="0" cellspacing="0" cellpadding="0" class="hcp13">
+ <tr>
+  <td width="272" valign="bottom" style="width:203.8pt;" class="hcp14">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span lang="EN-US" class="hcp17"><img width="160" height="82" src="chap1_1.files/image112.gif" v:shapes="_x0000_i1083"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">Рис.
+  1.1.3</span></p>
+  </td>
+  <td width="272" valign="bottom" style="width:203.85pt;" class="hcp14">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span lang="EN-US" class="hcp17"><img width="228" height="191" src="chap1_1.files/image114.gif" v:shapes="_x0000_i1084"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">Рис.
+  1.1.4</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Определим математическое ожидание<sub><img width="46" height="20" src="chap1_1.files/image116.gif" v:shapes="_x0000_i1085"></sub> и
+дисперсию <sub><img width="42" height="20" src="chap1_1.files/image117.gif" v:shapes="_x0000_i1086"></sub><span class="hcp8"> </span>функции<sub><img width="38" height="22" src="chap1_1.files/image119.gif" v:shapes="_x0000_i1087"></sub>. На
+основании (1.1.4) с учетом (1.1.10) получаем</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><sub><span class="hcp3"><img width="406" height="174" src="chap1_1.files/image121.gif" v:shapes="_x0000_i1088"></span></sub><span class="hcp3"><span class="hcp8"> </span><span class="hcp9">      </span><span class="hcp8"> </span>(1.1.11)</span></p>
+
+<p class=Bookbody align=left style='margin-top:6.0pt;text-align:left;
+text-indent:0cm;line-height:normal'><span class="hcp3">Так как по определению</span></p>
+
+<p class=BookMath align=center style='margin-bottom:4.0pt;text-align:center;
+line-height:normal'><sub><span class="hcp3"><img width="214" height="50" src="chap1_1.files/image123.gif" v:shapes="_x0000_i1089"></span></sub><span class="hcp3"><span class="hcp8"> </span></span></p>
+
+<p class=BookMath style='margin-bottom:4.0pt;line-height:normal'><sub><span class="hcp3"><img width="314" height="50" src="chap1_1.files/image125.gif" v:shapes="_x0000_i1090"></span></sub><span class="hcp3"><span class="hcp15">                  </span><span class="hcp8"> </span><span class="hcp15">                       </span><span class="hcp8">  </span>(1.1.12)</span></p>
+
+<p class=Bookbody align=left style='text-align:left;text-indent:0cm;line-height:
+normal'><span class="hcp3">то из (1.1.11) следует</span></p>
+
+<p class=BookMath style='line-height:normal'><sub><span class="hcp3"><img width="175" height="28" src="chap1_1.files/image127.gif" v:shapes="_x0000_i1091"></span></sub><span class="hcp3">.<span class="hcp10">                           </span><span class="hcp8">     </span>(1.1.13)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Очевидно, что для случая разности двух случайных величин, <sub><img width="88" height="22" src="chap1_1.files/image129.gif" v:shapes="_x0000_i1092"></sub>,
+математическое ожидание результата по аналогии с (1.1.13) равно</span></p>
+
+<p class=BookMath align=center style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:center;line-height:normal'><sub><span class="hcp3"><img width="174" height="28" src="chap1_1.files/image131.gif" v:shapes="_x0000_i1093"></span></sub><span class="hcp3">.</span></p>
+
+<p class=BookMath style='text-align:justify;line-height:normal'><span class="hcp3">В общем случае справедлив следующий
+вывод: при сложении <sub><img width="14" height="14" src="chap1_1.files/image133.gif" v:shapes="_x0000_i1094"></sub><span class="hcp8"> </span>независимых случайных величин математическое
+ожидание результирующего распределения равно алгебраической сумме
+математических ожиданий составляющих величин:</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><sub><span class="hcp3"><img width="132" height="46" src="chap1_1.files/image135.gif" v:shapes="_x0000_i1095"></span></sub><span class="hcp3">.<span class="hcp16">                                      </span>
+(1.1.14)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Полученный результат (1.1.14) не зависит от вида функций
+плотности вероятности величин.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Определим далее дисперсию распределения (1.1.10). Согласно
+(1.1.6) имеем:</span></p>
+
+<p class=BookMath align=center style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:8.0pt;margin-left:0cm;text-align:center;line-height:normal'><sub><span class="hcp3"><img width="502" height="163" src="chap1_1.files/image137.gif" v:shapes="_x0000_i1096"></span></sub></p>
+
+<p class=BookMath align=left style='margin-top:2.0pt;margin-right:0cm;
+margin-bottom:2.0pt;margin-left:0cm;text-align:left;line-height:normal'><span class="hcp3">откуда с учетом очевидных равенств
+(1.1.12) следует<sub><img width="12" height="22" src="chap1_1.files/image139.gif" v:shapes="_x0000_i1097"></sub></span></p>
+
+<p class=BookMath align=center style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:center;line-height:normal'><sub><span class="hcp3"><img width="84" height="22" src="chap1_1.files/image141.gif" v:shapes="_x0000_i1098"></span></sub><span class="hcp3">; <sub><img width="96" height="24" src="chap1_1.files/image143.gif" v:shapes="_x0000_i1099"></sub>.</span></p>
+
+<p class=BookMath align=left style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:left;line-height:normal'><span class="hcp3">Аналогичный результат получается в
+случае вычитания двух или нескольких случайных чисел из серии случайных распределений
+с плотностями <sub><img width="44" height="22" src="chap1_1.files/image145.gif" v:shapes="_x0000_i1100"></sub>, <sub><img width="46" height="22" src="chap1_1.files/image147.gif" v:shapes="_x0000_i1101"></sub>, <sub><img width="46" height="22" src="chap1_1.files/image149.gif" v:shapes="_x0000_i1102"></sub><span class="hcp8"> </span>и т. д. В общем случае имеем</span></p>
+
+<p class=BookMath style='margin-bottom:4.0pt;line-height:normal'><sub><span class="hcp3"><img width="70" height="46" src="chap1_1.files/image151.gif" v:shapes="_x0000_i1103"></span></sub><span class="hcp3">; <sub><img width="82" height="46" src="chap1_1.files/image153.gif" v:shapes="_x0000_i1104"></sub>.<span class="hcp15">                   </span><span class="hcp8">                   </span>(1.1.15)</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;line-height:normal'><b class="hcp4"><span class="hcp3">Различные виды функций плотности вероятности.</span></b> <span class="hcp3">Функция плотности вероятности
+случайной величины в общем случае может иметь совершенно произвольный вид. Однако
+есть ряд аналитических зависимостей, которые используются в математической
+статистике в качестве функций плотности наиболее часто.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Остановимся на них более подробно.</span></p>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp4"><i><span class="hcp3">Показательное
+(экспоненциальное) распределение. </span></i></b><span class="hcp6">Случайная величина имеет <i class="hcp5">показательное</i> распределение, если ее
+функция плотности вероятности представима в виде</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><sub><span class="hcp3"><img width="206" height="74" src="chap1_1.files/image155.gif" v:shapes="_x0000_i1105"></span></sub><span class="hcp3">,<span class="hcp8">      </span>(1.1.16)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">где положительная величина <sub><img width="14" height="18" src="chap1_1.files/image157.gif" v:shapes="_x0000_i1106"></sub>–
+параметр распределения (рис. 1.1.5).</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp3"><img width="168" height="104" src="chap1_1.files/image159.gif" v:shapes="_x0000_i1107"></span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp3">Рис. 1.1.5</span></p>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp4"><i><span class="hcp3">Равномерное
+распределение.</span></i></b> <span class="hcp3">Говорят,
+что случайная величина распределена на участке от <sub><img width="14" height="14" src="chap1_1.files/image161.gif" v:shapes="_x0000_i1108"></sub><span class="hcp8"> </span>до <sub><img width="12" height="18" src="chap1_1.files/image163.gif" v:shapes="_x0000_i1109"></sub><span class="hcp8"> </span><i class="hcp5">равномерно</i>,
+если <sub><img width="38" height="22" src="chap1_1.files/image165.gif" v:shapes="_x0000_i1110"></sub><span class="hcp8"> </span>на этом участке постоянна (рис. 1.1.6),</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp3"><img width="214" height="86" src="chap1_1.files/image167.gif" v:shapes="_x0000_i1111"></span></sub><span class="hcp3">.<span class="hcp8">     </span>(1.1.17)</span></p>
+
+<p class=2 style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+text-indent:21.3pt'><span class="hcp18">Распределение (1.1.17) называют еще <i class="hcp5">равновероятным.</i></span><span class="hcp19"></span></p>
+
+<p class=Bookbody align=center style='margin-top:12.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><b class="hcp4"><span class="hcp3"><img width="168" height="106" src="chap1_1.files/image169.gif" v:shapes="_x0000_i1112"></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-family:Arial;mso-ansi-language:RU'>Рис. 1.1.6</span><span class="hcp19"></span></p>
+
+<p class=2 style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+text-indent:21.25pt'><i><span style='mso-bidi-font-family:Arial;mso-ansi-language:
+RU'>Треугольное распределение.</span></i><span class="hcp19"> </span><span class="hcp18">Если
+случайная величина на участке <sub><img width="38" height="26" src="chap1_1.files/image171.gif" v:shapes="_x0000_i1113"></sub><span class="hcp8"> </span>представляет собой сумму двух других случайных
+равномерно распределенных величин, то можно показать, что функция плотности
+вероятности этой величины подчиняется так называемому <i class="hcp5">треугольному</i> распределению (рис. 1.1.7):</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:12.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="12" height="22" src="chap1_1.files/image173.gif" v:shapes="_x0000_i1114"><img width="266" height="118" src="chap1_1.files/image175.gif" v:shapes="_x0000_i1115"></span></sub><span class="hcp3">.<span class="hcp8">                          </span>(1.1.18)</span></p>
+
+<p class=Bookbody align=center style='margin-top:12.0pt;text-align:center;
+line-height:normal'><b class="hcp4"><span class="hcp3"><img width="179" height="101" src="chap1_1.files/image177.gif" v:shapes="_x0000_i1116"></span></b></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:21.25pt;
+line-height:normal'><span class="hcp3">Рис. 1.1.7</span></p>
+
+<p class=Bookbody style='text-indent:21.25pt;line-height:normal'><b class="hcp4"><i><span class="hcp3">Нормальное распределение.</span></i></b> <span class="hcp3">Можно показать, что алгебраическая
+сумма шести и более равномерно распределенных случайных величин дает случайную
+величину, распределенную по <b class="hcp4"><span class="hcp11">нормальному закону (закону Гаусса).</span></b>
+Нормальный закон распределения играет важнейшую роль в теории вероятностей
+вообще и в ее инженерных приложениях в частности. Среди других законов
+распределения он занимает особое место. Нормальным распределением можно описать
+любое сложное событие, составленное из совокупности простых взаимно независимых
+случайных явлений. Вот почему например, фактический разброс линейных размеров
+деталей после механической обработки подчиняется именно закону нормального
+распределения. Функция плотности вероятности в этом случае имеет вид</span></p>
+
+<p class=BookMath style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:21.25pt;line-height:normal'><sub><span class="hcp3"><img width="221" height="50" src="chap1_1.files/image179.gif" v:shapes="_x0000_i1117"></span></sub><span class="hcp3">, <span class="hcp15">                    </span><span class="hcp8">          </span>(1.1.19)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">где <sub><img width="22" height="22" src="chap1_1.files/image181.gif" v:shapes="_x0000_i1118"></sub><span class="hcp8"> </span>и <sub><img width="16" height="20" src="chap1_1.files/image183.gif" v:shapes="_x0000_i1119"></sub>– параметры
+нормального распределения, т. е. математическое ожидание и среднее квадратичное
+отклонение соответственно. Кривая нормального распределения имеет симметричный
+колоколообразный вид (рис. 1.1.8).</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp3"><img width="155" height="124" src="chap1_1.files/image185.gif" v:shapes="_x0000_i1120"></span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp3">Рис. 1.1.8</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp3">Вероятность попадания нормально
+распределенной случайной величины<sub><img width="18" height="16" src="chap1_1.files/image186.gif" v:shapes="_x0000_i1121"></sub>в
+диапазон <sub><img width="38" height="22" src="chap1_1.files/image188.gif" v:shapes="_x0000_i1122"></sub><span class="hcp8"> </span>с учетом (1.1.19) и (1.1.2) равна</span></p>
+
+<p class=BookMath style='margin-top:4.0pt;margin-right:0cm;margin-bottom:4.0pt;
+margin-left:0cm;text-indent:21.25pt;line-height:normal'><sub><span class="hcp3"><img width="304" height="50" src="chap1_1.files/image190.gif" v:shapes="_x0000_i1123"></span></sub><span class="hcp3">.<span class="hcp9">            </span>
+(1.1.20)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">Сделав замену переменной <sub><img width="70" height="42" src="chap1_1.files/image192.gif" v:shapes="_x0000_i1124"></sub><span class="hcp8"> </span>и введя обозначения <sub><img width="74" height="41" src="chap1_1.files/image194.gif" v:shapes="_x0000_i1125"></sub>, <sub><img width="77" height="42" src="chap1_1.files/image196.gif" v:shapes="_x0000_i1126"></sub>,
+перепишем (1.1.20) как</span></p>
+
+<p class=BookMath style='line-height:normal'><sub><span class="hcp3"><img width="234" height="52" src="chap1_1.files/image198.gif" v:shapes="_x0000_i1127"></span></sub><span class="hcp3">. <span class="hcp15">                        </span><span class="hcp8"> </span>(1.1.21)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">Отношение <sub><img width="70" height="41" src="chap1_1.files/image200.gif" v:shapes="_x0000_i1128"></sub><span class="hcp8"> </span>называется <span class="hcp7">квантилью</span> нормального распределения и обычно
+обозначается как <sub><img width="18" height="22" src="chap1_1.files/image202.gif" v:shapes="_x0000_i1129"></sub>.
+Квантиль имеет следующий смысл: она равна значению случайной величины,
+соответствующему заданной вероятности <sub><img width="16" height="18" src="chap1_1.files/image204.gif" v:shapes="_x0000_i1130"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Интеграл (1.1.21) не выражается через элементарные функции,
+и его расчет проводится с помощью специальной функции <sub><img width="38" height="20" src="chap1_1.files/image206.gif" v:shapes="_x0000_i1131"></sub>,</span></p>
+
+<p class=Bookbody align=right style='text-align:right;line-height:normal'><b class="hcp4"><i class="hcp5"><sub><span class="hcp3"><img width="190" height="50" src="chap1_1.files/image208.gif" v:shapes="_x0000_i1132"></span></sub></i></b><span class="hcp3">, <span class="hcp10">                            </span><span class="hcp8">  </span>(1.1.22)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">которая называется <span class="hcp7">функцией Лапласа</span>
+или <span class="hcp7">интегралом
+вероятностей</span><i class="hcp5">.</i> Для вычисления
+функции Лапласа имеются таблицы (например, табл. 1.1.1). Функция Лапласа <sub><img width="38" height="20" src="chap1_1.files/image209.gif" v:shapes="_x0000_i1133"></sub><span class="hcp8"> </span>обладает следующими свойствами: 1) <sub><img width="62" height="20" src="chap1_1.files/image211.gif" v:shapes="_x0000_i1134"></sub>;<br>
+2) <sub><img width="106" height="20" src="chap1_1.files/image213.gif" v:shapes="_x0000_i1135"></sub><span class="hcp8"> </span>(нечетная функция); 3) <sub><img width="86" height="20" src="chap1_1.files/image215.gif" v:shapes="_x0000_i1136"></sub><span class="hcp8"> </span>и, значит, <sub><img width="94" height="20" src="chap1_1.files/image217.gif" v:shapes="_x0000_i1137"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">С учетом (1.1.22) вероятность (1.1.21) попадания случайной
+величины в промежуток от <sub><img width="14" height="14" src="chap1_1.files/image219.gif" v:shapes="_x0000_i1138"></sub><span class="hcp8"> </span>до <sub><img width="12" height="18" src="chap1_1.files/image221.gif" v:shapes="_x0000_i1139"></sub><span class="hcp8"> </span>принимает вид</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp3"><img width="264" height="50" src="chap1_1.files/image223.gif" v:shapes="_x0000_i1140"></span></sub><span class="hcp3">.<span class="hcp15">                       </span>
+(1.1.23)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Из (1.1.23) следует, что нахождение вероятности попадания
+нормально распределенной случайной величины в некоторый интервал <sub><img width="34" height="26" src="chap1_1.files/image225.gif" v:shapes="_x0000_i1141"></sub><span class="hcp8"> </span>сводится к выборке значений из таблицы
+функции <sub><img width="38" height="20" src="chap1_1.files/image227.gif" v:shapes="_x0000_i1142"></sub>.</span></p>
+
+<p class=Bookbody style='margin-top:12.0pt;margin-right:0cm;margin-bottom:4.0pt;
+margin-left:0cm;text-indent:0cm;line-height:normal'><span class="hcp20">Таблица</span>
+<span class="hcp21">1.1.1.</span>
+<b class="hcp4"><span class="hcp3">Значения функции Лапласа</span></b> <sub><span class="hcp3"><img width="38" height="20" src="chap1_1.files/image228.gif" v:shapes="_x0000_i1143"></span></sub></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='margin-left:3.5pt;
+ border-collapse:collapse;border:none;mso-border-alt:solid windowtext .75pt;
+ mso-padding-alt:0cm 3.5pt 0cm 3.5pt'>
+ <tr style='height:12.3pt'>
+  <td width=71 style='width:52.9pt;border:solid windowtext .75pt;padding:0cm 3.5pt 0cm 3.5pt;
+  height:12.3pt'>
+  <p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+  margin-bottom:4.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">х</span></p>
+  </td>
+  <td width="85" style="width:63.8pt; height:12.3pt;" class="hcp22">
+  <p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+  margin-bottom:4.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">Ф(x)</span></p>
+  </td>
+  <td width="66" style="width:49.6pt; height:12.3pt;" class="hcp22">
+  <p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+  margin-bottom:4.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">x</span></p>
+  </td>
+  <td width="66" style="width:49.65pt; height:12.3pt;" class="hcp22">
+  <p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+  margin-bottom:4.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">Ф(x)</span></p>
+  </td>
+  <td width="66" style="width:49.6pt; height:12.3pt;" class="hcp22">
+  <p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+  margin-bottom:4.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">x</span></p>
+  </td>
+  <td width="89" style="width:66.75pt; height:12.3pt;" class="hcp22">
+  <p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+  margin-bottom:4.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">Ф(x)</span></p>
+  </td>
+ </tr>
+ <tr style='height:125.9pt'>
+  <td width=71 valign=top style='width:52.9pt;border:solid windowtext .75pt;
+  border-top:none;mso-border-top-alt:solid windowtext .75pt;padding:0cm 3.5pt 0cm 3.5pt;
+  height:125.9pt'>
+  <p class=Bookbody align=center style='margin-top:3.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,0</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,1</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,2</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,3</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,4</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,5</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,6</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,7</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,8</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,9</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">1,0</span></p>
+  </td>
+  <td width="85" valign="top" style="width:63.8pt; height:125.9pt;" class="hcp23">
+  <p class=Bookbody align=center style='margin-top:3.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,00000</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,03983</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,07926</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,11791</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,15542</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,19146</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,22575</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,25804</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,28814</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,31594</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,34134</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt; height:125.9pt;" class="hcp23">
+  <p class=Bookbody align=center style='margin-top:3.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">1,1</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">1,2</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">1,3</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">1,4</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">1,5</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">1,6</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">1,7</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">1,8</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">1,9</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">2,0</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">2,1</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.65pt; height:125.9pt;" class="hcp23">
+  <p class=Bookbody align=center style='margin-top:3.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,36433</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,38493</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,40320</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,41924</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,43319</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,44520</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,45543</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,46407</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,47128</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,47725</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">0,48214</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt; height:125.9pt;" class="hcp23">
+  <p class=Bookbody align=center style='margin-top:3.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">2,2</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">2,3</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">2,4</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">2,5</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">2,6</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">2,7</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">2,8</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">2,9</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">3,0</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">3,5</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp3">4,0</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">5,0</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.75pt; height:125.9pt;" class="hcp23">
+  <p class=Bookbody align=left style='margin-top:3.0pt;text-align:left;
+  text-indent:13.05pt;line-height:normal'><span class="hcp3">0,48610</span></p>
+  <p class=Bookbody align=left style='margin-top:1.0pt;text-align:left;
+  text-indent:13.05pt;line-height:normal'><span class="hcp3">0,48928</span></p>
+  <p class=Bookbody align=left style='margin-top:1.0pt;text-align:left;
+  text-indent:13.05pt;line-height:normal'><span class="hcp3">0,49180</span></p>
+  <p class=Bookbody align=left style='margin-top:1.0pt;text-align:left;
+  text-indent:13.05pt;line-height:normal'><span class="hcp3">0,49379</span></p>
+  <p class=Bookbody align=left style='margin-top:1.0pt;text-align:left;
+  text-indent:13.05pt;line-height:normal'><span class="hcp3">0,49534</span></p>
+  <p class=Bookbody align=left style='margin-top:1.0pt;text-align:left;
+  text-indent:13.05pt;line-height:normal'><span class="hcp3">0,49653</span></p>
+  <p class=Bookbody align=left style='margin-top:1.0pt;text-align:left;
+  text-indent:13.05pt;line-height:normal'><span class="hcp3">0,49744</span></p>
+  <p class=Bookbody align=left style='margin-top:1.0pt;text-align:left;
+  text-indent:13.05pt;line-height:normal'><span class="hcp3">0,49813</span></p>
+  <p class=Bookbody align=left style='margin-top:1.0pt;text-align:left;
+  text-indent:13.05pt;line-height:normal'><span class="hcp3">0,49865</span></p>
+  <p class=Bookbody align=left style='margin-top:1.0pt;text-align:left;
+  text-indent:13.05pt;line-height:normal'><span class="hcp3">0,49977</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;margin-right:0cm;
+  margin-bottom:0cm;margin-left:.5pt;margin-bottom:.0001pt;text-align:center;
+  text-indent:-.5pt;line-height:normal'><span class="hcp3">0,499968</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:.5pt;text-align:center;text-indent:-.5pt;
+  line-height:normal'><span class="hcp3">0,499999</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=Bookbody style='margin-top:12.0pt;line-height:normal'><span class="hcp3">Если участок <sub><img width="41" height="22" src="chap1_1.files/image230.gif" v:shapes="_x0000_i1144"></sub><span class="hcp8"> </span>симметричен относительно математического
+ожидания, то, используя понятие квантили нормального распределения, координаты <sub><img width="30" height="22" src="chap1_1.files/image232.gif" v:shapes="_x0000_i1145"></sub><span class="hcp8"> </span>и <sub><img width="31" height="22" src="chap1_1.files/image234.gif" v:shapes="_x0000_i1146"></sub><span class="hcp8"> </span>границ участка с заданной вероятностью попадания
+в него случайной величины можно определить по формулам</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><span class="hcp3"><span class="hcp8"> </span><sub><img width="104" height="24" src="chap1_1.files/image236.gif" v:shapes="_x0000_i1147"></sub><span class="hcp8"> </span>; <sub><img width="116" height="24" src="chap1_1.files/image238.gif" v:shapes="_x0000_i1148"></sub>. <span class="hcp15">                 </span><span class="hcp8">    </span>(1.1.24)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">На практике важно знать, какова величина границ (1.1.24).
+Расчеты вероятности <sub><img width="128" height="28" src="chap1_1.files/image240.gif" v:shapes="_x0000_i1149"></sub><span class="hcp8"> </span>попадания случайной величины <sub><img width="18" height="16" src="chap1_1.files/image241.gif" v:shapes="_x0000_i1150"></sub><span class="hcp8"> </span>в различные интервалы из промежутка <sub><img width="74" height="24" src="chap1_1.files/image243.gif" v:shapes="_x0000_i1151"></sub>, выполненные
+по формуле (1.1.23), приведены в таблице 1.1.2. Как следует из таблицы,
+случайная величина, описываемая законом нормального распределения, с большой
+долей вероятности не выходит за пределы <sub><img width="56" height="22" src="chap1_1.files/image245.gif" v:shapes="_x0000_i1152"></sub><span class="hcp8"> </span>(так называемое правило «трех сигма»),</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="234" height="24" src="chap1_1.files/image247.gif" v:shapes="_x0000_i1153"></span></sub><span class="hcp3">.<span class="hcp15">             </span><span class="hcp8">          </span>(1.1.25)</span></p>
+
+<p class=Bookbody style='margin-top:12.0pt;margin-right:0cm;margin-bottom:4.0pt;
+margin-left:0cm;text-indent:0cm;line-height:normal'><span class="hcp20">Таблица</span>
+<span class="hcp21">1.1.2.</span><b class="hcp4"><span class="hcp3">Правило «трех сигма»</span></b></p>
+
+<table border=1 cellspacing=0 cellpadding=0 width=418 style='width:313.25pt;
+ margin-left:5.4pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .75pt;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width=248 valign=top style='width:185.7pt;border:solid windowtext .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+  margin-bottom:4.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal'><sub><span class="hcp3"><img width="15" height="14" src="chap1_1.files/image248.gif" v:shapes="_x0000_i1154"></span></sub></p>
+  </td>
+  <td width=170 valign=top style='width:127.55pt;border:solid windowtext .75pt;
+  border-left:none;mso-border-left-alt:solid windowtext .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+  margin-bottom:4.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal'><sub><span class="hcp3"><img width="14" height="14" src="chap1_1.files/image250.gif" v:shapes="_x0000_i1155"></span></sub></p>
+  </td>
+ </tr>
+ <tr style='height:10.75pt'>
+  <td width="248" style="width:185.7pt; height:10.75pt;" class="hcp24">
+  <p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal'><sub><span class="hcp3"><img width="101" height="21" src="chap1_1.files/image252.gif" v:shapes="_x0000_i1156"></span></sub></p>
+  </td>
+  <td width="170" style="width:127.55pt; height:10.75pt;" class="hcp25">
+  <p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">0,341</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="248" style="width:185.7pt;" class="hcp24">
+  <p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal'><sub><span class="hcp3"><img width="128" height="20" src="chap1_1.files/image254.gif" v:shapes="_x0000_i1157"></span></sub></p>
+  </td>
+  <td width="170" style="width:127.55pt;" class="hcp25">
+  <p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">0,136</span></p>
+  </td>
+ </tr>
+ <tr style='height:17.6pt'>
+  <td width="248" style="width:185.7pt; height:17.6pt;" class="hcp24">
+  <p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal'><sub><span class="hcp3"><img width="137" height="20" src="chap1_1.files/image256.gif" v:shapes="_x0000_i1158"></span></sub></p>
+  </td>
+  <td width="170" style="width:127.55pt; height:17.6pt;" class="hcp25">
+  <p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp3">0,021</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=Bookbody style='margin-top:12.0pt;line-height:normal'><span class="hcp3">Вероятность попадания значения
+величины <sub><img width="18" height="16" src="chap1_1.files/image257.gif" v:shapes="_x0000_i1159"></sub><span class="hcp8"> </span>в интервал <sub><img width="90" height="28" src="chap1_1.files/image259.gif" v:shapes="_x0000_i1160"></sub><span class="hcp8"> </span>мала: <sub><img width="174" height="30" src="chap1_1.files/image261.gif" v:shapes="_x0000_i1161"></sub>. В
+связи с этим при проведении инженерных расчетов полагают, что отклонение случайной
+нормально распределенной величины от ее среднего значения не превышает <sub><img width="22" height="20" src="chap1_1.files/image263.gif" v:shapes="_x0000_i1162"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Если по результатам наблюдения за нормально распределенной
+случайной величиной определены ее экстремальные значения <sub><img width="30" height="22" src="chap1_1.files/image264.gif" v:shapes="_x0000_i1163"></sub><span class="hcp8"> </span>и <sub><img width="31" height="22" src="chap1_1.files/image265.gif" v:shapes="_x0000_i1164"></sub>, то
+среднее значение <sub><img width="20" height="24" src="chap1_1.files/image267.gif" v:shapes="_x0000_i1165"></sub><span class="hcp8"> </span>и квадратичное отклонение <sub><img width="16" height="18" src="chap1_1.files/image269.gif" v:shapes="_x0000_i1166"></sub>,
+учитывая (1.1.25), равны</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp3"><img width="110" height="44" src="chap1_1.files/image271.gif" v:shapes="_x0000_i1167"></span></sub><span class="hcp3">; <sub><img width="100" height="41" src="chap1_1.files/image273.gif" v:shapes="_x0000_i1168"></sub>. <span class="hcp15">                     </span><span class="hcp8">     </span>(1.1.26)</span></p>
+
+<p class=Bookbody style='line-height:normal'><b><i><span class="hcp3">Распределение Вейбулла.</span></i></b> <span class="hcp3">Плотность вероятности в этом случае
+описывается формулой</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="326" height="56" src="chap1_1.files/image275.gif" v:shapes="_x0000_i1169"></span></sub><span class="hcp3">,<span class="hcp9">  </span><span class="hcp8">           </span>(1.1.27)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">где <sub><img width="14" height="22" src="chap1_1.files/image277.gif" v:shapes="_x0000_i1170"></sub>&nbsp;–
+параметр формы,<sub><img width="48" height="22" src="chap1_1.files/image279.gif" v:shapes="_x0000_i1171"></sub>&nbsp;–
+параметры масштаба. Эти величины всегда положительны. Различные формы кривой
+распределения показаны на рис. 1.1.9 при <sub><img width="38" height="18" src="chap1_1.files/image281.gif" v:shapes="_x0000_i1172"></sub>.</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp3"><img width="175" height="124" src="chap1_1.files/image283.gif" v:shapes="_x0000_i1173"></span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp3">Рис. 1.1.9</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Можно показать, что при <sub><img width="38" height="22" src="chap1_1.files/image285.gif" v:shapes="_x0000_i1174"></sub><span class="hcp8"> </span>и <sub><img width="38" height="18" src="chap1_1.files/image286.gif" v:shapes="_x0000_i1175"></sub><span class="hcp8"> </span>распределение Вейбулла трансформируется в
+экспоненциальное.</span></p>
+
+<p class=Bookbody style='line-height:normal;page-break-after:avoid'><span
+style='font-size:10.0pt;font-family:Arial;letter-spacing:.2pt'>Подводя итог,
+заметим, что в настоящее время широкое распространение получили методы
+численного моделирования случайных событий. В этой связи разработаны алгоритмы
+генерации случайных чисел, а подсчет вероятностей и иные вычисления выполняются
+за счет непосредственной обработки массивов случайных величин, подчиненных
+заданным законам распределения.</span></p>
+
+<p class=Bookbody style='line-height:normal;page-break-after:avoid'>&nbsp;</p>
+
+</div>
+
+<div placeholder id="footer" style="width:100%;" class="hcp1">
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			border-bottom-color: #000080;
+			border-bottom-style: Ridge;
+			border-bottom-width: 2px;
+			font-size: 10pt;">&nbsp;</p>
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			font-size: 8pt;">&#169; 
+ 2007 Copyright &nbsp;&#1053;&#1058;&#1062; 
+ &#1040;&#1055;&#1052;</p>
+</div>
+</body>
+</html>

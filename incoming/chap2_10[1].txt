@@ -1,0 +1,1661 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="File-List" href="./chap2_10.files/filelist.xml">
+<link rel="Edit-Time-Data" href="./chap2_10.files/editdata.mso">
+<title>Глава 2.10. Расчет прочности при переменном характере внешнего
+нагружения</title><style>
+<!--
+p.MsoNormal { margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoNormal { margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoNormal { margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+h1 { mso-style-next:Обычный; margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; page-break-after:avoid; mso-outline-level:1; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-bidi-font-family:Times New Roman; mso-font-kerning:14.0pt; mso-bidi-font-weight:normal; }
+h2 { mso-style-next:Обычный; margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; page-break-after:avoid; mso-outline-level:2; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-bidi-font-family:Times New Roman; mso-bidi-font-weight:normal; font-style:italic; mso-bidi-font-style:normal; }
+h3 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-align:right; mso-pagination:widow-orphan; page-break-after:avoid; mso-outline-level:3; mso-element:frame; mso-element-frame-width:214.9pt; mso-element-frame-hspace:9.05pt; mso-element-wrap:auto; mso-element-anchor-vertical:page; mso-element-anchor-horizontal:page; mso-element-left:107.3pt; mso-element-top:117.25pt; mso-height-rule:exactly; mso-element-anchor-lock:locked; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-bidi-font-weight:normal; }
+p.MsoHeader { margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoHeader { margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoHeader { margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.MsoCaption { mso-style-next:Обычный; margin-top:4.0pt; margin-right:0cm; margin-bottom:.0001pt; margin-left:0cm; text-align:center; mso-pagination:widow-orphan; mso-list:skip; mso-element:frame; mso-element-frame-width:262.05pt; mso-element-frame-height:180.25pt; mso-element-frame-hspace:7.1pt; mso-element-wrap:around; mso-element-anchor-vertical:page; mso-element-anchor-horizontal:page; mso-element-left:84.75pt; mso-element-top:153.25pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; }
+li.MsoCaption { mso-style-next:Обычный; margin-top:4.0pt; margin-right:0cm; margin-bottom:.0001pt; margin-left:0cm; text-align:center; mso-pagination:widow-orphan; mso-list:skip; mso-element:frame; mso-element-frame-width:262.05pt; mso-element-frame-height:180.25pt; mso-element-frame-hspace:7.1pt; mso-element-wrap:around; mso-element-anchor-vertical:page; mso-element-anchor-horizontal:page; mso-element-left:84.75pt; mso-element-top:153.25pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; }
+div.MsoCaption { mso-style-next:Обычный; margin-top:4.0pt; margin-right:0cm; margin-bottom:.0001pt; margin-left:0cm; text-align:center; mso-pagination:widow-orphan; mso-list:skip; mso-element:frame; mso-element-frame-width:262.05pt; mso-element-frame-height:180.25pt; mso-element-frame-hspace:7.1pt; mso-element-wrap:around; mso-element-anchor-vertical:page; mso-element-anchor-horizontal:page; mso-element-left:84.75pt; mso-element-top:153.25pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; }
+p.MsoList2 { margin-top:0cm; margin-right:0cm; margin-bottom:.0001pt; margin-left:28.3pt; text-align:justify; text-indent:-14.15pt; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoList2 { margin-top:0cm; margin-right:0cm; margin-bottom:.0001pt; margin-left:28.3pt; text-align:justify; text-indent:-14.15pt; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoList2 { margin-top:0cm; margin-right:0cm; margin-bottom:.0001pt; margin-left:28.3pt; text-align:justify; text-indent:-14.15pt; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.MsoList3 { margin-top:0cm; margin-right:0cm; margin-bottom:.0001pt; margin-left:42.45pt; text-align:justify; text-indent:-14.15pt; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoList3 { margin-top:0cm; margin-right:0cm; margin-bottom:.0001pt; margin-left:42.45pt; text-align:justify; text-indent:-14.15pt; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoList3 { margin-top:0cm; margin-right:0cm; margin-bottom:.0001pt; margin-left:42.45pt; text-align:justify; text-indent:-14.15pt; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.MsoBodyText { margin-top:0cm; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoBodyText { margin-top:0cm; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoBodyText { margin-top:0cm; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.MsoBodyText2 { margin:0cm; margin-bottom:.0001pt; text-align:center; mso-pagination:widow-orphan; mso-element:frame; mso-element-frame-width:214.9pt; mso-element-frame-hspace:9.05pt; mso-element-wrap:auto; mso-element-anchor-vertical:page; mso-element-anchor-horizontal:page; mso-element-left:107.3pt; mso-element-top:117.25pt; mso-height-rule:exactly; mso-element-anchor-lock:locked; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.MsoBodyText2 { margin:0cm; margin-bottom:.0001pt; text-align:center; mso-pagination:widow-orphan; mso-element:frame; mso-element-frame-width:214.9pt; mso-element-frame-hspace:9.05pt; mso-element-wrap:auto; mso-element-anchor-vertical:page; mso-element-anchor-horizontal:page; mso-element-left:107.3pt; mso-element-top:117.25pt; mso-height-rule:exactly; mso-element-anchor-lock:locked; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.MsoBodyText2 { margin:0cm; margin-bottom:.0001pt; text-align:center; mso-pagination:widow-orphan; mso-element:frame; mso-element-frame-width:214.9pt; mso-element-frame-hspace:9.05pt; mso-element-wrap:auto; mso-element-anchor-vertical:page; mso-element-anchor-horizontal:page; mso-element-left:107.3pt; mso-element-top:117.25pt; mso-height-rule:exactly; mso-element-anchor-lock:locked; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.MsoBodyText3 { margin:0cm; margin-bottom:.0001pt; text-align:center; mso-pagination:widow-orphan; mso-list:skip; mso-element:frame; mso-element-frame-width:217.05pt; mso-element-frame-height:162.25pt; mso-element-frame-hspace:7.1pt; mso-element-wrap:around; mso-element-anchor-vertical:paragraph; mso-element-anchor-horizontal:page; mso-element-left:273.75pt; mso-element-top:.05pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; font-style:italic; mso-bidi-font-style:normal; }
+li.MsoBodyText3 { margin:0cm; margin-bottom:.0001pt; text-align:center; mso-pagination:widow-orphan; mso-list:skip; mso-element:frame; mso-element-frame-width:217.05pt; mso-element-frame-height:162.25pt; mso-element-frame-hspace:7.1pt; mso-element-wrap:around; mso-element-anchor-vertical:paragraph; mso-element-anchor-horizontal:page; mso-element-left:273.75pt; mso-element-top:.05pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; font-style:italic; mso-bidi-font-style:normal; }
+div.MsoBodyText3 { margin:0cm; margin-bottom:.0001pt; text-align:center; mso-pagination:widow-orphan; mso-list:skip; mso-element:frame; mso-element-frame-width:217.05pt; mso-element-frame-height:162.25pt; mso-element-frame-hspace:7.1pt; mso-element-wrap:around; mso-element-anchor-vertical:paragraph; mso-element-anchor-horizontal:page; mso-element-left:273.75pt; mso-element-top:.05pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; font-style:italic; mso-bidi-font-style:normal; }
+p.Normal1 { mso-style-name:Normal1; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Wide Latin; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.Normal1 { mso-style-name:Normal1; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Wide Latin; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.Normal1 { mso-style-name:Normal1; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Wide Latin; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.BodyText2 { mso-style-name:Body Text 2; margin-top:0cm; margin-right:0cm; margin-bottom:6.0pt; margin-left:14.15pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.BodyText2 { mso-style-name:Body Text 2; margin-top:0cm; margin-right:0cm; margin-bottom:6.0pt; margin-left:14.15pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.BodyText2 { mso-style-name:Body Text 2; margin-top:0cm; margin-right:0cm; margin-bottom:6.0pt; margin-left:14.15pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.BodyText3 { mso-style-name:Body Text 3; mso-style-parent:Body Text 2; margin-top:0cm; margin-right:0cm; margin-bottom:6.0pt; margin-left:14.15pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.BodyText3 { mso-style-name:Body Text 3; mso-style-parent:Body Text 2; margin-top:0cm; margin-right:0cm; margin-bottom:6.0pt; margin-left:14.15pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.BodyText3 { mso-style-name:Body Text 3; mso-style-parent:Body Text 2; margin-top:0cm; margin-right:0cm; margin-bottom:6.0pt; margin-left:14.15pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.Iniiaiieoaeno4 { mso-style-name:Iniiaiie oaeno 4; mso-style-parent:Body Text 2; margin-top:0cm; margin-right:0cm; margin-bottom:6.0pt; margin-left:14.15pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.Iniiaiieoaeno4 { mso-style-name:Iniiaiie oaeno 4; mso-style-parent:Body Text 2; margin-top:0cm; margin-right:0cm; margin-bottom:6.0pt; margin-left:14.15pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.Iniiaiieoaeno4 { mso-style-name:Iniiaiie oaeno 4; mso-style-parent:Body Text 2; margin-top:0cm; margin-right:0cm; margin-bottom:6.0pt; margin-left:14.15pt; text-align:justify; text-indent:1.0cm; mso-pagination:widow-orphan; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:TimesET; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; mso-list:skip; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; mso-list:skip; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; mso-list:skip; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; mso-list:skip; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; mso-list:skip; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; mso-list:skip; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; mso-list:skip; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; mso-list:skip; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; mso-list:skip; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; mso-list:skip; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; mso-list:skip; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; mso-list:skip; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.Section1 { page:Section1; }
+lfo2 { mso-level-number-format:bullet; mso-level-numbering:continue; mso-level-text:\F0B7; mso-level-tab-stop:none; mso-level-number-position:left; mso-level-legacy:yes; mso-level-legacy-indent:14.15pt; mso-level-legacy-space:0cm; margin-left:42.5pt; text-indent:-14.15pt; font-family:Symbol; }
+ol { margin-bottom:0cm; }
+ul { margin-bottom:0cm; }
+-->
+</style><style title="hcp" type="text/css">
+<!--
+div.hcp1 { position:relative; }
+b.hcp2 { mso-bidi-font-weight:normal; }
+span.hcp3 { font-size:10.0pt; font-family:Arial; letter-spacing:-.2pt; }
+span.hcp4 { font-size:10.0pt; font-family:Arial; }
+span.hcp5 { letter-spacing:-.2pt; }
+i.hcp6 { mso-bidi-font-style:normal; }
+span.hcp7 { letter-spacing:2.0pt; mso-bidi-font-style:italic; }
+table.hcp8 { border-collapse:collapse; mso-padding-alt:0cm 5.4pt 0cm 5.4pt; }
+td.hcp9 { padding:0cm 5.4pt 0cm 5.4pt; }
+span.hcp10 { font-size:10.0pt; font-family:Arial; mso-ansi-language:EN-US; }
+span.hcp11 { mso-spacerun:yes; }
+span.hcp12 { font-size:10.0pt; font-family:Arial; letter-spacing:2.0pt; mso-bidi-font-style:italic; }
+span.hcp13 { letter-spacing:2.0pt; mso-bidi-font-weight:bold; mso-bidi-font-style:italic; }
+td.hcp14 { padding-top:0cm; padding-right:9.05pt; padding-bottom:0cm; padding-left:9.05pt; }
+span.hcp15 { font-size:9.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; }
+span.hcp16 { mso-tab-count:1; }
+span.hcp17 { mso-bidi-font-style:italic; }
+span.hcp18 { mso-tab-count:2; }
+td.hcp19 { padding-top:0cm; padding-right:7.1pt; padding-bottom:0cm; padding-left:7.1pt; }
+span.hcp20 { font-size:10.0pt; font-family:Arial; mso-bidi-font-weight:bold; }
+td.hcp21 { border-top:solid windowtext .75pt; border-left:none; border-bottom:none; border-right:solid windowtext .75pt; padding:0cm 3.5pt 0cm 3.5pt; }
+td.hcp22 { border:solid windowtext .75pt; border-top:none; mso-border-top-alt:solid windowtext .75pt; padding:0cm 3.5pt 0cm 3.5pt; }
+span.hcp23 { font-size:9.0pt; mso-bidi-font-size:10.0pt; }
+span.hcp24 { font-size:9.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; }
+span.hcp25 { letter-spacing:.2pt; }
+span.hcp26 { font-size:10.0pt; font-family:Symbol; mso-bidi-font-family:Arial; }
+span.hcp27 { font:7.0pt "Times New Roman"; }
+span.hcp28 { mso-tab-count:3; }
+td.hcp29 { border-top:solid windowtext 1.5pt; border-left:none; border-bottom:solid windowtext .75pt; border-right:solid windowtext .75pt; padding:0cm 3.5pt 0cm 3.5pt; }
+td.hcp30 { border-top:solid windowtext 1.5pt; border-left:none; border-bottom:solid windowtext .75pt; border-right:solid windowtext .75pt; mso-border-left-alt:solid windowtext .75pt; padding:0cm 3.5pt 0cm 3.5pt; }
+td.hcp31 { border:none; border-bottom:solid windowtext .75pt; mso-border-top-alt:solid windowtext .75pt; mso-border-left-alt:solid windowtext .75pt; padding:0cm 3.5pt 0cm 3.5pt; }
+td.hcp32 { border-top:none; border-left:solid windowtext 1.5pt; border-bottom:solid windowtext .75pt; border-right:solid windowtext .75pt; mso-border-top-alt:solid windowtext .75pt; padding:0cm 3.5pt 0cm 3.5pt; }
+td.hcp33 { border-top:none; border-left:none; border-bottom:solid windowtext .75pt; border-right:solid windowtext 1.5pt; mso-border-top-alt:solid windowtext .75pt; mso-border-left-alt:solid windowtext .75pt; padding:0cm 3.5pt 0cm 3.5pt; }
+span.hcp34 { font-size:10.0pt; mso-bidi-font-size:12.0pt; font-family:Arial; }
+-->
+</style>
+</head>
+<body lang="RU" style="tab-interval:36.0pt">
+<div placeholder id="header" style="width:100%;" class="hcp1">
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			background-color: #d8e8f9;
+			margin-left: 0px;"><img src="head_for_help.jpg"
+									x-maintain-ratio=TRUE
+									style="border: none;
+											width: 1000px;
+											height: 50px;
+											float: none;
+											border-style: none;
+											border-style: none;"
+									width=1000
+									height=50
+									border=0></p>
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			border-top-color: #000080;
+			border-top-width: 2px;
+			border-top-style: Ridge;
+			margin-left: 0px;">&nbsp;</p>
+</div>
+<div class=Section1>
+
+<h1 align=left style='text-align:left;text-indent:0cm;page-break-after:auto'><span
+style='mso-bidi-font-size:14.0pt;mso-bidi-font-family:Arial;color:navy;
+mso-font-kerning:18.0pt'>Глава 2.10. Расчет прочности при переменном характере
+внешнего нагружения</span><span style='font-size:10.0pt;mso-bidi-font-family:
+Arial'></span></h1>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp2"><span class="hcp3">&nbsp;</span></b></p>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp2"><span class="hcp3">Механизм
+разрушения деталей при их статическом нагружении.</span></b><span class="hcp4"> <span class="hcp5">Модель
+материала в виде сплошного изотропного тела может быть применима только к объектам
+больших линейных размеров. У малых объемов, как правило, наблюдается анизотропия
+структуры (т.&nbsp;е. различие свойств по разным направлениям), которая
+приводит к значительному изменению механических свойств материала и их
+рассеянию. Если рассматривать металлы на молекулярном уровне, то можно
+утверждать, что они состоят из одинаковых сферических атомов с плотно
+упакованной кристаллической решеткой. Размеры атома обычно не превышают <sub><img width="77" height="26" src="chap2_10.files/image002.gif" v:shapes="_x0000_i1025"></sub>мм.
+Единица длины, равная 10<sup>7</sup> мм, называется <i class="hcp6">ангстремом</i>. Совокупность атомов, образующих периодическую
+структуру, называется</span> <span class="hcp7">кристаллической решеткой</span><span class="hcp5">, а
+точки, в которых размещены сами атомы&nbsp;–</span> <span class="hcp7">узлами</span> <span class="hcp5">решетки. По местоположению узловых точек кристаллические решетки
+металлов бывают кубическими (рис. 2.10.1a), <i class="hcp6">объемно-центрированными</i>
+(рис. 2.10.1b)<i class="hcp6">, гранецентрированными</i>
+(рис. 2.10.1c) и <i class="hcp6">гексагональными</i>
+(рис. 2.10.1d). Например, железо, хром и молибден имеют кубическую
+объемно-центрированную структуру, в то время как алюминий и медь&nbsp;–
+кубическую гранецентрированную. Можно привести и другие примеры, однако
+заметим, что атомарное строение твердых тел описывается с помощью методов
+физики твердого тела, и за получением более подробной информации по этим
+вопросам можно обратиться к любой монографии по этому разделу физики.</span></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Здесь же, не вдаваясь в детали квантово&nbsp;– механической
+модели взаимодействия атомов кристаллической решетки, следует указать лишь на
+то, что взаимное расположение элементов кристаллической решетки обусловлено
+двумя параллельными процессами: отталкиванием (рис. 2.10.2a, кривая 1) и
+притяжением (кривая 2). Силы притяжения возникают благодаря взаимодействию
+электронов с положительно заряженным ядром собственного атома, а
+отталкивания&nbsp;– благодаря наличию взаимодействия электронов с ядрами
+соседних атомов.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">&nbsp;</span></p>
+
+<div align=center>
+
+<table border="0" cellspacing="0" cellpadding="0" class="hcp8">
+ <tr>
+  <td width="136" valign="bottom" style="width:101.9pt;" class="hcp9">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span lang="EN-US" class="hcp10">a) </span><span style='font-size:10.0pt;
+  font-family:Arial;text-transform:uppercase'><img width="106" height="108" src="chap2_10.files/image004.gif" v:shapes="_x0000_i1026"></span><span lang="EN-US" class="hcp10"></span></p>
+  </td>
+  <td width="147" valign="bottom" style="width:110.35pt;" class="hcp9">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span lang="EN-US" class="hcp10">b) </span><span class="hcp4"><img width="113" height="107" src="chap2_10.files/image006.gif" v:shapes="_x0000_i1027"></span><span lang="EN-US" class="hcp10"></span></p>
+  </td>
+  <td width="151" valign="bottom" style="width:4.0cm;" class="hcp9">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span lang="EN-US" class="hcp10">c) </span><span class="hcp4"><img width="112" height="108" src="chap2_10.files/image008.gif" v:shapes="_x0000_i1028"></span><span lang="EN-US" class="hcp10"></span></p>
+  </td>
+  <td width="136" valign="bottom" style="width:101.95pt;" class="hcp9">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span lang="EN-US" class="hcp10">d</span><span class="hcp4">)<img width="94" height="122" src="chap2_10.files/image010.gif" v:shapes="_x0000_i1029"></span></p>
+  </td>
+ </tr>
+ <tr style='height:19.55pt'>
+  <td width="570" colspan="4" valign="bottom" style="width:427.6pt; height:19.55pt;" class="hcp9">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp4">Рис.
+  2.10.1</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+text-indent:0cm'><span class="hcp4">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">В результате при отсутствии нагрузки атомы располагаются
+всегда на некотором расстоянии <sub><img width="14" height="14" src="chap2_10.files/image012.gif" v:shapes="_x0000_i1030"></sub><span class="hcp11"> </span>друг от друга, где сила их взаимодействия, а,
+следовательно, и энергия <sub><img width="16" height="18" src="chap2_10.files/image014.gif" v:shapes="_x0000_i1031"></sub>, равны
+нулю. Такое состояние кристаллической решетки является <i class="hcp6">устойчивым,</i> или <i class="hcp6">равновесным</i>.
+Последнее означает, что при сколь угодно малых смещениях атомов, вызванных приложением
+внешних сил, они возвращаются в исходное состояние после снятия нагрузки. Если перемещения
+относительно малы по величине, то силу взаимодействия атомов допустимо считать
+линейной относительно этих перемещений (рис. 2.10.2b), а деформацию&nbsp;–
+упругой. В силу абсолютной симметрии можно утверждать, что смещенные на
+расстояние <sub><img width="14" height="14" src="chap2_10.files/image016.gif" v:shapes="_x0000_i1032"></sub>=<sub><img width="31" height="16" src="chap2_10.files/image018.gif" v:shapes="_x0000_i1033"></sub>
+атомы взаимодействуют с другой группой атомов, что приводит к необратимым
+сдвигам слоев. В свою очередь, сдвиг слоев вызывает появление пластических
+деформаций, величина которых кратна <sub><img width="14" height="14" src="chap2_10.files/image019.gif" v:shapes="_x0000_i1034"></sub>.
+Предположим, что величина касательного напряжения <sub><img width="14" height="14" src="chap2_10.files/image021.gif" v:shapes="_x0000_i1035"></sub><span class="hcp11"> </span>зависит от смещений по синусоидальному
+закону, а именно <sub><img width="126" height="24" src="chap2_10.files/image023.gif" v:shapes="_x0000_i1036"></sub>,
+где <sub><img width="31" height="22" src="chap2_10.files/image025.gif" v:shapes="_x0000_i1037"></sub>&nbsp;–
+напряжение, при котором появляются пластические деформации. Тогда очевидно, что
+для малых углов получаем прямо пропорциональную зависимость</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">&nbsp;</span></p>
+
+<div align=center>
+
+<table border="0" cellspacing="0" cellpadding="0" class="hcp8">
+ <tr>
+  <td width="179" valign="bottom" style="width:134.3pt;" class="hcp9">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp4">а) <img width="149" height="162" src="chap2_10.files/image027.gif" v:shapes="_x0000_i1038"></span></p>
+  </td>
+  <td width="302" valign="bottom" style="width:8.0cm;" class="hcp9">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span lang="EN-US" class="hcp10">b</span><span class="hcp4">)<img width="276" height="141" src="chap2_10.files/image029.gif" v:shapes="_x0000_i1039"></span></p>
+  </td>
+ </tr>
+ <tr style='height:14.65pt'>
+  <td width="481" colspan="2" valign="bottom" style="width:361.1pt; height:14.65pt;" class="hcp9">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span style='font-size:10.0pt;mso-bidi-font-size:9.0pt;
+  font-family:Arial'>Рис. 2.10.2</span><span class="hcp4"></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">&nbsp;</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><span class="hcp4"><span class="hcp11">           </span><sub><img width="82" height="41" src="chap2_10.files/image031.gif" v:shapes="_x0000_i1040"></sub>.<span class="hcp11">                          </span><span class="hcp11">                    </span>(2.10.1)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Запишем аналогично (2.4.1) закон Гука для рассматриваемого
+нами случая:</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="50" height="22" src="chap2_10.files/image033.gif" v:shapes="_x0000_i1041"></span></sub><span class="hcp4">,<span class="hcp11">                                                     </span>(2.10.2)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">где <sub><img width="16" height="18" src="chap2_10.files/image035.gif" v:shapes="_x0000_i1042"></sub>&nbsp;–
+модуль упругости при сдвиге, <sub><img width="58" height="22" src="chap2_10.files/image037.gif" v:shapes="_x0000_i1043"></sub>&nbsp;–
+угол сдвига. Подставляя в (2.10.2) выражение (2.10.1), имеем</span></p>
+
+<p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="102" height="22" src="chap2_10.files/image039.gif" v:shapes="_x0000_i1044"></span></sub><span class="hcp4">.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Переходя от наибольшего касательного напряжения <sub><img width="32" height="22" src="chap2_10.files/image041.gif" v:shapes="_x0000_i1045"></sub><span class="hcp11"> </span>к нормальному <sub><img width="34" height="22" src="chap2_10.files/image043.gif" v:shapes="_x0000_i1046"></sub><span class="hcp11"> </span>(для случая одноосного растяжения согласно
+(2.2.9) можно записать <sub><img width="86" height="22" src="chap2_10.files/image045.gif" v:shapes="_x0000_i1047"></sub>) и
+принимая во внимание, что для металлов при <sub><img width="50" height="22" src="chap2_10.files/image047.gif" v:shapes="_x0000_i1048"></sub><span class="hcp11"> </span>модуль упругости равен <sub><img width="74" height="20" src="chap2_10.files/image049.gif" v:shapes="_x0000_i1049"></sub>,
+окончательно получаем</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="124" height="44" src="chap2_10.files/image051.gif" v:shapes="_x0000_i1050"></span></sub><span class="hcp4">.<span class="hcp11">          </span><span class="hcp11">                                </span>(2.10.3)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">Выражение
+(2.10.3) говорит о том, что в случае одноосного растяжения пластические
+деформации начинаются при напряжениях, равных примерно одной восьмой модуля
+упругости <sub><img width="16" height="18" src="chap2_10.files/image053.gif" v:shapes="_x0000_i1051"></sub>.
+Между тем, как показывают экспериментальные данные, напряжения, при которых
+материалы начинают пластически деформироваться, могут быть ниже в десятки и
+даже сотни раз. Близкие к расчетным результаты наблюдаются только для
+кристаллов</span><span class="hcp4"> </span><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial;letter-spacing:-.2pt;
+mso-ansi-language:EN-US'>c</span><span lang="EN-US" class="hcp4"> </span><span class="hcp3">одним центром кристаллизации (монокристаллов), выращенных
+в специальных условиях. Поликристаллические структуры (рис. 2.10.3a) с хаотично
+ориентированными кристаллическими решетками являются значительно менее прочными
+из-за наличия в них</span><span class="hcp12">дислокаций</span><span class="hcp4"> <span class="hcp5">(т.&nbsp;е.
+дефектов кристаллической решетки в тех местах, где имеются смещенные из
+устойчивого положения атомы), дефектов на границах и т.&nbsp;д. Можно
+утверждать, что металлы состоят из множества зерен, хаотично ориентированных
+внутри рассматриваемого объема.</span></span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span class="hcp4"><img width="369" height="94" src="chap2_10.files/image055.gif" v:shapes="_x0000_i1052"></span></p>
+
+<p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+text-indent:0cm'><span lang="EN-US" class="hcp10">a)<span class="hcp11">                                                                </span><span class="hcp11">    </span>b)</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span class="hcp4">Рис</span><span lang="EN-US" class="hcp10">. 2.10.3</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp10">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Атомарная модель может быть использована при описании
+монокристаллических тел либо тел малых объемов, размеры которых не превышают
+размеров одного зерна. Тем не менее, даже если размеры объекта состоят из
+единичного числа зерен, может возникать явление анизотропии. Анизотропия
+свойств не наблюдается для металлов, имеющих большие по сравнению с размером
+зерен линейные размеры, так как хаотически ориентированные механические
+свойства зерен в совокупности приводят к усредненным характеристикам, не
+зависящим от направления. В этой связи и была сформулирована модель материала в
+виде сплошной среды, имеющей одинаковые свойства во всех направлениях (рис.
+2.10.3b).</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp2"><span class="hcp4">Механизм усталостного разрушения деталей.</span></b><span class="hcp4"> Если детали подвержены действию
+переменных нагрузок, то при определенных значениях переменных напряжений,
+возникающих внутри их объема, начинают протекать процессы зарождения и развития
+трещин, что, в конечном итоге, может привести к внезапному разрушению этих
+деталей. Зарождение трещин связано с накоплением повреждений, а их количество
+зависит от числа циклов нагружения детали. Вероятность появления трещины больше
+там, где выше уровень напряжений, и в этом смысле опасными являются как
+номинальные, так и местные напряжения.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Процесс зарождения трещины случаен и в сильной степени
+зависит от размеров зерен. Кроме того, причиной ее возникновения могут быть
+пластические деформации сдвига, появляющиеся в отдельных неблагоприятно
+ориентированных зернах. Следы таких сдвигов можно наблюдать и при малом числе
+циклов нагружения. Они бывают заметными даже в деталях, отработавших лишь один
+процент времени от фактической долговечности. Опасным местом зарождения и роста
+трещины является также поверхностный слой, который из-за наличия шероховатостей
+и поверхностных напряжений сам является концентратором напряжений. Процесс
+пластического деформирования вблизи поверхности оказывается более легким, чем в
+толще материала. Этим можно объяснить тот факт, что почти все трещины,
+приводящие к разрушению, начинаются с поверхности. Ярким доказательством этого
+служит периодическая обработка поверхности с целью удаления дефектного слоя,
+которая приводит к значительному увеличению срока службы детали, работающей в
+условиях переменного нагружения.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span style='font-size:10.0pt;
+mso-bidi-font-size:11.0pt;font-family:Arial'>Механизм разрушения детали определяется
+многими факторами: неоднородностью структуры материала, наличием дефектов
+кристаллической решетки, примесей, включений и т.&nbsp;п. Возникновение
+микроскопических трещин, чаще всего связанное с перемещением дислокаций на
+границу зерна и их объединением, начинается в наиболее напряженных зонах. С
+течением времени трещины группируются, образуя макроскопические структуры
+протяженностью <sub><img width="54" height="20" src="chap2_10.files/image057.gif" v:shapes="_x0000_i1053"></sub>мм.
+Повреждения таких размеров, являясь дополнительными концентраторами, способны
+существенно изменить картину распределения напряжений, что значительно ускоряет
+процесс разрушения.</span><span class="hcp4"></span></p>
+
+<p class=Bookbody style='line-height:normal'><span style='font-size:10.0pt;
+font-family:Arial;letter-spacing:-.1pt'>Скорость процесса роста трещины зависит
+также от температуры тела. Поскольку в процессе нагружения механическая система
+поглощает энергию, то ее температура при этом возрастает, что приводит к увеличению
+подвижности дислокаций и скорости роста трещин. Замедлить этот процесс можно с
+помощью теплоотвода.</span><span class="hcp4"></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Описанный выше тип разрушений является
+наиболее частой причиной поломки машин, однако именно он менее всего прогнозируем.
+Способность металла сопротивляться процессу накопления повреждений, вызванному
+переменным характером нагружения, называют</span><span class="hcp4"> <span class="hcp13">выносливостью</span><span style='letter-spacing:
+-.2pt;mso-bidi-font-weight:bold;mso-bidi-font-style:italic'>.</span> <span class="hcp5">В основе расчетов на выносливость лежат
+фундаментальные экспериментальные исследования поведения материалов в условиях
+их переменного нагружения. Остановимся на этом более подробно.</span></span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:144.3pt;mso-element-frame-height:
+105.2pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+paragraph;mso-element-anchor-horizontal:page;mso-element-left:102.95pt;
+mso-element-top:.05pt'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=204 height=140
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="140" class="hcp14">
+  <p class=MsoNormal style='margin-top:6.0pt;text-indent:0cm;mso-element:frame;
+  mso-element-frame-width:144.3pt;mso-element-frame-height:105.2pt;mso-element-frame-hspace:
+  9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:page;mso-element-left:102.95pt;mso-element-top:
+  .05pt'><span class="hcp4"><img width="192" height="115" src="chap2_10.files/image059.gif" v:shapes="_x0000_i1054"></span></p>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm;
+  mso-element:frame;mso-element-frame-width:144.3pt;mso-element-frame-height:
+  105.2pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:page;mso-element-left:102.95pt;
+  mso-element-top:.05pt'><span class="hcp4">Рис.
+  2.10.4</span><span class="hcp15"></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp2"><span class="hcp4">Кривая выносливости и определение предела выносливости.</span></b><span class="hcp4"> В большинстве случаев смена режимов
+нагружения происходит периодически (циклически). Это приводит к возникновению
+таких же переменных напряжений. Для периодического нагружения важной
+характеристикой является цикл. Под <span class="hcp13">циклом нагружения</span>
+понимается совокупность переменных напряжений за время, равное одному периоду.
+За время цикла напряжение меняются в пределах <sub><img width="103" height="22" src="chap2_10.files/image061.gif" v:shapes="_x0000_i1055"></sub>,
+где <sub><img width="30" height="22" src="chap2_10.files/image063.gif" v:shapes="_x0000_i1056"></sub><span class="hcp11"> </span>и <sub><img width="31" height="22" src="chap2_10.files/image065.gif" v:shapes="_x0000_i1057"></sub>&nbsp;–
+наименьшее и наибольшее напряжения цикла. Для характеристики цикла можно
+использовать следующие параметры (рис. 2.10.4):</span></p>
+
+<p class=Bookbody style='margin-left:1.0cm;text-indent:-7.05pt;line-height:
+normal'><span class="hcp4">среднее (постоянное)
+напряжение цикла</span></p>
+
+<p class=Bookbody align=right style='margin-top:0cm;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:1.0cm;text-align:right;line-height:normal'><sub><span class="hcp4"><img width="126" height="42" src="chap2_10.files/image067.gif" v:shapes="_x0000_i1058"></span></sub><span class="hcp4">;<span class="hcp11">                            </span>(2.10.4)</span></p>
+
+<p class=Bookbody style='margin-left:1.0cm;text-indent:-7.05pt;line-height:
+normal'><span class="hcp4">амплитудное напряжение
+цикла</span></p>
+
+<p class=Bookbody align=right style='margin-top:0cm;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:1.0cm;text-align:right;line-height:normal'><sub><span class="hcp4"><img width="130" height="42" src="chap2_10.files/image069.gif" v:shapes="_x0000_i1059"></span></sub><span class="hcp4">;<span class="hcp11">                             </span>(2.10.5)</span></p>
+
+<p class=Bookbody style='margin-left:1.0cm;text-indent:-7.05pt;line-height:
+normal'><span class="hcp4">коэффициент асимметрии</span></p>
+
+<p class=Bookbody align=right style='margin-top:0cm;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:1.0cm;text-align:right;line-height:normal'><sub><span class="hcp4"><img width="70" height="46" src="chap2_10.files/image071.gif" v:shapes="_x0000_i1060"></span></sub><span class="hcp4">.<span class="hcp11">                                    </span>(2.10.6)</span></p>
+
+<p class=Bookbody style='margin-bottom:4.0pt;text-indent:21.25pt;line-height:
+normal'><span class="hcp3">Рассмотрим
+несколько важных с практической точки зрения характерных циклов:</span><span class="hcp4"></span></p>
+
+<p class=Bookbody style='margin-left:51.5pt;text-indent:-30.2pt;line-height:
+normal'><span class="hcp4">симметричный (рис.
+2.10.5</span><span lang="EN-US" class="hcp10">a</span><span class="hcp4">)</span></p>
+
+<p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:51.6pt;text-align:center;line-height:normal'><sub><span class="hcp4"><img width="272" height="34" src="chap2_10.files/image073.gif" v:shapes="_x0000_i1061"></span></sub><span class="hcp4">;</span></p>
+
+<p class=Bookbody style='margin-left:51.5pt;text-indent:-30.2pt;line-height:
+normal'><span class="hcp4">асимметричный (рис.
+2.10.5</span><span lang="EN-US" class="hcp10">b</span><span class="hcp4">)</span></p>
+
+<p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:51.6pt;text-align:center;line-height:normal'><sub><span class="hcp4"><img width="144" height="22" src="chap2_10.files/image075.gif" v:shapes="_x0000_i1062"></span></sub><span class="hcp4">;</span></p>
+
+<p class=Bookbody style='margin-left:51.5pt;text-indent:-30.2pt;line-height:
+normal'><span class="hcp4">пульсирующий
+положительный (рис. 2.10.5</span><span lang="EN-US" class="hcp10">c</span><span class="hcp4">)</span></p>
+
+<p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:51.6pt;text-align:center;line-height:normal'><sub><span class="hcp4"><img width="274" height="30" src="chap2_10.files/image077.gif" v:shapes="_x0000_i1063"></span></sub><span class="hcp4">;</span></p>
+
+<p class=Bookbody style='margin-left:51.5pt;text-indent:-30.2pt;line-height:
+normal'><span class="hcp4">пульсирующий отрицательный
+(рис. 2.10.5</span><span lang="EN-US" class="hcp10">d</span><span class="hcp4">)</span></p>
+
+<p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:51.6pt;text-align:center;line-height:normal'><sub><span class="hcp4"><img width="306" height="30" src="chap2_10.files/image079.gif" v:shapes="_x0000_i1064"></span></sub><span class="hcp4">;</span></p>
+
+<p class=Bookbody style='margin-left:51.5pt;text-indent:-30.2pt;line-height:
+normal'><span class="hcp4">постоянный (случай
+статического нагружения)</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:51.6pt;text-align:right;line-height:normal'><sub><span class="hcp4"><img width="252" height="30" src="chap2_10.files/image081.gif" v:shapes="_x0000_i1065"></span></sub><span class="hcp4">. <span class="hcp16">       </span><span class="hcp11">               </span>(2.10.7)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">На практике наиболее просто реализовать случай симметричного
+нагружения (рис. 2.10.5a). В этом смысле он является базовым и лежит в основе
+исследований на выносливость.</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">&nbsp;</span></p>
+
+<div align=center>
+
+<table border="0" cellspacing="0" cellpadding="0" class="hcp8">
+ <tr>
+  <td width="283" valign="top" style="width:212.25pt;" class="hcp9">
+  <p class=Bookbody style='text-indent:0cm;line-height:normal'><span lang="EN-US" class="hcp10">a)<span class="hcp11">  </span></span><span class="hcp4"><img width="226" height="120" src="chap2_10.files/image083.gif" v:shapes="_x0000_i1066"></span><span lang="EN-US" class="hcp10"></span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.55pt;" class="hcp9">
+  <p class=Bookbody style='text-indent:0cm;line-height:normal'><span lang="EN-US" class="hcp10">b)
+  <img width="217" height="116" src="chap2_10.files/image085.gif" v:shapes="_x0000_i1067"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="283" valign="top" style="width:212.25pt;" class="hcp9">
+  <p class=Bookbody style='text-indent:0cm;line-height:normal'><span lang="EN-US" class="hcp10">c)
+  </span><span class="hcp4"><img width="249" height="114" src="chap2_10.files/image087.gif" v:shapes="_x0000_i1068"></span><span lang="EN-US" class="hcp10"></span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.55pt;" class="hcp9">
+  <p class=Bookbody style='text-indent:0cm;line-height:normal'><span lang="EN-US" class="hcp10">d</span><span class="hcp4">) </span><span lang="EN-US" class="hcp10"><img width="239" height="111" src="chap2_10.files/image089.gif" v:shapes="_x0000_i1069"></span><span class="hcp4"></span></p>
+  </td>
+ </tr>
+ <tr style='height:13.4pt'>
+  <td width="557" colspan="2" valign="bottom" style="width:417.8pt; height:13.4pt;" class="hcp9">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp4">Рис.
+  2.10.5</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+text-indent:0cm;mso-list:skip'><span class="hcp4"><span class="hcp16">            </span></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Экспериментально построенная кривая, определяющая
+зависимость допустимого напряжения <sub><img width="16" height="14" src="chap2_10.files/image091.gif" v:shapes="_x0000_i1070"></sub><span class="hcp11"> </span>от числа циклов нагружения <sub><img width="18" height="18" src="chap2_10.files/image093.gif" v:shapes="_x0000_i1071"></sub>,
+называется <span class="hcp13">кривой выносливости</span>. </span><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:Arial;letter-spacing:
+.2pt'>Чаще всего она строится по результатам испытания цилиндрических образцов
+на изгиб при их вращении. Следует отметить, что число циклов до
+разрушения&nbsp;– непостоянная величина, а потому корректное построение кривой
+выносливости требует довольно большого числа испытаний с последующей статистической
+обработкой полученных значений. В качестве примера на рис. 2.10.6</span><span class="hcp4"> приведена кривая, отражающая данные
+эксперимента для образцов из углеродистой стали в условиях симметричного
+нагружения. Аналитическое уравнение этой кривой может быть записано в виде</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:162.45pt;mso-element-frame-height:
+135.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+page;mso-element-anchor-horizontal:page;mso-element-left:103.05pt;mso-element-top:
+72.25pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=229 height=180
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="180" class="hcp14">
+  <p class=MsoNormal style='margin-top:6.0pt;text-indent:0cm;mso-list:skip;
+  mso-element:frame;mso-element-frame-width:162.45pt;mso-element-frame-height:
+  135.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:103.05pt;mso-element-top:
+  72.25pt;mso-height-rule:exactly'><span style='font-size:10.0pt;font-family:
+  "Times New Roman"'><img width="204" height="139" src="chap2_10.files/image095.gif" v:shapes="_x0000_i1072"></span><span
+  style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Times New Roman"'></span></p>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  text-indent:0cm;mso-list:skip;mso-element:frame;mso-element-frame-width:162.45pt;
+  mso-element-frame-height:135.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:page;
+  mso-element-left:103.05pt;mso-element-top:72.25pt;mso-height-rule:exactly'><span class="hcp15">Рис.
+  2.10.6</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="194" height="50" src="chap2_10.files/image097.gif" v:shapes="_x0000_i1073"></span></sub><span class="hcp4">.<span class="hcp11">  
+</span>(2.10.8)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">Здесь <sub><img width="16" height="14" src="chap2_10.files/image099.gif" v:shapes="_x0000_i1074"></sub>&nbsp;–
+показатель степени, зависящий от материала и термообработки. Если нет более
+достоверных сведений, то величину показателя степени <sub><img width="16" height="14" src="chap2_10.files/image100.gif" v:shapes="_x0000_i1075"></sub><span class="hcp11"> </span>можно оценить с помощью формулы</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp4"><img width="74" height="41" src="chap2_10.files/image102.gif" v:shapes="_x0000_i1076"></span></sub><span class="hcp4">,<span class="hcp11">                    </span><span class="hcp11">                    </span>(2.10.8</span><span lang="EN-US" class="hcp10">a</span><span class="hcp4">)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">где <sub><img width="20" height="24" src="chap2_10.files/image104.gif" v:shapes="_x0000_i1077"></sub>&nbsp;–
+предел прочности.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Как следует из рисунка, кривая выносливости делится на два
+участка. На первом степенная зависимость оказывается ярко выраженной, а на
+втором наблюдается асимптотическое стремление функции к пределу <sub><img width="110" height="24" src="chap2_10.files/image106.gif" v:shapes="_x0000_i1078"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Уровень напряжений, соответствующий этому пределу и
+характеризующий усталостную прочность, называется <span class="hcp13">пределом
+выносливости</span> и обозначается <sub><img width="24" height="22" src="chap2_10.files/image108.gif" v:shapes="_x0000_i1079"></sub>,
+где нижний индекс равен коэффициенту асимметрии цикла. Так, в данном случае
+обозначение <sub><img width="26" height="22" src="chap2_10.files/image110.gif" v:shapes="_x0000_i1080"></sub><span class="hcp11"> </span>говорит о том, что напряжение определяется
+для случая симметричного нагружения, для которого <sub><img width="50" height="16" src="chap2_10.files/image112.gif" v:shapes="_x0000_i1081"></sub>.
+Число циклов нагружения <sub><img width="26" height="22" src="chap2_10.files/image114.gif" v:shapes="_x0000_i1082"></sub>,
+соответствующее границе перехода от первого участка ко второму, называется <span class="hcp7">базовым числом цикло</span><span class="hcp17">в.</span></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">В области малых значений чисел циклов
+напряжения ограничены</span><span class="hcp4"> <span class="hcp7">пределом прочности</span>
+<sub><span class="hcp5"><img width="22" height="22" src="chap2_10.files/image116.gif" v:shapes="_x0000_i1083"></span></sub><span class="hcp5">. Под малым значением чисел циклов следует
+понимать диапазон <sub><img width="78" height="22" src="chap2_10.files/image118.gif" v:shapes="_x0000_i1084"></sub>,
+для которого нет необходимости учитывать переменный характер режима нагружения.
+Область <sub><img width="92" height="22" src="chap2_10.files/image120.gif" v:shapes="_x0000_i1085"></sub><span class="hcp11"> </span>соответствует малоцикловой усталости. Числа
+циклов, принадлежащие диапазону <sub><img width="86" height="20" src="chap2_10.files/image122.gif" v:shapes="_x0000_i1086"></sub>, составляют
+область многоцикловой усталости. Следует отметить, что режим нагружения с малым
+числом циклов, <sub><img width="92" height="22" src="chap2_10.files/image124.gif" v:shapes="_x0000_i1087"></sub>,
+на практике встречается редко и поэтому здесь не рассматривается. Все дальнейшие
+выводы относятся к области многоцикловой усталости.</span></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Параметры кривой выносливости определяются экспериментально,
+но для практического применения можно использовать приближенные зависимости,
+полученные с помощью обработки результатов огромного количества испытаний. Установлено,
+например, что предел усталостной прочности по нормальным изгибным напряжениям
+для сталей лежит в пределах <sub><img width="122" height="22" src="chap2_10.files/image126.gif" v:shapes="_x0000_i1088"></sub>,
+где <sub><img width="22" height="22" src="chap2_10.files/image128.gif" v:shapes="_x0000_i1089"></sub>&nbsp;–
+предел прочности материала. Более точная зависимость описывается выражением <sub><img width="174" height="24" src="chap2_10.files/image130.gif" v:shapes="_x0000_i1090"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Аналогично можно проводить испытания на кручение. Такие
+испытания по определению предела усталостной прочности по касательным
+напряжениям дали следующие результаты:</span></p>
+
+<p class=Bookbody align=left style='margin-left:21.3pt;text-align:left;
+text-indent:0cm;line-height:normal'><span class="hcp4">для углеродистых и низколегированных сталей</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:21.25pt;text-align:center;line-height:normal'><sub><span class="hcp4"><img width="184" height="24" src="chap2_10.files/image132.gif" v:shapes="_x0000_i1091"></span></sub><span class="hcp4">;</span></p>
+
+<p class=Bookbody style='margin-left:21.3pt;text-indent:0cm;line-height:normal'><span class="hcp4">для хрупких материалов
+(высокоуглеродистая сталь, чугун)</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:21.25pt;text-align:right;line-height:normal'><sub><span class="hcp4"><img width="80" height="22" src="chap2_10.files/image134.gif" v:shapes="_x0000_i1092"></span></sub><span class="hcp4">. <span class="hcp18">                        </span><span class="hcp11">                      </span>(2.10.9)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Сравнивая эти результаты с полученным ранее в (2.7.35) значением
+предела текучести при сдвиге в статике <sub><img width="70" height="22" src="chap2_10.files/image136.gif" v:shapes="_x0000_i1093"></sub><span class="hcp11"> </span>(или предела прочности <sub><img width="70" height="22" src="chap2_10.files/image138.gif" v:shapes="_x0000_i1094"></sub>),
+приходим к выводу, что для углеродистых и низколегированных сталей соотношения,
+характеризующие статическую и усталостную прочности, аналогичны.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Опытным путем для сталей установлено, что базовое число
+циклов лежит в интервале <sub><img width="110" height="26" src="chap2_10.files/image140.gif" v:shapes="_x0000_i1095"></sub>,
+поэтому при отсутствии более достоверных сведений можно принимать <sub><img width="78" height="24" src="chap2_10.files/image142.gif" v:shapes="_x0000_i1096"></sub>.
+Для некоторых материалов не удается обнаружить границу горизонтального участка.
+В этом случае используют понятие <span class="hcp7">условного предела прочности</span>. Под условным пределом прочности
+понимают напряжение, которое выдерживает образец при <sub><img width="56" height="22" src="chap2_10.files/image144.gif" v:shapes="_x0000_i1097"></sub><span class="hcp11"> </span>циклах нагружения.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp2"><span class="hcp4">Влияние различных факторов на величину предела выносливости.</span></b><span class="hcp4"> Значение предела выносливости в сильной
+степени зависит от размеров образца и состояния его поверхности, наличия
+местных напряжений, асимметрии цикла и т.&nbsp;п. Остановимся на каждом из этих
+факторов более подробно.</span></p>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp2"><i class="hcp6"><span class="hcp4">1. Влияние местных напряжений.</span></i></b><span class="hcp4"> Предел прочности снижается, если кроме
+основных (номинальных) напряжений в образце возникают напряжения местного
+характера, превосходящие основной уровень (рис. 2.10.7). Местные напряжения
+появляются в областях резкого изменения конфигурации детали, которые называются
+<span class="hcp7">концентраторам</span><span class="hcp17">и.</span> В качестве концентраторов могут
+выступать галтели, канавки, отверстия, шпоночные пазы, шлицевые участки и т. д.</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:146.35pt;mso-element-frame-height:
+126.25pt;mso-element-frame-hspace:7.1pt;mso-element-wrap:around;mso-element-anchor-vertical:
+page;mso-element-anchor-horizontal:page;mso-element-left:336.75pt;mso-element-top:
+495.25pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=204 height=168
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="168" class="hcp19">
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm;
+  mso-list:skip;mso-element:frame;mso-element-frame-width:146.35pt;mso-element-frame-height:
+  126.25pt;mso-element-frame-hspace:7.1pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:336.75pt;mso-element-top:
+  495.25pt;mso-height-rule:exactly'><span class="hcp4"><img width="192" height="137" src="chap2_10.files/image146.gif" v:shapes="_x0000_i1098"></span></p>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  text-indent:0cm;mso-list:skip;mso-element:frame;mso-element-frame-width:146.35pt;
+  mso-element-frame-height:126.25pt;mso-element-frame-hspace:7.1pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:page;
+  mso-element-left:336.75pt;mso-element-top:495.25pt;mso-height-rule:exactly'><span class="hcp4">Рис. 2.10.7</span><span class="hcp15"></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Отметим, что разделение напряжений на номинальные и местные
+несколько условно. Современные численные методы расчета напряженно&nbsp;– деформированного
+состояния детали позволяют определить напряжения в любой точке, включая и
+местные напряжения, не разделяя их по признакам. Тем не менее существующая
+аналитическая методика предусматривает такое деление.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Для учета местных напряжений в областях размещения
+концентратора вводится понятие <span class="hcp7">эффективного коэффициента концентрации напряжений</span><sub><img width="24" height="24" src="chap2_10.files/image148.gif" v:shapes="_x0000_i1099"></sub>
+для нормальных напряжений и <sub><img width="22" height="24" src="chap2_10.files/image150.gif" v:shapes="_x0000_i1100"></sub>&nbsp;–
+для касательных (здесь и далее индекс <sub><img width="16" height="14" src="chap2_10.files/image152.gif" v:shapes="_x0000_i1101"></sub><span class="hcp11"> </span>у поправочных коэффициентов относится к
+нормальным напряжениям, а <sub><img width="14" height="14" src="chap2_10.files/image154.gif" v:shapes="_x0000_i1102"></sub>&nbsp;–
+к касательным, или напряжениям сдвига).</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Эффективный коэффициент концентрации напряжений представляет
+собой отношение предела выносливости стандартного образца без концентратора к
+пределу выносливости образца такого же размера, но с концентратором:</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="160" height="46" src="chap2_10.files/image156.gif" v:shapes="_x0000_i1103"></span></sub><span class="hcp4">. <span class="hcp18">                  </span><span class="hcp11">               </span>(2.10.10)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Значения <sub><img width="24" height="24" src="chap2_10.files/image158.gif" v:shapes="_x0000_i1104"></sub><span class="hcp11"> </span>и <sub><img width="22" height="24" src="chap2_10.files/image160.gif" v:shapes="_x0000_i1105"></sub><span class="hcp11"> </span>можно определить через <span class="hcp7">теоретические
+коэффициенты концентрации</span> <sub><img width="26" height="24" src="chap2_10.files/image162.gif" v:shapes="_x0000_i1106"></sub><span class="hcp11"> </span>и <sub><img width="26" height="24" src="chap2_10.files/image164.gif" v:shapes="_x0000_i1107"></sub>,
+которые равны отношениям соответствующих наибольших местных напряжений к
+номинальным. Тогда имеем</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:2.0pt;margin-left:0cm;text-align:right;text-indent:1.0cm;
+line-height:normal'><sub><span class="hcp4"><img width="262" height="30" src="chap2_10.files/image166.gif" v:shapes="_x0000_i1108"></span></sub><span class="hcp4">,<span class="hcp11">                 </span>(2.10.11)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">где <sub><img width="14" height="18" src="chap2_10.files/image168.gif" v:shapes="_x0000_i1109"></sub>&nbsp;–
+коэффициент чувствительности материала к концентрации напряжений. Формула
+(2.10.11) является результатом обобщения экспериментальных данных о влиянии
+местных напряжений на усталостную прочность. Исследования показали, что коэффициент
+чувствительности материала <sub><img width="14" height="18" src="chap2_10.files/image169.gif" v:shapes="_x0000_i1110"></sub><span class="hcp11"> </span>зависит исключительно от химического состава
+этого материала, и для практических расчетов можно воспользоваться усредненными
+значениями, приведенными в таблице 2.10.1. Однако этот способ довольно грубый,
+и ошибка при его применении достигает <sub><img width="34" height="18" src="chap2_10.files/image171.gif" v:shapes="_x0000_i1111"></sub>.</span></p>
+
+<p class=MsoList2 align=left style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:left;text-indent:0cm;mso-list:
+skip'><span style='font-size:10.0pt;font-family:Arial;letter-spacing:2.0pt;
+mso-bidi-font-weight:bold'>Таблица</span><span class="hcp4"> <span style='mso-bidi-font-weight:bold'>2.10.1 </span><b class="hcp2">Рекомендуемые значения коэффициента<br>
+чувствительности материала <sub><img width="14" height="18" src="chap2_10.files/image173.gif" v:shapes="_x0000_i1112"></sub></b></span></p>
+
+<table border=0 cellspacing=0 cellpadding=0 style='margin-left:4.1pt;
+ border-collapse:collapse;mso-padding-alt:0cm 3.5pt 0cm 3.5pt'>
+ <tr style='height:12.15pt'>
+  <td width=345 style='width:258.45pt;border:solid windowtext .75pt;padding:
+  0cm 3.5pt 0cm 3.5pt;height:12.15pt'>
+  <p class=BodyText3 align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  mso-list:skip'><span class="hcp20">Материалы</span><span class="hcp4"></span></p>
+  </td>
+  <td width="113" style="width:84.75pt; height:12.15pt;" class="hcp21">
+  <p class=BodyText3 align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  mso-list:skip'><sub><span class="hcp20"><img width="12" height="18" src="chap2_10.files/image175.gif" v:shapes="_x0000_i1113"></span></sub><span class="hcp4"></span></p>
+  </td>
+ </tr>
+ <tr style='height:15.9pt'>
+  <td width="345" valign="top" style="width:258.45pt; height:15.9pt;" class="hcp22">
+  <p class=BodyText3 align=left style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:left;text-indent:10.7pt;
+  mso-list:skip'><span class="hcp20">литые материалы</span><span class="hcp4"></span></p>
+  </td>
+  <td width="113" style="width:84.75pt; height:15.9pt;" class="hcp21">
+  <p class=BodyText3 align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  mso-list:skip'><sub><span class="hcp20"><img width="46" height="18" src="chap2_10.files/image177.gif" v:shapes="_x0000_i1114"></span></sub><span class="hcp4"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="345" valign="top" style="width:258.45pt;" class="hcp22">
+  <p class=BodyText3 align=left style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:left;text-indent:10.7pt;
+  mso-list:skip'><span class="hcp20">среднеуглеродистые и низколегированные стали</span><span class="hcp4"></span></p>
+  </td>
+  <td width="113" style="width:84.75pt;" class="hcp21">
+  <p class=BodyText3 align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  mso-list:skip'><sub><span class="hcp20"><img width="49" height="18" src="chap2_10.files/image179.gif" v:shapes="_x0000_i1115"></span></sub><span class="hcp4"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="345" valign="top" style="width:258.45pt;" class="hcp22">
+  <p class=BodyText3 align=left style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:left;text-indent:10.7pt;
+  mso-list:skip'><span class="hcp20">легированные стали</span><span class="hcp4"></span></p>
+  </td>
+  <td width="113" style="width:84.75pt;" class="hcp21">
+  <p class=BodyText3 align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  mso-list:skip'><sub><span class="hcp20"><img width="49" height="18" src="chap2_10.files/image181.gif" v:shapes="_x0000_i1116"></span></sub><span class="hcp4"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="345" valign="top" style="width:258.45pt;" class="hcp22">
+  <p class=BodyText3 align=left style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:left;text-indent:10.7pt;
+  mso-list:skip'><span class="hcp20">высоколегированные стали</span><span class="hcp4"></span></p>
+  </td>
+  <td width=113 style='width:84.75pt;border:solid windowtext .75pt;border-left:
+  none;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=BodyText3 align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  mso-list:skip'><sub><span class="hcp20"><img width="20" height="17" src="chap2_10.files/image183.gif" v:shapes="_x0000_i1117"></span></sub><span class="hcp4"></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><span class="hcp4">Значения коэффициентов <sub><img width="31" height="24" src="chap2_10.files/image185.gif" v:shapes="_x0000_i1118"></sub><span class="hcp11"> </span>и <sub><img width="30" height="24" src="chap2_10.files/image187.gif" v:shapes="_x0000_i1119"></sub><span class="hcp11"> </span>рассчитываются методами теории упругости (см.
+главу 3.1) либо определяются экспериментально. Кроме того, возможно нахождение
+этих величин при помощи систем конечно-элементного анализа (глава 3.3),
+реализуемых на компьютере. Что касается коэффициентов концентрации <sub><img width="22" height="24" src="chap2_10.files/image189.gif" v:shapes="_x0000_i1120"></sub><span class="hcp11"> </span>и <sub><img width="22" height="24" src="chap2_10.files/image191.gif" v:shapes="_x0000_i1121"></sub>,
+то для грубой ориентировочной оценки допустимо использовать следующие
+приближенные формулы:</span></p>
+
+<p class=Bookbody style='margin-left:35.45pt;text-indent:-14.15pt;line-height:
+normal'><span class="hcp4">при отсутствии резких
+концентраторов напряжений для деталей с чисто обработанной поверхностью</span></p>
+
+<p class=Bookbody align=right style='margin-top:0cm;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:42.55pt;text-align:right;line-height:normal'><sub><span class="hcp4"><img width="154" height="42" src="chap2_10.files/image193.gif" v:shapes="_x0000_i1122"></span></sub><span class="hcp4">;<span class="hcp18">                       </span>
+(2.10.12)</span></p>
+
+<p class=Bookbody align=center style='margin-left:42.55pt;text-align:center;
+text-indent:0cm;line-height:normal'><sub><span class="hcp4"><img width="62" height="24" src="chap2_10.files/image195.gif" v:shapes="_x0000_i1123"></span></sub><span class="hcp4">.</span></p>
+
+<p class=Bookbody style='margin-left:42.5pt;text-indent:-21.2pt;line-height:
+normal'><span class="hcp4">при наличии резких
+концентраторов</span></p>
+
+<p class=Bookbody align=center style='margin-bottom:6.0pt;text-align:center;
+line-height:normal'><sub><span class="hcp4"><img width="146" height="42" src="chap2_10.files/image197.gif" v:shapes="_x0000_i1124"></span></sub><span class="hcp4">;</span></p>
+
+<p class=Bookbody align=right style='margin-top:0cm;margin-right:0cm;
+margin-bottom:2.0pt;margin-left:42.5pt;text-align:right;text-indent:-21.25pt;
+line-height:normal'><sub><span class="hcp4"><img width="22" height="24" src="chap2_10.files/image199.gif" v:shapes="_x0000_i1125"></span></sub><span class="hcp4">=<sub><img width="22" height="24" src="chap2_10.files/image200.gif" v:shapes="_x0000_i1126"></sub> . <span
+style='mso-tab-count:4'>                                     </span><span class="hcp11">        </span>(2.10.13)</span></p>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp2"><i class="hcp6"><span class="hcp4">2. Влияние размеров детали.</span></i></b><span class="hcp4"> С увеличением линейных размеров
+детали вероятность появления усталостных трещин также увеличивается, что
+предлагается учитывать введением <span class="hcp7">масштабного коэффициента</span>:</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="76" height="45" src="chap2_10.files/image202.gif" v:shapes="_x0000_i1127"></span></sub><span class="hcp4">,<span class="hcp11">                                  </span><span class="hcp11">           </span>(2.10.14)</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:217.05pt;mso-element-frame-height:
+177.2pt;mso-element-frame-hspace:7.1pt;mso-element-wrap:around;mso-element-anchor-vertical:
+paragraph;mso-element-anchor-horizontal:page;mso-element-left:273.75pt;
+mso-element-top:.05pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=299 height=236
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="236" class="hcp19">
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  text-indent:0cm;mso-list:skip;mso-element:frame;mso-element-frame-width:217.05pt;
+  mso-element-frame-height:177.2pt;mso-element-frame-hspace:7.1pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  page;mso-element-left:273.75pt;mso-element-top:.05pt;mso-height-rule:exactly'><span class="hcp4"><img width="282" height="173" src="chap2_10.files/image204.gif" v:shapes="_x0000_i1128"></span></p>
+  <p class=MsoBodyText3 style='mso-element:frame;mso-element-frame-height:177.2pt;
+  mso-element-wrap:around;mso-height-rule:exactly'><span class="hcp23">1&nbsp;— углеродистые стали;</span></p>
+  <p class=MsoBodyText3 style='mso-element:frame;mso-element-frame-height:177.2pt;
+  mso-element-wrap:around;mso-height-rule:exactly'><span class="hcp23">2&nbsp;— легированные стали</span></p>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  text-indent:0cm;mso-list:skip;mso-element:frame;mso-element-frame-width:217.05pt;
+  mso-element-frame-height:177.2pt;mso-element-frame-hspace:7.1pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  page;mso-element-left:273.75pt;mso-element-top:.05pt;mso-height-rule:exactly'><span class="hcp4">Рис. 2.10.8</span><span class="hcp15"></span></p>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm;
+  mso-list:skip;mso-element:frame;mso-element-frame-width:217.05pt;mso-element-frame-height:
+  177.2pt;mso-element-frame-hspace:7.1pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:page;mso-element-left:273.75pt;
+  mso-element-top:.05pt;mso-height-rule:exactly'><span class="hcp15">&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">где <sub><img width="36" height="26" src="chap2_10.files/image206.gif" v:shapes="_x0000_i1129"></sub>&nbsp;–
+предел выносливости образца заданного размера; <sub><img width="30" height="26" src="chap2_10.files/image208.gif" v:shapes="_x0000_i1130"></sub>&nbsp;–
+предел выносливости эталонного образца диаметром <sub><img width="41" height="18" src="chap2_10.files/image210.gif" v:shapes="_x0000_i1131"></sub><span class="hcp11"> </span>мм. Как показали многочисленные эксперименты,
+для работающих на изгиб геометрически подобных образцов имеют место
+зависимости, приведенные на рис. 2.10.8.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">В тех случаях, когда достоверные сведения о значении
+масштабного фактора отсутствуют, рекомендуется использовать методы статистической
+теории подобия. Суть теории подобия применительно к усталостному разрушению
+состоит в следующем: твердое упругое тело представляется в виде совокупности
+звеньев цепи, разрушение одного из элементов которого приводит к усталостному
+разрушению всей цепи. При этом вероятность разрушения отдельно взятого элемента
+цепи не зависит от наличия других составляющих звеньев. Сформулированный таким
+образом принцип независимого взаимодействия отдельных элементов цепи позволяет
+определить вероятность усталостного неразрушения упругих тел умножением
+вероятностей неразрушения отдельных звеньев цепи (теорема умножения
+вероятностей, глава 1.1). Используя этот принцип, можно сравнить два образца,
+один из которых является эталонным, и посредством такого сравнения найти
+величину масштабного фактора требуемой детали. Более подробную информацию о
+теории подобия можно получить из специальной литературы (например, [19]).</span></p>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp2"><i class="hcp6"><span class="hcp4">3. Влияние состояния поверхности</span></i></b><b class="hcp2"><span class="hcp12">.</span></b><span class="hcp4"> Влияние состояния поверхности на
+величину предела усталостной прочности характеризуется <span class="hcp7">коэффициентом качества поверхности</span>, <span
+style='letter-spacing:-.1pt'>который численно равен отношению предела выносливости
+образца с фактическим состоянием поверхности к пределу выносливости
+геометрически подобного образца с полированной поверхностью:</span></span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="152" height="48" src="chap2_10.files/image212.gif" v:shapes="_x0000_i1132"></span></sub><span class="hcp4">.<span class="hcp11">                                   </span><span class="hcp11">  </span>(2.10.15)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Экспериментально установлены следующие соотношения для
+расчета коэффициентов качества поверхности стальных образцов (<sub><img width="67" height="16" src="chap2_10.files/image214.gif" v:shapes="_x0000_i1133"></sub>&nbsp;–
+высота шероховатости поверхностного слоя):</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="248" height="46" src="chap2_10.files/image216.gif" v:shapes="_x0000_i1134"></span></sub><span class="hcp4"><span class="hcp11"> </span>мкм; <sub><img width="110" height="26" src="chap2_10.files/image218.gif" v:shapes="_x0000_i1135"></sub>мкм;</span></p>
+
+<p class=Bookbody align=center style='margin-bottom:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><sub><span class="hcp4"><img width="166" height="46" src="chap2_10.files/image220.gif" v:shapes="_x0000_i1136"></span></sub><span class="hcp4">.</span></p>
+
+<p class=MsoNormal style='text-indent:21.3pt;mso-list:skip'><span class="hcp4">Чем прочнее материал, тем более он
+чувствителен к состоянию поверхности (рис. 2.10.9). В том случае, если нет достоверных
+сведений относительно коэффициентов <sub><img width="24" height="22" src="chap2_10.files/image222.gif" v:shapes="_x0000_i1137"></sub>,
+при расчете следует принимать их равными единице, а приближенность выбора
+компенсировать соответствующим подбором коэффициентов запаса.</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:266.55pt;mso-element-frame-height:
+180.25pt;mso-element-frame-hspace:7.1pt;mso-element-wrap:around;mso-element-anchor-vertical:
+page;mso-element-anchor-horizontal:page;mso-element-left:84.75pt;mso-element-top:
+153.25pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=365 height=240
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="240" class="hcp19">
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm;
+  mso-list:skip;mso-element:frame;mso-element-frame-width:266.55pt;mso-element-frame-height:
+  180.25pt;mso-element-frame-hspace:7.1pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:84.75pt;mso-element-top:
+  153.25pt;mso-height-rule:exactly'><span class="hcp24"><img width="290" height="194" src="chap2_10.files/image224.gif" v:shapes="_x0000_i1138"><span class="hcp11">  </span></span></p>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm;
+  mso-list:skip;mso-element:frame;mso-element-frame-width:266.55pt;mso-element-frame-height:
+  180.25pt;mso-element-frame-hspace:7.1pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:84.75pt;mso-element-top:
+  153.25pt;mso-height-rule:exactly'><i class="hcp6"><span class="hcp24">1&nbsp;—
+  полирование; 2&nbsp;— шлифование; 3&nbsp;— тонкое точение;<br>
+  <span class="hcp11"> </span>4&nbsp;— грубое точение; 5 —<span class="hcp11">  </span>необработанная после прокатки</span></i><i class="hcp6"><span class="hcp15"></span></i></p>
+  <p class=MsoCaption style='mso-element:frame;mso-element-frame-width:266.55pt;
+  mso-element-wrap:around;mso-height-rule:exactly'>Рис. 2.10.9<i class="hcp6"></i></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp2"><i class="hcp6"><span class="hcp4">4. Влияние асимметрии цикла.</span></i></b><span class="hcp4"> <span class="hcp25">В
+случае симметричного нагружения переменной нагрузкой можно определить значения
+коэффициентов запаса по нормальным и касательным напряжениям.</span> <span class="hcp7">Коэффициентом запаса
+усталостной прочности</span> <sub><span class="hcp25"><img width="14" height="14" src="chap2_10.files/image226.gif" v:shapes="_x0000_i1139"></span></sub><span class="hcp25"><span class="hcp11"> </span>назовем
+отношение предела выносливости к номинальному значению амплитудного напряжения.
+Таким образом, по определению для эталонного образца запас прочности по
+нормальным и касательным напряжениям равен</span></span></p>
+
+<p class=Bookbody align=right style='margin-bottom:8.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp4"><img width="67" height="46" src="chap2_10.files/image228.gif" v:shapes="_x0000_i1140"></span></sub><span class="hcp4">;<span class="hcp11">   
+</span><sub><img width="62" height="46" src="chap2_10.files/image230.gif" v:shapes="_x0000_i1141"></sub>.<span class="hcp18">                      </span><span class="hcp11">            </span>(2.10.16)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Для детали, имеющей отличные от эталонной размеры и чистоту
+поверхности, а также концентраторы напряжений, соотношения (2.10.16)
+переписываются в виде</span></p>
+
+<p class=Bookbody align=right style='margin-top:8.0pt;margin-right:0cm;
+margin-bottom:8.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="77" height="46" src="chap2_10.files/image232.gif" v:shapes="_x0000_i1142"></span></sub><span class="hcp4">;<span class="hcp11">  
+</span><sub><img width="70" height="46" src="chap2_10.files/image234.gif" v:shapes="_x0000_i1143"></sub>.<span class="hcp16">      </span> <span class="hcp16">           </span><span class="hcp11">             </span>(2.10.17)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Здесь <sub><img width="18" height="18" src="chap2_10.files/image236.gif" v:shapes="_x0000_i1144"></sub></span>–
+<span class="hcp4">коэффициент снижения предела
+выносливости, равный</span></p>
+
+<p class=Bookbody style='margin-left:36.0pt;text-indent:-14.7pt;line-height:
+normal;tab-stops:list 36.0pt'><span class="hcp4">для
+нормальных напряжений:</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:18.15pt;text-align:center;line-height:normal'><sub><span class="hcp4"><img width="166" height="50" src="chap2_10.files/image238.gif" v:shapes="_x0000_i1145"></span></sub><span class="hcp4">;</span></p>
+
+<p class=Bookbody style='margin-left:36.0pt;text-indent:-14.7pt;line-height:
+normal;tab-stops:list 36.0pt'><span class="hcp4">для
+касательных напряжений</span></p>
+
+<p class=Bookbody align=right style='margin-left:17.85pt;text-align:right;
+line-height:normal'><sub><span class="hcp4"><img width="168" height="50" src="chap2_10.files/image240.gif" v:shapes="_x0000_i1146"></span></sub><span class="hcp4">,<span class="hcp11">                                    </span>(2.10.18)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">где <sub><img width="24" height="24" src="chap2_10.files/image242.gif" v:shapes="_x0000_i1147"></sub>&nbsp;–
+коэффициент упрочнения поверхности в зависимости от термической, механической и
+других видов обработки. Значения этого коэффициента приводятся в литературе по
+выносливости, например, в [19].</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">В общем случае нагружение асимметрично. Влияние асимметрии
+цикла на предел прочности при переменных режимах характеризуется диаграммой
+предельных амплитуд (рис. 2.10.10, кривая 1), которая позволяет определить
+значение предела прочности в зависимости от амплитудного и среднего напряжений.
+Приведенная диаграмма соответствует случаю растяжения; если речь идет о чистом
+сдвиге (кручении), то характер кривой не меняется, поэтому нужно везде символ <sub><img width="16" height="14" src="chap2_10.files/image244.gif" v:shapes="_x0000_i1148"></sub><span class="hcp11"> </span>заменить на <sub><img width="14" height="14" src="chap2_10.files/image246.gif" v:shapes="_x0000_i1149"></sub>.
+График построен таким образом, что по горизонтали отложены средние напряжения
+цикла <sub><img width="26" height="22" src="chap2_10.files/image248.gif" v:shapes="_x0000_i1150"></sub>, а
+по вертикали – амплитудные значения напряжения <sub><img width="31" height="22" src="chap2_10.files/image250.gif" v:shapes="_x0000_i1151"></sub>.
+Очевидно, что при симметричном нагружении (см. 2.10.7) максимальное значение по
+вертикали соответствует пределу выносливости, т.&nbsp;е. <sub><img width="66" height="22" src="chap2_10.files/image252.gif" v:shapes="_x0000_i1152"></sub>, а
+по горизонтали – пределу прочности, <sub><img width="62" height="22" src="chap2_10.files/image254.gif" v:shapes="_x0000_i1153"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Экспериментальная кривая предельных амплитуд, вообще говоря,
+имеет сложный вид, но при практическом использовании может быть приближенно заменена
+отрезком прямой, проведенной через точки <sub><img width="26" height="22" src="chap2_10.files/image256.gif" v:shapes="_x0000_i1154"></sub><span class="hcp11"> </span>и <sub><img width="22" height="24" src="chap2_10.files/image258.gif" v:shapes="_x0000_i1155"></sub>.
+Такая замена не приводит к серьезным погрешностям, так как фактическое значение
+запаса прочности оказывается несколько больше расчетного. Упрощенная диаграмма
+предельных амплитуд изображена на рис. 2.10.10, линия 2. Отметим, что на этой
+диаграмме проведена линия границы, при переходе которой наблюдаются остаточные
+пластические явления (зона 3). Линия границы пластического деформирования
+очерчена отрезком прямой, пересекающим оси координат в точках <sub><img width="50" height="26" src="chap2_10.files/image260.gif" v:shapes="_x0000_i1156"></sub><span class="hcp11"> </span>и <sub><img width="52" height="26" src="chap2_10.files/image262.gif" v:shapes="_x0000_i1157"></sub>.</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:244.05pt;mso-element-frame-hspace:
+7.1pt;mso-element-wrap:around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:
+page;mso-element-left:6.7pt;mso-element-top:334.35pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=335 align=left>
+ <tr>
+  <td valign="top" align="left" class="hcp19">
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm;
+  mso-list:skip;mso-element:frame;mso-element-frame-width:244.05pt;mso-element-frame-hspace:
+  7.1pt;mso-element-wrap:around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:
+  page;mso-element-left:6.7pt;mso-element-top:334.35pt;mso-height-rule:exactly'><span class="hcp4"><img width="300" height="215" src="chap2_10.files/image264.gif" v:shapes="_x0000_i1158"></span></p>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  text-indent:0cm;mso-list:skip;mso-element:frame;mso-element-frame-width:244.05pt;
+  mso-element-frame-hspace:7.1pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:6.7pt;mso-element-top:
+  334.35pt;mso-height-rule:exactly'><span class="hcp4">Рис. 2.10.10</span><span class="hcp15"></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Очевидно, что диаграммы всех прочих
+циклов нагружения будут находиться внутри предельной, заданной линией 2.
+Обозначим через <sub><img width="16" height="18" src="chap2_10.files/image266.gif" v:shapes="_x0000_i1159"></sub><span class="hcp11"> </span>некоторую рабочую точку цикла при
+произвольном асимметричном нагружении. Так как точка <sub><img width="16" height="16" src="chap2_10.files/image268.gif" v:shapes="_x0000_i1160"></sub><span class="hcp11"> </span>соответствует предельно допустимому
+состоянию, то, исходя из определения, коэффициент запаса в этом случае равен</span><span class="hcp4"></span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:1.0cm;line-height:normal'><sub><span class="hcp4"><img width="54" height="42" src="chap2_10.files/image270.gif" v:shapes="_x0000_i1161"></span></sub><span class="hcp4">.<span class="hcp11">        </span>(2.10.19)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">С учетом поправок на концентрацию напряжений, а также поверхностный
+и масштабный коэффициенты, координаты точки <sub><img width="16" height="18" src="chap2_10.files/image272.gif" v:shapes="_x0000_i1162"></sub><span class="hcp11"> </span>равны: по горизонтали&nbsp;– среднему
+значению цикла <sub><img width="22" height="24" src="chap2_10.files/image274.gif" v:shapes="_x0000_i1163"></sub>,
+по вертикали&nbsp;– значению<sub><img width="12" height="22" src="chap2_10.files/image276.gif" v:shapes="_x0000_i1164"><img width="77" height="24" src="chap2_10.files/image278.gif" v:shapes="_x0000_i1165"></sub>.
+Проведем через точку <sub><img width="16" height="18" src="chap2_10.files/image280.gif" v:shapes="_x0000_i1166"></sub><span class="hcp11"> </span>прямую, параллельную <sub><img width="28" height="18" src="chap2_10.files/image282.gif" v:shapes="_x0000_i1167"></sub>.
+Из подобия треугольников <sub><img width="40" height="18" src="chap2_10.files/image284.gif" v:shapes="_x0000_i1168"></sub><span class="hcp11"> </span>и <sub><img width="41" height="18" src="chap2_10.files/image286.gif" v:shapes="_x0000_i1169"></sub><span class="hcp11"> </span>следует, что <sub><img width="70" height="41" src="chap2_10.files/image288.gif" v:shapes="_x0000_i1170"></sub>,
+где <sub><img width="102" height="18" src="chap2_10.files/image290.gif" v:shapes="_x0000_i1171"></sub>.
+Кроме того, из геометрических соображений очевидно соотношение <sub><img width="84" height="24" src="chap2_10.files/image292.gif" v:shapes="_x0000_i1172"></sub>.
+Введем обозначения <sub><img width="212" height="46" src="chap2_10.files/image294.gif" v:shapes="_x0000_i1173"></sub>.
+Тогда выражение (2.10.19) для определения коэффициента запаса может быть записано
+в виде</span></p>
+
+<p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:0cm;margin-left:1.0cm;margin-bottom:.0001pt;text-align:center;
+text-indent:-1.0cm;line-height:normal'><sub><span class="hcp4"><img width="170" height="46" src="chap2_10.files/image296.gif" v:shapes="_x0000_i1174"></span></sub><span class="hcp4">;</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="154" height="46" src="chap2_10.files/image298.gif" v:shapes="_x0000_i1175"></span></sub><span class="hcp4">.<span class="hcp11">                                        </span>(2.10.20)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Коэффициенты и называются <span class="hcp7">коэффициентами асимметрии цикла</span>. Их значения
+определяется экспериментально, а для аналитического описания рекомендуются
+следующие зависимости:</span></p>
+
+<p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="150" height="26" src="chap2_10.files/image300.gif" v:shapes="_x0000_i1176"></span></sub><span class="hcp4"><span class="hcp11">         </span><sub><img width="130" height="26" src="chap2_10.files/image302.gif" v:shapes="_x0000_i1177"></sub></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Полученный результат показал, что асимметричное нагружение
+при расчете можно свести к симметричному. При этом величины эквивалентных
+напряжений <sub><img width="22" height="22" src="chap2_10.files/image304.gif" v:shapes="_x0000_i1178"></sub><span class="hcp11"> </span>и <sub><img width="18" height="22" src="chap2_10.files/image306.gif" v:shapes="_x0000_i1179"></sub><span class="hcp11"> </span>равны</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:1.0cm;
+line-height:normal'><sub><span class="hcp4"><img width="126" height="24" src="chap2_10.files/image308.gif" v:shapes="_x0000_i1180"></span></sub><span class="hcp4">.<span class="hcp11">                           </span><span class="hcp11">                 </span>(2.10.21)</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:1.0cm;
+line-height:normal'><sub><span class="hcp4"><img width="112" height="24" src="chap2_10.files/image310.gif" v:shapes="_x0000_i1181"></span></sub><span class="hcp4">.<span class="hcp11">                                              </span>(2.10.22)</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp2"><span class="hcp4">Расчет статической прочности.</span></b><span class="hcp4"> При выполнении усталостного расчета необходимо проводить
+проверку статической прочности. Тогда для коэффициентов запаса имеем:</span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;text-indent:-14.15pt;mso-list:
+l0 level1 lfo2'><span class="hcp26">·<span class="hcp27">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp4">по нормальным
+напряжениям:</span></p>
+
+<p class=MsoNormal align=right style='margin-top:0cm;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:35.45pt;text-align:right'><sub><span class="hcp4"><img width="154" height="46" src="chap2_10.files/image312.gif" v:shapes="_x0000_i1182"></span></sub><span class="hcp4">;<span class="hcp11">                                          </span>(2.10.23)</span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;text-indent:-14.15pt;mso-list:
+l0 level1 lfo2'><span class="hcp26">·<span class="hcp27">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp4">по
+касательным напряжениям</span></p>
+
+<p class=MsoNormal align=right style='margin-top:0cm;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:35.45pt;text-align:right'><sub><span class="hcp4"><img width="142" height="46" src="chap2_10.files/image314.gif" v:shapes="_x0000_i1183"></span></sub><span class="hcp4">.<span class="hcp11">                                          </span>(2.10.24)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">Здесь <sub><img width="22" height="22" src="chap2_10.files/image316.gif" v:shapes="_x0000_i1184"></sub><span class="hcp11"> </span>и <sub><img width="18" height="22" src="chap2_10.files/image318.gif" v:shapes="_x0000_i1185"></sub><span class="hcp11"> </span>– значения пределов текучести по нормальным и
+касательным напряжениям.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span style='font-size:10.0pt;
+font-family:Arial;letter-spacing:.1pt'>Задача усложняется, если имеет место
+случай одновременного нагружения как нормальными, так и сдвигающими напряжениями.
+Для выполнения этого расчета следует от совокупности двух нагружений перейти к
+эквивалентному растяжению, результатом которого будет возникновение эквивалентного
+напряжения <sub><img width="24" height="22" src="chap2_10.files/image320.gif" v:shapes="_x0000_i1186"></sub>.
+Тогда</span><span class="hcp4"></span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp4"><img width="54" height="46" src="chap2_10.files/image322.gif" v:shapes="_x0000_i1187"></span></sub><span class="hcp4">.<span class="hcp11">                                                     </span>(2.10.25)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Для удобства расчетов запишем квадрат обратной величины
+коэффициента запаса, воспользовавшись гипотезой прочности по наибольшим касательным
+напряжениям (2.8.23):</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp4"><img width="194" height="48" src="chap2_10.files/image324.gif" v:shapes="_x0000_i1188"></span></sub><span class="hcp4">.<span class="hcp18">                       </span><span class="hcp11">        </span>(2.10.26)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Так как для случая чистого сдвига справедливо соотношение
+(2.10.9), а именно <sub><img width="80" height="22" src="chap2_10.files/image326.gif" v:shapes="_x0000_i1189"></sub>,
+то из (2.10.26) находим</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="90" height="46" src="chap2_10.files/image328.gif" v:shapes="_x0000_i1190"></span></sub><span class="hcp4">.<span class="hcp11">                                              </span>(2.10.27)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Запишем далее выражение для расчета коэффициента запаса в
+общем случае произвольного нагружения. Напряженное состояние, как обычно, будем
+характеризовать главными напряжениями <sub><img width="40" height="22" src="chap2_10.files/image330.gif" v:shapes="_x0000_i1191"></sub><span class="hcp11"> </span>и <sub><img width="20" height="24" src="chap2_10.files/image332.gif" v:shapes="_x0000_i1192"></sub>.
+При этом среднее напряжение <sub><img width="22" height="22" src="chap2_10.files/image334.gif" v:shapes="_x0000_i1193"></sub><span class="hcp11"> </span>не оказывает заметного влияния на процесс
+разрушения, а потому эквивалентное напряжение <sub><img width="26" height="22" src="chap2_10.files/image336.gif" v:shapes="_x0000_i1194"></sub><span class="hcp11"> </span>согласно третьей теории прочности (2.7.23)
+равно</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="93" height="23" src="chap2_10.files/image338.gif" v:shapes="_x0000_i1195"></span></sub><span class="hcp4">,<span class="hcp11">                                          </span>(2.10.28)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">где <sub><img width="24" height="22" src="chap2_10.files/image340.gif" v:shapes="_x0000_i1196"></sub><span class="hcp11"> </span>и <sub><img width="26" height="22" src="chap2_10.files/image342.gif" v:shapes="_x0000_i1197"></sub>&nbsp;–
+наибольшее и наименьшее эквивалентные напряжения, действующие в наиболее
+опасной точке,</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><sub><span class="hcp4"><img width="139" height="24" src="chap2_10.files/image344.gif" v:shapes="_x0000_i1198"></span></sub><span class="hcp4"></span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="140" height="24" src="chap2_10.files/image346.gif" v:shapes="_x0000_i1199"></span></sub><span class="hcp4"><span class="hcp11">                                    </span>(2.10.29)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Условие прочности в общем виде записывается как</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="98" height="46" src="chap2_10.files/image348.gif" v:shapes="_x0000_i1200"></span></sub><span class="hcp4">.<span class="hcp28">                                   </span><span class="hcp11">        </span>(2.10.30)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Следует отметить, что условие прочности (2.10.30) считается
+выполненным, если значение коэффициента запаса лежит в пределах <sub><img width="14" height="14" src="chap2_10.files/image350.gif" v:shapes="_x0000_i1201"></sub>=<sub><img width="54" height="20" src="chap2_10.files/image352.gif" v:shapes="_x0000_i1202"></sub>. Выбор
+значений внутри указанного интервала определяется степенью ответственности детали,
+для которой выполняется указанный расчет.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Напомним, что проведенное выше рассмотрение справедливо
+только тогда, когда число циклов <sub><img width="18" height="16" src="chap2_10.files/image354.gif" v:shapes="_x0000_i1203"></sub><span class="hcp11"> </span>превышает базовое, <sub><img width="86" height="22" src="chap2_10.files/image356.gif" v:shapes="_x0000_i1204"></sub>.
+Для диапазона <sub><img width="94" height="24" src="chap2_10.files/image358.gif" v:shapes="_x0000_i1205"></sub>,
+как следует из кривой выносливости (2.10.6), расчет ведется не по пределу длительной
+прочности <sub><img width="24" height="22" src="chap2_10.files/image360.gif" v:shapes="_x0000_i1206"></sub>, а
+по напряжению, равному <sub><img width="64" height="46" src="chap2_10.files/image362.gif" v:shapes="_x0000_i1207"></sub>,
+где <sub><img width="18" height="16" src="chap2_10.files/image363.gif" v:shapes="_x0000_i1208"></sub>&nbsp;–
+фактическое число циклов нагружения, а показатель степени <sub><img width="18" height="14" src="chap2_10.files/image365.gif" v:shapes="_x0000_i1209"></sub><span class="hcp11"> </span>для произвольных деталей вычисляется по
+уточненной относительно (2.10.8а) формуле</span></p>
+
+<p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="114" height="46" src="chap2_10.files/image367.gif" v:shapes="_x0000_i1210"></span></sub><span class="hcp4">.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Окончательное выражение для коэффициента запаса в указанной
+области имеет вид</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="92" height="70" src="chap2_10.files/image369.gif" v:shapes="_x0000_i1211"></span></sub><span class="hcp4">.<span class="hcp18">                        </span>
+<span class="hcp16">           </span><span class="hcp11">                    </span>(2.10.31)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">По формулам (2.10.29)&nbsp;– (2.10.30) коэффициент запаса
+рассчитывается и в том случае, когда внешняя нагрузка постоянна во времени.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span class="hcp4"><img width="245" height="126" src="chap2_10.files/image371.gif" v:shapes="_x0000_i1212"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span class="hcp4">Рис. 2.10.11</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span class="hcp4">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Методика расчета усложняется, если внешняя нагрузка
+переменна во времени, а при каждом уровне нагружения действует определенное
+число циклов. Например, большой практический интерес вызывает случай <span class="hcp7">блочного нагружения</span>,
+который представляет собой совокупность повторяющихся блоков нагружения (рис.
+2.10.11). Каждый блок состоит из нескольких ступеней нагружения, а каждая из
+ступеней характеризуется амплитудным напряжением <sub><img width="31" height="24" src="chap2_10.files/image373.gif" v:shapes="_x0000_i1213"></sub><span class="hcp11"> </span>и числом его повторений в блоке <sub><img width="20" height="24" src="chap2_10.files/image375.gif" v:shapes="_x0000_i1214"></sub>.
+Напомним, что число повторений амплитуд напряжений определяет число циклов нагружения.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Характер изменения напряжений в блоке суть асимметричный
+циклический процесс, подобный рассмотренному выше (см. 2.10.25). В соответствии
+с описанной методикой такой режим переменного нагружения сводится к
+эквивалентному симметричному, амплитуда которого согласно (2.10.21) равна</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="132" height="24" src="chap2_10.files/image377.gif" v:shapes="_x0000_i1215"></span></sub><span class="hcp4">.<span class="hcp11">                                        </span>(2.10.32)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Здесь все поправочные коэффициенты, входящие в (2.10.21),
+приняты равными единице. Аналогично можно переписать выражение (2.10.22) для
+эквивалентной амплитуды по касательным напряжениям.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span style='font-size:10.0pt;
+font-family:Arial;letter-spacing:.2pt'>Для полной характеристики блочного
+режима необходимо также определить числа циклов нагружения на каждой из
+амплитуд. Все эти характеристики можно извлечь либо из осциллограмм нагружения,
+полученных в результате прямых испытаний, либо по принятым прототипам, подобным
+фактическим условиям нагружения. Обработку осциллограмм обычно выполняют с
+помощью компьютера.</span><span class="hcp4"></span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp2"><span class="hcp4">Расчет на прочность и долговечность при переменном характере изменения</span></b><span class="hcp4"> <b class="hcp2">напряжения.</b> Переменное во времени нагружение детали может быть
+описано гистограммой относительного нагружения, показанной на рис. 2.10.12.
+Здесь по вертикальной оси отложено значение текущего напряжения, вызванного
+внешними силовыми факторами, а по горизонтальной&nbsp;– число циклов действия
+этих напряжений. Такой график нагружения может быть построен для проектируемого
+оборудования исходя либо из характера заданного внешнего нагружения, либо из
+характера нагружения работающего прототипа. Иными словами, гистограмму можно
+получить по известному графику зависимости нагрузки от времени. Кроме того, для
+выполнения расчета предлагаются готовые прототипы режимов, к которым можно
+свести режим работы проектируемого оборудования. Эти прототипы представлены в
+виде графиков и приведены в литературе. Использование прототипа значительно
+облегчает аналитический расчет долговечности при переменном характере
+нагружения.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Расчет долговечности при переменном характере внешнего
+нагружения проводится на основе гипотезы линейного суммирования. Согласно этой
+гипотезе усталостное повреждение, вносимое напряжением <sub><img width="18" height="22" src="chap2_10.files/image379.gif" v:shapes="_x0000_i1216"></sub>,
+составляет некоторую долю, равную <sub><img width="52" height="24" src="chap2_10.files/image381.gif" v:shapes="_x0000_i1217"></sub>,
+от полного повреждения, соответствующего появлению усталостных трещин и
+разрушению (рис. 2.10.13). Здесь под <sub><img width="20" height="24" src="chap2_10.files/image383.gif" v:shapes="_x0000_i1218"></sub><span class="hcp11"> </span>понимается фактическое число циклов
+нагружения при напряжении <sub><img width="18" height="22" src="chap2_10.files/image384.gif" v:shapes="_x0000_i1219"></sub>, а
+под <sub><img width="26" height="24" src="chap2_10.files/image386.gif" v:shapes="_x0000_i1220"></sub>&nbsp;–
+предельное при данном уровне напряжений число циклов нагружения, определяемое
+из кривой выносливости. Разрушение наступает тогда, когда выполняется условие</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="72" height="46" src="chap2_10.files/image388.gif" v:shapes="_x0000_i1221"></span></sub><span class="hcp4">, <span class="hcp18">                </span><span class="hcp11">                               </span>(2.10.33)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">где <sub><img width="14" height="18" src="chap2_10.files/image390.gif" v:shapes="_x0000_i1222"></sub>&nbsp;–
+полное число уровней напряжений. Выражение (2.10.33) представляет собой
+аналитическое выражение гипотезы линейного суммирования повреждений.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Как следует из уравнения кривой выносливости (2.10.8), на
+криволинейном участке (при <sub><img width="98" height="26" src="chap2_10.files/image392.gif" v:shapes="_x0000_i1223"></sub>)
+это уравнение можно представить в виде</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp4"><img width="90" height="48" src="chap2_10.files/image394.gif" v:shapes="_x0000_i1224"></span></sub><span class="hcp4">.<span class="hcp11">                                          </span>(2.10.34)</span></p>
+
+<div align=center>
+
+<table border="0" cellspacing="0" cellpadding="0" class="hcp8">
+ <tr>
+  <td width="213" valign="bottom" style="width:159.5pt;" class="hcp9">
+  <p class=MsoNormal align=center style='margin-top:14.0pt;text-align:center;
+  text-indent:0cm'><span class="hcp4"><img width="198" height="151" src="chap2_10.files/image396.gif" v:shapes="_x0000_i1225"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp4">Рис.
+  2.10.13</span></p>
+  </td>
+  <td width="243" valign="bottom" style="width:182.15pt;" class="hcp9">
+  <p class=MsoNormal align=center style='margin-top:4.0pt;text-align:center;
+  text-indent:0cm'><span class="hcp4"><img width="228" height="160" src="chap2_10.files/image398.gif" v:shapes="_x0000_i1226"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp4">Рис.
+  2.10.12</span></p>
+  </td>
+  <td width="270" valign="bottom" style="width:202.8pt;" class="hcp9">
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp10"><img width="256" height="147" src="chap2_10.files/image400.gif" v:shapes="_x0000_i1227"></span><span class="hcp4"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp4">Рис.
+  2.10.14</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Подставляя (2.10.34) в (2.10.33), находим</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="118" height="46" src="chap2_10.files/image402.gif" v:shapes="_x0000_i1228"></span></sub><span class="hcp4"><span class="hcp11"> </span>.<span class="hcp11">                                    </span>(2.10.35)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Суть метода расчета заключается в приведении рассматриваемого
+переменного режима к эквивалентному постоянному с напряжением <sub><img width="20" height="24" src="chap2_10.files/image404.gif" v:shapes="_x0000_i1229"></sub><span class="hcp11"> </span>(рис. 2.10.14) и числом циклов нагружения <sub><img width="70" height="46" src="chap2_10.files/image406.gif" v:shapes="_x0000_i1230"></sub>,
+равным сумме чисел циклов переменного режима. Под эквивалентным понимается
+такой режим постоянного нагружения, который вызывает за одинаковый период
+времени такое же усталостное разрушение, что и рассматриваемый переменный.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Используя уравнение кривой выносливости (2.10.8), запишем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp4"><img width="103" height="26" src="chap2_10.files/image408.gif" v:shapes="_x0000_i1231"></span></sub><span class="hcp4">,<span class="hcp11">                                          </span>(2.10.36)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp4">откуда с учетом (2.10.35) получаем</span></p>
+
+<p class=MsoNormal align=right style='margin-bottom:6.0pt;text-align:right'><sub><span class="hcp4"><img width="136" height="50" src="chap2_10.files/image410.gif" v:shapes="_x0000_i1232"></span></sub><span class="hcp4">.<span class="hcp28">                            </span><span class="hcp11">          </span>(2.10.37)</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:189.4pt;mso-element-frame-height:
+432.35pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+paragraph;mso-element-anchor-horizontal:page;mso-element-left:309.9pt;
+mso-element-top:189.15pt'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=264 height=576
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="576" class="hcp14">
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
+  tab-stops:241.0pt;mso-element:frame;mso-element-frame-width:189.4pt;
+  mso-element-frame-height:432.35pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  page;mso-element-left:309.9pt;mso-element-top:189.15pt'><span class="hcp4"><img width="241" height="145" src="chap2_10.files/image412.gif" v:shapes="_x0000_i1233"></span></p>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+  margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  tab-stops:241.0pt;mso-element:frame;mso-element-frame-width:189.4pt;
+  mso-element-frame-height:432.35pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  page;mso-element-left:309.9pt;mso-element-top:189.15pt'><span class="hcp4">а)</span></p>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
+  tab-stops:241.0pt;mso-element:frame;mso-element-frame-width:189.4pt;
+  mso-element-frame-height:432.35pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  page;mso-element-left:309.9pt;mso-element-top:189.15pt'><span class="hcp4"><img width="241" height="162" src="chap2_10.files/image414.gif" v:shapes="_x0000_i1234"></span></p>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+  margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  tab-stops:241.0pt;mso-element:frame;mso-element-frame-width:189.4pt;
+  mso-element-frame-height:432.35pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  page;mso-element-left:309.9pt;mso-element-top:189.15pt'><span lang="EN-US" class="hcp10">b)</span><span class="hcp4"></span></p>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm;
+  tab-stops:241.0pt;mso-element:frame;mso-element-frame-width:189.4pt;
+  mso-element-frame-height:432.35pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  page;mso-element-left:309.9pt;mso-element-top:189.15pt'><span class="hcp4"><img width="241" height="162" src="chap2_10.files/image416.gif" v:shapes="_x0000_i1235"></span><span lang="EN-US" class="hcp10"></span></p>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+  margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  tab-stops:3.0cm;mso-element:frame;mso-element-frame-width:189.4pt;mso-element-frame-height:
+  432.35pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:page;mso-element-left:309.9pt;
+  mso-element-top:189.15pt'><span lang="EN-US" class="hcp10">c</span><span class="hcp4">)</span></p>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm;
+  tab-stops:3.0cm;mso-element:frame;mso-element-frame-width:189.4pt;mso-element-frame-height:
+  432.35pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:page;mso-element-left:309.9pt;
+  mso-element-top:189.15pt'><span class="hcp4">Рис.
+  2.10.16</span><span class="hcp15"></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">В некоторых случаях оказывается удобным привести переменное
+нагружение к постоянному с напряжением <sub><img width="32" height="24" src="chap2_10.files/image418.gif" v:shapes="_x0000_i1236"></sub>,
+равным наибольшему значению напряжения при переменном режиме. Очевидно, что при
+таком варианте эквивалентного приведения число циклов до разрушения, называемое<span class="hcp7">эквивалентным числом
+циклов</span> <sub><img width="22" height="24" src="chap2_10.files/image420.gif" v:shapes="_x0000_i1237"></sub><span class="hcp11"> </span>(рис. 2.10.15), будет меньше полного числа
+циклов. Эквивалентное число циклов, по аналогии с (2.10.36), определяется из
+уравнения</span></p>
+
+<p class=MsoNormal align=center style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><sub><span class="hcp4"><img width="110" height="26" src="chap2_10.files/image422.gif" v:shapes="_x0000_i1238"></span></sub><span class="hcp4">,</span></p>
+
+<p class=MsoNormal style='text-indent:0cm'><span class="hcp4">откуда, с учетом (2.10.33), получаем</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp4"><img width="112" height="48" src="chap2_10.files/image424.gif" v:shapes="_x0000_i1239"></span></sub><span class="hcp4">.<span class="hcp11">                                         </span>(2.10.38)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Выбор формы приведения переменного режима к
+постоянному&nbsp;– с эквивалентным напряжением (2.10.37) или с эквивалентным
+значением числа циклов (2.10.38)&nbsp;– зависит от характера решаемой задачи и
+предпочтений разработчиков конкретных методик.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Описанный метод приведения переменного режима нагружения к
+постоянному в полной мере относится и к случаю случайного нагружения.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp2"><span class="hcp4">Схематизация процесса усталостного разрушения при случайном изменении</span></b><span class="hcp4"> <b class="hcp2">напряжений.</b> Рассмотренные выше зависимости относятся к регулярным законам
+изменения напряжений во времени и в большой степени носят частный характер.
+Методика расчета при случайном нагружении (когда внешняя нагрузка переменна во
+времени и не может быть описана периодической функцией) отличается от расчета
+режима циклического нагружения. В общем случае характер изменения напряжений случаен,
+что, в конечном итоге, вынуждает воспользоваться методами схематизации.</span></p>
+
+<p class=MsoNormal style='text-indent:21.3pt'><span class="hcp4">Экспериментальные исследования показывают, что из всех
+известных методов схематизации наиболее полно отражают физическую сущность
+процесса разрушения <i class="hcp6">метод дождя</i> и <i class="hcp6">метод полных циклов</i>. Эти два метода приводят
+к близким результатам, а потому ниже кратко рассмотрим в качестве примера метод
+полных циклов.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Основой для расчетов в области случайных нагружений является
+кривая напряжений, записанная в процессе наблюдения в течение некоторого промежутка
+времени (рис. 2.10.16а). Процесс обработки кривой напряжений по методу полных
+циклов начинается с нахождения максимумов и фиксации размахов локальных высот
+(рис. 2.10.16а) с их последующим отбрасыванием (рис. 2.10.16b). Результаты
+подсчета количества циклов и соответствующих им амплитуд сохраняются и
+заносятся в таблицу (таблица 2.10.2). По мере увеличения высот график
+схематизированной кривой становится реже (рис. 2.10.16с). Кроме амплитудных
+значений, следует хранить и средние значения подсчитанных напряжений. Все эти
+данные позволяют представить кривую случайного нагружения как совокупность
+блочных режимов. Дальнейшая обработка блочного режима нагружения дает возможность
+свести его к режиму симметричного знакопеременного нагружения, которое вызывает
+процесс разрушения, аналогичный процессу разрушения при случайном нагружении.
+Эти операции приведения удобно выполнять с помощью компьютера.</span></p>
+
+<h3 align=left style='margin-top:12.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-align:left;mso-element:frame;mso-element-frame-width:0cm;
+mso-element-frame-hspace:0cm;mso-element-wrap:auto;mso-element-anchor-vertical:
+margin;mso-element-anchor-horizontal:column;mso-element-left:left;mso-element-top:
+0cm;mso-height-rule:exactly'><span style='font-size:10.0pt;font-family:Arial;
+letter-spacing:2.0pt;font-weight:normal;mso-bidi-font-weight:bold'>Таблица</span><span class="hcp4"> </span><span style='font-size:10.0pt;
+font-family:Arial;font-weight:normal;mso-bidi-font-weight:bold'>2.10.2.</span><span class="hcp4"> Значения размахов напряжений,
+выделенные<br>
+методом полных циклов</span></h3>
+
+<table border=1 cellspacing=0 cellpadding=0 width=529 style='width:14.0cm;
+ margin-left:3.5pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .75pt;
+ mso-padding-alt:0cm 3.5pt 0cm 3.5pt'>
+ <tr>
+  <td width=84 valign=top style='width:63.2pt;border:solid windowtext .75pt;
+  border-bottom:solid windowtext 1.5pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">Обозначение</span></p>
+  </td>
+  <td width=89 valign=top style='width:66.75pt;border-top:solid windowtext .75pt;
+  border-left:none;border-bottom:solid windowtext 1.5pt;border-right:none;
+  mso-border-left-alt:solid windowtext .75pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><sub><span class="hcp4"><img width="27" height="18" src="chap2_10.files/image426.gif" v:shapes="_x0000_i1240"></span></sub><span class="hcp4">, МПа</span></p>
+  </td>
+  <td width=89 valign=top style='width:66.75pt;border-top:.75pt;border-left:
+  1.5pt;border-bottom:1.5pt;border-right:.75pt;border-color:windowtext;
+  border-style:solid;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">Обозначение</span></p>
+  </td>
+  <td width=89 valign=top style='width:66.7pt;border-top:solid windowtext .75pt;
+  border-left:none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  mso-border-left-alt:solid windowtext .75pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><sub><span class="hcp4"><img width="27" height="18" src="chap2_10.files/image428.gif" alt="*" v:shapes="_x0000_i1241"></span></sub><span class="hcp4">, МПа</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.75pt;" class="hcp21">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">Обозначение</span></p>
+  </td>
+  <td width=89 valign=top style='width:66.75pt;border-top:solid windowtext .75pt;
+  border-left:none;border-bottom:none;border-right:solid windowtext .75pt;
+  mso-border-left-alt:solid windowtext .75pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><sub><span class="hcp4"><img width="27" height="18" src="chap2_10.files/image429.gif" alt="*" v:shapes="_x0000_i1242"></span></sub><span class="hcp4">, МПа</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=84 valign=top style='width:63.2pt;border:solid windowtext .75pt;
+  border-top:none;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">1–1'</span></p>
+  </td>
+  <td width=89 valign=top style='width:66.75pt;border:none;border-bottom:solid windowtext .75pt;
+  mso-border-left-alt:solid windowtext .75pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">8</span></p>
+  </td>
+  <td width=89 valign=top style='width:66.75pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">9–9’</span></p>
+  </td>
+  <td width=89 valign=top style='width:66.7pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-left-alt:solid windowtext .75pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">8</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.75pt;" class="hcp29">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">2–3’</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.75pt;" class="hcp30">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">48</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="84" valign="top" style="width:63.2pt;" class="hcp22">
+  <p class=MsoNormal align=left style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:left;text-indent:17.0pt'><span class="hcp4">2’–3</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.75pt;" class="hcp31">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">6</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.75pt;" class="hcp32">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">10–10’</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.7pt;" class="hcp33">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">7</span></p>
+  </td>
+  <td width=89 valign=top style='width:66.75pt;border:none;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">11–13’</span></p>
+  </td>
+  <td width=89 valign=top style='width:66.75pt;border:none;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">46</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="84" valign="top" style="width:63.2pt;" class="hcp22">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">4–4’</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.75pt;" class="hcp31">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">10</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.75pt;" class="hcp32">
+  <p class=MsoNormal align=left style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:left;text-indent:11.35pt'><span class="hcp4">11’–12</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.7pt;" class="hcp33">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">8,5</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.75pt;" class="hcp29">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">5–7’</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.75pt;" class="hcp30">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">58</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="84" valign="top" style="width:63.2pt;" class="hcp22">
+  <p class=MsoNormal align=left style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:left;text-indent:17.0pt'><span class="hcp4">5’–6</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.75pt;" class="hcp31">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">6,5</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.75pt;" class="hcp32">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">12–13’</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.7pt;" class="hcp33">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">9,5</span></p>
+  </td>
+  <td width=89 valign=top style='width:66.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">16–16’</span></p>
+  </td>
+  <td width=89 valign=top style='width:66.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">41</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="84" valign="top" style="width:63.2pt;" class="hcp22">
+  <p class=MsoNormal align=left style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:left;text-indent:17.0pt'><span class="hcp4">6’–7</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.75pt;" class="hcp31">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">9</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.75pt;" class="hcp32">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">14–14’</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.7pt;" class="hcp33">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">9</span></p>
+  </td>
+  <td width=89 valign=top style='width:66.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm'>&nbsp;<span class="hcp34"></span></p>
+  </td>
+  <td width=89 valign=top style='width:66.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-left-alt:solid windowtext .75pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm'>&nbsp;<span class="hcp34"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="84" valign="top" style="width:63.2pt;" class="hcp22">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">8–8’</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.75pt;" class="hcp31">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">10</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.75pt;" class="hcp32">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">15–15</span><span lang="EN-US" class="hcp10">’</span></p>
+  </td>
+  <td width="89" valign="top" style="width:66.7pt;" class="hcp33">
+  <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span class="hcp4">10,5</span></p>
+  </td>
+  <td width=89 valign=top style='width:66.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm'>&nbsp;<span class="hcp34"></span></p>
+  </td>
+  <td width=89 valign=top style='width:66.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0cm 3.5pt 0cm 3.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;text-indent:0cm'>&nbsp;<span class="hcp34"></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:0cm'><span class="hcp34">&nbsp;</span></p>
+
+</div>
+
+<div placeholder id="footer" style="width:100%;" class="hcp1">
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			border-bottom-color: #000080;
+			border-bottom-style: Ridge;
+			border-bottom-width: 2px;
+			font-size: 10pt;">&nbsp;</p>
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			font-size: 8pt;">&#169; 
+ 2007 Copyright &nbsp;&#1053;&#1058;&#1062; 
+ &#1040;&#1055;&#1052;</p>
+</div>
+</body>
+</html>

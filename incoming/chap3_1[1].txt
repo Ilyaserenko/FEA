@@ -1,0 +1,748 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="File-List" href="./chap3_1.files/filelist.xml">
+<link rel="Edit-Time-Data" href="./chap3_1.files/editdata.mso">
+<title>Глава 3.1. Общий случай расчета напряженно-деформированного состояния в
+точке. Полная система уравнений теории упругости</title><style>
+<!--
+p.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+h1 { margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; mso-outline-level:1; font-size:14.0pt; font-family:Arial; }
+p.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.Section1 { page:Section1; }
+-->
+</style><style title="hcp" type="text/css">
+<!--
+div.hcp1 { position:relative; }
+b.hcp2 { mso-bidi-font-weight:normal; }
+span.hcp3 { font-size:10.0pt; font-family:Arial; }
+span.hcp4 { letter-spacing:2.0pt; mso-bidi-font-style:italic; }
+i.hcp5 { mso-bidi-font-style:normal; }
+span.hcp6 { mso-spacerun:yes; }
+span.hcp7 { font-family:Arial; }
+td.hcp8 { padding-top:0cm; padding-right:9.05pt; padding-bottom:0cm; padding-left:9.05pt; }
+span.hcp9 { mso-tab-count:1; }
+span.hcp10 { font-size:10.0pt; mso-bidi-font-size:11.0pt; font-family:Arial; }
+td.hcp11 { padding:0cm 5.4pt 0cm 5.4pt; }
+span.hcp12 { font-family:Arial; mso-ansi-language:EN-US; }
+span.hcp13 { mso-tab-count:2; }
+span.hcp14 { font-size:10.0pt; font-family:Arial; mso-ansi-language:EN-US; }
+span.hcp15 { mso-ansi-language:EN-US; }
+span.hcp16 { mso-tab-count:3; }
+-->
+</style>
+</head>
+<body lang="RU" style="tab-interval:36.0pt">
+<div placeholder id="header" style="width:100%;" class="hcp1">
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			background-color: #d8e8f9;
+			margin-left: 0px;"><img src="head_for_help.jpg"
+									x-maintain-ratio=TRUE
+									style="border: none;
+											width: 1000px;
+											height: 50px;
+											float: none;
+											border-style: none;
+											border-style: none;"
+									width=1000
+									height=50
+									border=0></p>
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			border-top-color: #000080;
+			border-top-width: 2px;
+			border-top-style: Ridge;
+			margin-left: 0px;">&nbsp;</p>
+</div>
+<div class=Section1>
+
+<h1 style='mso-hyphenate:none'><span style='color:navy;mso-bidi-font-weight:
+normal'>Глава 3.1. Общий случай расчета напряженно-деформированного состояния в
+точке. Полная система уравнений теории упругости</span></h1>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp2"><span class="hcp3">&nbsp;</span></b></p>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp2"><span class="hcp3">Три группы основных
+уравнений. </span></b><span class="hcp3">Рассмотренные
+ранее частные случаи определения напряжений (глава 2.7) и деформаций (глава
+2.6) следует дополнить решением задач теории упругости в общем виде. <span class="hcp4">Теорией упругости</span>
+называется раздел механики сплошной среды, который занимается изучением
+поведения упругих твердых тел при их нагружении. При этом деформируемая среда
+считается однородной и изотропной, т.&nbsp;е. ее упругие свойства одинаковы во
+всех направлениях. Кроме того, предполагается, что среда деформируется линейно
+(для материала среды выполняется закон Гука), причем перемещения и деформации
+достаточно малы.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span style='font-size:10.0pt;
+font-family:Arial;letter-spacing:.2pt'>В общем случае расчет
+напряженно-деформированного состояния в точке (т.&nbsp;е. расчет <i class="hcp5">на прочность</i> и <i class="hcp5">жесткость</i>) можно провести с помощью системы фундаментальных
+уравнений теории упругости. Получение точного аналитического решения этих
+уравнений оказывается весьма сложной процедурой, поэтому аналитические методы
+имеют ограниченное применение. Единственным выходом из такого положения
+является использование приближенных численных методов, реализация которых
+возможна с помощью современной вычислительной техники. Решая фундаментальные
+уравнения теории упругости с помощью численных методов, можно выполнить все
+необходимые вычисления для корректного описания напряженно-деформированного
+состояния бесконечно большого числа возможных вариантов конструкций при произвольном
+нагружении и закреплении (см. далее главу 3.3). С этой целью разрабатывается
+специализированное программное обеспечение, позволяющее решать комплекс этих и
+смежных с ними задач.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Перейдем теперь к непосредственному выводу уравнений,
+являющихся основанием для анализа напряженно-деформированного состояния в точке
+численными методами. Эти уравнения можно разделить на три группы.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span style='font-size:10.0pt;
+font-family:Arial;letter-spacing:.1pt'>Первая группа, или <i class="hcp5">статические уравнения</i>, описывает равновесие выделенного в окрестности
+некоторой точки тела элементарного параллелепипеда. Вторая группа уравнений,
+или <i class="hcp5">обобщенный закон Гука</i>, выражает
+зависимость между напряжениями и деформациями элемента. Поскольку в этих
+уравнениях учитываются физико-механические свойства материала, их называют <i class="hcp5">физическими.</i> Наконец, уравнения третьей
+группы связывает деформации элемента тела с перемещениями его точек вследствие
+действия приложенной нагрузки это – <i class="hcp5">геометрические
+уравнения</i>.</span></p>
+
+<p class=Bookbody style='margin-top:8.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp2"><span class="hcp3">Уравнения равновесия элемента объема.</span></b> <span class="hcp3">Рассмотрим некоторое тело, нагруженное произвольной
+системой сил (рис. 2.7.1). Для анализа напряженно-деформированного состояния
+тела в окрестности произвольно выбранной точки <sub><img width="16" height="18" src="chap3_1.files/image002.gif" v:shapes="_x0000_i1025"></sub><span class="hcp6"> </span>вырежем элемент объема, имеющий форму
+параллелепипеда со сторонами <sub><img width="50" height="26" src="chap3_1.files/image004.gif" v:shapes="_x0000_i1026"></sub><span class="hcp6"> </span>и <sub><img width="20" height="18" src="chap3_1.files/image006.gif" v:shapes="_x0000_i1027"></sub>. По
+граням этого выделенного элемента в общем случае трехосного нагружения
+действуют нормальные и касательные напряжения (рис. 3.1.1), которые можно
+представить в форме <i class="hcp5">тензора напряжений</i>
+<sub><img width="26" height="26" src="chap3_1.files/image008.gif" v:shapes="_x0000_i1028"></sub><span class="hcp6"> </span>следующего вида:</span></p>
+
+<p class=MsoNormal align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right'><sub><span class="hcp7"><img width="138" height="77" src="chap3_1.files/image010.gif" v:shapes="_x0000_i1029"></span></sub><span class="hcp7">.<span class="hcp6">                                             </span>(3.1.1)</span></p>
+
+<div style='mso-element:frame;mso-element-frame-height:171.25pt;mso-element-frame-hspace:
+9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:
+margin;mso-element-top:72.25pt'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 height=228 align=left>
+ <tr>
+  <td valign="top" align="left" height="228" class="hcp8">
+  <p class=MsoNormal align=center style='margin-top:12.0pt;text-align:center;
+  mso-element:frame;mso-element-frame-height:171.25pt;mso-element-frame-hspace:
+  9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:
+  margin;mso-element-top:72.25pt'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Напомним, что первый индекс в обозначениях напряжений
+указывает площадку, на которой действует напряжение, а второй – его
+направление; поскольку в обозначениях нормальных напряжений фигурируют два
+одинаковых индекса, обычно один из них опускают.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Согласно закону парности касательных напряжений (2.4.14),
+имеют место равенства</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="58" height="24" src="chap3_1.files/image012.gif" v:shapes="_x0000_i1030"></span></sub><span class="hcp3">;<span class="hcp6">      </span><sub><img width="54" height="22" src="chap3_1.files/image014.gif" v:shapes="_x0000_i1031"></sub>;<span class="hcp6">      </span><sub><img width="54" height="24" src="chap3_1.files/image016.gif" v:shapes="_x0000_i1032"></sub>. <span class="hcp9">   </span><span class="hcp6">                             </span>(3.1.2)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Поскольку, как следует из (3.1.2), матрица напряжений
+(3.1.1) симметрична, в механике вводят вектор-столбец напряжений <sub><img width="16" height="18" src="chap3_1.files/image018.gif" v:shapes="_x0000_i1033"></sub>,
+который записывается как</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp3"><img width="234" height="26" src="chap3_1.files/image020.gif" v:shapes="_x0000_i1034"></span></sub><span class="hcp3">.<span class="hcp6">         </span><span class="hcp6">                     </span>(3.1.3)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Здесь и далее верхний индекс <sub><img width="14" height="18" src="chap3_1.files/image022.gif" v:shapes="_x0000_i1035"></sub>означает
+транспонирование вектора-столбца, что позволяет для сокращения записывать его в
+строку, а не в столбец.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp10">Кроме напряжений, приложенным к
+граням, в общем случае на выделенный элемент объема могут действовать массовые
+силы, компоненты которых в проекции на координатные оси обозначим как <sub><img width="42" height="26" src="chap3_1.files/image024.gif" v:shapes="_x0000_i1036"></sub>и <sub><img width="16" height="18" src="chap3_1.files/image026.gif" v:shapes="_x0000_i1037"></sub>.
+Примерами массовых сил могут служить сила тяжести, центробежные нагрузки, а
+также некоторые другие силы, которые равномерно распределены в объеме рассматриваемого
+тела.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp10">&nbsp;</span></p>
+
+<div align=center>
+
+<table border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width="228" valign="bottom" style="width:171.1pt;" class="hcp11">
+  <p class=MsoNormal align=center style='margin-top:12.0pt;text-align:center'><span lang="EN-US" class="hcp12"><img width="169" height="166" src="chap3_1.files/image028.gif" v:shapes="_x0000_i1038"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp7">Рис. 3.1.1</span><span class="hcp10"></span></p>
+  </td>
+  <td width="329" valign="bottom" style="width:246.85pt;" class="hcp11">
+  <p class=MsoNormal align=center style='margin-right:21.7pt;text-align:center;
+  mso-element:frame;mso-element-frame-width:214.85pt;mso-element-frame-height:
+  171.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:margin;mso-element-top:72.25pt'><span class="hcp7"><img width="286" height="190" src="chap3_1.files/image030.gif" v:shapes="_x0000_i1039"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp7">Рис. 3.1.2</span><span class="hcp10"></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp10">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp10">Ясно, что после приложения внешней
+нагрузки выделенный элемент объема находится в равновесии. Аналитически условие
+равновесия можно получить, спроецировав все силовые факторы на оси координат. Выполним
+операцию проецирования, например, на ось <sub><img width="14" height="14" src="chap3_1.files/image032.gif" v:shapes="_x0000_i1040"></sub>. С
+этой целью на рис. 3.1.2 изображены только те силовые факторы, которые
+направлены вдоль этой оси. Тогда имеем</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="404" height="98" src="chap3_1.files/image034.gif" v:shapes="_x0000_i1041"></span></sub><span class="hcp3"><span class="hcp6">        </span>(3.1.4)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Вычисляя аналогично (3.1.4) суммы проекций сил на оси <sub><img width="14" height="18" src="chap3_1.files/image036.gif" v:shapes="_x0000_i1042"></sub><span class="hcp6"> </span>и <sub><img width="12" height="14" src="chap3_1.files/image038.gif" v:shapes="_x0000_i1043"></sub>,
+после приведения подобных членов и деления на <sub><img width="86" height="22" src="chap3_1.files/image040.gif" v:shapes="_x0000_i1044"></sub><span class="hcp6"> </span>окончательно получаем систему <i class="hcp5">дифференциальных уравнений равновесия Навье</i>,
+а именно</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="182" height="134" src="chap3_1.files/image042.gif" v:shapes="_x0000_i1045"></span></sub><span class="hcp3">.<span class="hcp6">                                          </span>(3.1.5)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Уравнения равновесия (3.1.5) удобно записать в матричной
+форме,</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp3"><span class="hcp6"> </span><sub><img width="86" height="22" src="chap3_1.files/image044.gif" v:shapes="_x0000_i1046"></sub>,<span class="hcp6">                  </span><span class="hcp6">                                </span>(3.1.6)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">где элементы матрицы <sub><img width="26" height="26" src="chap3_1.files/image046.gif" v:shapes="_x0000_i1047"></sub><span class="hcp6"> </span>представляют собой операторы
+дифференцирования,</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:21.25pt;line-height:normal'><sub><span class="hcp3"><img width="232" height="130" src="chap3_1.files/image048.gif" v:shapes="_x0000_i1048"></span></sub><span class="hcp3">,<span class="hcp13">                  </span><span class="hcp6">                   </span>(3.1.7)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">а матрица-столбец <sub><img width="14" height="18" src="chap3_1.files/image050.gif" v:shapes="_x0000_i1049"></sub><span class="hcp6"> </span>состоит из компонент массовых сил: <sub><img width="113" height="24" src="chap3_1.files/image052.gif" v:shapes="_x0000_i1050"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Сформулируем теперь условия на поверхности тела как граничные
+условия для дифференциальных уравнений (3.1.5). Они выражают равновесие между
+поверхностной нагрузкой и напряжениями в произвольной точке поверхности тела.
+Пусть на произвольно ориентированную площадку <sub><img width="22" height="18" src="chap3_1.files/image054.gif" v:shapes="_x0000_i1051"></sub><span class="hcp6"> </span>в трехмерном пространстве действует некоторая
+внешняя поверхностная нагрузка <sub><img width="16" height="18" src="chap3_1.files/image056.gif" v:shapes="_x0000_i1052"></sub><span class="hcp6"> </span>(рис. 3.1.3</span><span lang="EN-US" class="hcp14">a</span><span class="hcp3">), <sub><img width="132" height="28" src="chap3_1.files/image058.gif" v:shapes="_x0000_i1053"></sub>,
+где <sub><img width="52" height="26" src="chap3_1.files/image060.gif" v:shapes="_x0000_i1054"></sub><span class="hcp6"> </span>и <sub><img width="20" height="22" src="chap3_1.files/image062.gif" v:shapes="_x0000_i1055"></sub><span class="hcp6"> </span>– проекции на координатные оси вектора полной
+внешней поверхностной нагрузки <sub><img width="16" height="18" src="chap3_1.files/image063.gif" v:shapes="_x0000_i1056"></sub>.
+Напряжения <sub><img width="50" height="26" src="chap3_1.files/image065.gif" v:shapes="_x0000_i1057"></sub><span class="hcp6"> </span>и <sub><img width="20" height="22" src="chap3_1.files/image067.gif" v:shapes="_x0000_i1058"></sub><span class="hcp6"> </span>определяются из уравнений равновесия
+тетраэдра <sub><img width="50" height="18" src="chap3_1.files/image069.gif" v:shapes="_x0000_i1059"></sub>.
+Массовые силы в большинстве случаев оказываются малыми, и их наличием можно
+пренебречь.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Ориентация рассматриваемой площадки описывается значениями
+направляющих косинусов, т.&nbsp;е. косинусов углов между направлением вектора
+нормали <sub><img width="14" height="18" src="chap3_1.files/image071.gif" v:shapes="_x0000_i1060"></sub><span class="hcp6"> </span>к площадке и соответствующими ортами
+декартовой системы координат (рис.3.1.3</span><span lang="EN-US" class="hcp14">b</span><span class="hcp3">),</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span lang="EN-US" class="hcp14"><img width="94" height="46" src="chap3_1.files/image073.gif" v:shapes="_x0000_i1061"></span></sub><span class="hcp3">;</span> <sub><span lang="EN-US" class="hcp14"><img width="103" height="46" src="chap3_1.files/image075.gif" v:shapes="_x0000_i1062"></span></sub><span class="hcp3">;<span class="hcp6">  
+</span></span><span class="hcp6"> </span><sub><span lang="EN-US" class="hcp14"><img width="96" height="46" src="chap3_1.files/image077.gif" v:shapes="_x0000_i1063"></span></sub><span class="hcp3">; <sub><img width="104" height="22" src="chap3_1.files/image079.gif" v:shapes="_x0000_i1064"></sub>.<span class="hcp6">     </span>(3.1.8)</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:186.75pt;mso-element-frame-height:
+135.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+paragraph;mso-element-anchor-horizontal:margin;mso-element-top:4.35pt'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=261 height=180
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="180" class="hcp8">
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:7.05pt;margin-bottom:.0001pt;text-indent:-.55pt;mso-element:
+  frame;mso-element-frame-width:186.75pt;mso-element-frame-height:135.25pt;
+  mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:margin;mso-element-top:4.35pt'><span lang="EN-US" class="hcp12"><img width="236" height="124" src="chap3_1.files/image081.gif" v:shapes="_x0000_i1065"></span></p>
+  <p class=MsoNormal style='text-indent:36.0pt;mso-element:frame;mso-element-frame-width:
+  186.75pt;mso-element-frame-height:135.25pt;mso-element-frame-hspace:9.05pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:4.35pt'><span lang="EN-US" class="hcp12"><span class="hcp6"> </span>a) <span class="hcp13">                   </span><span class="hcp6">  </span>b)</span><span lang="EN-US" class="hcp15"></span></p>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  mso-element:frame;mso-element-frame-width:186.75pt;mso-element-frame-height:
+  135.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:margin;mso-element-top:4.35pt'><span class="hcp7">Рис</span><span lang="EN-US" class="hcp12">. 3.1.3</span><span lang="EN-US" class="hcp15"></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;text-indent:21.3pt'><span class="hcp7">Составим сумму проекций всех сил, приложенных к
+граням тетраэдра, на ось <sub><img width="24" height="18" src="chap3_1.files/image083.gif" v:shapes="_x0000_i1066"></sub>(на
+рис. 3.1.3</span><span lang="EN-US" class="hcp12">b</span><span lang=EN-US> </span><span class="hcp7">показаны
+только те напряжения, которые дают проекции на эту ось):</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="234" height="26" src="chap3_1.files/image085.gif" v:shapes="_x0000_i1067"></span></sub><span class="hcp3">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">откуда</span></p>
+
+<p class=Bookbody align=center style='margin-bottom:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="142" height="26" src="chap3_1.files/image087.gif" v:shapes="_x0000_i1068"></span></sub><span class="hcp3">.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Аналогично, проецируя все действующие на тетраэдр силы на
+оси <sub><img width="24" height="22" src="chap3_1.files/image089.gif" v:shapes="_x0000_i1069"></sub><span class="hcp6"> </span>и <sub><img width="22" height="18" src="chap3_1.files/image091.gif" v:shapes="_x0000_i1070"></sub>,
+находим выражения для <sub><img width="22" height="26" src="chap3_1.files/image093.gif" v:shapes="_x0000_i1071"></sub><span class="hcp6"> </span>и <sub><img width="20" height="22" src="chap3_1.files/image094.gif" v:shapes="_x0000_i1072"></sub>. В
+результате получаем следующие формулы для составляющих полной поверхностной
+нагрузки:</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="154" height="77" src="chap3_1.files/image096.gif" v:shapes="_x0000_i1073"></span></sub><span class="hcp3">. <span class="hcp9">        </span><span class="hcp6">                            </span>(3.1.9)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">В сокращенной записи условия на поверхности (3.1.19)
+представляются в виде</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="66" height="22" src="chap3_1.files/image098.gif" v:shapes="_x0000_i1074"></span></sub><span class="hcp3">;<span class="hcp6"> 
+</span><sub><img width="186" height="74" src="chap3_1.files/image100.gif" v:shapes="_x0000_i1075"></sub>. <span class="hcp9">    </span><span class="hcp6">               </span>(3.1.10)</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp2"><span class="hcp3">Закон Гука.</span></b> <span class="hcp3">Для
+случая объемного напряженного состояния линейно-упругих изотропных тел
+справедлив обобщенный закон Гука (2.7.8), который в матричном виде выглядит как</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="74" height="24" src="chap3_1.files/image102.gif" v:shapes="_x0000_i1076"></span></sub><span class="hcp3"><span class="hcp6"> </span>;<span class="hcp9">    </span> <sub><img width="66" height="152" src="chap3_1.files/image104.gif" v:shapes="_x0000_i1077"></sub>;</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:12.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="357" height="148" src="chap3_1.files/image106.gif" v:shapes="_x0000_i1078"></span></sub><span class="hcp3">.<span class="hcp6">            </span>(3.1.11)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Здесь модули упругости <sub><img width="16" height="18" src="chap3_1.files/image108.gif" v:shapes="_x0000_i1079"></sub><span class="hcp6"> </span>и <sub><img width="16" height="18" src="chap3_1.files/image110.gif" v:shapes="_x0000_i1080"></sub><span class="hcp6"> </span>связаны между собой соотношением (2.4.11);
+матрица упругой податливости <sub><img width="38" height="24" src="chap3_1.files/image112.gif" v:shapes="_x0000_i1081"></sub>является
+обратной по отношению к матрице модулей упругости (или матрице жесткости) <sub><img width="26" height="22" src="chap3_1.files/image114.gif" v:shapes="_x0000_i1082"></sub>,
+которая в свою очередь равна</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="545" height="183" src="chap3_1.files/image116.gif" v:shapes="_x0000_i1083"></span></sub><span class="hcp3">Уравнения (3.1.11), называемые <i class="hcp5">законом Гука в прямой форме</i>, дают возможность
+вычислить деформации, если известны напряжения. В ходе решения задач теории
+упругости часто возникает необходимость в обратных соотношениях, когда
+напряжения выражены через деформации. Для этого надо разрешить уравнения
+(3.1.11) относительно напряжений. Сделав это, получим</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="62" height="22" src="chap3_1.files/image118.gif" v:shapes="_x0000_i1084"></span></sub><span class="hcp3">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">или</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp3"><img width="283" height="166" src="chap3_1.files/image120.gif" v:shapes="_x0000_i1085"></span></sub><span class="hcp3"><span class="hcp6">             </span>(3.1.12)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Равенства (3.1.12) выражают обратную форму закона Гука.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp2"><span class="hcp3">Поля упругих перемещений точек элемента при нагружении.</span></b> <span class="hcp3">Внешние нагрузки, приложенные к
+телу, вызывают деформирование этого тела и перемещение составляющих его точек в
+пространстве (рис. 2.1.3). Определим соотношения, связывающие <i class="hcp5">абсолютные перемещения</i> точек тела с их <i class="hcp5">относительными смещениями</i>, или <i class="hcp5">деформациями</i>.</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:188.65pt;mso-element-frame-height:
+170.6pt;mso-element-frame-hspace:9.0pt;mso-element-wrap:auto;mso-element-anchor-vertical:
+paragraph;mso-element-anchor-horizontal:page;mso-element-left:310.1pt;
+mso-element-top:38.45pt'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=263 height=227>
+ <tr>
+  <td valign=top align=left height=227 style='padding-top:0cm;padding-right:
+  9.0pt;padding-bottom:0cm;padding-left:9.0pt'>
+  <p class=MsoNormal align=right style='margin-top:6.0pt;text-align:right;
+  mso-element:frame;mso-element-frame-width:188.65pt;mso-element-frame-height:
+  170.6pt;mso-element-frame-hspace:9.0pt;mso-element-wrap:auto;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:page;mso-element-left:310.1pt;
+  mso-element-top:38.45pt'><span lang="EN-US" class="hcp12"><img width="240" height="192" src="chap3_1.files/image122.gif" v:shapes="_x0000_i1086"></span></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-element:frame;
+  mso-element-frame-width:188.65pt;mso-element-frame-height:170.6pt;mso-element-frame-hspace:
+  9.0pt;mso-element-wrap:auto;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  page;mso-element-left:310.1pt;mso-element-top:38.45pt'><span class="hcp7">Рис. 3.1.4</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Представим трехмерную задачу как совокупность плоских
+проекционных&nbsp;– такой подход позволяет существенно упростить картину без
+ограничения общности. На рис. 3.1.4 изображено положение некоторого элемента
+плоскости <sub><img width="38" height="18" src="chap3_1.files/image124.gif" v:shapes="_x0000_i1087"></sub><span class="hcp6"> </span>до приложения нагрузки и после. Примем за
+начало отсчета деформаций точку <sub><img width="16" height="18" src="chap3_1.files/image126.gif" v:shapes="_x0000_i1088"></sub><span class="hcp6"> </span>с координатами (<sub><img width="46" height="22" src="chap3_1.files/image128.gif" v:shapes="_x0000_i1089"></sub>), а
+конечное положение этой точки обозначим через <sub><img width="18" height="22" src="chap3_1.files/image130.gif" v:shapes="_x0000_i1090"></sub>,
+так что компоненты линейного перемещения точки <sub><img width="16" height="18" src="chap3_1.files/image131.gif" v:shapes="_x0000_i1091"></sub><span class="hcp6"> </span>по направлениям координатных осей равны <sub><img width="12" height="14" src="chap3_1.files/image133.gif" v:shapes="_x0000_i1092"></sub><span class="hcp6"> </span>и <sub><img width="12" height="14" src="chap3_1.files/image135.gif" v:shapes="_x0000_i1093"></sub>.
+Будем считать, что эти компоненты являются малыми величинами, меняющимися
+непрерывно по объему тела; деформациями, связанными с искривлением ребер
+выделенного элемента, пренебрегаем. Если тело подвергается деформации, то в
+условиях принятых допущений при переходе от точки <sub><img width="16" height="18" src="chap3_1.files/image137.gif" v:shapes="_x0000_i1094"></sub><span class="hcp6"> </span>к соседней точке <sub><img width="16" height="18" src="chap3_1.files/image139.gif" v:shapes="_x0000_i1095"></sub>, расположенной
+на оси <sub><img width="14" height="14" src="chap3_1.files/image141.gif" v:shapes="_x0000_i1096"></sub>,
+изменяется только абсцисса на величину <sub><img width="20" height="18" src="chap3_1.files/image143.gif" v:shapes="_x0000_i1097"></sub>,
+так что перемещения точки <sub><img width="16" height="18" src="chap3_1.files/image145.gif" v:shapes="_x0000_i1098"></sub><span class="hcp6"> </span>отличаются от перемещений точки <sub><img width="16" height="18" src="chap3_1.files/image146.gif" v:shapes="_x0000_i1099"></sub><span class="hcp6"> </span>на величины частных приращений <sub><img width="31" height="24" src="chap3_1.files/image148.gif" v:shapes="_x0000_i1100"></sub><span class="hcp6"> </span>и <sub><img width="30" height="24" src="chap3_1.files/image150.gif" v:shapes="_x0000_i1101"></sub>,
+которые можно приближенно заменить их линейными частями:</span></p>
+
+<p class=Bookbody align=center style='margin-bottom:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="170" height="41" src="chap3_1.files/image152.gif" v:shapes="_x0000_i1102"></span></sub><span class="hcp3">.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Тогда перемещения точки <sub><img width="16" height="18" src="chap3_1.files/image154.gif" v:shapes="_x0000_i1103"></sub><span class="hcp6"> </span>с точностью до величин первого порядка
+малости по <sub><img width="20" height="18" src="chap3_1.files/image156.gif" v:shapes="_x0000_i1104"></sub><span class="hcp6"> </span>имеют вид</span></p>
+
+<p class=Bookbody align=center style='margin-bottom:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="142" height="41" src="chap3_1.files/image158.gif" v:shapes="_x0000_i1105"></span></sub><span class="hcp3">.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Таким образом, абсолютное увеличение длины ребра <sub><img width="26" height="18" src="chap3_1.files/image160.gif" v:shapes="_x0000_i1106"></sub>,
+вызванное деформацией, равно <sub><img width="41" height="41" src="chap3_1.files/image162.gif" v:shapes="_x0000_i1107"></sub>, а
+относительное удлинение в точке <sub><img width="16" height="18" src="chap3_1.files/image164.gif" v:shapes="_x0000_i1108"></sub><span class="hcp6"> </span>в направлении <sub><img width="14" height="14" src="chap3_1.files/image166.gif" v:shapes="_x0000_i1109"></sub><span class="hcp6"> </span>(т.&nbsp;е. линейная <i class="hcp5">деформация</i>) составляет <sub><img width="56" height="41" src="chap3_1.files/image168.gif" v:shapes="_x0000_i1110"></sub>.
+Аналогично можно рассмотреть перемещения точки <sub><img width="16" height="18" src="chap3_1.files/image170.gif" v:shapes="_x0000_i1111"></sub><span class="hcp6"> </span>(равные <sub><img width="142" height="44" src="chap3_1.files/image172.gif" v:shapes="_x0000_i1112"></sub>) и
+линейную деформацию в направлении оси <sub><img width="14" height="18" src="chap3_1.files/image174.gif" v:shapes="_x0000_i1113"></sub>,
+равную <sub><img width="58" height="44" src="chap3_1.files/image176.gif" v:shapes="_x0000_i1114"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Угловая деформация выделенного элемента, в соответствии с
+(2.1.5), определяется как уменьшение первоначально прямого угла <sub><img width="48" height="18" src="chap3_1.files/image178.gif" v:shapes="_x0000_i1115"></sub>. И
+рисунка (3.1.4) видно, что это уменьшение равно сумме углов поворотов ребер <sub><img width="18" height="22" src="chap3_1.files/image180.gif" v:shapes="_x0000_i1116"></sub><span class="hcp6"> </span>и <sub><img width="20" height="22" src="chap3_1.files/image182.gif" v:shapes="_x0000_i1117"></sub>. Поскольку
+углы малы, то</span></p>
+
+<p class=Bookbody align=center style='margin-bottom:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="296" height="46" src="chap3_1.files/image184.gif" v:shapes="_x0000_i1118"></span></sub><span class="hcp3">.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Следовательно, для угловой деформации <sub><img width="22" height="26" src="chap3_1.files/image186.gif" v:shapes="_x0000_i1119"></sub><span class="hcp6"> </span>получаем</span></p>
+
+<p class=Bookbody align=center style='margin-bottom:6.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="180" height="44" src="chap3_1.files/image188.gif" v:shapes="_x0000_i1120"></span></sub><span class="hcp3">.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Для общего трехмерного случая выражения, связывающие
+абсолютные и относительные перемещения, имеют вид</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="319" height="94" src="chap3_1.files/image190.gif" v:shapes="_x0000_i1121"></span></sub><span class="hcp3">.<span class="hcp6">            </span>(3.1.13)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Соотношения (3.1.13) называются <i class="hcp5">геометрическими уравнениями</i> <i class="hcp5">Коши</i>.
+В матричной форме они записывается как</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="70" height="24" src="chap3_1.files/image192.gif" v:shapes="_x0000_i1122"></span></sub><span class="hcp3">.<span class="hcp6">                                                </span>(3.1.14)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">Здесь <sub><img width="34" height="24" src="chap3_1.files/image194.gif" v:shapes="_x0000_i1123"></sub>получена
+транспонированием матрицы <sub><img width="26" height="22" src="chap3_1.files/image196.gif" v:shapes="_x0000_i1124"></sub>,
+введенной в (3.1.7), <sub><img width="14" height="14" src="chap3_1.files/image198.gif" v:shapes="_x0000_i1125"></sub>&nbsp;–
+вектор-столбец перемещений, <sub><img width="104" height="24" src="chap3_1.files/image200.gif" v:shapes="_x0000_i1126"></sub>, а
+вектор-столбец деформаций <sub><img width="14" height="18" src="chap3_1.files/image202.gif" v:shapes="_x0000_i1127"></sub><span class="hcp6"> </span>определяется (3.1.11).</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Иногда вместо (3.1.13) удобнее использовать так называемые <i class="hcp5">уравнения сплошности (неразрывности),</i>
+или <i class="hcp5">уравнения совместности деформаций</i>,
+которые представляют собой иную форму записи геометрических уравнений. Согласно
+уравнениям сплошности, при деформациях сохраняются первоначальные геометрические
+связи между соседними точками тела. Это обстоятельство подчеркивает отсутствие
+разрывов связей при упругих перемещениях.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Для вывода уравнений сплошности исключим из уравнений Коши
+(3.1.13) перемещения <sub><img width="26" height="18" src="chap3_1.files/image204.gif" v:shapes="_x0000_i1128"></sub><span class="hcp6"> </span>и <sub><img width="16" height="14" src="chap3_1.files/image206.gif" v:shapes="_x0000_i1129"></sub>.
+Продифференцируем в (3.1.13) первое уравнение по <sub><img width="14" height="18" src="chap3_1.files/image208.gif" v:shapes="_x0000_i1130"></sub>, а
+второе&nbsp; по –<sub><img width="14" height="12" src="chap3_1.files/image210.gif" v:shapes="_x0000_i1131"></sub>, и
+сложим результаты. Получим</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="310" height="50" src="chap3_1.files/image212.gif" v:shapes="_x0000_i1132"></span></sub><span class="hcp3">.<span class="hcp6">              </span>(3.1.15)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Сравнивая (3.1.15) и (3.1.13), замечаем, что выражение, стоящее
+в скобках в правой части (3.1.15), равно угловой деформации <sub><img width="22" height="24" src="chap3_1.files/image214.gif" v:shapes="_x0000_i1133"></sub>,
+поэтому имеем</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="142" height="48" src="chap3_1.files/image216.gif" v:shapes="_x0000_i1134"></span></sub><span class="hcp3">. <span class="hcp9">           </span><span class="hcp6">  </span><span class="hcp13">                      </span><span class="hcp6"> </span>(3.1.16)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">В результате подобных операций можно записать и другие
+аналогичные (3.1.16) соотношения первой группы <i class="hcp5">условий совместности деформаций Сен-Венана</i>:</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="149" height="144" src="chap3_1.files/image218.gif" v:shapes="_x0000_i1135"></span></sub><span class="hcp3">.<span class="hcp6">      </span><span class="hcp6">                               </span>(3.1.17)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Выражения (3.1.17) устанавливают связь между компонентами
+линейных деформаций в проекционных плоскостях. Угловые деформации в
+проекционных плоскостях также связаны между собой. Для выявления этих связей
+преобразуем в (3.1.13) компоненты угловых деформаций по следующему правилу:
+дифференцируем <sub><img width="22" height="24" src="chap3_1.files/image219.gif" v:shapes="_x0000_i1136"></sub><span class="hcp6"> </span>по <sub><img width="12" height="12" src="chap3_1.files/image221.gif" v:shapes="_x0000_i1137"></sub>, <sub><img width="22" height="22" src="chap3_1.files/image223.gif" v:shapes="_x0000_i1138"></sub><span class="hcp6"> </span>– по <sub><img width="14" height="18" src="chap3_1.files/image224.gif" v:shapes="_x0000_i1139"></sub>, а <sub><img width="22" height="24" src="chap3_1.files/image226.gif" v:shapes="_x0000_i1140"></sub><span class="hcp6"> </span>– по <sub><img width="14" height="14" src="chap3_1.files/image228.gif" v:shapes="_x0000_i1141"></sub>.
+Сложение первых двух результатов дифференцирования и последующее вычитание
+третьего дает</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="178" height="46" src="chap3_1.files/image230.gif" v:shapes="_x0000_i1142"></span></sub><span class="hcp3">.<span class="hcp6">                                </span>(3.1.18)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Еще раз дифференцируя обе части равенства (3.1.18) по <sub><img width="14" height="14" src="chap3_1.files/image232.gif" v:shapes="_x0000_i1143"></sub><span class="hcp6"> </span>и принимая во внимание, что согласно (3.1.13)
+верно равенство <sub><img width="54" height="41" src="chap3_1.files/image234.gif" v:shapes="_x0000_i1144"></sub>,
+запишем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="214" height="50" src="chap3_1.files/image236.gif" v:shapes="_x0000_i1145"></span></sub><span class="hcp3">.<span class="hcp6">                        </span>(3.1.19)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">По аналогии с (3.1.19) можно определить и остальные
+соотношения, совокупность которых описывает связи между компонентами деформаций
+в разных плоскостях:</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:12.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="222" height="144" src="chap3_1.files/image238.gif" v:shapes="_x0000_i1146"></span></sub><span class="hcp3">.<span class="hcp6">                          </span>(3.1.20)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Если уравнения сплошности (3.1.20) выполняются, то это
+указывает на отсутствие разрывов упругого тела, что является непременным
+условием существования прочности упругих тел.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp2"><span class="hcp3">Полная систему уравнений теории упругости.</span></b> <span class="hcp3">Итак, полную систему уравнений
+теории упругости составляют: <i class="hcp5">уравнения
+равновесия Навье</i> (3.1.5)&nbsp;– (3.1.6), <i class="hcp5">закон Гука в прямой</i> (3.1.11) и <i class="hcp5">обратной</i>
+(3.1.12) формах, а также <i class="hcp5">геометрические
+уравнения Коши</i> (3.1.13) или эквивалентные им <i class="hcp5">уравнения совместности деформаций Сен-Венана</i> (3.1.20). Заметим, что
+эта система почти не содержит факторов, определяющих напряженно-деформированное
+состояние тела, как то: форма и размеры тела, способы его нагружения и
+закрепления и т.&nbsp;д.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Таким образом, полная система уравнений теории упругости
+устанавливает лишь общие закономерности, присущие поведению твердого упругого
+тела под действием внешнего нагружения. Решение же каждой конкретной задачи
+невозможно без задания некоторых дополнительных (т. н. <i class="hcp5">граничных</i>) условий, определяющих конкретные режимы нагружения и
+закрепления тела определенной формы и размеров.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp2"><span class="hcp3">Энергетические уравнения.</span></b> <span class="hcp3">В случае объемного деформирования энергия <sub><img width="22" height="22" src="chap3_1.files/image240.gif" v:shapes="_x0000_i1147"></sub>,
+накопленная в единице объема, как следует из (2.7.13), равна</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="396" height="44" src="chap3_1.files/image242.gif" v:shapes="_x0000_i1148"></span></sub><span class="hcp3">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">или</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="82" height="41" src="chap3_1.files/image244.gif" v:shapes="_x0000_i1149"></span></sub><span class="hcp3">.<span class="hcp6">                                                    </span>(3.1.21)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Здесь <sub><img width="24" height="22" src="chap3_1.files/image246.gif" v:shapes="_x0000_i1150"></sub>&nbsp;–
+матрица-строка, транспонированная по отношению к (3.1.2). Выражение (3.1.21)
+называется <i class="hcp5">формулой Клапейрона</i>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Потенциальная энергия деформации всего объема <sub><img width="16" height="18" src="chap3_1.files/image248.gif" v:shapes="_x0000_i1151"></sub>определяется
+интегрированием (3.1.21) по объему <sub><img width="16" height="18" src="chap3_1.files/image250.gif" v:shapes="_x0000_i1152"></sub>:</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="194" height="46" src="chap3_1.files/image252.gif" v:shapes="_x0000_i1153"></span></sub><span class="hcp3">.<span class="hcp6">                                 </span>(3.1.22)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Работа внутренних напряжений вызвана внешними силовыми
+факторами, которые приложены к поверхности рассматриваемого тела. Пусть на
+поверхности тела действуют внешние распределенные нагрузки <sub><img width="16" height="22" src="chap3_1.files/image254.gif" v:shapes="_x0000_i1154"></sub>и
+массовые силы <sub><img width="14" height="18" src="chap3_1.files/image256.gif" v:shapes="_x0000_i1155"></sub>.
+Внешние силы в отличие от внутренних в процессе деформирования считаются <i class="hcp5">неизменными</i>, поэтому при вычислении потенциальной
+энергии системы <sub><img width="18" height="18" src="chap3_1.files/image258.gif" v:shapes="_x0000_i1156"></sub>,
+ответственной за совершение работы внешними силовыми факторами, множитель <sub><img width="30" height="18" src="chap3_1.files/image260.gif" v:shapes="_x0000_i1157"></sub><span class="hcp6"> </span>будет отсутствовать:</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="334" height="40" src="chap3_1.files/image262.gif" v:shapes="_x0000_i1158"></span></sub><span class="hcp3">.<span class="hcp6">             </span>(3.1.23)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Полная потенциальная энергия системы равна сумме
+потенциальной энергии деформаций (3.1.22) и работе внешних сил (3.1.23), так
+что в матричной форме имеем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="329" height="46" src="chap3_1.files/image264.gif" v:shapes="_x0000_i1159"></span></sub><span class="hcp3">.<span class="hcp6">             </span>(3.1.24)</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp2"><span class="hcp3">Плоское нагружение.</span></b> <span class="hcp3">Практический интерес представляет случай плоского нагружения. <i class="hcp5">Двухосным</i>, или <i class="hcp5">плоским</i><span style='mso-bidi-font-style:italic'>,</span> называется
+такое напряженное состояние тела, при котором во всех его точках одно из
+напряжений (например, <sub><img width="22" height="22" src="chap3_1.files/image266.gif" v:shapes="_x0000_i1160"></sub>)
+равно нулю. При этом оказывается, что во всех поперечных сечениях тела</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="146" height="26" src="chap3_1.files/image268.gif" v:shapes="_x0000_i1161"></span></sub><span class="hcp3">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">а напряжения <sub><img width="110" height="26" src="chap3_1.files/image270.gif" v:shapes="_x0000_i1162"></sub><span class="hcp6"> </span>изменяются в зависимости от <sub><img width="14" height="14" src="chap3_1.files/image272.gif" v:shapes="_x0000_i1163"></sub><span class="hcp6"> </span>в соответствии с законом распределения
+внешнего нагружения.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Такое напряженное состояние приблизительно осуществляется в
+тонких пластинах, подвергающихся действию сил, не вызывающих изгиб, т.&nbsp;е.
+лежащих в срединной плоскости пластины.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Если плоское напряженное состояние возникло под действием
+равномерно распределенной по длине нагрузки, то все отличные от нуля напряжения
+не будут зависеть от переменной <sub><img width="14" height="14" src="chap3_1.files/image273.gif" v:shapes="_x0000_i1164"></sub>.
+Тогда основные уравнения теории упругости для плоского состояния получаются из
+соответствующих уравнений для объемной задачи путем исключения из них
+производных по координате <sub><img width="14" height="14" src="chap3_1.files/image274.gif" v:shapes="_x0000_i1165"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Уравнения равновесия (3.1.5) приобретают вид</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="130" height="90" src="chap3_1.files/image276.gif" v:shapes="_x0000_i1166"></span></sub><span class="hcp3"><span class="hcp9">    </span><span class="hcp6">  </span><span class="hcp13">                      </span><span class="hcp6">         </span>(3.1.25)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Уравнения равновесия плоского сечения (статические граничные
+условия) (3.1.9) преобразуются как</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="103" height="50" src="chap3_1.files/image278.gif" v:shapes="_x0000_i1167"></span></sub><span class="hcp3"><span class="hcp16">                                  </span><span class="hcp6">      </span>(3.1.27)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Система геометрических уравнений Коши (3.1.13) записывается
+в виде</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="246" height="74" src="chap3_1.files/image280.gif" v:shapes="_x0000_i1168"></span></sub><span class="hcp3">.<span class="hcp13">                      </span>
+(3.1.28)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Из шести условий совместности деформаций Сен-Венана остается
+только одно уравнение вида (3.1.16), а именно</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="146" height="50" src="chap3_1.files/image282.gif" v:shapes="_x0000_i1169"></span></sub><span class="hcp3">.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Наконец, закон Гука для изотропного материала, имеющий в
+прямой форме вид (2.7.7), или</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="144" height="174" src="chap3_1.files/image284.gif" v:shapes="_x0000_i1170"></span></sub></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">в обратной записывается как</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="164" height="130" src="chap3_1.files/image286.gif" v:shapes="_x0000_i1171"></span></sub><span class="hcp3"><span class="hcp16">                               </span><span class="hcp6">        </span>(3.1.29)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Уравнение сплошности (3.1.16) с учетом (2.7.7) может быть
+переписано в терминах напряжений, а именно</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp3"><span class="hcp6"> </span><sub><img width="304" height="48" src="chap3_1.files/image288.gif" v:shapes="_x0000_i1172"></sub>.<span class="hcp9">      </span><span class="hcp6">      
+</span>(3.1.30)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Считая объемные силы <sub><img width="18" height="18" src="chap3_1.files/image290.gif" v:shapes="_x0000_i1173"></sub><span class="hcp6"> </span>и <sub><img width="14" height="18" src="chap3_1.files/image292.gif" v:shapes="_x0000_i1174"></sub><span class="hcp6"> </span>постоянными, продифференцируем первое
+уравнение системы (3.1.25) по <sub><img width="14" height="12" src="chap3_1.files/image293.gif" v:shapes="_x0000_i1175"></sub>, а
+второе&nbsp; по – <sub><img width="14" height="16" src="chap3_1.files/image295.gif" v:shapes="_x0000_i1176"></sub>, и
+сложим их почленно. Имеем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp3"><span class="hcp6"> </span><sub><img width="178" height="54" src="chap3_1.files/image297.gif" v:shapes="_x0000_i1177"></sub>.<span class="hcp6">                                   </span>(3.1.31)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Сравнивая (3.1.30) и (3.1.31), получаем уравнение
+неразрывности деформаций, выраженное в напряжениях </span>– <i class="hcp5"><span class="hcp3">уравнение Леви</span></i><span class="hcp3">:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="164" height="54" src="chap3_1.files/image299.gif" v:shapes="_x0000_i1178"></span></sub><span class="hcp3">, <span class="hcp13">                 </span><span class="hcp6">                 </span>(3.1.32)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">или</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:21.25pt;
+line-height:normal'><sub><span class="hcp3"><img width="104" height="26" src="chap3_1.files/image301.gif" v:shapes="_x0000_i1179"></span></sub><span class="hcp3">.<span class="hcp6">                                             </span>(3.1.33)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Здесь через <sub><img width="22" height="22" src="chap3_1.files/image303.gif" v:shapes="_x0000_i1180"></sub><span class="hcp6"> </span>обозначен <span style='letter-spacing:2.0pt'>гармонический
+оператор Лаплас</span>а.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Таким образом, решение плоской задачи теории упругости в напряжениях
+сводится к интегрированию системы трех дифференциальных уравнений: двух уравнений
+равновесия (3.1.25) и уравнения совместности деформаций (3.1.32) или (3.1.33).
+Однако эту систему также можно упростить, сведя ее к одному уравнению, если
+ввести в рассмотрение так называемую <span class="hcp4">функцию Эйри</span> <sub><img width="48" height="22" src="chap3_1.files/image305.gif" v:shapes="_x0000_i1181"></sub>.
+Величины напряжений связаны с функцией Эйри соотношениями</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="308" height="46" src="chap3_1.files/image307.gif" v:shapes="_x0000_i1182"></span></sub><span class="hcp3">. <span class="hcp9">     </span><span class="hcp6">            </span>(3.1.34)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Для проверки корректности введения функции напряжений <sub><img width="14" height="18" src="chap3_1.files/image309.gif" v:shapes="_x0000_i1183"></sub><span class="hcp6"> </span>и ее зависимости от напряжений подставим (3.1.34)
+в уравнения равновесия (3.1.25). Нетрудно убедиться, что такая подстановка при
+условии постоянства объемных сил <sub><img width="18" height="18" src="chap3_1.files/image311.gif" v:shapes="_x0000_i1184"></sub><span class="hcp6"> </span>и <sub><img width="14" height="18" src="chap3_1.files/image313.gif" v:shapes="_x0000_i1185"></sub><span class="hcp6"> </span>дает тождество для любой функции <sub><img width="14" height="18" src="chap3_1.files/image315.gif" v:shapes="_x0000_i1186"></sub>:</span></p>
+
+<p class=Bookbody align=center style='margin-bottom:4.0pt;text-align:center;
+text-indent:0cm;line-height:normal'><sub><span class="hcp3"><img width="240" height="104" src="chap3_1.files/image317.gif" v:shapes="_x0000_i1187"></span></sub></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Таким образом можно получить множество решений уравнений
+равновесия (3.1.25). Действительным решением задачи будет то из них, которое
+одновременно удовлетворяет условию совместности деформаций (3.1.32). Подставляя
+(3.1.34) в (3.1.32), получаем</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="170" height="46" src="chap3_1.files/image319.gif" v:shapes="_x0000_i1188"></span></sub><span class="hcp3">.<span class="hcp13">                 </span><span class="hcp6">                </span>(3.1.35)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp3">или</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp3"><span class="hcp6"> </span><sub><img width="76" height="24" src="chap3_1.files/image321.gif" v:shapes="_x0000_i1189"></sub>.<span class="hcp6">                                              
+</span>(3.1.36)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Выражение (3.1.36), или, в развернутом виде, (3.1.35),
+называемое <i class="hcp5">бигармоническим уравнением</i>,
+широко используется в теории упругости для описания напряженного состояния. Это
+уравнение является исключительно важным, ведь в результате плоская задача
+теории упругости свелась к решению единственного уравнения (3.1.35),
+дополненного в каждом конкретном случае соответствующими статическими
+граничными условиями на поверхности тела типа (3.1.27). После определения
+функции <sub><img width="14" height="18" src="chap3_1.files/image322.gif" v:shapes="_x0000_i1190"></sub><span class="hcp6"> </span>переход к самим напряжениям выполняется по
+формулам (3.1.34) с помощью дифференцирования.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Заметим, что если объемные нагрузки отсутствуют, то
+выражения (3.1.34) упрощаются:</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:21.25pt;
+line-height:normal'><span class="hcp3"><span class="hcp9">     </span><span class="hcp6"> </span><sub><img width="242" height="46" src="chap3_1.files/image324.gif" v:shapes="_x0000_i1191"></sub><span class="hcp6"> </span><span class="hcp9">          </span><span class="hcp6">           </span>(3.1.37)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Статические граничные условия (3.1.27) выражаются через
+функцию напряжения <sub><img width="14" height="18" src="chap3_1.files/image325.gif" v:shapes="_x0000_i1192"></sub>,
+если в (3.1.27) подставить соотношения (3.1.37):</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:21.25pt;
+line-height:normal'><b class="hcp2"><span class="hcp3"><span class="hcp6"> </span><sub><img width="12" height="22" src="chap3_1.files/image327.gif" v:shapes="_x0000_i1193"><img width="158" height="98" src="chap3_1.files/image329.gif" v:shapes="_x0000_i1194"></sub><span class="hcp13">                      </span><span class="hcp6">                 </span></span></b><span class="hcp6"> </span><span class="hcp3">(3.1.38)</span></p>
+
+</div>
+
+<div placeholder id="footer" style="width:100%;" class="hcp1">
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			border-bottom-color: #000080;
+			border-bottom-style: Ridge;
+			border-bottom-width: 2px;
+			font-size: 10pt;">&nbsp;</p>
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			font-size: 8pt;">&#169; 
+ 2007 Copyright &nbsp;&#1053;&#1058;&#1062; 
+ &#1040;&#1055;&#1052;</p>
+</div>
+</body>
+</html>

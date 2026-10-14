@@ -1,0 +1,970 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="File-List" href="./chap1_2.files/filelist.xml">
+<link rel="Edit-Time-Data" href="./chap1_2.files/editdata.mso">
+<title>Глава 1.2. Погрешности геометрических размеров деталей</title><style>
+<!--
+p.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+li.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+div.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+h1 { margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; mso-outline-level:1; font-size:14.0pt; font-family:Arial; }
+h3 { mso-style-next:Обычный; margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; page-break-after:avoid; mso-outline-level:3; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-ansi-language:EN-US; mso-bidi-font-weight:normal; }
+p.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+li.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+div.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+p.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+li.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+div.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+p.MsoCaption { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; font-weight:bold; mso-bidi-font-weight:normal; }
+li.MsoCaption { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; font-weight:bold; mso-bidi-font-weight:normal; }
+div.MsoCaption { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; font-weight:bold; mso-bidi-font-weight:normal; }
+p.MsoDocumentMap { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; background:navy; font-size:10.0pt; font-family:Tahoma; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+li.MsoDocumentMap { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; background:navy; font-size:10.0pt; font-family:Tahoma; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+div.MsoDocumentMap { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; background:navy; font-size:10.0pt; font-family:Tahoma; mso-fareast-font-family:Times New Roman; mso-ansi-language:EN-US; }
+p.Caaieiaie1CaaieiaieAeaauuA { mso-style-name:Caaieiaie 1\.Caaieiaie Aeaau|uA; mso-style-next:Обычный; margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-font-kerning:14.0pt; mso-ansi-language:EN-US; font-weight:bold; mso-bidi-font-weight:normal; }
+li.Caaieiaie1CaaieiaieAeaauuA { mso-style-name:Caaieiaie 1\.Caaieiaie Aeaau|uA; mso-style-next:Обычный; margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-font-kerning:14.0pt; mso-ansi-language:EN-US; font-weight:bold; mso-bidi-font-weight:normal; }
+div.Caaieiaie1CaaieiaieAeaauuA { mso-style-name:Caaieiaie 1\.Caaieiaie Aeaau|uA; mso-style-next:Обычный; margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-font-kerning:14.0pt; mso-ansi-language:EN-US; font-weight:bold; mso-bidi-font-weight:normal; }
+p.Caaieiaie2IiacaaieiaieAeaau { mso-style-name:Caaieiaie 2\.Iiacaaieiaie Aeaau; mso-style-next:Обычный; margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; page-break-after:avoid; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; font-weight:bold; mso-bidi-font-weight:normal; }
+li.Caaieiaie2IiacaaieiaieAeaau { mso-style-name:Caaieiaie 2\.Iiacaaieiaie Aeaau; mso-style-next:Обычный; margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; page-break-after:avoid; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; font-weight:bold; mso-bidi-font-weight:normal; }
+div.Caaieiaie2IiacaaieiaieAeaau { mso-style-name:Caaieiaie 2\.Iiacaaieiaie Aeaau; mso-style-next:Обычный; margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; page-break-after:avoid; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; font-weight:bold; mso-bidi-font-weight:normal; }
+p.Paragraphtitle { mso-style-name:Paragraph title; mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-align:center; line-height:90%; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; font-style:italic; mso-bidi-font-style:normal; }
+li.Paragraphtitle { mso-style-name:Paragraph title; mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-align:center; line-height:90%; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; font-style:italic; mso-bidi-font-style:normal; }
+div.Paragraphtitle { mso-style-name:Paragraph title; mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-align:center; line-height:90%; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; font-style:italic; mso-bidi-font-style:normal; }
+p.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; line-height:90%; mso-pagination:none; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; line-height:90%; mso-pagination:none; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:1.0cm; line-height:90%; mso-pagination:none; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookChapter { mso-style-name:Book_Chapter; mso-style-parent:Book_SubPart; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookChapter { mso-style-name:Book_Chapter; mso-style-parent:Book_SubPart; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookChapter { mso-style-name:Book_Chapter; mso-style-parent:Book_SubPart; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.Section1 { page:Section1; }
+-->
+</style><style title="hcp" type="text/css">
+<!--
+div.hcp1 { position:relative; }
+span.hcp2 { mso-bidi-font-family:Arial; }
+span.hcp3 { letter-spacing:2.0pt; mso-bidi-font-style:italic; }
+span.hcp4 { mso-bidi-font-style:italic; }
+i.hcp5 { mso-bidi-font-style:normal; }
+span.hcp6 { mso-spacerun:yes; }
+span.hcp7 { mso-bidi-font-family:Arial; letter-spacing:2.0pt; mso-bidi-font-style:italic; }
+span.hcp8 { mso-bidi-font-family:Arial; mso-bidi-font-style:italic; }
+span.hcp9 { font-family:Times New Roman; }
+span.hcp10 { mso-bidi-font-family:Arial; mso-ansi-language:EN-US; }
+span.hcp11 { mso-bidi-font-family:Arial; letter-spacing:.2pt; }
+b.hcp12 { mso-bidi-font-weight:normal; }
+span.hcp13 { mso-tab-count:4; }
+span.hcp14 { mso-bidi-font-family:Arial; letter-spacing:2.0pt; mso-bidi-font-weight:bold; }
+span.hcp15 { mso-bidi-font-family:Arial; mso-bidi-font-weight:bold; }
+td.hcp16 { border:solid windowtext .75pt; border-left:none; mso-border-left-alt:solid windowtext .75pt; padding:0cm 3.5pt 0cm 3.5pt; }
+td.hcp17 { border:solid windowtext .75pt; border-top:none; mso-border-top-alt:solid windowtext .75pt; padding:0cm 3.5pt 0cm 3.5pt; }
+td.hcp18 { border-top:none; border-left:none; border-bottom:solid windowtext .75pt; border-right:solid windowtext .75pt; mso-border-top-alt:solid windowtext .75pt; mso-border-left-alt:solid windowtext .75pt; padding:0cm 3.5pt 0cm 3.5pt; }
+table.hcp19 { border-collapse:collapse; mso-padding-alt:0cm 5.4pt 0cm 5.4pt; }
+td.hcp20 { padding:0cm 5.4pt 0cm 5.4pt; }
+td.hcp21 { border:solid windowtext .75pt; border-top:none; mso-border-top-alt:solid windowtext .75pt; padding:0cm 5.4pt 0cm 5.4pt; }
+td.hcp22 { border-top:none; border-left:none; border-bottom:solid windowtext .75pt; border-right:solid windowtext .75pt; mso-border-top-alt:solid windowtext .75pt; mso-border-left-alt:solid windowtext .75pt; padding:0cm 5.4pt 0cm 5.4pt; }
+td.hcp23 { border:solid windowtext .5pt; border-top:none; mso-border-top-alt:solid windowtext .5pt; padding:0cm 5.4pt 0cm 5.4pt; }
+td.hcp24 { border-top:none; border-left:none; border-bottom:solid windowtext .5pt; border-right:solid windowtext .5pt; mso-border-top-alt:solid windowtext .5pt; mso-border-left-alt:solid windowtext .5pt; padding:0cm 5.4pt 0cm 5.4pt; }
+span.hcp25 { mso-tab-count:3; }
+span.hcp26 { mso-bidi-font-size:11.0pt; mso-bidi-font-family:Arial; }
+span.hcp27 { mso-bidi-font-size:11.0pt; mso-bidi-font-family:Arial; letter-spacing:.1pt; }
+-->
+</style>
+</head>
+<body lang="RU" style="tab-interval:36.0pt">
+<div placeholder id="header" style="width:100%;" class="hcp1">
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			background-color: #d8e8f9;
+			margin-left: 0px;"><img src="head_for_help.jpg"
+									x-maintain-ratio=TRUE
+									style="border: none;
+											width: 1000px;
+											height: 50px;
+											float: none;
+											border-style: none;
+											border-style: none;"
+									width=1000
+									height=50
+									border=0></p>
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			border-top-color: #000080;
+			border-top-width: 2px;
+			border-top-style: Ridge;
+			margin-left: 0px;">&nbsp;</p>
+</div>
+<div class=Section1>
+
+<h1><span style='color:navy;mso-bidi-font-weight:normal'>Глава 1.2. Погрешности
+геометрических размеров деталей</span><span style='color:navy'></span></h1>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Геометрические размеры детали, которые
+проставляются на ее чертеже, называются <span class="hcp3">номинальным</span><span class="hcp4">и.</span> Номинальные размеры принято согласовывать с рядом предпочтительных
+чисел. Это позволят сократить количество инструментов, используемых при изготовления
+детали. Ряды предпочтительных чисел представляют собой геометрические
+прогрессии, знаменатели которых равны <sub><img width="174" height="26" src="chap1_2.files/image002.gif" v:shapes="_x0000_i1025"></sub>.
+Ряды чисел, вычисленных как члены геометрических прогрессий с такими
+знаменателями, обозначаются соответственно <sub><img width="158" height="22" src="chap1_2.files/image004.gif" v:shapes="_x0000_i1026"></sub>.
+При этом наиболее часто используется ряд <sub><img width="32" height="16" src="chap1_2.files/image006.gif" v:shapes="_x0000_i1027"></sub>.</span></p>
+
+<p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp2"><img width="283" height="121" src="chap1_2.files/image008.gif" v:shapes="_x0000_i1028"></span></p>
+
+<p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp2">Рис. 1.2.1</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Полученная после изготовления по чертежам
+деталь всегда имеет отклонения от правильной геометрической формы и номинальных
+размеров, т. е. выполнена с той или иной <i class="hcp5">точностью</i>.
+Точность&nbsp;–</span> <span class="hcp2">степень
+приближения действительных параметров детали (формы и размеров) к номинальным.
+Отклонение действительных формы и размеров детали от номинальных, возникающее в
+процессе производства, называется <span class="hcp3">погрешность</span><span class="hcp4">ю</span><i class="hcp5">.</i> Погрешности условно можно разделить на
+макро- и микрогеометрические. Параметры микрогеометрии определяют чистоту
+обработки поверхности детали, а макрогеометрии&nbsp;– погрешность формы.
+Фактическую погрешность формы поверхности можно определить как разность <sub><img width="113" height="24" src="chap1_2.files/image010.gif" v:shapes="_x0000_i1126"></sub><span class="hcp6"> </span>, где <sub><img width="34" height="22" src="chap1_2.files/image012.gif" v:shapes="_x0000_i1030"></sub><span class="hcp6"> </span>и <sub><img width="31" height="22" src="chap1_2.files/image014.gif" v:shapes="_x0000_i1031"></sub><span class="hcp6"> </span>– соответственно максимальное и минимальное
+значения размера <sub><img width="16" height="18" src="chap1_2.files/image016.gif" v:shapes="_x0000_i1032"></sub>. На
+рис. 1.2.1 показан фрагмент неидеальной поверхности в сечении, где наглядно
+представлены макро- и микрогеометрические ошибки.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Для получения работоспособной конструкции
+изготовителю кроме погрешности формы необходимо знать границы рассеяния размера
+каждой детали. Введем несколько понятий.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp7">Вал</span> <span class="hcp8">и <span style='letter-spacing:2.0pt'>отверстие–</span></span> <span class="hcp2">термины, применяемые для обозначения
+наружных и внутренних размеров детали соответственно.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp7">Допуском размера</span><span class="hcp2">называется
+разность между наибольшим и наименьшим допустимыми размерами. Как следует из
+рис. 1.2.2, допуск <sub><img width="18" height="22" src="chap1_2.files/image018.gif" v:shapes="_x0000_i1033"></sub><span class="hcp6"> </span>диаметра отверстия равен <sub><img width="110" height="22" src="chap1_2.files/image020.gif" v:shapes="_x0000_i1034"></sub>, а
+диаметра вала – <sub><img width="103" height="22" src="chap1_2.files/image022.gif" v:shapes="_x0000_i1035"></sub>,
+где <sub><img width="34" height="22" src="chap1_2.files/image024.gif" v:shapes="_x0000_i1036"></sub><span class="hcp6"> </span>и <sub><img width="32" height="22" src="chap1_2.files/image026.gif" v:shapes="_x0000_i1037"></sub>&nbsp;–
+наиболее и наименее допустимые диаметры отверстия, а <sub><img width="31" height="22" src="chap1_2.files/image028.gif" v:shapes="_x0000_i1038"></sub><span class="hcp6"> </span>и <sub><img width="30" height="22" src="chap1_2.files/image030.gif" v:shapes="_x0000_i1039"></sub>&nbsp;–
+наиболее и наименее допустимые диаметры вала.</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;text-align:center;
+text-indent:0cm'><span class="hcp9"><img width="410" height="166" src="chap1_2.files/image032.gif" v:shapes="_x0000_i1040"></span><span class="hcp2"></span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:21.3pt;
+line-height:normal'><span class="hcp2">Рис. 1.2.2</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:21.3pt;
+line-height:normal'>&nbsp;</p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal;page-break-after:
+avoid'><span class="hcp7">Поле допуска</span><span class="hcp2">&nbsp;
+интервал размеров внутри границ рассеивания. Величина поля допуска зависит от <span class="hcp3">квалитета</span>&nbsp;
+степени точности выполнения размера, который в свою очередь определяет точность
+обработки детали. Естественно, при увеличении допуска сложность изготовления
+детали (и, следовательно, себестоимость) снижается. Поле допуска является
+функцией размера и класса точности. Всего в России предусмотрено 19 классов
+точности (квалитетов), которые по мере их уменьшения обозначаются последовательным
+рядом чисел 01, 0, 1, 2, …, 17. При этом классы точности 01, 0, 1, 2, 3, 4
+используются при изготовлении эталонных измерительных деталей, а квалитеты 5,
+6, …, 13 – деталей сопряжения. Остальные классы точности предназначены для
+задания свободных размеров деталей.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Допуски могут существенно влиять на характер
+контактного взаимодействия деталей. На чертежах допуски размеров проставляются
+в виде предельных отклонений, например, символ <sub><img width="38" height="26" src="chap1_2.files/image034.gif" v:shapes="_x0000_i1041"></sub><span class="hcp6"> </span>на чертеже означает, что размер<sub><img width="16" height="16" src="chap1_2.files/image036.gif" v:shapes="_x0000_i1042"></sub>
+выполняется с нижним отклонением <i>0,01</i> и верхним<sub> </sub><i>0,035</i>.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp7">Зазор</span><span style='mso-bidi-font-family:Arial;letter-spacing:
+2.0pt'>&nbsp;–</span> <span class="hcp2">разность
+размеров отверстия и сопряженного с ним вала в том случае, когда размер
+отверстия больше размера вала (рис. 1.2.2). Если рассматривать зазор как
+случайную величину, ограниченную рамками допуска, то можно определить границы
+допустимых зазоров,</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:8.0pt;margin-left:0cm;text-align:center;line-height:normal'><sub><span class="hcp2"><img width="120" height="22" src="chap1_2.files/image038.gif" v:shapes="_x0000_i1043"></span></sub><span class="hcp2">;<span class="hcp6">       
+</span><sub><img width="118" height="22" src="chap1_2.files/image040.gif" v:shapes="_x0000_i1044"></sub>.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp7">Натяг –</span> <span class="hcp2">разность
+размеров отверстия и сопряженного с ним вала, если размер вала больше размера
+отверстия.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp7">Посадка</span> <span class="hcp2">определяет
+характер контактного взаимодействия деталей. Если в результате такого
+взаимодействия гарантирован зазор, то имеет место посадка <i class="hcp5">с зазором</i>. В том случае, когда контактное взаимодействие
+обеспечивает натяг&nbsp;– <i>посадка с </i><i class="hcp5">натягом</i>.
+Наконец, если результатом такого взаимодействия является либо натяг, либо зазор,
+то посадка называется <i class="hcp5">переходной</i>.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Для того чтобы рассчитать величины возможных
+посадок, следует знать значения основных отклонений.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp7">Основное отклонение</span><span class="hcp2">&nbsp;–
+ближайшее к нулевой линии предельное отклонение размера, односторонне ограничивающее
+поле допуска. Эти отклонения могут обозначаться буквами (рис. 1.2.3, 1.2.4).
+Очевидно, что наибольшее отклонение от нулевой линии определяется как сумма
+либо разность отклонений основного отклонения и допуска, зависящего от
+квалитета.</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm'><span class="hcp9"><img width="437" height="169" src="chap1_2.files/image042.gif" v:shapes="_x0000_i1045"></span><span lang="EN-US" class="hcp10"></span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:21.3pt;
+line-height:normal'><span class="hcp2">Рис. 1.2.3</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm'><span class="hcp9"><img width="475" height="185" src="chap1_2.files/image044.gif" v:shapes="_x0000_i1046"></span><span class="hcp2"></span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:21.3pt;
+line-height:normal'><span class="hcp2">Рис. 1.2.4</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'>&nbsp;</p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">В зависимости от положения основного
+отклонения различают две системы образования посадок: <i class="hcp5">систему отверстия</i> и <i class="hcp5">систему
+вала</i>.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">В системе отверстия образование посадки
+реализуется за счет отклонения вала, а допуск отверстия не зависит от посадки и
+определяется исключительно величиной квалитета. При этом основное отклонение
+размера равно нулю, а поле допуска направлено так, что оно увеличивает размер
+отверстия.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Отклонение отверстия условно обозначается
+как <sub><img width="26" height="16" src="chap1_2.files/image046.gif" v:shapes="_x0000_i1047"></sub>,
+где цифра в обозначении указывает на класс точности.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Основные отклонения валов в системе
+отверстия и их условные обозначения приведены на рис. 1.2.3. Следует отметить,
+что размер поля допуска вала определяется величиной квалитета. Отклонения вала,
+также как и отклонения отверстия, определяют величину и характер посадки. В
+таком случае условное обозначение посадки вала с номинальным диаметром <sub><img width="34" height="24" src="chap1_2.files/image048.gif" v:shapes="_x0000_i1048"></sub>мм в
+отверстие можно представить в виде <sub><img width="84" height="26" src="chap1_2.files/image050.gif" v:shapes="_x0000_i1049"></sub>.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp11">Что касается системы
+вала, то допуск вала в этом случае не зависит от посадки, а сама посадка
+определяется совокупностью отклонений отверстий. Поля допусков отверстий в
+системе вала изображены на рис. 1.2.4. Основное отклонение вала при этом равно
+нулю, а величина допуска вала направлена в сторону его уменьшения. Пример
+условного обозначения размера в системе вала&nbsp;–<sub><img width="82" height="24" src="chap1_2.files/image052.gif" v:shapes="_x0000_i1050"></sub>.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Технологически система отверстия является
+более предпочтительной, а потому именно она широко используется на практике.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp12"><span class="hcp2">Ошибки
+геометрической формы.</span></b> <span class="hcp2">Приближенный
+учет погрешности формы поверхности можно выполнить, если эту поверхность
+заменить совокупностью участков, имеющих плоскую макрогеометрическую форму с
+микронеровностью. Это оказывается возможным для участков малых размеров, на
+которых погрешностью формы можно пренебречь. Уровни расположения участков можно
+описать функцией плотности<sub><img width="40" height="24" src="chap1_2.files/image054.gif" v:shapes="_x0000_i1051"></sub> и в
+дальнейших расчетах использовать статистические методы (рис. 1.2.5). Основная
+погрешность вычислений в этом случае вызвана отсутствием учета взаимного
+влияния соседних участков (погрешностью формы которых ввиду малости линейных
+размеров можно пренебречь) на напряженно&nbsp;– деформированное состояние
+текущего участка, который, согласно принятой модели, является идеально плоским
+с поверхностным шероховатым слоем. Ошибка вычисления может быть значительно
+уменьшена при совместном использовании метода численного моделирования
+погрешности и метода конечных элементов (МКЭ).</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><span lang="EN-US" class="hcp10"><img width="349" height="130" src="chap1_2.files/image056.gif" v:shapes="_x0000_i1052"></span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:150%'><span class="hcp2">Рис. 1.2.5</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">В большинстве случаев из-за практических
+сложностей погрешностью формы пренебрегают, однако иногда это может привести к
+существенно неверным результатам. Рассмотрим ошибки микрогеометрии, которые
+определяют чистоту обработки поверхности, более подробно. Чистота обработки
+трактуется еще и как шероховатость поверхности. Укрупненное изображение
+шероховатости поверхности, полученное в результате замера, дано на рис. 1.2.6.</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp9"><img width="528" height="198" src="chap1_2.files/image058.gif" v:shapes="_x0000_i1053"></span><span class="hcp2"></span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:21.3pt;
+line-height:normal'><span class="hcp2">Рис. 1.2.6</span></p>
+
+<p class=Bookbody style='text-indent:21.25pt;line-height:normal'><span class="hcp2">Основной микрогеометрической характеристикой
+является измеренный на длине <sub><img width="11" height="18" src="chap1_2.files/image060.gif" v:shapes="_x0000_i1054"></sub><span class="hcp6"> </span>модуль среднего арифметического отклонения
+профиля относительно средней линии <sub><img width="24" height="18" src="chap1_2.files/image062.gif" v:shapes="_x0000_i1055"></sub>:</span></p>
+
+<p class=Bookbody align=right style='text-align:right;text-indent:21.3pt;
+line-height:normal'><sub><span class="hcp2"><img width="106" height="56" src="chap1_2.files/image064.gif" v:shapes="_x0000_i1056"></span></sub><span class="hcp2">,<span class="hcp13">                                      </span>
+(1.2.1)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">для определения которого используются
+специальные измерительные средства. С величиной <sub><img width="24" height="18" src="chap1_2.files/image066.gif" v:shapes="_x0000_i1057"></sub><span class="hcp6"> </span>связывают значения классов чистоты
+поверхности (табл. 1.2.1).</span></p>
+
+<p class=Bookbody style='margin-top:12.0pt;margin-right:0cm;margin-bottom:4.0pt;
+margin-left:0cm;text-indent:0cm;line-height:normal;page-break-after:avoid;
+mso-outline-level:1'><span class="hcp14">Таблица</span> <span class="hcp15">1.2.1.</span><b class="hcp12"><span class="hcp2">Классы чистоты поверхности</span></b></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='margin-left:3.5pt;
+ border-collapse:collapse;border:none;mso-border-alt:solid windowtext .75pt;
+ mso-padding-alt:0cm 3.5pt 0cm 3.5pt'>
+ <tr>
+  <td width=108 style='width:81.25pt;border:solid windowtext .75pt;padding:
+  0cm 3.5pt 0cm 3.5pt'>
+  <p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal;page-break-after:avoid'><span class="hcp15">Класс<br>
+  шероховатости</span></p>
+  </td>
+  <td width="76" style="width:2.0cm;" class="hcp16">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal;page-break-after:avoid'><span class="hcp15">Разряд</span></p>
+  </td>
+  <td width="217" valign="top" style="width:163.05pt;" class="hcp16">
+  <p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal;page-break-after:avoid'><span class="hcp15">Среднее арифметическое<br>
+  отклонение профиля <sub><img width="24" height="18" src="chap1_2.files/image068.gif" v:shapes="_x0000_i1058"></sub>,
+  мкм</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="108" valign="top" style="width:81.25pt;" class="hcp17">
+  <p class=Bookbody align=right style='margin-top:1.0pt;margin-right:46.15pt;
+  margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:right;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">6</span></p>
+  </td>
+  <td width="76" valign="top" style="width:2.0cm;" class="hcp18">
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">а</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">б</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">в</span></p>
+  </td>
+  <td width="217" valign="top" style="width:163.05pt;" class="hcp18">
+  <p class=Bookbody align=center style='margin-top:2.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">2,5 – 2,0</span></p>
+  <p class=Bookbody align=center style='margin-top:2.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">2,0 – 1,6</span></p>
+  <p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal;page-break-after:avoid'><span class="hcp2">1,6 – 1,25</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="108" valign="top" style="width:81.25pt;" class="hcp17">
+  <p class=Bookbody align=right style='margin-top:1.0pt;margin-right:46.15pt;
+  margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:right;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">7</span></p>
+  </td>
+  <td width="76" valign="top" style="width:2.0cm;" class="hcp18">
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">а</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">б</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">в</span></p>
+  </td>
+  <td width="217" valign="top" style="width:163.05pt;" class="hcp18">
+  <p class=Bookbody align=center style='margin-top:2.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">1,25 – 1,0</span></p>
+  <p class=Bookbody align=center style='margin-top:2.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">1,0 – 0,80</span></p>
+  <p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal;page-break-after:avoid'><span class="hcp2">0,80 – 0,63</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="108" valign="top" style="width:81.25pt;" class="hcp17">
+  <p class=Bookbody align=right style='margin-top:1.0pt;margin-right:46.15pt;
+  margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:right;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">8</span></p>
+  </td>
+  <td width="76" valign="top" style="width:2.0cm;" class="hcp18">
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">а</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">б</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">в</span></p>
+  </td>
+  <td width="217" valign="top" style="width:163.05pt;" class="hcp18">
+  <p class=Bookbody align=center style='margin-top:2.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">0,63 – 0,50</span></p>
+  <p class=Bookbody align=center style='margin-top:2.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">0,50 – 0,40</span></p>
+  <p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal;page-break-after:avoid'><span class="hcp2">0,40 – 0,32</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="108" valign="top" style="width:81.25pt;" class="hcp17">
+  <p class=Bookbody align=right style='margin-top:1.0pt;margin-right:46.15pt;
+  margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:right;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">9</span></p>
+  </td>
+  <td width="76" valign="top" style="width:2.0cm;" class="hcp18">
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">а</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">б</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">в</span></p>
+  </td>
+  <td width="217" valign="top" style="width:163.05pt;" class="hcp18">
+  <p class=Bookbody align=center style='margin-top:2.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">0,32 – 0,25</span></p>
+  <p class=Bookbody align=center style='margin-top:2.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">0,25 – 0,20</span></p>
+  <p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal;page-break-after:avoid'><span class="hcp2">0,20 – 0,16</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="108" valign="top" style="width:81.25pt;" class="hcp17">
+  <p class=Bookbody align=right style='margin-top:1.0pt;margin-right:46.15pt;
+  margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:right;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">10</span></p>
+  </td>
+  <td width="76" valign="top" style="width:2.0cm;" class="hcp18">
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">а</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">б</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">в</span></p>
+  </td>
+  <td width="217" valign="top" style="width:163.05pt;" class="hcp18">
+  <p class=Bookbody align=center style='margin-top:2.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">0,160 – 0,125</span></p>
+  <p class=Bookbody align=center style='margin-top:2.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">0,125 – 0,100</span></p>
+  <p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal;page-break-after:avoid'><span class="hcp2">0,100 – 0,080</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="108" valign="top" style="width:81.25pt;" class="hcp17">
+  <p class=Bookbody align=right style='margin-top:1.0pt;margin-right:46.15pt;
+  margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:right;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">11</span></p>
+  </td>
+  <td width="76" valign="top" style="width:2.0cm;" class="hcp18">
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">а</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">б</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">в</span></p>
+  </td>
+  <td width="217" valign="top" style="width:163.05pt;" class="hcp18">
+  <p class=Bookbody align=center style='margin-top:2.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">0,080 – 0,063</span></p>
+  <p class=Bookbody align=center style='margin-top:2.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">0,063 – 0,050</span></p>
+  <p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal;page-break-after:avoid'><span class="hcp2">0,050 – 0,040</span></p>
+  </td>
+ </tr>
+ <tr style='height:32.85pt'>
+  <td width="108" valign="top" style="width:81.25pt; height:32.85pt;" class="hcp17">
+  <p class=Bookbody align=right style='margin-top:1.0pt;margin-right:46.15pt;
+  margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:right;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">12</span></p>
+  </td>
+  <td width="76" valign="top" style="width:2.0cm; height:32.85pt;" class="hcp18">
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">а</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">б</span></p>
+  <p class=Bookbody align=center style='margin-top:1.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">в</span></p>
+  </td>
+  <td width="217" valign="top" style="width:163.05pt; height:32.85pt;" class="hcp18">
+  <p class=Bookbody align=center style='margin-top:2.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">0,040 – 0,032</span></p>
+  <p class=Bookbody align=center style='margin-top:2.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;page-break-after:avoid'><span class="hcp2">0,032 – 0,025</span></p>
+  <p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+  line-height:normal;page-break-after:avoid'><span class="hcp2">0,025 – 0,020</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Чистота обработки поверхности также
+указывается на чертеже. Для этого в России применяется специальный символ (рис.
+1.2.7</span><span lang="EN-US" class="hcp10">a</span><span class="hcp2">). Число, записанное в
+поле символа, равно параметру <sub><img width="24" height="18" src="chap1_2.files/image070.gif" v:shapes="_x0000_i1059"></sub>. Если
+обработка поверхности изготовляемой по данному чертежу детали не
+предполагается, то используется обозначение, изображенное на рис. 1.2.7</span><span lang="EN-US" class="hcp10">b</span><span class="hcp2">.</span></p>
+
+<p class=Bookbody style='text-indent:21.25pt;line-height:normal'><span class="hcp2">В том случае, когда чистоту поверхности
+необходимо обеспечить только предусмотренной конструктором механической обработкой,
+она может быть оговорена в поле, ограниченном прямоугольником (рис. 1.2.7</span><span lang="EN-US" class="hcp10">c</span><span class="hcp2">).</span></p>
+
+<p class=Bookbody style='text-indent:21.25pt;line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<table border="0" cellspacing="0" cellpadding="0" class="hcp19">
+ <tr style='height:70.4pt'>
+  <td width="272" valign="bottom" style="width:203.8pt; height:70.4pt;" class="hcp20">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="130" height="85" src="chap1_2.files/image072.gif" v:shapes="_x0000_i1060"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2">Рис. 1.2.8</span></p>
+  </td>
+  <td width="272" valign="bottom" style="width:203.85pt; height:70.4pt;" class="hcp20">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="216" height="55" src="chap1_2.files/image074.gif" v:shapes="_x0000_i1061"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2">а)<span class="hcp6">                </span>б)<span class="hcp6">                </span>с)</span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2">Рис. 1.2.7</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=Bookbody style='text-indent:21.25pt;line-height:normal;page-break-after:
+avoid'><span class="hcp2">&nbsp;</span></p>
+
+<p class=Bookbody style='text-indent:21.25pt;line-height:normal;page-break-after:
+avoid'><span class="hcp2">На чертежах деталей кроме допуска
+на размер можно указать погрешности формы поверхностей. Делается это в том
+случае, когда по условиям работы величины погрешностей формы меньше величин
+соответствующих допусков. В качестве примера рассмотрим плоскую деталь, допуск
+одного из линейных размеров которой равен<sub><img width="26" height="16" src="chap1_2.files/image076.gif" v:shapes="_x0000_i1062"></sub>
+(рис.&nbsp;1.2.8). При этом величина отклонения от идеальной плоской поверхности
+не превышает длины отрезка <sub><img width="38" height="18" src="chap1_2.files/image078.gif" v:shapes="_x0000_i1063"></sub>.
+Отметим, что величина отклонения от идеальной поверхности также может быть
+ограничена допуском. При этом размер этого допуска не должен превышать допуска
+линейного размера, а поле допуска располагается внутри <sub><img width="26" height="16" src="chap1_2.files/image079.gif" v:shapes="_x0000_i1064"></sub>.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal;page-break-after:
+avoid'><span class="hcp2">Условные обозначения,
+характеризующие допуск формы и относительное расположение поверхностей,
+приведены в таблице 1.2.2.</span></p>
+
+<p class=Bookbody align=left style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:left;text-indent:0cm;line-height:
+normal'><span class="hcp14">Таблица</span> <span class="hcp15">1.2.2. </span><b class="hcp12"><span class="hcp2">Знаки условного обозначения допусков
+формы и расположения поверхностей</span></b></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='margin-left:5.4pt;
+ border-collapse:collapse;border:none;mso-border-alt:solid windowtext .75pt;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width=437 valign=top style='width:327.45pt;border:solid windowtext .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:5.4pt;text-align:center;text-indent:-5.4pt;
+  line-height:normal'><b class="hcp12"><span class="hcp8">Допуск</span></b></p>
+  </td>
+  <td width=68 valign=top style='width:51.35pt;border:solid windowtext .75pt;
+  border-left:none;mso-border-left-alt:solid windowtext .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Bookbody align=center style='margin-top:2.0pt;margin-right:0cm;
+  margin-bottom:2.0pt;margin-left:5.4pt;text-align:center;text-indent:-5.4pt;
+  line-height:normal'><b class="hcp12"><span class="hcp8">Знак</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:25.8pt'>
+  <td width="437" style="width:327.45pt; height:25.8pt;" class="hcp21">
+  <p class=Bookbody align=left style='text-align:left;line-height:normal'><span class="hcp2">Формы</span></p>
+  </td>
+  <td width="68" style="width:51.35pt; height:25.8pt;" class="hcp22">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="27" height="17" src="chap1_2.files/image081.gif" v:shapes="_x0000_i1065"></span></p>
+  </td>
+ </tr>
+ <tr style='height:25.8pt'>
+  <td width="437" style="width:327.45pt; height:25.8pt;" class="hcp21">
+  <p class=Bookbody align=left style='text-align:left;line-height:normal'><span class="hcp2">Цилиндричности</span></p>
+  </td>
+  <td width="68" style="width:51.35pt; height:25.8pt;" class="hcp22">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="35" height="32" src="chap1_2.files/image083.gif" v:shapes="_x0000_i1066"></span></p>
+  </td>
+ </tr>
+ <tr style='height:25.8pt'>
+  <td width="437" style="width:327.45pt; height:25.8pt;" class="hcp21">
+  <p class=Bookbody align=left style='text-align:left;line-height:normal'><span class="hcp2">Плоскостности</span></p>
+  </td>
+  <td width="68" style="width:51.35pt; height:25.8pt;" class="hcp22">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="26" height="22" src="chap1_2.files/image085.gif" v:shapes="_x0000_i1067"></span></p>
+  </td>
+ </tr>
+ <tr style='height:25.8pt'>
+  <td width="437" style="width:327.45pt; height:25.8pt;" class="hcp21">
+  <p class=Bookbody align=left style='text-align:left;line-height:normal'><span class="hcp2">Формы заданного профиля</span></p>
+  </td>
+  <td width="68" style="width:51.35pt; height:25.8pt;" class="hcp22">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="26" height="22" src="chap1_2.files/image087.gif" v:shapes="_x0000_i1068"></span></p>
+  </td>
+ </tr>
+ <tr style='height:25.8pt'>
+  <td width="437" style="width:327.45pt; height:25.8pt;" class="hcp21">
+  <p class=Bookbody align=left style='text-align:left;line-height:normal'><span class="hcp2">Круглости</span></p>
+  </td>
+  <td width="68" style="width:51.35pt; height:25.8pt;" class="hcp22">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="27" height="32" src="chap1_2.files/image089.gif" v:shapes="_x0000_i1069"></span></p>
+  </td>
+ </tr>
+ <tr style='height:25.8pt'>
+  <td width="437" style="width:327.45pt; height:25.8pt;" class="hcp21">
+  <p class=Bookbody align=left style='text-align:left;line-height:normal'><span class="hcp2">Профиля продольного сечения цилиндрической
+  поверхности</span></p>
+  </td>
+  <td width="68" style="width:51.35pt; height:25.8pt;" class="hcp22">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="27" height="14" src="chap1_2.files/image091.gif" v:shapes="_x0000_i1070"></span></p>
+  </td>
+ </tr>
+ <tr style='height:25.8pt'>
+  <td width="437" style="width:327.45pt; height:25.8pt;" class="hcp21">
+  <p class=Bookbody align=left style='text-align:left;line-height:normal'><span class="hcp2">Прямолинейности</span></p>
+  </td>
+  <td width="68" style="width:51.35pt; height:25.8pt;" class="hcp22">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="30" height="5" src="chap1_2.files/image093.gif" v:shapes="_x0000_i1071"></span></p>
+  </td>
+ </tr>
+ <tr style='height:25.8pt'>
+  <td width="437" style="width:327.45pt; height:25.8pt;" class="hcp23">
+  <p class=Bookbody align=left style='text-align:left;line-height:normal'><span class="hcp2">Параллельности</span></p>
+  </td>
+  <td width="68" style="width:51.35pt; height:25.8pt;" class="hcp24">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="18" height="31" src="chap1_2.files/image095.gif" v:shapes="_x0000_i1072"></span></p>
+  </td>
+ </tr>
+ <tr style='height:25.8pt'>
+  <td width="437" style="width:327.45pt; height:25.8pt;" class="hcp23">
+  <p class=Bookbody align=left style='text-align:left;line-height:normal'><span class="hcp2">Перпендикулярности</span></p>
+  </td>
+  <td width="68" valign="top" style="width:51.35pt; height:25.8pt;" class="hcp24">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="22" height="28" src="chap1_2.files/image097.gif" v:shapes="_x0000_i1073"></span></p>
+  </td>
+ </tr>
+ <tr style='height:25.8pt'>
+  <td width="437" style="width:327.45pt; height:25.8pt;" class="hcp23">
+  <p class=Bookbody align=left style='text-align:left;line-height:normal'><span class="hcp2">Наклона</span></p>
+  </td>
+  <td width="68" style="width:51.35pt; height:25.8pt;" class="hcp24">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="28" height="22" src="chap1_2.files/image099.gif" v:shapes="_x0000_i1074"></span></p>
+  </td>
+ </tr>
+ <tr style='height:25.8pt'>
+  <td width="437" style="width:327.45pt; height:25.8pt;" class="hcp23">
+  <p class=Bookbody align=left style='text-align:left;line-height:normal'><span class="hcp2">Соосности</span></p>
+  </td>
+  <td width="68" valign="top" style="width:51.35pt; height:25.8pt;" class="hcp24">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="27" height="32" src="chap1_2.files/image101.gif" v:shapes="_x0000_i1075"></span></p>
+  </td>
+ </tr>
+ <tr style='height:25.8pt'>
+  <td width="437" style="width:327.45pt; height:25.8pt;" class="hcp23">
+  <p class=Bookbody align=left style='text-align:left;line-height:normal'><span class="hcp2">Симметричности</span></p>
+  </td>
+  <td width="68" style="width:51.35pt; height:25.8pt;" class="hcp24">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="35" height="14" src="chap1_2.files/image103.gif" v:shapes="_x0000_i1076"></span></p>
+  </td>
+ </tr>
+ <tr style='height:25.8pt'>
+  <td width="437" style="width:327.45pt; height:25.8pt;" class="hcp23">
+  <p class=Bookbody align=left style='text-align:left;line-height:normal'><span class="hcp2">Оси плоскости симметрии (позиционный)</span></p>
+  </td>
+  <td width="68" style="width:51.35pt; height:25.8pt;" class="hcp24">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="33" height="34" src="chap1_2.files/image105.gif" v:shapes="_x0000_i1077"></span></p>
+  </td>
+ </tr>
+ <tr style='height:25.8pt'>
+  <td width="437" style="width:327.45pt; height:25.8pt;" class="hcp23">
+  <p class=Bookbody align=left style='text-align:left;line-height:normal'><span class="hcp2">Пересечения осей</span></p>
+  </td>
+  <td width="68" valign="top" style="width:51.35pt; height:25.8pt;" class="hcp24">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="20" height="25" src="chap1_2.files/image107.gif" v:shapes="_x0000_i1078"></span></p>
+  </td>
+ </tr>
+ <tr style='height:25.8pt'>
+  <td width="437" style="width:327.45pt; height:25.8pt;" class="hcp23">
+  <p class=Bookbody align=left style='text-align:left;line-height:normal'><span class="hcp2">Полного радиального или торцового биения</span></p>
+  </td>
+  <td width="68" valign="top" style="width:51.35pt; height:25.8pt;" class="hcp24">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="30" height="26" src="chap1_2.files/image109.gif" v:shapes="_x0000_i1079"></span></p>
+  </td>
+ </tr>
+ <tr style='height:25.8pt'>
+  <td width="437" style="width:327.45pt; height:25.8pt;" class="hcp23">
+  <p class=Bookbody align=left style='text-align:left;line-height:normal'><span class="hcp2">Биения радиального, торцового или в заданном
+  направлении</span></p>
+  </td>
+  <td width="68" valign="top" style="width:51.35pt; height:25.8pt;" class="hcp24">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2"><img width="10" height="30" src="chap1_2.files/image111.gif" v:shapes="_x0000_i1080"></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=Bookbody style='margin-top:12.0pt;text-indent:21.25pt;line-height:
+normal'><span class="hcp2">Термины, приведенные в
+таблице, следует понимать следующим образом: круглость&nbsp;– степень
+отклонения от окружности, соосность – степень отклонения осей соосных деталей,
+и т. д.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Если ограничиваются параметры двух или нескольких
+поверхностей, то они либо обозначаются группой стрелок (рис. 1.2.9), либо один
+из параметров получает ограничения относительно базы. При этом местонахождение
+базовой поверхности указывается равнобедренным треугольником, а сама
+поверхность обозначается буквой внутри прямоугольника (рис. 1.2.10a). Когда же
+ограничения касаются одной поверхности, то она помечается стрелкой (рис.
+1.2.10b).</span></p>
+
+<table border="0" cellspacing="0" cellpadding="0" class="hcp19">
+ <tr>
+  <td width="302" valign="bottom" style="width:226.2pt;" class="hcp20">
+  <p class=Bookbody align=center style='margin-top:12.0pt;text-align:center;
+  text-indent:0cm;line-height:normal'><span class="hcp2"><img width="287" height="213" src="chap1_2.files/image113.gif" v:shapes="_x0000_i1081"></span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2">Рис. 1.2.9</span></p>
+  </td>
+  <td width="272" valign="bottom" style="width:203.85pt;" class="hcp20">
+  <p class=Bookbody align=center style='margin-top:12.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;mso-element:frame;mso-element-frame-width:
+  234.45pt;mso-element-frame-height:117.25pt;mso-element-frame-hspace:9.05pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:
+  margin;mso-element-top:504.25pt'><span lang="EN-US" class="hcp10"><img width="132" height="59" src="chap1_2.files/image115.gif" v:shapes="_x0000_i1082"></span><span class="hcp2"><span class="hcp6">     
+  </span><img width="86" height="84" src="chap1_2.files/image117.gif" v:shapes="_x0000_i1083"></span></p>
+  <p class=Bookbody align=center style='margin-top:6.0pt;text-align:center;
+  text-indent:0cm;line-height:normal;mso-element:frame;mso-element-frame-width:
+  234.45pt;mso-element-frame-height:117.25pt;mso-element-frame-hspace:9.05pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:
+  margin;mso-element-top:504.25pt'><span class="hcp2">а)<span class="hcp6">                                             
+  </span></span><span lang="EN-US" class="hcp10">b</span><span class="hcp2">)</span></p>
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2">Рис. 1.2.10</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp12"><span class="hcp2">Расчет
+экстремальных натягов (зазоров) в сопряжении деталей цилиндрической формы</span></b><span class="hcp2">. Эта задача является одной из наиболее
+практически важных, а потому остановимся на ней более подробно.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp11">Вал и отверстие цилиндрической
+формы после сборки имеют разные по величине натяги либо зазоры, что зависит от
+величин допусков размеров вала и отверстия (рис. 1.2.2). Будем полагать, что
+размеры вала и отверстия являются случайными величинами, распределенными по
+нормальному закону (1.1.19). Обозначим через <sub><img width="22" height="24" src="chap1_2.files/image119.gif" v:shapes="_x0000_i1084"></sub><span class="hcp6"> </span>и <sub><img width="24" height="24" src="chap1_2.files/image121.gif" v:shapes="_x0000_i1085"></sub><span class="hcp6"> </span>средние значения диаметров вала и отверстия
+соответственно (т. е. их математические ожидания). Если использовать предельно
+допустимые размеры сопряженных диаметров (рис. 1.2.2), то согласно (1.1.26)
+можно записать</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><span class="hcp2"><span class="hcp6"> </span><sub><img width="244" height="41" src="chap1_2.files/image123.gif" v:shapes="_x0000_i1086"></sub>. <span class="hcp25">                         </span><span class="hcp6"> </span>(1.2.2)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Математическое ожидание <sub><img width="22" height="24" src="chap1_2.files/image125.gif" v:shapes="_x0000_i1087"></sub><span class="hcp6"> </span>среднего натяга равно</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><span class="hcp2"><span class="hcp6"> </span><sub><img width="90" height="24" src="chap1_2.files/image127.gif" v:shapes="_x0000_i1088"></sub>.<span class="hcp13">                                         </span><span class="hcp6">      </span>(1.2.3)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Натяг, полученный при сборке вала с
+отверстием, представляет собой сумму двух независимых случайных величин.
+Поэтому, как следует из (1.1.15), его можно характеризовать величиной среднего
+квадратичного отклонения натяга <sub><img width="20" height="24" src="chap1_2.files/image129.gif" v:shapes="_x0000_i1089"></sub>:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><span class="hcp2"><span class="hcp6"> </span><sub><img width="106" height="30" src="chap1_2.files/image131.gif" v:shapes="_x0000_i1090"></sub>.<span class="hcp13">                                     </span><span class="hcp6">         </span>(1.2.4)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">При условии нормального распределения
+средние квадратичные отклонения диаметров согласно (1.1.26) равны</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp2"><img width="54" height="41" src="chap1_2.files/image133.gif" v:shapes="_x0000_i1091"></span></sub><span class="hcp2">;</span> <span class="hcp2"><span class="hcp6">          </span><sub><img width="66" height="42" src="chap1_2.files/image135.gif" v:shapes="_x0000_i1092"></sub><span class="hcp6">                                      </span>(1.2.5)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">так что в этом случае выражение (1.2.4) с
+учетом (1.2.5) принимает вид</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><sub><span class="hcp2"><img width="192" height="41" src="chap1_2.files/image137.gif" v:shapes="_x0000_i1093"></span></sub><span class="hcp2">.<span style='mso-tab-count:2'>                       </span><span class="hcp6">         </span>(1.2.6)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Наибольшее и наименьшее значение натяга в
+соответствии с (1.1.25) можно определить как</span></p>
+
+<p class=Bookbody align=right style='margin-top:8.0pt;margin-right:0cm;
+margin-bottom:8.0pt;margin-left:0cm;text-align:right;text-indent:36.0pt;
+line-height:normal'><sub><span class="hcp2"><img width="234" height="24" src="chap1_2.files/image139.gif" v:shapes="_x0000_i1094"></span></sub><span class="hcp2"><span class="hcp25">                          </span><span class="hcp6">  </span>(1.2.7)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span
+style='mso-bidi-font-size:11.0pt;mso-bidi-font-family:Arial;letter-spacing:
+-.1pt'>Описанным выше способом можно вычислить экстремальные значения натягов,
+вероятность которых, по правилу «трех сигма» (1.1.25), крайне низка. Таким
+образом, расчет, ориентированный на определение маловероятных граничных
+натягов, приводит к созданию излишних запасов и тем самым не обеспечивает
+возможность выбора оптимального натяга. По этой причине для проектирования
+важна задача расчета натяга с заданной вероятностью. При уменьшении этой вероятности
+можно существенно снизить величины запасов при незначительном изменении
+надежности.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">Рассмотрим в качестве примера расчет посадок
+при заданной величине надежности.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal;
+page-break-after:avoid'><b class="hcp12"><span class="hcp26">Расчет
+максимальных и минимальных вероятностных натягов и зазоров при сборке деталей
+цилиндрической формы.</span></b><span class="hcp26"> Граничные значения отклонений, полученные в
+предыдущем примере, можно изменить, связывая их с изменением вероятности
+появления натяга либо зазора в цилиндрическом соединении (рис. 1.2.11).</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal;
+page-break-after:avoid'><span class="hcp26">&nbsp;</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm'><span class="hcp9"><img width="216" height="207" src="chap1_2.files/image141.gif" v:shapes="_x0000_i1095"></span><b class="hcp12"><span lang="EN-US" class="hcp10"></span></b></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;text-align:center;
+text-indent:21.25pt;line-height:normal;page-break-after:avoid'><span class="hcp2">Рис. 1.2.11</span><span class="hcp26"></span></p>
+
+<p class=Bookbody style='text-indent:21.25pt;line-height:normal;page-break-after:
+avoid'><span class="hcp2">Среднее значение <sub><img width="22" height="22" src="chap1_2.files/image143.gif" v:shapes="_x0000_i1096"></sub><span class="hcp6"> </span>зазора по определению равно</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal;page-break-after:avoid'><sub><span class="hcp2"><img width="100" height="42" src="chap1_2.files/image145.gif" v:shapes="_x0000_i1097"></span></sub><span class="hcp2">.<span class="hcp13">                                       </span><span class="hcp6">          </span>(1.2.8)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal;mso-pagination:
+widow-orphan'><span class="hcp2">Границы интервала
+суммарного зазора <sub><img width="62" height="24" src="chap1_2.files/image147.gif" v:shapes="_x0000_i1098"></sub><span class="hcp6"> </span>при заданной величине вероятности попадания в
+этот интервал определяются аналогично (1.1.24) как</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><sub><span lang="EN-US" class="hcp10"><img width="250" height="34" src="chap1_2.files/image149.gif" v:shapes="_x0000_i1099"></span></sub><span class="hcp2">.<span class="hcp6">                        </span>(1.2.9)</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp12"><span class="hcp2">Задача
+расчета точности замыкающего звена размерной цепи.</span></b><span class="hcp2"><span class="hcp6">  </span><span class="hcp3">Размерной цепью</span></span>
+<span style='mso-bidi-font-size:11.0pt;mso-bidi-font-family:Arial;letter-spacing:
+-.2pt'>называется совокупность взаимосвязанных размеров, образующих замкнутый
+контур. Звеном называется каждый из размеров, входящий в состав цепи.</span></p>
+
+<p class=Bookbody style='text-indent:21.25pt;line-height:normal'><span class="hcp27">На рис. 1.2.12 изображен фрагмент конструкции, в котором необходимо
+обеспечить зазор, лежащий в заданных пределах. Требуется найти допуск на размер<sub><img width="20" height="22" src="chap1_2.files/image151.gif" v:shapes="_x0000_i1100"></sub>
+одного из звеньев по известным размерам <sub><img width="20" height="22" src="chap1_2.files/image153.gif" v:shapes="_x0000_i1101"></sub><span class="hcp6"> </span>и <sub><img width="22" height="22" src="chap1_2.files/image155.gif" v:shapes="_x0000_i1102"></sub><span class="hcp6"> </span>остальных звеньев.</span></p>
+
+<p class=Bookbody style='text-indent:21.25pt;line-height:normal'><span class="hcp27">&nbsp;</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:150%'><span class="hcp9"><img width="214" height="242" src="chap1_2.files/image157.gif" v:shapes="_x0000_i1103"></span><span class="hcp2"></span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:21.25pt;
+line-height:150%'><span class="hcp2">Рис. 1.2.12</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span
+style='mso-bidi-font-size:11.0pt;mso-bidi-font-family:Arial;letter-spacing:
+.2pt'>Обозначим предельные значения размеров как <sub><img width="76" height="22" src="chap1_2.files/image159.gif" v:shapes="_x0000_i1104"></sub>, <sub><img width="78" height="22" src="chap1_2.files/image161.gif" v:shapes="_x0000_i1105"></sub>, <sub><img width="77" height="22" src="chap1_2.files/image163.gif" v:shapes="_x0000_i1106"></sub><span class="hcp6"> </span>и <sub><img width="77" height="22" src="chap1_2.files/image165.gif" v:shapes="_x0000_i1107"></sub>.
+Тогда математические ожидания и допуски этих величин (при условии нормального
+распределения) согласно (1.1.26) имеют следующий вид:</span></p>
+
+<p class=MsoNormal align=right style='margin-top:6.0pt;text-align:right'><sub><span
+lang=EN-US style='font-family:Arial'><img width="274" height="170" src="chap1_2.files/image167.gif" v:shapes="_x0000_i1108"></span></sub><span
+style='font-family:Arial;mso-ansi-language:RU'><span class="hcp6"> </span>,<span class="hcp25">                          </span>
+(1.2.10)</span><span style='mso-ansi-language:RU'></span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">так что</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+line-height:normal'><sub><span class="hcp2"><img width="118" height="41" src="chap1_2.files/image169.gif" v:shapes="_x0000_i1109"></span></sub><span class="hcp2">;</span> <span class="hcp2"><span class="hcp6">   </span><sub><img width="116" height="41" src="chap1_2.files/image171.gif" v:shapes="_x0000_i1110"></sub>.<span
+style='mso-tab-count:1'>          </span> <span class="hcp6">                   </span>(1.2.11)</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal'><span class="hcp2">В свою очередь, математическое ожидание <sub><img width="26" height="22" src="chap1_2.files/image173.gif" v:shapes="_x0000_i1111"></sub><span class="hcp6"> </span>размера замыкающего звена <sub><img width="20" height="22" src="chap1_2.files/image174.gif" v:shapes="_x0000_i1112"></sub><span class="hcp6"> </span>в соответствии с (1.1.14) представляет собой
+результат алгебраического сложения математических ожиданий размеров остальных
+звеньев:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp2"><img width="148" height="22" src="chap1_2.files/image176.gif" v:shapes="_x0000_i1113"></span></sub><span class="hcp2">,<span class="hcp6">                        </span><span class="hcp6">                  </span>(1.2.12)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">а дисперсия <sub><img width="26" height="22" src="chap1_2.files/image178.gif" v:shapes="_x0000_i1114"></sub>,
+как следует из (1.1.15), равна</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:normal'><sub><span class="hcp2"><img width="162" height="31" src="chap1_2.files/image180.gif" v:shapes="_x0000_i1115"></span></sub><span class="hcp2">,<span class="hcp6">                                          </span>(1.2.13)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal;page-break-after:
+avoid'><span class="hcp2">где согласно (1.2.5)</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal;page-break-after:avoid'><sub><span class="hcp2"><img width="316" height="42" src="chap1_2.files/image182.gif" v:shapes="_x0000_i1116"></span></sub><span class="hcp2">.</span></p>
+
+<p class=Bookbody style='text-indent:21.3pt;line-height:normal;page-break-after:
+avoid;mso-outline-level:1'><span class="hcp2">Следовательно,
+допуск <sub><img width="22" height="22" src="chap1_2.files/image184.gif" v:shapes="_x0000_i1117"></sub><span class="hcp6"> </span>на размер зазора <sub><img width="20" height="22" src="chap1_2.files/image185.gif" v:shapes="_x0000_i1118"></sub><span class="hcp6"> </span>равен</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal;page-break-after:avoid'><sub><span class="hcp2"><img width="70" height="22" src="chap1_2.files/image187.gif" v:shapes="_x0000_i1119"></span></sub><span class="hcp2">,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal;page-break-after:
+avoid'><span class="hcp2">где дисперсия <sub><img width="26" height="22" src="chap1_2.files/image188.gif" v:shapes="_x0000_i1120"></sub><span class="hcp6"> </span>рассчитывается по формуле (1.2.13); наибольшее
+<sub><img width="38" height="22" src="chap1_2.files/image190.gif" v:shapes="_x0000_i1121"></sub><span class="hcp6"> </span>и наименьшее <sub><img width="36" height="22" src="chap1_2.files/image192.gif" v:shapes="_x0000_i1122"></sub><span class="hcp6"> </span>значения зазора определяются из (1.2.11).</span></p>
+
+</div>
+
+<div placeholder id="footer" style="width:100%;" class="hcp1">
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			border-bottom-color: #000080;
+			border-bottom-style: Ridge;
+			border-bottom-width: 2px;
+			font-size: 10pt;">&nbsp;</p>
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			font-size: 8pt;">&#169; 
+ 2007 Copyright &nbsp;&#1053;&#1058;&#1062; 
+ &#1040;&#1055;&#1052;</p>
+</div>
+</body>
+</html>

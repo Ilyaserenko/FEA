@@ -1,0 +1,1003 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="File-List" href="./chap2_6.files/filelist.xml">
+<link rel="Edit-Time-Data" href="./chap2_6.files/editdata.mso">
+<title>Глава 2.6. Методы расчета деформированного состояния упругих систем </title><style>
+<!--
+p.MsoNormal { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoNormal { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoNormal { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+h1 { margin-top:12.0pt; margin-right:0cm; margin-bottom:3.0pt; margin-left:0cm; mso-pagination:widow-orphan; mso-outline-level:1; font-size:14.0pt; font-family:Arial; }
+p.MsoIndex1 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+li.MsoIndex1 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+div.MsoIndex1 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+p.MsoToc1 { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 415.55pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+li.MsoToc1 { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 415.55pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+div.MsoToc1 { mso-style-next:Обычный; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:right dotted 415.55pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; mso-ansi-language:EN-US; }
+p.MsoHeader { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoHeader { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoHeader { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+li.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+div.MsoFooter { margin:0cm; margin-bottom:.0001pt; text-indent:23.75pt; mso-pagination:widow-orphan; tab-stops:center 216.0pt right 432.0pt; font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; }
+p.UG1bodytext { mso-style-name:UG1 body text; margin:0cm; margin-bottom:.0001pt; text-indent:21.3pt; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.UG1bodytext { mso-style-name:UG1 body text; margin:0cm; margin-bottom:.0001pt; text-indent:21.3pt; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.UG1bodytext { mso-style-name:UG1 body text; margin:0cm; margin-bottom:.0001pt; text-indent:21.3pt; mso-pagination:widow-orphan; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.Section1 { page:Section1; }
+-->
+</style><style title="hcp" type="text/css">
+<!--
+div.hcp1 { position:relative; }
+span.hcp2 { font-size:10.0pt; font-family:Arial; }
+i.hcp3 { mso-bidi-font-style:normal; }
+b.hcp4 { mso-bidi-font-weight:normal; }
+span.hcp5 { font-size:10.0pt; font-family:Arial; letter-spacing:.2pt; }
+span.hcp6 { letter-spacing:2.0pt; mso-bidi-font-weight:bold; mso-bidi-font-style:italic; }
+span.hcp7 { letter-spacing:.2pt; }
+td.hcp8 { padding-top:0cm; padding-right:9.05pt; padding-bottom:0cm; padding-left:9.05pt; }
+span.hcp9 { mso-bidi-font-family:Arial; }
+span.hcp10 { font-size:9.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; }
+span.hcp11 { mso-text-raise:-2.0pt; }
+span.hcp12 { mso-spacerun:yes; }
+span.hcp13 { mso-text-raise:-3.0pt; }
+span.hcp14 { font-size:10.0pt; font-family:Arial; mso-text-raise:-2.0pt; mso-ansi-language:EN-US; }
+span.hcp15 { mso-text-raise:-5.0pt; }
+span.hcp16 { font-size:10.0pt; font-family:Arial; mso-text-raise:-15.0pt; }
+span.hcp17 { mso-tab-count:1; }
+span.hcp18 { font-size:10.0pt; font-family:Arial; mso-text-raise:-14.0pt; }
+span.hcp19 { mso-text-raise:-12.0pt; }
+span.hcp20 { mso-tab-count:3; }
+span.hcp21 { font-size:10.0pt; font-family:Arial; mso-ansi-language:EN-US; }
+span.hcp22 { font-size:10.0pt; font-family:Symbol; mso-ascii-font-family:Arial; mso-hansi-font-family:Arial; mso-bidi-font-family:Arial; mso-char-type:symbol; mso-symbol-font-family:Symbol; }
+span.hcp23 { mso-char-type:symbol; mso-symbol-font-family:Symbol; }
+span.hcp24 { mso-text-raise:-11.0pt; }
+span.hcp25 { letter-spacing:-.2pt; }
+span.hcp26 { mso-text-raise:-15.0pt; }
+span.hcp27 { font-size:10.0pt; font-family:Arial; mso-text-raise:-11.0pt; }
+span.hcp28 { mso-text-raise:-6.0pt; }
+span.hcp29 { font-size:10.0pt; font-family:Arial; mso-text-raise:-5.0pt; }
+span.hcp30 { font-size:10.0pt; font-family:Arial; mso-text-raise:-16.0pt; }
+span.hcp31 { mso-text-raise:-7.0pt; }
+span.hcp32 { font-size:10.0pt; mso-bidi-font-size:11.0pt; font-family:Arial; }
+span.hcp33 { font-size:10.0pt; font-family:Arial; letter-spacing:.2pt; mso-ansi-language:EN-US; }
+span.hcp34 { mso-bidi-font-size:9.0pt; mso-bidi-font-family:Arial; mso-ansi-language:EN-US; }
+span.hcp35 { mso-bidi-font-size:9.0pt; mso-bidi-font-family:Arial; }
+table.hcp36 { border-collapse:collapse; mso-padding-alt:0cm 5.4pt 0cm 5.4pt; }
+td.hcp37 { padding:0cm 5.4pt 0cm 5.4pt; }
+span.hcp38 { mso-tab-count:2; }
+span.hcp39 { font-size:10.0pt; font-family:Arial; mso-text-raise:-12.0pt; }
+span.hcp40 { mso-tab-count:4; }
+span.hcp41 { font-size:10.0pt; mso-bidi-font-size:11.0pt; font-family:Arial; letter-spacing:-.2pt; }
+span.hcp42 { font-size:10.0pt; mso-bidi-font-size:11.0pt; font-family:Arial; letter-spacing:-.2pt; mso-ansi-language:EN-US; }
+span.hcp43 { mso-bidi-font-family:Arial; mso-ansi-language:EN-US; }
+-->
+</style>
+</head>
+<body lang="RU" style="tab-interval:35.4pt">
+<div placeholder id="header" style="width:100%;" class="hcp1">
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			background-color: #d8e8f9;
+			margin-left: 0px;"><img src="head_for_help.jpg"
+									x-maintain-ratio=TRUE
+									style="border: none;
+											width: 1000px;
+											height: 50px;
+											float: none;
+											border-style: none;
+											border-style: none;"
+									width=1000
+									height=50
+									border=0></p>
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			border-top-color: #000080;
+			border-top-width: 2px;
+			border-top-style: Ridge;
+			margin-left: 0px;">&nbsp;</p>
+</div>
+<div class=Section1>
+
+<h1><span style='color:navy;mso-bidi-font-weight:normal'>Глава 2.6. Методы
+расчета деформированного состояния упругих систем</span><span style='font-size:
+11.0pt;mso-bidi-font-size:14.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+Arial'> </span></h1>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Действующая на тело внешняя нагрузка, как известно, приводит
+к его <i class="hcp3">деформированию</i> и последующему
+появлению внутренних напряжений (глава 2.1). Величины перемещений точек тела, вызванных
+действием внешних сил, определяют <b class="hcp4"><i class="hcp3">деформированное состояние</i></b>
+механической системы, которое в свою очередь может существенно влиять на ее работоспособность.
+</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Кроме перемещений, в практике
+проектирования используют понятие жесткости.</span><span class="hcp2"> <span class="hcp6">Жесткость</span> <span class="hcp7">как физическое понятие представляет собой способность тела сопротивляться
+внешнему деформированию и численно равна нагрузке, которая вызывает единичное
+перемещение. Величина, обратная жесткости, называется</span> <span class="hcp6">податливость</span><span
+style='letter-spacing:.2pt;mso-bidi-font-weight:bold;mso-bidi-font-style:italic'>ю</span><i class="hcp3"><span class="hcp7">.</span></i>
+<span class="hcp7">Податливость характеризует способность тела
+перемещаться (деформироваться) под действием внешнего силового воздействия.
+Единицей измерения податливости служит перемещение точки тела под действием
+единичной силы.</span></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Очевидно, что расчет жесткости напрямую связан с
+определением перемещений рассматриваемых точек детали. При этом следует
+различать природу возникновения деформаций. Если при нагружении детали
+деформация распределена по всему объему, то ее можно считать <i class="hcp3">объемной</i>. Встречаются также <i class="hcp3">контактные</i> деформации, которые в отличие
+от объемных локализованы внутри малых по сравнению с размерами тела объемах и
+быстро затухают. Необходимо, однако, отметить, что деление деформаций на
+объемные и контактные является условным.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">В немногочисленных частных случаях объемные и контактные
+деформации можно рассчитать аналитическими методами. Но для решения задачи
+расчета полей перемещений в деталях произвольной геометрической формы
+используются исключительно численные методы. Для реализации численных методов
+разработаны компьютерные программы, которые позволяют получить полную картину деформированного
+состояния детали. </span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">В этой главе рассмотрены некоторые из аналитических приемов
+расчета перемещений, каждый из которых можно эффективно применять при решении
+ряда конкретных задач. Численные методы будут изложены в главе 3.3.</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:206.3pt;mso-element-frame-height:
+160.35pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+page;mso-element-anchor-horizontal:page;mso-element-left:103.05pt;mso-element-top:
+468.25pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=287 height=214
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="214" class="hcp8">
+  <p class=MsoNormal style='margin-top:6.0pt;text-align:justify;text-indent:
+  0cm;mso-element:frame;mso-element-frame-width:206.3pt;mso-element-frame-height:
+  160.35pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:103.05pt;mso-element-top:
+  468.25pt;mso-height-rule:exactly'><span class="hcp9"><img width="265" height="171" src="chap2_6.files/image002.gif" v:shapes="_x0000_i1305"></span></p>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+  text-indent:0cm;mso-element:frame;mso-element-frame-width:206.3pt;mso-element-frame-height:
+  160.35pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:103.05pt;mso-element-top:
+  468.25pt;mso-height-rule:exactly'><span class="hcp9">Рис.
+  2.6.1</span><span class="hcp10"></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp4"><span class="hcp2">Определение перемещений методом интегрирования уравнения изогнутой оси
+балки.</span></b><span class="hcp2"> После
+приложения к телу внешней нагрузки его точки перемещаются. Обычно величины
+упругих перемещений считаются малыми по сравнению с геометрическими размерами
+деформируемых тел. Это условие положено в основу дальнейших расчетов.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Рассмотрим эти перемещения на примере консольной балки
+длиной <span class="hcp11"><img width="12" height="17" src="chap2_6.files/image004.gif" v:shapes="_x0000_i1027"></span><span class="hcp12"> </span>с односторонней внешней заделкой (рис.
+2.6.1). К свободному концу балки приложена сосредоточенная сила <span class="hcp11"><img width="17" height="16" src="chap2_6.files/image006.gif" v:shapes="_x0000_i1028"></span>,
+которая и вызывает деформацию. Прогиб балки в текущем сечении обозначим как <span class="hcp13"><img width="13" height="19" src="chap2_6.files/image008.gif" v:shapes="_x0000_i1029"></span>.
+Выделим элемент объема балки длиной </span><span lang="EN-US" class="hcp14"><img width="20" height="17" src="chap2_6.files/image010.gif" v:shapes="_x0000_i1030"></span><span class="hcp2">, находящийся на расстоянии </span><span lang="EN-US" class="hcp14"><img width="12" height="13" src="chap2_6.files/image012.gif" v:shapes="_x0000_i1031"></span><span lang="EN-US" class="hcp2"><span class="hcp12"> </span></span><span class="hcp2">от закрепленного конца. Деформированное состояние в текущем
+сечении балки описывается радиусом кривизны <span class="hcp15"><img width="17" height="21" src="chap2_6.files/image014.gif" v:shapes="_x0000_i1032"></span><span class="hcp12">  </span>(или кривизной <span class="hcp15"><img width="69" height="23" src="chap2_6.files/image016.gif" v:shapes="_x0000_i1033"></span>)
+ее изогнутой оси. Согласно (2.5.18) искомую кривизну можно определить как</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><span class="hcp16"><img width="109" height="47" src="chap2_6.files/image018.gif" v:shapes="_x0000_i1034"></span><span class="hcp2">,<span class="hcp17">       </span><span class="hcp12">                                       
+</span>(2.6.1)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">где </span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><span style='font-size:10.0pt;font-family:
+Arial;mso-text-raise:-6.0pt'><img width="99" height="24" src="chap2_6.files/image020.gif" v:shapes="_x0000_i1035"></span><span class="hcp2">.<span class="hcp17">          </span><span class="hcp12">                                       
+</span>(2.6.2)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Подставляя (2.6.1) и (2.6.2) в уравнение изогнутой оси балки
+(2.5.22), получаем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp18"><img width="104" height="48" src="chap2_6.files/image022.gif" v:shapes="_x0000_i1036"></span><span class="hcp2">.<span class="hcp17">        </span><span class="hcp12">                                        
+</span>(2.6.3)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Решение дифференциального уравнения (2.6.3) можно получить
+последовательным интегрированием. Однократное интегрирование (2.6.3) дает</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp16"><img width="292" height="49" src="chap2_6.files/image024.gif" v:shapes="_x0000_i1037"></span><span class="hcp2">.<span class="hcp12">                 </span>(2.6.4)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Величина <span class="hcp19"><img width="27" height="41" src="chap2_6.files/image026.gif" v:shapes="_x0000_i1038"></span>, как
+видно из рис. 2.6.1, равна углу поворота сечения.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">После повторного интегрирования уравнения (2.6.4) получаем
+выражение для нахождения перемещений точек<span class="hcp12"> 
+</span>в зависимости от их текущих координат:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp16"><img width="384" height="51" src="chap2_6.files/image028.gif" v:shapes="_x0000_i1039"></span><span class="hcp2">.<span class="hcp12">   
+</span>(2.6.5)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Постоянные интегрирования <span class="hcp15"><img width="19" height="21" src="chap2_6.files/image030.gif" v:shapes="_x0000_i1040"></span><span class="hcp12"> </span>и <span class="hcp15"><img width="20" height="21" src="chap2_6.files/image032.gif" v:shapes="_x0000_i1041"></span><span class="hcp12"> </span>можно определить, используя условия на
+границе: <span class="hcp19"><img width="97" height="41" src="chap2_6.files/image034.gif" v:shapes="_x0000_i1042"></span><span class="hcp12"> </span>при <span class="hcp11"><img width="37" height="16" src="chap2_6.files/image036.gif" v:shapes="_x0000_i1043"></span>.
+Из первого граничного условия получаем <span class="hcp15"><img width="48" height="21" src="chap2_6.files/image038.gif" v:shapes="_x0000_i1044"></span>, а
+из второго&nbsp;– <span class="hcp15"><img width="45" height="21" src="chap2_6.files/image040.gif" v:shapes="_x0000_i1045"></span>.
+После подстановки найденных констант в (2.6.5) окончательно запишем</span></p>
+
+<p class=Bookbody align=right style='text-align:right;line-height:normal'><span class="hcp16"><img width="131" height="51" src="chap2_6.files/image042.gif" v:shapes="_x0000_i1046"></span><span class="hcp2">.<span class="hcp12">                                       </span>(2.6.6)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Перемещение закрепленного конца балки соответствует <span class="hcp11"><img width="35" height="17" src="chap2_6.files/image044.gif" v:shapes="_x0000_i1047"></span>,
+следовательно, для этого конца из (2.6.6) имеем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp18"><img width="65" height="48" src="chap2_6.files/image046.gif" v:shapes="_x0000_i1048"></span><span class="hcp2">.<span class="hcp12">     </span><span class="hcp20">                         </span><span class="hcp12">                 </span>(2.6.7)</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:169.6pt;mso-element-frame-height:
+107.9pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+page;mso-element-anchor-horizontal:page;mso-element-left:94.05pt;mso-element-top:
+90.25pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=238 height=144
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="144" class="hcp8">
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm;
+  mso-element:frame;mso-element-frame-width:169.6pt;mso-element-frame-height:
+  107.9pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:94.05pt;mso-element-top:
+  90.25pt;mso-height-rule:exactly'><span class="hcp9"><img width="211" height="125" src="chap2_6.files/image048.gif" v:shapes="_x0000_i1312"></span></p>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm;
+  mso-element:frame;mso-element-frame-width:169.6pt;mso-element-frame-height:
+  107.9pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:94.05pt;mso-element-top:
+  90.25pt;mso-height-rule:exactly'><span class="hcp9">Рис.
+  2.6.2</span><span class="hcp10"></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">В качестве второго примера рассмотрим задачу расчета балки,
+установленной на двух опорах и нагруженной так, как это показано на рис. 2.5.4</span><span lang="EN-US" class="hcp21">a</span><span class="hcp2"> и 2.6.2.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Изгибающие моменты, действующие на участках <span class="hcp11"><img width="13" height="13" src="chap2_6.files/image050.gif" v:shapes="_x0000_i1051"></span><span class="hcp12"> </span>и <span class="hcp11"><img width="12" height="17" src="chap2_6.files/image052.gif" v:shapes="_x0000_i1052"></span>,
+определяются формулой (2.5.3). Тогда, интегрируя уравнение изогнутой оси балки
+(2.6.3), получаем на участке длиной <span class="hcp11"><img width="13" height="13" src="chap2_6.files/image053.gif" v:shapes="_x0000_i1053"></span></span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp18"><img width="208" height="47" src="chap2_6.files/image055.gif" v:shapes="_x0000_i1054"></span><span class="hcp2">;<span class="hcp12">                                 </span>(2.6.8)</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp18"><img width="303" height="47" src="chap2_6.files/image057.gif" v:shapes="_x0000_i1055"></span><span class="hcp2">,<span class="hcp12">                  </span>(2.6.9)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">а на участке длиной <span class="hcp11"><img width="12" height="17" src="chap2_6.files/image058.gif" v:shapes="_x0000_i1056"></span>&nbsp;–</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp16"><img width="376" height="48" src="chap2_6.files/image060.gif" v:shapes="_x0000_i1057"></span><span class="hcp2">;<span class="hcp12">       </span>(2.6.10)</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><span class="hcp16"><img width="431" height="42" src="chap2_6.files/image062.gif" v:shapes="_x0000_i1058"></span><span class="hcp2">.<span class="hcp12">  
+</span>(2.6.11)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Для нахождения конечных зависимостей по расчету перемещений
+и углов поворота следует определить значения произвольных постоянных, используя
+очевидные условия на границах.</span></p>
+
+<p class=Bookbody style='margin-left:21.3pt;text-indent:0cm;line-height:normal'><span class="hcp22"><span class="hcp23">·</span></span><span class="hcp2"> <i><span class="hcp12">  </span>Условие 1</i>:<span class="hcp17">        </span> <span class="hcp15"><img width="43" height="21" src="chap2_6.files/image064.gif" v:shapes="_x0000_i1059"></span>при
+<span class="hcp11"><img width="37" height="16" src="chap2_6.files/image065.gif" v:shapes="_x0000_i1060"></span>,
+тогда из<span class="hcp12">  </span>(2.6.9) следует <span class="hcp15"><img width="48" height="21" src="chap2_6.files/image066.gif" v:shapes="_x0000_i1061"></span>;</span></p>
+
+<p class=Bookbody style='margin-top:4.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:106.35pt;margin-bottom:.0001pt;text-indent:-3.0cm;line-height:normal'><span class="hcp22"><span class="hcp23">·</span></span><span class="hcp2"> <i><span class="hcp12">  </span>Условие 2</i>:<span class="hcp17">        </span> <span class="hcp24"><img width="72" height="41" src="chap2_6.files/image068.gif" v:shapes="_x0000_i1062"></span>при
+<span class="hcp11"><img width="37" height="13" src="chap2_6.files/image070.gif" v:shapes="_x0000_i1063"></span>,
+откуда с учетом (2.6.8) и (2.6.10)</span></p>
+
+<p class=Bookbody style='margin-left:106.3pt;text-indent:-3.0cm;line-height:
+normal'><span class="hcp2"><span class="hcp12">                                </span>получаем <span class="hcp15"><img width="53" height="21" src="chap2_6.files/image072.gif" v:shapes="_x0000_i1064"></span>;</span></p>
+
+<p class=Bookbody style='margin-top:4.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:106.35pt;margin-bottom:.0001pt;text-indent:-85.1pt;line-height:
+normal'><span class="hcp22"><span class="hcp23">·</span></span><span class="hcp2"> <i><span class="hcp12">  </span>Условие 3</i>:<span class="hcp17">        </span> <span class="hcp15"><img width="47" height="21" src="chap2_6.files/image074.gif" v:shapes="_x0000_i1065"></span>при
+<span class="hcp11"><img width="37" height="13" src="chap2_6.files/image075.gif" v:shapes="_x0000_i1066"></span>,
+тогда с помощью (2.6.9), (2.6.11) и<span class="hcp12"> 
+</span>равенства <span class="hcp15"><img width="53" height="21" src="chap2_6.files/image076.gif" v:shapes="_x0000_i1067"></span><span class="hcp12"> </span>имеем <span class="hcp15"><img width="48" height="21" src="chap2_6.files/image078.gif" v:shapes="_x0000_i1068"></span>;</span></p>
+
+<p class=Bookbody style='margin-top:4.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:21.25pt;margin-bottom:.0001pt;text-indent:0cm;line-height:normal'><span class="hcp22"><span class="hcp23">·</span></span><span class="hcp2"> <i><span class="hcp12">  </span><span class="hcp25">Условие 4</span></i><span class="hcp25">:<span class="hcp17">        </span> <span class="hcp15"><img width="45" height="23" src="chap2_6.files/image080.gif" v:shapes="_x0000_i1069"></span>при
+<span class="hcp11"><img width="35" height="17" src="chap2_6.files/image081.gif" v:shapes="_x0000_i1070"></span>, следовательно,
+используя (2.6.11), получаем</span></span></p>
+
+<p class=Bookbody align=left style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:left;text-indent:0cm;line-height:
+normal'><span class="hcp2"><span class="hcp12">                                     </span><span
+style='mso-text-raise:-14.0pt'><img width="208" height="49" src="chap2_6.files/image083.gif" v:shapes="_x0000_i1071"></span>;<span class="hcp12">      </span><span class="hcp26"><img width="141" height="45" src="chap2_6.files/image085.gif" v:shapes="_x0000_i1072"></span>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">С учетом вычисленных констант формулы (2.6.9) и (2.6.11) для
+расчета перемещений приобретают вид</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp16"><img width="156" height="45" src="chap2_6.files/image087.gif" v:shapes="_x0000_i1073"></span><span class="hcp2">;<span class="hcp12">                                     </span>(2.6.12)</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><span class="hcp18"><img width="259" height="49" src="chap2_6.files/image089.gif" v:shapes="_x0000_i1074"></span><span class="hcp2">.<span class="hcp12">                 </span><span class="hcp12">     </span>(2.6.13)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Углы поворота текущего сечения на соответствующих участках
+согласно (2.6.8) и (2.6.10) равны</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp16"><img width="363" height="49" src="chap2_6.files/image091.gif" v:shapes="_x0000_i1075"></span><span class="hcp2">;<span class="hcp12">      </span>(2.6.14)</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><span class="hcp16"><img width="265" height="49" src="chap2_6.files/image093.gif" v:shapes="_x0000_i1076"></span><span class="hcp2">.<span class="hcp12">                      </span>(2.6.15)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Практический интерес представляет случай, когда внешняя
+нагрузка приложена симметрично относительно опор. Тогда справедливо равенство <span class="hcp11"><img width="104" height="17" src="chap2_6.files/image095.gif" v:shapes="_x0000_i1077"></span>.
+При этом, например, средняя точка между опорами перемещается на расстояние</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><span class="hcp18"><img width="79" height="47" src="chap2_6.files/image097.gif" v:shapes="_x0000_i1078"></span><span class="hcp2">,<span class="hcp12">                                                  </span>(2.6.16)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">а угол поворота сечения, как и следовало
+ожидать, в рассматриваемой точке равен нулю:</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><span class="hcp27"><img width="53" height="41" src="chap2_6.files/image099.gif" v:shapes="_x0000_i1079"></span><span class="hcp2">.<span class="hcp12">                                                      </span>(2.6.17)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Описанный выше метод расчета перемещений можно применять
+только для ограниченного круга достаточно простых задач, тогда как подобный подход
+для более сложных случаев приводит к большим техническим трудностям. Более универсальными
+являются энергетические методы.<span class="hcp12">  </span></span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp4"><span class="hcp2">Расчет перемещений энергетическими методами.</span></b><span class="hcp2"> Рассмотрим равновесие тела,
+нагруженного системой внешних силовых факторов <span class="hcp15"><img width="17" height="23" src="chap2_6.files/image101.gif" v:shapes="_x0000_i1080"></span><span class="hcp12"> </span>(рис. 2.1.1). При приложении внешней нагрузки
+каждая точка тела перемещается в новое положение (рис. 2.1.3). Обозначим перемещения
+в точках приложения сил через <span class="hcp15"><img width="17" height="23" src="chap2_6.files/image103.gif" v:shapes="_x0000_i1081"></span>.
+Если принадлежащая телу точка приложения силы <span class="hcp15"><img width="17" height="23" src="chap2_6.files/image104.gif" v:shapes="_x0000_i1082"></span><span class="hcp12"> </span>перемещается на расстояние <span class="hcp15"><img width="27" height="23" src="chap2_6.files/image106.gif" v:shapes="_x0000_i1083"></span><span class="hcp12"> </span>в направлении действия этой силы (такое
+перемещение называется <i class="hcp3">возможным</i>),
+следовательно, эта сила совершает работу <span class="hcp28"><img width="29" height="24" src="chap2_6.files/image108.gif" v:shapes="_x0000_i1084"></span>,
+равную</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><span class="hcp29"><img width="80" height="21" src="chap2_6.files/image110.gif" v:shapes="_x0000_i1085"></span><span class="hcp2">.<span class="hcp12">                                                </span>(2.6.18)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">В результате совершенной работы в объеме тела возникают
+внутренние напряжения, приводящие к увеличению потенциальной энергии деформации
+<span class="hcp11"><img width="18" height="14" src="chap2_6.files/image112.gif" v:shapes="_x0000_i1086"></span>на
+величину <span class="hcp15"><img width="29" height="21" src="chap2_6.files/image114.gif" v:shapes="_x0000_i1087"></span>:</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:21.25pt;line-height:normal'><span class="hcp16"><img width="92" height="45" src="chap2_6.files/image116.gif" v:shapes="_x0000_i1088"></span><span class="hcp2">.<span class="hcp12">                                         </span>(2.6.19)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Поскольку приращение энергии деформаций <span class="hcp15"><img width="29" height="21" src="chap2_6.files/image117.gif" v:shapes="_x0000_i1089"></span><span class="hcp12"> </span>обеспечивается только работой <span class="hcp15"><img width="28" height="21" src="chap2_6.files/image119.gif" v:shapes="_x0000_i1090"></span>, т.
+е. левые части (2.6.19) и (2.6.18) равны, то, приравнивая между собой их правые
+части, запишем</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><span class="hcp16"><img width="59" height="45" src="chap2_6.files/image121.gif" v:shapes="_x0000_i1091"></span><span class="hcp2">.<span class="hcp12">                                               </span>(2.6.20)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Если рассматривать возможные приращения на других
+направлениях, то после аналогичных вычислений получаем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp16"><img width="59" height="45" src="chap2_6.files/image123.gif" v:shapes="_x0000_i1092"></span><span class="hcp2">,<span class="hcp12">  
+</span><span class="hcp26"><img width="63" height="45" src="chap2_6.files/image125.gif" v:shapes="_x0000_i1093"></span>,<span class="hcp12">  </span>...<span class="hcp12"> 
+</span>,<span class="hcp26"><img width="59" height="45" src="chap2_6.files/image127.gif" v:shapes="_x0000_i1094"></span>.<span class="hcp12">                      </span>(2.6.21)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Из (2.6.21) следует, что величина внешней нагрузки,
+вызвавшей перемещение <span class="hcp11"><img width="12" height="16" src="chap2_6.files/image129.gif" v:shapes="_x0000_i1095"></span>-ой
+точки тела, равна частной производной потенциальной энергии по данному
+перемещению. Это утверждение (т.&nbsp;н. <i class="hcp3">первая
+теорема Кастилиано</i>) может быть положено в основу расчета перемещений
+твердых деформируемых тел.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Решение (2.6.21), полученное на основе анализа внутренней
+энергии деформированного тела, представимо и в иной форме: если на тело
+действует система внешних сил <span class="hcp15"><img width="80" height="21" src="chap2_6.files/image131.gif" v:shapes="_x0000_i1096"></span>,
+то, вычисляя частные производные от потенциальной энергии по силам, имеем</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp16"><img width="57" height="45" src="chap2_6.files/image133.gif" v:shapes="_x0000_i1097"></span><span class="hcp2">,<span class="hcp12">  
+</span><span class="hcp26"><img width="60" height="45" src="chap2_6.files/image135.gif" v:shapes="_x0000_i1098"></span>,<span class="hcp12">  </span>... ,<span class="hcp26"><img width="57" height="45" src="chap2_6.files/image137.gif" v:shapes="_x0000_i1099"></span>.<span class="hcp12">                      </span>(2.6.22)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Выражение (2.6.22) представляет собой аналитическую запись <i class="hcp3">второй теоремы Кастилиано.</i></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Применим описанный выше метод к расчету перемещений свободного
+конца консольной балки, жестко закрепленной другим концом (рис. 2.6.1).
+Перемещение свободного конца (без учета поперечных сил), как следует из
+(2.6.22) и (2.5.33), равно</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp30"><img width="324" height="51" src="chap2_6.files/image139.gif" v:shapes="_x0000_i1100"></span><span class="hcp2">,<span class="hcp12">           </span>(2.6.23)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">что совпадает с (2.6.7).</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Необходимо отметить, что в произвольном случае процедура
+вычисления перемещений, основанная на непосредственном применении второй
+теоремы Кастилиано, может быть достаточно сложной технически. Более часто
+используется другой энергетический подход, являющийся модификацией
+вышеописанного&nbsp;– <i class="hcp3">метод единичной
+нагрузки</i>, или <i class="hcp3">метод Мора</i>.
+Рассмотрим его применительно к плоскому случаю чистого изгиба.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Дифференцирование выражения (2.5.33) в общем виде дает </span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp2"><span class="hcp12"> </span><span class="hcp26"><img width="267" height="48" src="chap2_6.files/image141.gif" v:shapes="_x0000_i1101"></span>.<span class="hcp12">              </span>(2.6.24)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Введем следующие обозначения: <span class="hcp26"><img width="83" height="45" src="chap2_6.files/image143.gif" v:shapes="_x0000_i1102"></span><span class="hcp12"> </span>и <span class="hcp28"><img width="31" height="24" src="chap2_6.files/image145.gif" v:shapes="_x0000_i1103"></span>– изгибающие
+моменты, обусловленные единичной силой и полной внешней нагрузкой
+соответственно. Отметим, что единичную нагрузку нужно приложить так, чтобы ее
+направление совпадало с направлением искомого перемещения. Тогда (2.6.24)
+переписывается в виде</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><span class="hcp16"><img width="115" height="48" src="chap2_6.files/image147.gif" v:shapes="_x0000_i1104"></span><span class="hcp2">.<span class="hcp12">  
+</span><span class="hcp12">                                       </span>(2.6.25)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Из (2.6.25) видно, что расчет перемещений сводится в
+конечном итоге к вычислению интегралов. А поскольку вычисление интегралов
+представляет собой простейшую численную процедуру, которая может быть легко
+реализована на компьютере, то этот метод и получил широкое распространение.
+Проиллюстрируем применение метода Мора на нескольких примерах.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><span class="hcp2">1. Определим перемещение конца
+консольно закрепленной балки (рис. 2.6.1), пользуясь формулой<span class="hcp12">  </span>(2.6.25). Для этого запишем выражения для
+двух изгибающих моментов: от рабочей нагрузки, который равен <span class="hcp28"><img width="99" height="24" src="chap2_6.files/image149.gif" v:shapes="_x0000_i1105"></span>, и
+от единичной нагрузки, <span class="hcp15"><img width="88" height="23" src="chap2_6.files/image151.gif" v:shapes="_x0000_i1106"></span>.
+Отсюда, как и следовало ожидать, получаем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:21.25pt;
+line-height:normal'><span class="hcp30"><img width="173" height="51" src="chap2_6.files/image153.gif" v:shapes="_x0000_i1107"></span><span class="hcp2">.<span class="hcp12">                                 </span>(2.6.26)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">2. При произвольном нагружении, понимая под <span class="hcp15"><img width="16" height="21" src="chap2_6.files/image155.gif" v:shapes="_x0000_i1108"></span><span class="hcp12"> </span>как линейное, так и угловое возможные
+перемещения, по аналогии с (2.6.25) имеем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp30"><img width="385" height="51" src="chap2_6.files/image157.gif" v:shapes="_x0000_i1109"></span><span class="hcp2">,<span class="hcp12">   
+</span>(2.6.27)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">где <span class="hcp15"><img width="44" height="23" src="chap2_6.files/image159.gif" v:shapes="_x0000_i1110"></span>&nbsp;–
+единичная и результирующая осевые нагрузки в текущем сечении; <span class="hcp15"><img width="31" height="21" src="chap2_6.files/image161.gif" v:shapes="_x0000_i1111"></span>,<span class="hcp12">  </span><span class="hcp31"><img width="31" height="24" src="chap2_6.files/image163.gif" v:shapes="_x0000_i1112"></span><span class="hcp12"> </span>и <span class="hcp28"><img width="37" height="24" src="chap2_6.files/image165.gif" v:shapes="_x0000_i1113"></span>,<span class="hcp12">  </span><span class="hcp31"><img width="37" height="25" src="chap2_6.files/image167.gif" v:shapes="_x0000_i1114"></span><span class="hcp12"> </span>&nbsp;<span class="hcp12"> 
+</span>единичные и результирующие изгибающие моменты относительно одноименной
+оси в текущем сечении; <span class="hcp28"><img width="57" height="24" src="chap2_6.files/image169.gif" v:shapes="_x0000_i1115"></span><span class="hcp12"> </span>– единичный и результирующий крутящие моменты
+текущего сечения; <span class="hcp11"><img width="16" height="16" src="chap2_6.files/image171.gif" v:shapes="_x0000_i1116"></span>&nbsp;–
+площадь поперечного сечения балки.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;line-height:normal'><span class="hcp32">3.
+Рассмотрим цилиндрическую пружину кручения диаметром <span class="hcp11"><img width="17" height="16" src="chap2_6.files/image173.gif" v:shapes="_x0000_i1117"></span><span class="hcp12"> </span>с числом витков <span class="hcp13"><img width="12" height="17" src="chap2_6.files/image175.gif" v:shapes="_x0000_i1118"></span>,
+имеющую круглое поперечное сечение диаметром <span class="hcp11"><img width="15" height="17" src="chap2_6.files/image177.gif" v:shapes="_x0000_i1119"></span>(рис.
+2.6.3). Приложим к такой пружине некоторый внешний момент вращения <span class="hcp11"><img width="15" height="17" src="chap2_6.files/image179.gif" v:shapes="_x0000_i1120"></span>.
+Тогда в ее<br>
+поперечном сечении возникнет реактивный момент <span class="hcp28"><img width="92" height="24" src="chap2_6.files/image181.gif" v:shapes="_x0000_i1121"></span>,
+вызывающий появление напряжений изгиба, наибольшее нормальное значение которых,
+согласно (2.5.13), равно </span><span class="hcp2"></span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:135.45pt;mso-element-frame-height:
+153.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+page;mso-element-anchor-horizontal:page;mso-element-left:94.05pt;mso-element-top:
+72.25pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=193 height=204
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="204" class="hcp8">
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm;
+  mso-element:frame;mso-element-frame-width:135.45pt;mso-element-frame-height:
+  153.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:94.05pt;mso-element-top:
+  72.25pt;mso-height-rule:exactly'><span class="hcp9"><img width="154" height="179" src="chap2_6.files/image183.gif" v:shapes="_x0000_i1323"></span></p>
+  <p class=MsoNormal align=center style='margin-top:4.0pt;text-align:center;
+  text-indent:0cm;mso-element:frame;mso-element-frame-width:135.45pt;
+  mso-element-frame-height:153.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:page;
+  mso-element-left:94.05pt;mso-element-top:72.25pt;mso-height-rule:exactly'><span class="hcp9">Рис. 2.6.3</span><span class="hcp10"></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody align=right style='margin-top:2.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp16"><img width="133" height="47" src="chap2_6.files/image185.gif" v:shapes="_x0000_i1124"></span><span class="hcp2">.<span class="hcp12">                 </span>(2.6.28)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Деформированное состояние пружины характеризуется углом закручивания
+<span class="hcp15"><img width="15" height="17" src="chap2_6.files/image187.gif" v:shapes="_x0000_i1125"></span>,
+т. е. относительным углом поворота сечения. Для определения угла <span class="hcp15"><img width="15" height="17" src="chap2_6.files/image188.gif" v:shapes="_x0000_i1126"></span><span class="hcp12">  </span>можно использовать формулу (2.6.25), полагая
+в ней <span class="hcp28"><img width="53" height="24" src="chap2_6.files/image190.gif" v:shapes="_x0000_i1127"></span>. Если
+пренебречь наличием всех иных напряжений, кроме напряжений изгиба, то при
+приложении внешнего момента для угла закручивания с учетом (2.3.9) получаем </span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp30"><img width="272" height="51" src="chap2_6.files/image192.gif" v:shapes="_x0000_i1128"></span><span class="hcp2">.<span class="hcp12">                      </span>(2.6.29)</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp4"><span class="hcp2">Полная потенциальная энергия.</span></b><span class="hcp2"> Полная потенциальная энергия <span class="hcp11"><img width="19" height="16" src="chap2_6.files/image194.gif" v:shapes="_x0000_i1129"></span><span class="hcp12"> </span>любой механической системы, как известно,
+численно равна работе, совершенной всеми действующими на систему силами при
+возвращении системы из деформированного состояния в исходное недеформированное.
+При этом действующими на систему силами являются как внешние нагрузки, совершающие
+отрицательную работу <span class="hcp11"><img width="19" height="16" src="chap2_6.files/image196.gif" v:shapes="_x0000_i1130"></span>,
+так и внутренние реактивные силы, потенциальной энергией которых является
+положительная энергия деформации <span class="hcp11"><img width="17" height="16" src="chap2_6.files/image197.gif" v:shapes="_x0000_i1131"></span>. </span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Рассматривая переход системы от деформированного состояния к
+исходному недеформированному, будем считать, что точка приложения нагрузки <span class="hcp15"><img width="17" height="21" src="chap2_6.files/image199.gif" v:shapes="_x0000_i1132"></span><span class="hcp12"> </span>перемещается на величину <span class="hcp28"><img width="16" height="24" src="chap2_6.files/image201.gif" v:shapes="_x0000_i1133"></span>,
+причем сама внешняя сила <span class="hcp15"><img width="17" height="21" src="chap2_6.files/image202.gif" v:shapes="_x0000_i1134"></span><span class="hcp12"> </span>остается в процессе перехода постоянной.
+Работа всех <span class="hcp13"><img width="13" height="19" src="chap2_6.files/image204.gif" v:shapes="_x0000_i1135"></span><span class="hcp12"> </span>внешних сил в этом случае равна</span></p>
+
+<p class=Bookbody align=right style='margin-top:4.0pt;text-align:right;
+text-indent:21.25pt;line-height:normal'><span class="hcp18"><img width="91" height="45" src="chap2_6.files/image206.gif" v:shapes="_x0000_i1136"></span><span class="hcp2">.<span class="hcp12">                                             </span>(2.6.30)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">Тогда</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+text-indent:21.25pt;line-height:normal'><span class="hcp18"><img width="165" height="45" src="chap2_6.files/image208.gif" v:shapes="_x0000_i1137"></span><span class="hcp2">.<span class="hcp12">              </span><span class="hcp12">                     </span>(2.6.31)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Если продифференцировать (2.6.31) по одному из возможных
+перемещений <span class="hcp15"><img width="16" height="21" src="chap2_6.files/image209.gif" v:shapes="_x0000_i1138"></span>,
+получим</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:4.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><span class="hcp16"><img width="93" height="45" src="chap2_6.files/image211.gif" v:shapes="_x0000_i1139"></span><span class="hcp2">.<span class="hcp12">                                             </span>(2.6.32) </span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Подставляя в (2.6.32) выражение (2.6.20), имеем</span></p>
+
+<p class=Bookbody align=right style='margin-top:2.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp16"><img width="52" height="45" src="chap2_6.files/image213.gif" v:shapes="_x0000_i1140"></span><span class="hcp2">.<span class="hcp12">                                       </span><span class="hcp12">          </span>(2.6.33)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Полная потенциальная энергия механической системы является
+ее важной характеристикой. Если механическая система находится в равновесии,
+то, как следует из (2.6.33), первые производные от полной энергии системы по
+каждому из всех возможных перемещений оказываются равными нулю, </span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp16"><img width="52" height="45" src="chap2_6.files/image215.gif" v:shapes="_x0000_i1141"></span><span class="hcp2">,<span class="hcp12"> 
+</span><span class="hcp26"><img width="55" height="45" src="chap2_6.files/image217.gif" v:shapes="_x0000_i1142"></span>, ,
+<span class="hcp26"><img width="52" height="45" src="chap2_6.files/image219.gif" v:shapes="_x0000_i1143"></span>.<span class="hcp12">                         </span>(2.6.34)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:Arial;letter-spacing:
+-.1pt'>Это означает, что в положении равновесия энергия системы достигает
+экстремального значения (в данном случае&nbsp;– минимума). Вывод, который
+следует из выражения (2.6.34), обосновывает одно из фундаментальных положений
+механики, и в частности, механики деформированного тела&nbsp;– так называемый <i class="hcp3">принцип наименьшего действия</i>. Согласно
+этому принципу можно утверждать, что в условиях равновесия деформированное тело
+принимает такое положение, при котором его полная потенциальная энергия имеет
+минимальное значение. Это утверждение можно отнести также и к геометрии деформированного
+состояния. В процессе деформации каждая точка тела занимает такое положение,
+при котором его полная потенциальная энергия минимальна, причем это положение
+является единственно возможным.</span><span class="hcp2"></span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp4"><span class="hcp5">Определение перемещений статически неопределимых
+стержневых систем.</span></b><span class="hcp2"> <span class="hcp7">Механическая стержневая конструкция<span class="hcp12">  </span>считается статически неопределимой, если
+число внутренних силовых факторов (реакций) превышает число возможных
+независимых уравнений статического равновесия (см. главу 2.2). Исходя из этого
+определения балка, изображенная на рис. 2.6.4</span></span><span lang="EN-US" class="hcp33">a</span><span class="hcp5">, однократно статически неопределима. Если в рассматриваемой статически
+неопределимой системе удалить одну из опор, например, среднюю (рис. 2.6.4</span><span lang="EN-US" class="hcp33">b</span><span class="hcp5">), то она становится статически определимой.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span class="hcp9"><img width="280" height="48" src="chap2_6.files/image221.gif" v:shapes="_x0000_i1144"></span></p>
+
+<p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp34">a</span><span class="hcp35">)</span><span class="hcp9"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span class="hcp9"><img width="279" height="47" src="chap2_6.files/image223.gif" v:shapes="_x0000_i1145"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span lang="EN-US" class="hcp34">b</span><span class="hcp35">)</span><span class="hcp9"></span></p>
+
+<p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+text-indent:0cm'><span class="hcp9">Рис. 2.6.4</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Стержневые системы следует разделять на геометрически
+замкнутые и геометрически разомкнутые. Такое деление связано с особенностями статической
+неопределимости. Например, стержневая система, образованная замкнутой цепью
+жестко связанных элементов, представляет собой статически неопределимую <i class="hcp3">рамную конструкцию</i> (рис. 2.6.7).</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">В общем случае раскрыть статическую
+неопределимость помогают приемы, в основу которых положены методы расчета
+деформаций. Для того чтобы систему из статически неопределимой преобразовать в
+статически определимую, необходимо отбросить лишние связи, заменив их
+неизвестными реакциями <span class="hcp15"><img width="95" height="21" src="chap2_6.files/image225.gif" v:shapes="_x0000_i1146"></span>.
+Величины этих реакций подбираются исходя из граничных условий. Для абсолютно
+жестких опор в качестве граничного можно использовать, к примеру, условие
+равенства нулю перемещений точек расположения опор в направлениях
+соответствующих реакций. Кроме этого, допустимо утверждать, что при использовании
+метода сечений для замкнутого контура относительное перемещение точек
+приложения внутренних силовых факторов также равно нулю. Если использовать
+принцип суперпозиции (независимого действия сил), то аналитически условие
+равенства относительных перемещений запишется в виде системы линейных уравнений</span><span class="hcp2"></span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span style='font-size:10.0pt;font-family:Arial;mso-text-raise:
+-33.0pt'><img width="352" height="96" src="chap2_6.files/image227.gif" v:shapes="_x0000_i1147"></span><span class="hcp2">.<span class="hcp12">           </span>(2.6.35)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">Здесь <span class="hcp31"><img width="24" height="25" src="chap2_6.files/image229.gif" v:shapes="_x0000_i1148"></span><span class="hcp12">  </span>и <span class="hcp28"><img width="23" height="24" src="chap2_6.files/image231.gif" v:shapes="_x0000_i1149"></span>, <span class="hcp15"><img width="80" height="21" src="chap2_6.files/image233.gif" v:shapes="_x0000_i1150"></span>&nbsp;–
+перемещения в направлении реакции <span class="hcp15"><img width="21" height="21" src="chap2_6.files/image235.gif" v:shapes="_x0000_i1151"></span>,
+обусловленные силой <span class="hcp31"><img width="24" height="24" src="chap2_6.files/image237.gif" v:shapes="_x0000_i1152"></span><span class="hcp12"> </span>и внешними силами <span class="hcp11"><img width="17" height="16" src="chap2_6.files/image238.gif" v:shapes="_x0000_i1153"></span><span class="hcp12"> </span>соответственно. Представим перемещение <span class="hcp31"><img width="24" height="25" src="chap2_6.files/image240.gif" v:shapes="_x0000_i1154"></span><span class="hcp12"> </span>как произведение</span></p>
+
+<p class=Bookbody align=right style='margin-top:0cm;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:141.45pt;text-align:right;text-indent:35.45pt;
+line-height:normal'><span style='font-size:10.0pt;font-family:Arial;mso-text-raise:
+-7.0pt'><img width="75" height="25" src="chap2_6.files/image242.gif" v:shapes="_x0000_i1155"></span><span class="hcp2">,<span class="hcp12">                         </span><span class="hcp12">                  </span>(2.6.36)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">где <span class="hcp31"><img width="19" height="25" src="chap2_6.files/image244.gif" v:shapes="_x0000_i1156"></span>&nbsp;–
+перемещение в направлении силового фактора <span class="hcp15"><img width="21" height="23" src="chap2_6.files/image246.gif" v:shapes="_x0000_i1157"></span>,
+вызванное действием единичной<span class="hcp12">  </span><span class="hcp15"><img width="13" height="20" src="chap2_6.files/image248.gif" v:shapes="_x0000_i1158"></span>-ой
+силы. В этих обозначениях систему уравнений (2.6.35) можно переписать в виде</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><span style='font-size:10.0pt;font-family:
+Arial;mso-text-raise:-32.0pt'><img width="383" height="97" src="chap2_6.files/image250.gif" v:shapes="_x0000_i1159"></span><span class="hcp2">.<span class="hcp12">      </span>(2.6.37)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Решение системы уравнений (2.6.37)
+относительно реакций опор <span class="hcp15"><img width="95" height="21" src="chap2_6.files/image251.gif" v:shapes="_x0000_i1160"></span><span class="hcp12"> </span>позволяет определить величины неизвестных реакций.
+Таким образом, раскрытие статической неопределимости свелось к расчету нагрузок
+в опорах. Такой метод получил название <i class="hcp3">метода
+сил</i>. Этот метод не единственный, но он является наиболее распространенным.
+В частности, метод сил широко используется при расчете металлоконструкций
+произвольной геометрической формы.</span><span class="hcp2"></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Практическое применение метода расчета
+статически неопределимых систем рассмотрим на примере рамы, состоящей из двух независимых
+участков <span class="hcp11"><img width="25" height="16" src="chap2_6.files/image253.gif" v:shapes="_x0000_i1161"></span><span class="hcp12"> </span>и <span class="hcp11"><img width="25" height="16" src="chap2_6.files/image255.gif" v:shapes="_x0000_i1162"></span><span class="hcp12"> </span>одинаковой длины <span class="hcp11"><img width="13" height="13" src="chap2_6.files/image256.gif" v:shapes="_x0000_i1163"></span><span class="hcp12"> </span>с постоянным поперечным сечением (2.6.5</span><span lang="EN-US" class="hcp33">a</span><span class="hcp5">). Участок <span class="hcp11"><img width="25" height="16" src="chap2_6.files/image257.gif" v:shapes="_x0000_i1164"></span><span class="hcp12"> </span>нагружен распределенной нагрузкой <span class="hcp15"><img width="13" height="17" src="chap2_6.files/image259.gif" v:shapes="_x0000_i1165"></span>.
+Эта рамная конструкция оказывается дважды статически неопределимой, так для
+определения неизвестных реакций опор не хватает двух уравнений. Отбросим одну
+из опор, как показано на рисунке. Для того чтобы получить статически
+определимую конструкцию, вместо отброшенной опоры следует приложить неизвестные
+реакции <span class="hcp15"><img width="23" height="21" src="chap2_6.files/image261.gif" v:shapes="_x0000_i1166"></span><span class="hcp12"> </span>и <span class="hcp15"><img width="24" height="21" src="chap2_6.files/image263.gif" v:shapes="_x0000_i1167"></span>(рис.
+2.6.5</span><span lang="EN-US" class="hcp33">b</span><span class="hcp5">), которые согласно (2.6.37)
+определяются из системы уравнений</span><span class="hcp2"></span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span style='font-size:10.0pt;font-family:Arial;mso-text-raise:
+-25.0pt'><img width="185" height="75" src="chap2_6.files/image265.gif" v:shapes="_x0000_i1168"></span><span class="hcp2">.<span class="hcp12">                                    </span>(2.6.38)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Коэффициенты <span class="hcp31"><img width="20" height="25" src="chap2_6.files/image267.gif" v:shapes="_x0000_i1169"></span>, <span class="hcp15"><img width="59" height="20" src="chap2_6.files/image269.gif" v:shapes="_x0000_i1170"></span>,
+уравнения (2.6.38), которые представляют собой перемещения, вызванные единичными
+силами, можно определить методом Мора, записав выражения для изгибающих
+моментов от этих силовых факторов. При этом для упрощения записи индекс «</span><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial;mso-text-raise:-3.0pt;
+mso-ansi-language:EN-US'><img width="13" height="15" src="chap2_6.files/image271.gif" v:shapes="_x0000_i1171"></span><span class="hcp2">» в обозначении внутреннего
+изгибающего момента будем опускать. Так, <span class="hcp15"><img width="36" height="23" src="chap2_6.files/image273.gif" v:shapes="_x0000_i1172"></span><span class="hcp12"> </span>и<span class="hcp12">  </span><span class="hcp15"><img width="39" height="23" src="chap2_6.files/image275.gif" v:shapes="_x0000_i1173"></span>&nbsp;–
+изгибающие моменты от единичной нагрузки, приложенные в направлениях силовых
+факторов <span class="hcp15"><img width="21" height="23" src="chap2_6.files/image277.gif" v:shapes="_x0000_i1174"></span><span class="hcp12"> </span>и <span class="hcp15"><img width="24" height="23" src="chap2_6.files/image279.gif" v:shapes="_x0000_i1175"></span><span class="hcp12"> </span>соответственно. Графическое представление
+зависимости этих изгибающих моментов от координаты <span class="hcp11"><img width="12" height="13" src="chap2_6.files/image280.gif" v:shapes="_x0000_i1176"></span><span class="hcp12"> </span>текущего сечения приведено на рис. 2.6.5 </span><span lang="EN-US" class="hcp21">c</span><span class="hcp2">,</span><span lang="EN-US" class="hcp21">d</span><span class="hcp2">.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<div align=center>
+
+<table border="0" cellspacing="0" cellpadding="0" class="hcp36">
+ <tr>
+  <td width="272" valign="bottom" style="width:203.8pt;" class="hcp37">
+  <p class=Bookbody align=left style='text-align:left;text-indent:0cm;
+  line-height:normal'><span lang="EN-US" class="hcp21"><img width="251" height="128" src="chap2_6.files/image282.gif" v:shapes="_x0000_i1177"></span><span class="hcp2"></span></p>
+  <p class=Bookbody align=left style='text-align:left;text-indent:0cm;
+  line-height:normal'><span lang="EN-US" class="hcp21">a) <span class="hcp38">                    </span><span class="hcp12">              </span>b)</span><span class="hcp2"></span></p>
+  </td>
+  <td width="272" valign="bottom" style="width:203.85pt;" class="hcp37">
+  <p class=Bookbody align=left style='text-align:left;text-indent:0cm;
+  line-height:normal'><span lang="EN-US" class="hcp21"><img width="252" height="125" src="chap2_6.files/image284.gif" v:shapes="_x0000_i1178"></span><span class="hcp2"></span></p>
+  <p class=Bookbody align=left style='text-align:left;text-indent:0cm;
+  line-height:normal'><span lang="EN-US" class="hcp21">c)<span class="hcp20">                                 </span>
+  d)</span><span class="hcp2"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="272" valign="bottom" style="width:203.8pt;" class="hcp37">
+  <p class=Bookbody align=left style='text-align:left;text-indent:0cm;
+  line-height:normal'><span lang="EN-US" class="hcp21"><img width="253" height="119" src="chap2_6.files/image286.gif" v:shapes="_x0000_i1179"></span><span class="hcp2"></span></p>
+  <p class=Bookbody align=left style='text-align:left;text-indent:0cm;
+  line-height:normal'><span lang="EN-US" class="hcp21">e)<span class="hcp20">                                 </span><span class="hcp12">  </span>f)<span class="hcp17">        </span></span><span class="hcp2"></span></p>
+  </td>
+  <td width="272" valign="bottom" style="width:203.85pt;" class="hcp37">
+  <p class=Bookbody align=left style='text-align:left;text-indent:0cm;
+  line-height:normal'><span lang="EN-US" class="hcp21"><img width="131" height="122" src="chap2_6.files/image288.gif" v:shapes="_x0000_i1180"></span><span class="hcp2"></span></p>
+  <p class=Bookbody align=left style='text-align:left;text-indent:0cm;
+  line-height:normal'><span lang="EN-US" class="hcp21">g</span><span class="hcp2">)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="544" colspan="2" valign="top" style="width:407.65pt;" class="hcp37">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2">Рис.
+  2.6.5</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Свяжем с началом каждого участка локальную систему координат,
+в которой и выполняются все дальнейшие вычисления:</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp16"><img width="325" height="51" src="chap2_6.files/image290.gif" v:shapes="_x0000_i1181"></span><span class="hcp2">;</span></p>
+
+<p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp16"><img width="272" height="51" src="chap2_6.files/image292.gif" v:shapes="_x0000_i1182"></span><span class="hcp2">;</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp16"><img width="328" height="51" src="chap2_6.files/image294.gif" v:shapes="_x0000_i1183"></span><span class="hcp2">.<span class="hcp12">              </span>(2.6.39)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Рассмотрим зависимость изгибающего момента, вызванного<span class="hcp12">  </span>действием распределенной нагрузки <span class="hcp15"><img width="13" height="17" src="chap2_6.files/image295.gif" v:shapes="_x0000_i1184"></span>,
+от текущей координаты <span class="hcp11"><img width="12" height="13" src="chap2_6.files/image296.gif" v:shapes="_x0000_i1185"></span>.
+На интересующем нас участке </span><span lang="EN-US" class="hcp14"><img width="25" height="16" src="chap2_6.files/image297.gif" v:shapes="_x0000_i1186"></span><span class="hcp2"><span class="hcp12"> </span>уравнение момента имеет вид<span class="hcp12"> 
+</span><span class="hcp24"><img width="117" height="41" src="chap2_6.files/image299.gif" v:shapes="_x0000_i1187"></span><span class="hcp12"> </span>(рис. 2.6.5). Следовательно, перемещение в
+направлении реакции опоры <span class="hcp15"><img width="23" height="21" src="chap2_6.files/image300.gif" v:shapes="_x0000_i1188"></span>,
+обусловленное внешними силами (в данном случае распределенной внешней силой <span class="hcp15"><img width="13" height="17" src="chap2_6.files/image301.gif" v:shapes="_x0000_i1189"></span>),
+согласно (2.6.25) равно</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp16"><img width="432" height="51" src="chap2_6.files/image303.gif" v:shapes="_x0000_i1190"></span><span class="hcp2">.<span class="hcp12">   
+</span>(2.6.40)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Аналогично для перемещения в направлении силового фактора <span class="hcp15"><img width="24" height="21" src="chap2_6.files/image304.gif" v:shapes="_x0000_i1191"></span><span class="hcp12"> </span>запишем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp16"><img width="311" height="51" src="chap2_6.files/image306.gif" v:shapes="_x0000_i1192"></span><span class="hcp2">.<span class="hcp12">       </span><span class="hcp17">        </span><span class="hcp12">   </span>(2.6.41)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Подстановка (2.6.39)&nbsp;– (2.6.41) в систему уравнений
+(2.6.38) преобразует ее к виду</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><span style='font-size:10.0pt;font-family:
+Arial;mso-text-raise:-35.0pt'><img width="211" height="101" src="chap2_6.files/image308.gif" v:shapes="_x0000_i1193"></span><span class="hcp2">, <span class="hcp20">                            </span><span class="hcp12"> </span>(2.6.42)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">откуда получаем выражения для
+реакций в опоре:</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp27"><img width="71" height="41" src="chap2_6.files/image310.gif" v:shapes="_x0000_i1194"></span><span class="hcp2">;<span class="hcp12">           </span><span class="hcp24"><img width="91" height="41" src="chap2_6.files/image312.gif" v:shapes="_x0000_i1195"></span>.<span class="hcp38">                 </span><span class="hcp12">   </span><span class="hcp12">        </span>(2.6.43)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Знак «–» у реакции <span class="hcp15"><img width="24" height="21" src="chap2_6.files/image313.gif" v:shapes="_x0000_i1196"></span><span class="hcp12"> </span>в (2.6.43) говорит о том, что она имеет
+противоположное по отношению к первоначально выбранному направление.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp32">Зная реакции (2.6.43), легко
+построить эпюры изгибающих моментов, необходимые для определения напряжений в
+текущем сечении. Для построения эпюр следует просуммировать моменты от каждого
+из силовых факторов (рис. 2.6.5</span><span lang=EN-US style='font-size:10.0pt;
+mso-bidi-font-size:11.0pt;font-family:Arial;mso-ansi-language:EN-US'>f</span><span class="hcp32">). Из
+(2.6.43) следует, что на участке <span class="hcp11"><img width="25" height="16" src="chap2_6.files/image314.gif" v:shapes="_x0000_i1197"></span><span class="hcp12"> </span>изгибающий момент описывается функцией</span><span class="hcp2"></span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;text-align:right;
+text-indent:21.25pt;line-height:normal'><span class="hcp39"><img width="143" height="44" src="chap2_6.files/image316.gif" v:shapes="_x0000_i1198"></span><span class="hcp2">, <span class="hcp40">                                      </span><span class="hcp12"> </span>(2.6.44)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">так что <span class="hcp28"><img width="57" height="24" src="chap2_6.files/image318.gif" v:shapes="_x0000_i1199"></span><span class="hcp12"> </span>при <span class="hcp11"><img width="37" height="16" src="chap2_6.files/image319.gif" v:shapes="_x0000_i1200"></span><span class="hcp12"> </span>и <span class="hcp19"><img width="88" height="44" src="chap2_6.files/image321.gif" v:shapes="_x0000_i1201"></span><span class="hcp12"> </span>при <span class="hcp11"><img width="37" height="13" src="chap2_6.files/image322.gif" v:shapes="_x0000_i1202"></span>.
+Точка экстремума <span class="hcp28"><img width="29" height="24" src="chap2_6.files/image324.gif" v:shapes="_x0000_i1203"></span><span class="hcp12"> </span>функции <span class="hcp28"><img width="49" height="24" src="chap2_6.files/image326.gif" v:shapes="_x0000_i1204"></span><span class="hcp12"> </span>находится из условия</span></p>
+
+<p class=Bookbody align=center style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:4.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp2"><span class="hcp12"> </span><span class="hcp19"><img width="225" height="43" src="chap2_6.files/image328.gif" v:shapes="_x0000_i1205"></span>,</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">откуда <span class="hcp24"><img width="69" height="41" src="chap2_6.files/image330.gif" v:shapes="_x0000_i1206"></span>,
+причем, с учетом (2.6.44), <span class="hcp19"><img width="109" height="41" src="chap2_6.files/image332.gif" v:shapes="_x0000_i1207"></span>.
+Далее, при переходе через нулевую линию из (2.6.44) имеем <span class="hcp19"><img width="207" height="44" src="chap2_6.files/image334.gif" v:shapes="_x0000_i1208"></span>,
+т.&nbsp;е. <span class="hcp24"><img width="57" height="41" src="chap2_6.files/image336.gif" v:shapes="_x0000_i1209"></span>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Изгибающий момент на участке <span class="hcp11"><img width="25" height="16" src="chap2_6.files/image337.gif" v:shapes="_x0000_i1210"></span><span class="hcp12"> </span>описывается линейной функцией</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp39"><img width="156" height="44" src="chap2_6.files/image339.gif" v:shapes="_x0000_i1211"></span><span class="hcp2">,<span class="hcp12">                                     </span>(2.6.45)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">причем в конечной точке участка
+(точка <span class="hcp11"><img width="16" height="16" src="chap2_6.files/image340.gif" v:shapes="_x0000_i1212"></span><span class="hcp12"> </span>с координатой <span class="hcp11"><img width="37" height="13" src="chap2_6.files/image341.gif" v:shapes="_x0000_i1213"></span>)
+имеем</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp39"><img width="76" height="44" src="chap2_6.files/image343.gif" v:shapes="_x0000_i1214"></span><span class="hcp2">.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Результаты расчета изгибающих моментов представлены на рис.
+2.6.5</span><span lang="EN-US" class="hcp21">g</span><span class="hcp2">.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp41">Для того
+чтобы сократить общий объем вычислений при выполнении аналитического расчета,
+очень важно уменьшить количество неизвестных параметров. В отдельных случаях
+это оказывается возможным. В качестве примера рассмотрим симметричную рамную
+конструкцию при симметричном нагружении (рис. 2.6.6</span><span lang="EN-US" class="hcp42">a</span><span class="hcp41">). Если
+рассечь эту раму в точке <span class="hcp11"><img width="16" height="16" src="chap2_6.files/image344.gif" v:shapes="_x0000_i1215"></span>,
+то внутренние силовые факторы в этом сечении можно заменить неизвестными
+внешними параметрами <span class="hcp15"><img width="48" height="21" src="chap2_6.files/image346.gif" v:shapes="_x0000_i1216"></span><span class="hcp12"> </span>и <span class="hcp15"><img width="23" height="21" src="chap2_6.files/image348.gif" v:shapes="_x0000_i1217"></span><span class="hcp12"> </span>(рис. 2.6.6</span><span lang="EN-US" class="hcp42">b</span><span class="hcp41">). Действуя
+аналогично рассмотренному выше случаю, легко построить эпюры изгибающих
+моментов (рис. 2.6.6</span><span lang="EN-US" class="hcp42">c</span><span class="hcp41">,</span><span lang="EN-US" class="hcp42">d</span><span class="hcp41">,</span><span lang="EN-US" class="hcp42">e</span><span class="hcp41">). Из анализа представленных графиков видно, что эпюры моментов неизвестных
+продольных сил <span class="hcp15"><img width="23" height="21" src="chap2_6.files/image349.gif" v:shapes="_x0000_i1218"></span><span class="hcp12"> </span>и <span class="hcp15"><img width="24" height="21" src="chap2_6.files/image350.gif" v:shapes="_x0000_i1219"></span><span class="hcp12"> </span>симметричны (рис. 2.6.6</span><span lang="EN-US" class="hcp42">c</span><span class="hcp41">,</span><span lang="EN-US" class="hcp42">d</span><span class="hcp41">), в
+то время как поперечные силы <span class="hcp15"><img width="23" height="21" src="chap2_6.files/image351.gif" v:shapes="_x0000_i1220"></span><span class="hcp12"> </span>обуславливают возникновение изгибающего
+момента, эпюра которого имеет так называемую кососимметричную форму (рис. 2.6.6</span><span lang="EN-US" class="hcp42">e</span><span class="hcp41">).
+Эпюра момента изгиба внешних сил, как видно из рис. 2.6.6</span><span lang="EN-US" class="hcp42">f</span><span class="hcp41">,
+также оказывается симметричной.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp41">&nbsp;</span></p>
+
+<div align=center>
+
+<table border="0" cellspacing="0" cellpadding="0" class="hcp36">
+ <tr>
+  <td width="544" valign="top" style="width:407.65pt;" class="hcp37">
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span class="hcp9"><img width="505" height="117" src="chap2_6.files/image353.gif" v:shapes="_x0000_i1221"></span><span lang="EN-US" class="hcp43"></span></p>
+  <p class=Bookbody align=left style='text-align:left;text-indent:0cm;
+  line-height:normal'><span lang="EN-US" class="hcp21">a)<span class="hcp20">                                 </span><span class="hcp12">                            </span>b)<span class="hcp40">                                        </span><span class="hcp12">     </span>c)</span><span lang="EN-US" class="hcp42"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="544" valign="top" style="width:407.65pt;" class="hcp37">
+  <p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><img width="494" height="98" src="chap2_6.files/image355.gif" v:shapes="_x0000_i1222"></p>
+  <p class=MsoNormal style='text-indent:0cm'><span lang=EN-US style='mso-ansi-language:
+  EN-US'>d)<span class="hcp38">                     </span><span class="hcp12">                                          </span>e)<span class="hcp38">              </span><span class="hcp12">         </span><span class="hcp17">   </span><span class="hcp12">                   </span>f)</span><span
+  lang=EN-US style='mso-bidi-font-size:11.0pt;letter-spacing:-.2pt;mso-ansi-language:
+  EN-US'></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="544" valign="top" style="width:407.65pt;" class="hcp37">
+  <p class=Bookbody align=center style='text-align:center;text-indent:0cm;
+  line-height:normal'><span class="hcp2">Рис.
+  2.6.6</span><span class="hcp41"></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp5">Такой вид эпюр моментов позволяет сделать
+вывод о том, что перемещения, которые в соответствии с формулой Мора (2.6.25)
+представляют собой произведения соответствующих моментов, оказываются равными
+нулю, <span class="hcp15"><img width="156" height="21" src="chap2_6.files/image357.gif" v:shapes="_x0000_i1223"></span>.
+Это очевидно, так как равна нулю сумма произведений моментов от симметричных и
+несимметричных силовых факторов (рис. 2.6.6).</span><span class="hcp2"></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Очевидно также, что если эпюра внешнего момента изгиба
+симметрична, то <span class="hcp15"><img width="51" height="21" src="chap2_6.files/image359.gif" v:shapes="_x0000_i1224"></span>.
+Тогда из (2.6.37) следует <span class="hcp15"><img width="49" height="21" src="chap2_6.files/image361.gif" v:shapes="_x0000_i1225"></span>.
+Это означает, что те силовые факторы, которые при симметричном нагружении симметричных
+конструкций имеют кососимметричную эпюру изгибающих моментов, равны нулю, и ими
+можно пренебречь. Количество неизвестных сил при этом уменьшается. Отметим, что
+подобное уменьшение количества неизвестных параметров возможно только для
+задач, имеющих симметрию.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Аналогично можно показать, что при кососимметричном внешнем
+нагружении внутренние симметричные факторы также равны нулю, т.&nbsp;е. <span class="hcp15"><img width="48" height="23" src="chap2_6.files/image363.gif" v:shapes="_x0000_i1226"></span>, <span class="hcp15"><img width="51" height="23" src="chap2_6.files/image365.gif" v:shapes="_x0000_i1227"></span>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Используя последнее утверждение, можно облегчить решение
+многих практически важных задач. Покажем это на примере расчета геометрически
+замкнутого кольца при его симметричном нагружении (рис. 2.6.7</span><span lang="EN-US" class="hcp21">a</span><span class="hcp2">).</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Изображенная на рис. 2.6.7</span><span lang="EN-US" class="hcp21">a</span><span class="hcp2"> кольцевая рама, находящаяся под
+действием симметричной нагрузки, является статически неопределимой вследствие своей
+конструктивной замкнутости. Для нахождения неизвестных силовых факторов <span class="hcp15"><img width="48" height="21" src="chap2_6.files/image366.gif" v:shapes="_x0000_i1228"></span><span class="hcp12"> </span>и <span class="hcp15"><img width="23" height="21" src="chap2_6.files/image367.gif" v:shapes="_x0000_i1229"></span><span class="hcp12"> </span>воспользуемся методом сечений (рис. 2.6.7</span><span lang="EN-US" class="hcp21">b</span><span class="hcp2">).</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Силовой фактор <span class="hcp15"><img width="23" height="21" src="chap2_6.files/image368.gif" v:shapes="_x0000_i1230"></span>,
+как было показано выше, приводит к кососимметричной эпюре момента,
+следовательно, <span class="hcp15"><img width="49" height="21" src="chap2_6.files/image369.gif" v:shapes="_x0000_i1231"></span>. В
+силу геометрической симметрии и симметричности нагружения из уравнения
+равновесия следует <span class="hcp15"><img width="75" height="21" src="chap2_6.files/image371.gif" v:shapes="_x0000_i1232"></span>.
+Неизвестный силовой фактор <span class="hcp15"><img width="23" height="21" src="chap2_6.files/image372.gif" v:shapes="_x0000_i1233"></span><span class="hcp12"> </span>найдем с помощью системы (2.6.35), которая в
+этом случае трансформируется в уравнение</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span class="hcp29"><img width="101" height="21" src="chap2_6.files/image374.gif" v:shapes="_x0000_i1234"></span><span class="hcp2">.<span class="hcp40">                                            </span>
+(2.6.46)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Коэффициенты уравнения (2.6.46) определяются методом Мора.
+Так, моменты от внешних и единичных силовых факторов в текущем сечении,
+расположенном под углом<span class="hcp15"><img width="15" height="17" src="chap2_6.files/image376.gif" v:shapes="_x0000_i1235"></span>,
+равны</span></p>
+
+<p class=Bookbody align=right style='text-align:right;line-height:normal'><span class="hcp27"><img width="139" height="41" src="chap2_6.files/image378.gif" v:shapes="_x0000_i1236"></span><span class="hcp2">;<span class="hcp12">     </span><span class="hcp15"><img width="72" height="21" src="chap2_6.files/image380.gif" v:shapes="_x0000_i1237"></span>,<span class="hcp20">                           </span> (2.6.47)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">а компоненты перемещений:</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><span class="hcp16"><img width="255" height="51" src="chap2_6.files/image382.gif" v:shapes="_x0000_i1238"></span><span class="hcp2">;</span></p>
+
+<p class=Bookbody align=right style='margin-bottom:6.0pt;text-align:right;
+text-indent:0cm;line-height:normal'><span class="hcp30"><img width="393" height="51" src="chap2_6.files/image384.gif" v:shapes="_x0000_i1239"></span><span class="hcp2">.<span class="hcp17">       </span>
+(2.6.48)</span></p>
+
+<p class=Bookbody style='text-indent:0cm;line-height:normal'><span class="hcp2">В результате подстановки (2.6.47) и
+(2.6.48) в (2.6.46) получаем</span></p>
+
+<p class=Bookbody align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:0cm;
+line-height:normal'><span style='font-size:10.0pt;font-family:Arial;mso-text-raise:
+-13.0pt'><img width="116" height="45" src="chap2_6.files/image386.gif" v:shapes="_x0000_i1240"></span><span class="hcp2">;<span class="hcp12">      </span><span style='mso-text-raise:-13.0pt'><img width="235" height="45" src="chap2_6.files/image388.gif" v:shapes="_x0000_i1241"></span>.<span class="hcp12">     </span>(2.6.49)</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Выражение (2.6.49) дает возможность построить эпюру
+изгибающего момента (рис. 2.6.7</span><span lang="EN-US" class="hcp21">c</span><span class="hcp2">) и определить величины напряжений и деформаций любого
+участка бруса.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span class="hcp9"><img width="473" height="188" src="chap2_6.files/image390.gif" v:shapes="_x0000_i1242"></span></p>
+
+<p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+text-indent:0cm'><span lang="EN-US" class="hcp43">a)<span class="hcp20">                                 </span><span class="hcp12">                </span>b)<span class="hcp20">                            </span><span class="hcp12">              </span>c)</span></p>
+
+<p class=Bookbody align=center style='text-align:center;line-height:normal'><span class="hcp2">Рис. 2.6.7</span></p>
+
+</div>
+
+<div placeholder id="footer" style="width:100%;" class="hcp1">
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			border-bottom-color: #000080;
+			border-bottom-style: Ridge;
+			border-bottom-width: 2px;
+			font-size: 10pt;">&nbsp;</p>
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			font-size: 8pt;">&#169; 
+ 2007 Copyright &nbsp;&#1053;&#1058;&#1062; 
+ &#1040;&#1055;&#1052;</p>
+</div>
+</body>
+</html>

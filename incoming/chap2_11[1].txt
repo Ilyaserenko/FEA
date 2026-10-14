@@ -1,0 +1,882 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="File-List" href="./chap2_11.files/filelist.xml">
+<link rel="Edit-Time-Data" href="./chap2_11.files/editdata.mso">
+<title>Глава 2.11. Машиностроительные материалы</title><style>
+<!--
+p.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoNormal { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+h1 { mso-style-next:Обычный; margin:0cm; margin-bottom:.0001pt; text-align:center; text-indent:23.75pt; mso-pagination:widow-orphan; page-break-after:avoid; mso-outline-level:1; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-bidi-font-family:Times New Roman; mso-font-kerning:0pt; mso-bidi-font-weight:normal; }
+p.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoHeader { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.MsoFooter { margin:0cm; margin-bottom:.0001pt; mso-pagination:widow-orphan; tab-stops:center 207.65pt right 415.3pt; font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; mso-list:skip; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+li.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; mso-list:skip; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+div.Bookbody { mso-style-name:Book_body; margin:0cm; margin-bottom:.0001pt; text-align:justify; text-indent:21.3pt; line-height:90%; mso-pagination:none; mso-list:skip; font-size:11.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; }
+p.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookChapter { mso-style-name:Book_Chapter; mso-style-next:Book_body; margin-top:6.0pt; margin-right:0cm; margin-bottom:6.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Arial; mso-fareast-font-family:Times New Roman; mso-bidi-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; mso-list:skip; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; mso-list:skip; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookHeading { mso-style-name:Book_Heading; mso-style-parent:Book_body; margin-top:18.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; mso-list:skip; font-size:12.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; mso-list:skip; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; mso-list:skip; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookPart { mso-style-name:Book_Part; mso-style-parent:Book_Heading; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; mso-list:skip; font-size:16.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+p.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; mso-list:skip; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+li.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; mso-list:skip; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.BookSubPart { mso-style-name:Book_SubPart; mso-style-parent:Book_Part; mso-style-next:Book_body; margin-top:12.0pt; margin-right:0cm; margin-bottom:12.0pt; margin-left:0cm; line-height:90%; mso-pagination:lines-together; page-break-after:avoid; mso-list:skip; font-size:14.0pt; mso-bidi-font-size:10.0pt; font-family:Times New Roman; mso-fareast-font-family:Times New Roman; text-transform:uppercase; font-weight:bold; mso-bidi-font-weight:normal; }
+div.Section1 { page:Section1; }
+lfo2 { mso-level-number-format:bullet; mso-level-numbering:continue; mso-level-text:\F0B7; mso-level-tab-stop:none; mso-level-number-position:left; mso-level-legacy:yes; mso-level-legacy-indent:14.15pt; mso-level-legacy-space:0cm; margin-left:42.5pt; text-indent:-14.15pt; font-family:Symbol; }
+lfo3 { mso-level-number-format:bullet; mso-level-numbering:continue; mso-level-text:\F0B7; mso-level-tab-stop:none; mso-level-number-position:left; mso-level-legacy:yes; mso-level-legacy-indent:14.15pt; mso-level-legacy-space:8.5pt; margin-left:56.65pt; text-indent:-14.15pt; font-family:Symbol; }
+ol { margin-bottom:0cm; }
+ul { margin-bottom:0cm; }
+-->
+</style><style title="hcp" type="text/css">
+<!--
+div.hcp1 { position:relative; }
+span.hcp2 { font-size:10.0pt; mso-bidi-font-size:11.0pt; font-family:Arial; letter-spacing:.1pt; }
+span.hcp3 { font-size:10.0pt; font-family:Arial; }
+span.hcp4 { font-size:10.0pt; mso-bidi-font-size:11.0pt; font-family:Arial; }
+b.hcp5 { mso-bidi-font-weight:normal; }
+span.hcp6 { font-size:10.0pt; font-family:Arial; letter-spacing:-.1pt; }
+span.hcp7 { font-family:Symbol; }
+span.hcp8 { font:7.0pt "Times New Roman"; }
+span.hcp9 { font-family:Arial; mso-bidi-font-style:italic; }
+span.hcp10 { font-size:10.0pt; font-family:Arial; letter-spacing:2.0pt; mso-bidi-font-style:italic; }
+i.hcp11 { mso-bidi-font-style:normal; }
+span.hcp12 { mso-spacerun:yes; }
+span.hcp13 { font-family:Arial; }
+span.hcp14 { font-size:10.0pt; font-family:Arial; mso-ansi-language:EN-US; }
+td.hcp15 { padding-top:0cm; padding-right:9.05pt; padding-bottom:0cm; padding-left:9.05pt; }
+span.hcp16 { font-size:9.0pt; mso-bidi-font-size:10.0pt; }
+span.hcp17 { font-size:10.0pt; font-family:Arial; letter-spacing:.1pt; }
+span.hcp18 { font-size:10.0pt; font-family:Arial; mso-bidi-font-style:italic; }
+span.hcp19 { letter-spacing:2.0pt; mso-bidi-font-style:italic; }
+span.hcp20 { font-size:10.0pt; font-family:Arial; letter-spacing:.2pt; }
+span.hcp21 { font-size:10.0pt; font-family:Arial; letter-spacing:.1pt; mso-bidi-font-style:italic; }
+span.hcp22 { font-family:Arial; mso-ansi-language:EN-US; mso-bidi-font-style:italic; }
+span.hcp23 { mso-bidi-font-style:italic; }
+span.hcp24 { font-size:10.0pt; font-family:Arial; letter-spacing:-.2pt; }
+span.hcp25 { font-size:10.0pt; font-family:Arial; letter-spacing:-.2pt; mso-ansi-language:EN-US; }
+span.hcp26 { font-size:10.0pt; mso-bidi-font-size:11.0pt; font-family:Arial; letter-spacing:-.1pt; }
+span.hcp27 { font-size:10.0pt; mso-bidi-font-size:11.0pt; font-family:Arial; letter-spacing:-.1pt; mso-ansi-language:EN-US; }
+span.hcp28 { font-size:10.0pt; mso-bidi-font-size:11.0pt; font-family:Arial; letter-spacing:-.1pt; mso-ansi-language:EN-US; mso-bidi-font-style:italic; }
+span.hcp29 { font-size:10.0pt; mso-bidi-font-size:11.0pt; font-family:Arial; letter-spacing:-.1pt; mso-bidi-font-style:italic; }
+-->
+</style>
+</head>
+<body lang="RU" style="tab-interval:35.4pt">
+<div placeholder id="header" style="width:100%;" class="hcp1">
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			background-color: #d8e8f9;
+			margin-left: 0px;"><img src="head_for_help.jpg"
+									x-maintain-ratio=TRUE
+									style="border: none;
+											width: 1000px;
+											height: 50px;
+											float: none;
+											border-style: none;
+											border-style: none;"
+									width=1000
+									height=50
+									border=0></p>
+ <p style="font-size: 10pt;
+			font-family: Arial, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			border-top-color: #000080;
+			border-top-width: 2px;
+			border-top-style: Ridge;
+			margin-left: 0px;">&nbsp;</p>
+</div>
+<div class=Section1>
+
+<h1 align=left style='margin-top:12.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:0cm;text-align:left;text-indent:0cm;page-break-after:auto'><span
+style='font-size:14.0pt;mso-bidi-font-family:Arial;color:navy;mso-font-kerning:
+18.0pt'>Глава 2.11. Машиностроительные материалы</span></h1>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">&nbsp;</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Выбор
+материалов существенно влияет на себестоимость машин, механизмов и конструкций.
+Материалы во многом определяют массу конструкции, занимаемый ею объем и
+энергетические затраты при работе механического оборудования. Доля их стоимости
+в современном машиностроении может доходить до 75% от общей стоимости машины.
+Этот факт заставляет разработчиков конструкций серьезно относиться к процедуре
+выбора материалов и их термообработке.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Для разных условий работы и различных сред, в которых
+эксплуатируется оборудование, используется множество разнообразных материалов,
+которые наилучшим образом соответствуют тем или иным условиям эксплуатации.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Важным фактором, лежащим в основе выбора материалов и
+методов их обработки, является экономическая целесообразность. Для уменьшения
+объема механической обработки и, следовательно, снижения себестоимости
+производства рекомендуется использовать наборы заготовок, выполненные в форме
+уголков, труб, швеллеров и т.&nbsp;д. со стандартными поперечными сечениями.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp4">Следует отметить также, что
+окончательно решение по выбору материалов и технологии изготовления следует
+принимать после всестороннего анализа всех показателей, которые так или иначе
+влияют на работоспособность конструкции.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp5"><span class="hcp6">Основные свойства материалов.</span></b> <span class="hcp6">Основными
+техническими характеристиками материалов, влияющие на работоспособность машины
+или конструкции, являются:</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.15pt;margin-bottom:
+0cm;margin-left:14.15pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+7.15pt;mso-list:l0 level1 lfo2'><span class="hcp7">·<span class="hcp8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp9">прочность;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.15pt;margin-bottom:
+0cm;margin-left:14.15pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+7.15pt;mso-list:l0 level1 lfo2'><span class="hcp7">·<span class="hcp8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp9">упругость;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.15pt;margin-bottom:
+0cm;margin-left:14.15pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+7.15pt;mso-list:l0 level1 lfo2'><span class="hcp7">·<span class="hcp8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp9">пластичность;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.15pt;margin-bottom:
+0cm;margin-left:14.15pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+7.15pt;mso-list:l0 level1 lfo2'><span class="hcp7">·<span class="hcp8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp9">выносливость;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.15pt;margin-bottom:
+0cm;margin-left:14.15pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+7.15pt;mso-list:l0 level1 lfo2'><span class="hcp7">·<span class="hcp8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp9">твердость;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.15pt;margin-bottom:
+0cm;margin-left:14.15pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+7.15pt;mso-list:l0 level1 lfo2'><span class="hcp7">·<span class="hcp8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp9">износостойкость;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.15pt;margin-bottom:
+0cm;margin-left:14.15pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+7.15pt;mso-list:l0 level1 lfo2'><span class="hcp7">·<span class="hcp8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp9">теплостойкость.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp10">Прочность</span><span class="hcp3">&nbsp;– способность материала
+сопротивляться нагрузкам без разрушения. Количественной характеристикой является
+предел прочности <sub><img width="20" height="22" src="chap2_11.files/image002.gif" v:shapes="_x0000_i1025"></sub>,
+под которым понимается напряжение, приводящее к разрушению материала.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp10">Упругость–</span><i class="hcp11"><span class="hcp3">&nbsp;</span></i><span class="hcp3">свойство
+материала восстанавливать форму и размеры после снятия нагрузки. Основной
+количественной характеристикой упругости служит перемещение под действием
+единичной нагрузки, которое в свою очередь зависит от модуля упругости <sub><img width="16" height="16" src="chap2_11.files/image004.gif" v:shapes="_x0000_i1026"></sub><span class="hcp12"> </span>и коэффициента Пуассона <sub><img width="16" height="18" src="chap2_11.files/image006.gif" v:shapes="_x0000_i1027"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp10">Пластичность–</span><span class="hcp3">&nbsp; свойство материала сохранять
+значительные пластические деформации после снятия нагрузки. Характеризуется
+пределом текучести <sub><img width="18" height="22" src="chap2_11.files/image008.gif" v:shapes="_x0000_i1028"></sub>&nbsp;–
+напряжением, при котором величина остаточной пластической деформации не
+превышает 0,2 %.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp10">Выносливость</span><span class="hcp3">&nbsp;– способность материала
+сопротивляться разрушению от усталости. Количественно характеризуется пределом
+выносливости <sub><img width="24" height="22" src="chap2_11.files/image010.gif" v:shapes="_x0000_i1029"></sub>,
+равным наибольшему напряжению, которое образец выдерживает без разрушения при
+неограниченном числе симметричных циклов нагружения.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp10">Твёрдость</span><span class="hcp3">&nbsp;– способность материала
+сопротивляться внедрению индентора. Наибольшее распространение получили методы
+определения твердости, выраженной в единицах <sub><img width="26" height="18" src="chap2_11.files/image012.gif" v:shapes="_x0000_i1030"></sub>.
+Для получения числового значения твердости <sub><img width="26" height="18" src="chap2_11.files/image014.gif" v:shapes="_x0000_i1031"></sub><span class="hcp12"> </span>на металлическую поверхность устанавливают
+шар диаметром <sub><img width="18" height="16" src="chap2_11.files/image016.gif" v:shapes="_x0000_i1032"></sub>,
+который нагружается силой <sub><img width="18" height="16" src="chap2_11.files/image018.gif" v:shapes="_x0000_i1033"></sub>, в
+результате чего на плоской поверхности появляется отпечаток диаметром <sub><img width="14" height="18" src="chap2_11.files/image020.gif" v:shapes="_x0000_i1034"></sub>,
+вызванный пластической деформацией этой поверхности. Очевидно, что чем выше
+твердость поверхности, тем меньше диаметр отпечатка. Связь диаметров <sub><img width="18" height="16" src="chap2_11.files/image021.gif" v:shapes="_x0000_i1035"></sub><span class="hcp12"> </span>и <sub><img width="14" height="18" src="chap2_11.files/image022.gif" v:shapes="_x0000_i1036"></sub><span class="hcp12"> </span>со значением твердости определяется следующей
+формулой:</span></p>
+
+<p class=Bookbody align=center style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:center;text-indent:0cm;
+line-height:normal'><sub><span class="hcp3"><img width="170" height="50" src="chap2_11.files/image024.gif" v:shapes="_x0000_i1037"></span></sub><span class="hcp3">.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Испытания показали, что между пределом прочности и величиной
+твердости существует следующая зависимость:</span></p>
+
+<p class=MsoNormal style='margin-top:4.0pt;margin-right:-24.1pt;margin-bottom:
+0cm;margin-left:56.65pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+14.15pt'><span class="hcp13">сталь <span style='mso-tab-count:5'>                                                  </span><span class="hcp12"> </span><sub><img width="90" height="22" src="chap2_11.files/image026.gif" v:shapes="_x0000_i1038"></sub>;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.1pt;margin-bottom:
+0cm;margin-left:42.5pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+28.3pt'><span class="hcp13">медные сплавы<span style='mso-tab-count:
+2'>                       </span> <span style='mso-tab-count:1'>           </span><span class="hcp12"> </span><sub><img width="88" height="22" src="chap2_11.files/image028.gif" v:shapes="_x0000_i1039"></sub>;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.1pt;margin-bottom:
+4.0pt;margin-left:56.65pt;text-align:justify;text-indent:14.15pt'><span class="hcp13">алюминиевые сплавы <span style='mso-tab-count:3'>                         </span><span class="hcp12"> </span><sub><img width="88" height="22" src="chap2_11.files/image030.gif" v:shapes="_x0000_i1040"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Поскольку твердость поверхности для стали <sub><img width="68" height="16" src="chap2_11.files/image032.gif" v:shapes="_x0000_i1041"></sub>, а
+для цветных металлов <sub><img width="68" height="16" src="chap2_11.files/image034.gif" v:shapes="_x0000_i1042"></sub>, то
+расчет твердости этих материалов по вдавливанию шарика оказывается неудобным
+из-за малых размеров полученного отпечатка. Поэтому в таких случаях
+рекомендуется заменять шарик алмазной призмой и замерять глубину ее
+проникновения. Замеры глубины проникновения выполняются при нагружении
+начальной <sub><img width="18" height="22" src="chap2_11.files/image036.gif" v:shapes="_x0000_i1043"></sub><span class="hcp12"> </span>и рабочей <sub><img width="14" height="18" src="chap2_11.files/image038.gif" v:shapes="_x0000_i1044"></sub><span class="hcp12"> </span>силами. Разность полученных размеров определяет
+твердость поверхности, выраженную в единицах <sub><img width="38" height="18" src="chap2_11.files/image040.gif" v:shapes="_x0000_i1045"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp10">Износостойкость</span><span class="hcp3">&nbsp;– способность материалов
+сохранять без разрушения поверхностные слои, участвующие в относительном
+движении при контактном взаимодействии. Износостойкость можно характеризовать
+скоростью износа, которая зависит от выбора материалов в контакте, величины
+твердости поверхности, вида смазки и используемого сорта масла. Контактирующие
+поверхности в таком случае, как правило, упрочняются.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp10">Теплостойкость&nbsp;–</span>
+<span class="hcp3">способность материала
+сохранять свои свойства при работе в среде высоких температур.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp5"><span class="hcp3">Металлы и их атомарное представление.</span></b> <span class="hcp3">Наилучшими материалами при создании машин считаются
+металлические, а потому их следует рассмотреть более подробно.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">На молекулярном уровне металлы имеют кристаллическую
+решетку, которая определяет порядок размещение атомов. Для чистых металлов с
+идеальным размещением атомов разрушение вызывается возможным относительным сдвигом
+слоев кристаллической решетки. Прочность таких металлов называется <span
+style='letter-spacing:2.0pt'>теоретической прочностью</span>. Касательное
+напряжение, соответствующее вызванному сдвигом слоев началу пластического
+деформирования, как было показано ранее (глава 2.10), равно <sub><img width="78" height="22" src="chap2_11.files/image042.gif" v:shapes="_x0000_i1046"></sub>.
+Результаты, полученные при испытаниях материалов на растяжение, показали, что
+теоретическое значение прочности в 100…1000 раз превышает значения технической
+прочности. Происходит это оттого, что в действительности кристаллическая
+решетка имеет множество дефектов, которые существенно снижают прочность
+материала (см. главу 2.10). Кроме того, формирование кристаллической решетки
+металла (в процессе его получения из расплава путем охлаждения) начинается одновременно
+в нескольких точках, что в конечном итоге приводит к образованию
+поликристаллических структур. Прочность металла также снижается за счет
+дефектов кристаллических решеток в местах дислокаций и на границе. Чем больше
+скорость образования зародышей и чем меньше скорость их роста, тем меньше
+размер зерна и тем больше их количество. Следовательно, металл можно
+представить как совокупность зерен, хаотично ориентированных в пространстве
+(рис. 2.10.3</span><span lang="EN-US" class="hcp14">a</span><span class="hcp3">).</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Дефекты самой кристаллической решетки можно рассматривать
+либо как вакансии, когда в той или иной точке кристаллической решетки
+отсутствует атом или группа атомов, либо как межузловые дефекты, когда внутри
+кристаллической решетки появляется лишний атом. Для металлов, атомы которых
+плотно упакованы,<span class="hcp12">  </span>межузловые дефекты
+нехарактерны.</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:168.4pt;mso-element-frame-height:
+153.35pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+page;mso-element-anchor-horizontal:page;mso-element-left:328.4pt;mso-element-top:
+261.25pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=236 height=204
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="204" class="hcp15">
+  <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:-24.1pt;
+  margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:center;
+  mso-list:skip;mso-element:frame;mso-element-frame-width:168.4pt;mso-element-frame-height:
+  153.35pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:328.4pt;mso-element-top:
+  261.25pt;mso-height-rule:exactly'><span lang=EN-US style='font-family:Arial;
+  mso-ansi-language:EN-US'><img width="204" height="173" src="chap2_11.files/image044.gif" v:shapes="_x0000_i1111"></span><span class="hcp13"></span></p>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:-24.1pt;
+  margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:center;
+  mso-list:skip;mso-element:frame;mso-element-frame-width:168.4pt;mso-element-frame-height:
+  153.35pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:328.4pt;mso-element-top:
+  261.25pt;mso-height-rule:exactly'><span class="hcp13">Рис. 2.11.1</span><span class="hcp16"></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Разрушение представляет собой процесс зарождения и развития
+трещины. Под разрушением при этом понимается разделение металла на части,
+вызванное ростом трещины. По характеру разрушение может быть хрупким и вязким.
+Механизм разрушения всегда связан с зарождением и ростом трещины. Трещина возникает,
+как правило, в результате слияния подвижных дислокаций. Для вязкого разрушения
+характерна малая скорость распространения трещины, а при хрупком трещина растет
+мгновенно, причем процесс разрушения отличается внезапностью.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Прочность материала можно повысить, изменяя химический
+состав и технологию обработки. Прочность растет также при уменьшении количества
+дефектов кристаллической решетки. Плотность дислокаций не должна превышать <sub><img width="70" height="20" src="chap2_11.files/image046.gif" v:shapes="_x0000_i1049"></sub>см<sup>-2</sup>,
+так как при большей плотности нагружение будет вызывать стремительный рост
+трещин и, следовательно, разрушение металла.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp17">Сопротивление пластической деформации
+тем больше, чем меньше подвижность атомов и чем больше барьеров на пути их
+распространения. Существенным препятствием на пути продвижения трещины является
+граница зерна. По этой причине все металлы, имеющие мелкозернистую структуру,
+оказываются более прочными.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">На рис. 2.11.1 представлен график зависимости предела
+текучести и предела выносливости для низкоуглеродистой стали от диаметра зерна.
+Видно, что такая зависимость оказывается линейной.</span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:181.0pt;mso-element-frame-height:
+216.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+page;mso-element-anchor-horizontal:page;mso-element-left:103.4pt;mso-element-top:
+72.25pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=253 height=288
+ align=left>
+ <tr>
+  <td valign="top" align="left" height="288" class="hcp15">
+  <p class=MsoNormal align=center style='margin-right:.2pt;text-align:center;
+  mso-list:skip;mso-element:frame;mso-element-frame-width:181.0pt;mso-element-frame-height:
+  216.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:103.4pt;mso-element-top:
+  72.25pt;mso-height-rule:exactly'><span class="hcp13"><img width="218" height="265" src="chap2_11.files/image048.gif" v:shapes="_x0000_i1117"></span></p>
+  <p class=MsoNormal align=center style='margin-right:.2pt;text-align:center;
+  mso-list:skip;mso-element:frame;mso-element-frame-width:181.0pt;mso-element-frame-height:
+  216.25pt;mso-element-frame-hspace:9.05pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  page;mso-element-anchor-horizontal:page;mso-element-left:103.4pt;mso-element-top:
+  72.25pt;mso-height-rule:exactly'><span class="hcp13">Рис. 2.11.2</span><span class="hcp16"></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b><span class="hcp18">Железо и
+сплавы на его основе</span></b><b><i class="hcp11"><span class="hcp3">. </span></i></b><i class="hcp11"><span class="hcp3">Железо </span></i><span class="hcp12"> </span><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial;mso-ansi-language:EN-US;
+mso-bidi-font-style:italic'>Fe</span><span class="hcp18"> –</span> <span class="hcp3">это металл сероватого цвета, атомная масса которого равна
+55,85, атомный радиус&nbsp;– 0,127 нм, температура плавления – <sub><img width="54" height="22" src="chap2_11.files/image050.gif" v:shapes="_x0000_i1052"></sub>. В
+твердом состоянии железо имеет кристаллическую решетку, для которой характерно
+два возможных состояния, называемых полиморфными модификациями и обозначаемых,
+как <sub><img width="50" height="18" src="chap2_11.files/image052.gif" v:shapes="_x0000_i1053"></sub><span class="hcp12"> </span>и <sub><img width="46" height="20" src="chap2_11.files/image054.gif" v:shapes="_x0000_i1054"></sub>.
+Существование этих модификаций зависит от температуры нагрева.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span style='font-size:10.0pt;
+mso-bidi-font-size:11.0pt;font-family:Arial;letter-spacing:.2pt'>На рис. 2.11.2
+наглядно показаны области существования каждой из модификаций и соответствующие
+им структуры кристаллической решетки для железа без наличия примесей. Для <sub><img width="50" height="18" src="chap2_11.files/image055.gif" v:shapes="_x0000_i1055"></sub><span class="hcp12"> </span>характерна объемно-центрированная кубическая
+решетка, которая существует при температурах менее <sub><img width="72" height="22" src="chap2_11.files/image057.gif" v:shapes="_x0000_i1056"></sub><span class="hcp12"> </span>и в диапазоне</span> <sub><span class="hcp4"><img width="134" height="26" src="chap2_11.files/image059.gif" v:shapes="_x0000_i1057"></span></sub><span class="hcp4">. В
+диапазоне температур <sub><img width="126" height="26" src="chap2_11.files/image061.gif" v:shapes="_x0000_i1058"></sub><span class="hcp12"> </span>железо существует в форме <sub><img width="46" height="20" src="chap2_11.files/image062.gif" v:shapes="_x0000_i1059"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp2">Углерод
+является неметаллическим элементом, который растворяется в железе как в жидком,
+так и твердом состояниях. Чаще всего система <sub><img width="50" height="18" src="chap2_11.files/image064.gif" v:shapes="_x0000_i1060"></sub><span class="hcp12"> </span>существует в виде жидкого сплава или твердого
+раствора. Твердыми растворами называют такие фазы, в которых один из
+компонентов сохраняет кристаллическую структуру, а атомы других компонентов
+присутствуют в решетке первого, изменяя ее размеры. Различают твердые растворы
+замещения и внедрения.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Твердый раствор углерода и других примесей в <sub><img width="50" height="18" src="chap2_11.files/image065.gif" v:shapes="_x0000_i1061"></sub><span class="hcp12"> </span>называется <span class="hcp19">ферритом</span>. Углерод при этом располагается в
+центре грани куба, в котором может поместиться сфера с радиусом, равным <sub><img width="44" height="22" src="chap2_11.files/image067.gif" v:shapes="_x0000_i1062"></sub>,
+где <sub><img width="16" height="18" src="chap2_11.files/image069.gif" v:shapes="_x0000_i1063"></sub>&nbsp;–
+атомный радиус железа.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp20">Раствор углерода и других примесей в <sub><img width="46" height="20" src="chap2_11.files/image070.gif" v:shapes="_x0000_i1064"></sub><span class="hcp12"> </span>называют</span> <span class="hcp10">аустенитом</span><span class="hcp20">. Атом углерода
+при этом размещается в центре куба со вписанной сферой радиусом <sub><img width="42" height="22" src="chap2_11.files/image072.gif" v:shapes="_x0000_i1065"></sub>.
+Аустенит характеризуется высокой пластичностью и низкой прочностью</span><span class="hcp3">.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Наиболее распространенными сплавами на основе железа
+являются <i class="hcp11">сталь</i> и <i class="hcp11">чугун</i>, которые представляют собой твердые растворы (сплавы) железа <sub><img width="22" height="16" src="chap2_11.files/image074.gif" v:shapes="_x0000_i1066"></sub><span class="hcp12"> </span>с углеродом <sub><img width="16" height="16" src="chap2_11.files/image076.gif" v:shapes="_x0000_i1067"></sub>.
+Если содержание углерода в растворе менее <sub><img width="46" height="18" src="chap2_11.files/image078.gif" v:shapes="_x0000_i1068"></sub>,
+то сплав называется сталью, а если больше <sub><img width="46" height="18" src="chap2_11.files/image079.gif" v:shapes="_x0000_i1069"></sub>,
+то чугуном. Граница разделения чугуна и стали соответствует предельной
+растворимости углерода в аустените. Стали после затвердевания не содержат
+хрупкой структурной составляющей и при высоком нагреве имеют только аустенитную
+структуру, обладающую высокой пластичностью. По этой причине стали легко
+деформируются при нормальных и повышенных температурах, т.&nbsp;е. являются
+ковкими материалами. В отличие от сталей чугуны характеризуются хрупкостью, но
+обладают хорошими литейными свойствами, в том числе более низкой температурой
+плавления.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b><span class="hcp21">Стали.</span></b><span class="hcp3">Стали,
+применяемые при изготовлении машин и конструкций, можно условно разделить на <i>углеродистые</i>
+с содержанием углерода</span> <span lang="EN-US" class="hcp14">C</span><sub><span class="hcp3"><img width="58" height="22" src="chap2_11.files/image081.gif" v:shapes="_x0000_i1070"></span></sub><span class="hcp3">, сред<i>неуглеродистые</i> с</span>
+<span lang="EN-US" class="hcp14">C</span><sub><span class="hcp3"><img width="103" height="22" src="chap2_11.files/image083.gif" v:shapes="_x0000_i1071"></span></sub><span class="hcp3"> и<i>высокоуглеродистые</i> с</span>
+<span lang="EN-US" class="hcp14">C</span><sub><span class="hcp3"><img width="50" height="22" src="chap2_11.files/image085.gif" v:shapes="_x0000_i1072"></span></sub><span class="hcp3">. Углеродистые стали являются
+наиболее распространенным. Их производство доходит до <sub><img width="34" height="16" src="chap2_11.files/image087.gif" v:shapes="_x0000_i1073"></sub>от
+общего объема производства всех сталей. Они используются, как правило, для
+изготовления малонагруженных деталей, металлоконструкций, всевозможных
+корпусных деталей и т.&nbsp;д.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Механические свойства сталей можно характеризовать <span class="hcp19">пределом прочности</span>
+<sub><img width="22" height="24" src="chap2_11.files/image089.gif" v:shapes="_x0000_i1074"></sub><span class="hcp12"> </span>и <span class="hcp19">пределом текучести</span> <sub><img width="20" height="22" src="chap2_11.files/image091.gif" v:shapes="_x0000_i1075"></sub>,
+значения которых в сильной степени зависят от химического состава стали и ее
+термообработки. Кроме того, для сталей характерны постоянные значения модуля
+упругости <sub><img width="18" height="16" src="chap2_11.files/image093.gif" v:shapes="_x0000_i1076"></sub><span class="hcp12"> </span>и коэффициента Пуассона <sub><img width="16" height="18" src="chap2_11.files/image095.gif" v:shapes="_x0000_i1077"></sub>,
+которые независимо от марки можно полагать равными соответственно <sub><img width="80" height="22" src="chap2_11.files/image097.gif" v:shapes="_x0000_i1078"></sub><span class="hcp12"> </span>МПа и <sub><img width="50" height="20" src="chap2_11.files/image099.gif" v:shapes="_x0000_i1079"></sub>. С
+увеличением процентного содержания углерода повышаются характеристики прочности
+и снижается пластичность.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Кроме углерода, в состав сталей включают и другие элементы.
+Такие стали называются<i class="hcp11">легированными</i>.
+Они обладают большой статической прочностью, а также прочностью при переменных режимах
+нагружения. В качестве легирующих элементов, как правило, используются:</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.15pt;margin-bottom:
+0cm;margin-left:14.15pt;margin-bottom:.0001pt;text-indent:7.15pt;mso-list:l0 level1 lfo3'><span class="hcp7">·<span class="hcp8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp9">хром Cr;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.15pt;margin-bottom:
+0cm;margin-left:14.15pt;margin-bottom:.0001pt;text-indent:7.15pt;mso-list:l0 level1 lfo3'><span class="hcp7">·<span class="hcp8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp9">кремний Si;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.15pt;margin-bottom:
+0cm;margin-left:14.15pt;margin-bottom:.0001pt;text-indent:7.15pt;mso-list:l0 level1 lfo3'><span class="hcp7">·<span class="hcp8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp9">никель Ni;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.15pt;margin-bottom:
+0cm;margin-left:14.15pt;margin-bottom:.0001pt;text-indent:7.15pt;mso-list:l0 level1 lfo3'><span class="hcp7">·<span class="hcp8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp9">ванадий</span> <span lang="EN-US" class="hcp22">V</span><span class="hcp9">;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.15pt;margin-bottom:
+0cm;margin-left:14.15pt;margin-bottom:.0001pt;text-indent:7.15pt;mso-list:l0 level1 lfo3'><span class="hcp7">·<span class="hcp8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp9">алюминий Al;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.15pt;margin-bottom:
+0cm;margin-left:14.15pt;margin-bottom:.0001pt;text-indent:7.15pt;mso-list:l0 level1 lfo3'><span class="hcp7">·<span class="hcp8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp9">марганец M</span><span lang="EN-US" class="hcp22">n</span><span lang=EN-US> </span><span class="hcp9">и другие.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Стали, в которых суммарное содержание легирующих элементов
+не превышает <sub><img width="24" height="22" src="chap2_11.files/image101.gif" v:shapes="_x0000_i1080"></sub>%,
+называются <i class="hcp11">низколегированными</i>; если
+содержание легирующих элементов составляет <sub><img width="76" height="22" src="chap2_11.files/image103.gif" v:shapes="_x0000_i1081"></sub><span class="hcp12"> </span>– это <i class="hcp11">легированные</i>
+стали, а если легирующих добавок больше <sub><img width="34" height="18" src="chap2_11.files/image105.gif" v:shapes="_x0000_i1082"></sub>,
+то такие стали называю<i class="hcp11">т
+высоколегированными</i><span class="hcp23">.</span></span></p>
+
+<p class=Bookbody style='line-height:normal'><i class="hcp11"><span class="hcp3">Коррозийно-стойкие</span></i>
+<span class="hcp3">стали обладают стойкостью
+против коррозии. Это большая группа высоколегированных сталей, у которых в
+качестве легирующего элемента чаще всего используется хром <sub><img width="70" height="22" src="chap2_11.files/image107.gif" v:shapes="_x0000_i1083"></sub><span class="hcp12"> </span>или иногда никель.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Материалы с высокими упругими свойствами (<i class="hcp11">пружинные стали</i>)&nbsp;– это углеродистые
+либо легированные стали, с большим содержанием углерода, (<sub><img width="54" height="22" src="chap2_11.files/image109.gif" v:shapes="_x0000_i1084"></sub>)%.</span></p>
+
+<p class=Bookbody style='margin-top:2.0pt;text-indent:21.25pt;line-height:normal'><b><span class="hcp21">Чугун</span></b><b><i class="hcp11"><span class="hcp17">. </span></i></b><i><span class="hcp3">Чугун</span></i> – <span class="hcp3">сплав железа Fe и углерода С (свыше
+2%), содержащий легирующие элементы, которые вводятся для получения заданных
+свойств. Повышенное содержание углерода улучшает его литейные свойства при
+одновременном увеличении хрупкости. Благодаря хорошим литейным свойствам и
+низкой стоимости чугун используется для изготовления конструкций сложных
+конфигураций. Из-за относительно низкой стоимости чугун применяется для
+изготовления массивных деталей, например, корпусных, и различного рода станин.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Чугун можно рассматривать как сталь, пронизанную графитом,
+который играет роль надрезов, ослабляющих металлическую основу структуры. В
+этом случае механические свойства чугуна зависят от характера распределений
+включений графита и от их величины. Чем меньше графитовых включений и чем они
+мельче, тем выше прочность чугуна. Таким образом, можно сказать, что для чугуна
+характерно нарушение сплошности, и это обстоятельство делает его мало чувствительным
+ко всевозможным концентраторам.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">В отличие от стали чугун не подвержен остаточному
+пластическому деформированию, следовательно, не имеет предела текучести.
+Характеристикой чугуна является только предел прочности, причем предел
+прочности при сжатии <sub><img width="24" height="22" src="chap2_11.files/image111.gif" v:shapes="_x0000_i1085"></sub><span class="hcp12"> </span>оказывается существенно выше, чем предел
+прочности при растяжении <sub><img width="22" height="22" src="chap2_11.files/image113.gif" v:shapes="_x0000_i1086"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Важной механической характеристикой любого материала
+является модуль упругости. Для чугуна его величина может быть рассчитана по
+формуле<sub><img width="130" height="24" src="chap2_11.files/image115.gif" v:shapes="_x0000_i1087"></sub>,
+если предел прочности</span> <sub><span lang="EN-US" class="hcp14"><img width="22" height="24" src="chap2_11.files/image117.gif" v:shapes="_x0000_i1088"></span></sub><span class="hcp3"><span class="hcp12"> </span>находится в границах <sub><img width="108" height="24" src="chap2_11.files/image119.gif" v:shapes="_x0000_i1089"></sub>МПа.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Для этих материалов закон прямой пропорциональной
+зависимости деформации от нагрузки справедлив не в полной мере, поэтому
+решения, полученные методами линейной теории упругости, применительно к чугуну
+могут иметь значительно большие погрешности, чем для других материалов.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">В зависимости от химического содержания и вариантов
+термообработки чугун подразделяется на несколько типов. <i class="hcp11">Серый</i> чугун представляет собой сплав</span> <span lang="EN-US" class="hcp14">Fe</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">Si</span><span
+lang=EN-US> </span><span class="hcp3">и</span> <span lang="EN-US" class="hcp14">C</span><span class="hcp3">, содержащий примеси</span> <span lang="EN-US" class="hcp14">Mg</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">P</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">S</span><span class="hcp3">. Этот тип чугуна является наиболее
+дешевым (что определяет его широкое применение), однако имеет малую
+механическую прочность. Для обеспечения возможности обработки давлением имеется
+разновидность <i class="hcp11">ковкого</i> чугуна, который
+обладает повышенной пластичностью.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Созданы также чугуны, имеющий повышенную по отношению к
+другим маркам прочность. Эти марки в качестве легирующих добавок имеют</span> <span lang="EN-US" class="hcp14">Cr</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">Mg</span><span
+lang=EN-US> </span><span class="hcp3">и некоторые
+другие компоненты. Такой чугун допускает закалку поверхности и упрочнение ее
+наклепом.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp24">Некоторые марки чугуна (при добавлении
+к ним таких легирующих элементов, как</span> <span lang="EN-US" class="hcp25">Mg</span><span class="hcp24">,</span> <span lang="EN-US" class="hcp25">Cu</span><span class="hcp24">,</span> <span lang="EN-US" class="hcp25">Si</span><span
+lang=EN-US> </span><span class="hcp24">и т.&nbsp;д.) обладают антифрикционными свойствами, для которых
+характерно низкое значение коэффициента трения, и малой скоростью износа
+поверхностного слоя. Такой чугун рекомендуется использовать в качестве
+материала для изготовления работающих в условиях относительного скольжения
+деталей, трущиеся поверхности которых допускают процедуру закалки.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b><span class="hcp21">Медь и сплавы на ее основе</span></b><b><i class="hcp11"><span class="hcp17">.</span></i></b><i class="hcp11"><span class="hcp3">Медь</span></i> <i class="hcp11"><span lang="EN-US" class="hcp14">Cu</span></i><span class="hcp3">&nbsp;– это металл красноватого
+цвета плотностью 8,94 г/см<sup>3</sup>, имеющий гранецентрированную
+кристаллическую решетку с периодом <sub><img width="82" height="18" src="chap2_11.files/image121.gif" v:shapes="_x0000_i1090"></sub>нм.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">На основе меди получают различные сплавы, которые широко
+используются в качестве материалов для изготовления различных деталей. Эти
+сплавы обладают хорошими механическими и антикоррозийными свойствами, они
+износостойки, имеют низкий коэффициент трения, высокую электро- и
+теплопроводность. Различают две основные группы медных сплавов: <i class="hcp11">латунь</i> –сплав меди</span> <span lang="EN-US" class="hcp14">Cu</span><span
+lang=EN-US> </span><span class="hcp3">с цинком</span>
+<span lang="EN-US" class="hcp14">Zn</span><span lang=EN-US> </span><span class="hcp3">и <i class="hcp11">бронза</i> – сплав
+меди с другими элементами.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Содержание цинка в латуни достигает <sub><img width="74" height="22" src="chap2_11.files/image123.gif" v:shapes="_x0000_i1091"></sub>.
+Латунь пластична и обладает хорошими литейными свойствами; предел ее текучести
+лежит в диапазоне <sub><img width="102" height="22" src="chap2_11.files/image125.gif" v:shapes="_x0000_i1092"></sub><span class="hcp12"> </span>МПа. Прочность латуни можно несколько
+повысить за счет использования обработки давлением при высокой температуре. В
+состав латуни часто вводят легирующие добавки (например,</span> <span lang="EN-US" class="hcp14">Al</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">Zn</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">Si</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">Mn</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">Ni</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">Pb</span><span class="hcp3">), которые повышают прочность, но
+снижают пластичность.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">По технологическим признакам латунь разделяется на две
+группы: предназначенная для обработки давлением и для изготовления деталей,
+полученных литьем. Литейная латунь содержит большое количество легирующих
+добавок для улучшения литейных качеств.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Детали из латуни часто используются в судостроении, так как
+они обладают стойкостью к морской воде, особенно те из них, которые легированы
+оловом. Если латунные детали выполняются прокаткой, то затем они подвергаются
+отжигу для уменьшения твердости.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Для химического состава <i class="hcp11">бронзы</i>
+характерно наличие основного легирующего компонента, в качестве которого применяют:</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.15pt;margin-bottom:
+0cm;margin-left:14.15pt;margin-bottom:.0001pt;text-indent:7.15pt;mso-list:l0 level1 lfo3'><span class="hcp7">·<span class="hcp8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp9">олово</span> <span lang="EN-US" class="hcp22">Sn</span><span class="hcp9">;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.15pt;margin-bottom:
+0cm;margin-left:14.15pt;margin-bottom:.0001pt;text-indent:7.15pt;mso-list:l0 level1 lfo3'><span class="hcp7">·<span class="hcp8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp9">алюминий</span> <span lang="EN-US" class="hcp22">Al</span><span class="hcp9">;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.15pt;margin-bottom:
+0cm;margin-left:14.15pt;margin-bottom:.0001pt;text-indent:7.15pt;mso-list:l0 level1 lfo3'><span class="hcp7">·<span class="hcp8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp9">железо</span> <span lang="EN-US" class="hcp22">Fe</span><span class="hcp9">;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.15pt;margin-bottom:
+0cm;margin-left:14.15pt;margin-bottom:.0001pt;text-indent:7.15pt;mso-list:l0 level1 lfo3'><span class="hcp7">·<span class="hcp8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp9">кремний</span> <span lang="EN-US" class="hcp22">Si</span><span class="hcp9">;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.15pt;margin-bottom:
+0cm;margin-left:14.15pt;margin-bottom:.0001pt;text-indent:7.15pt;mso-list:l0 level1 lfo3'><span class="hcp7">·<span class="hcp8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp9">хром</span> <span lang="EN-US" class="hcp22">Cr</span><span class="hcp9">;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-24.15pt;margin-bottom:
+0cm;margin-left:14.15pt;margin-bottom:.0001pt;text-indent:7.15pt;mso-list:l0 level1 lfo3'><span class="hcp7">·<span class="hcp8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="hcp9">бериллий</span> <span lang="EN-US" class="hcp22">Be</span><span class="hcp9">и некоторые другие.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Сплав меди с оловом</span> <span lang="EN-US" class="hcp14">Sn</span><span
+lang=EN-US> </span><span class="hcp3">обычно содержит
+до <sub><img width="72" height="22" src="chap2_11.files/image127.gif" v:shapes="_x0000_i1093"></sub>олова.
+Если увеличить содержание олова, то сплав приобретает повышенную хрупкость.
+Обычно этот тип бронзы дополнительно легируют</span> <span lang="EN-US" class="hcp14">Zn</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">P</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">Pb</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">Ni</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">Fe</span><span
+lang=EN-US> </span><span class="hcp3">и другими
+элементами. При этом цинк</span> <span lang="EN-US" class="hcp14">Zn</span><span lang=EN-US> </span><span class="hcp3">улучшает технологические свойства
+сплава и снижает его стоимость. Фосфор</span> <span lang="EN-US" class="hcp14">P</span><span
+lang=EN-US> </span><span class="hcp3">улучшает
+литейные свойства бронзы, никель</span> <span lang="EN-US" class="hcp14">Ni</span><span lang=EN-US> </span><span class="hcp3">положительно влияет на механические
+характеристики и улучшает коррозийную стойкость, железо</span> <span lang="EN-US" class="hcp14">Fe</span><span
+lang=EN-US> </span><span class="hcp3">повышает
+сопротивление коррозии.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Медь, легированная алюминием</span> <span lang="EN-US" class="hcp14">Al</span><span class="hcp3">, представляет собой сплав с содержанием
+алюминия до <sub><img width="26" height="16" src="chap2_11.files/image129.gif" v:shapes="_x0000_i1094"></sub>.
+Помимо алюминия, этот тип бронзы часто содержит дополнительные легирующие
+добавки, например,</span> <span lang="EN-US" class="hcp14">Fe</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">Ni</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">Mg</span><span lang=EN-US> </span><span class="hcp3">и др. Такая бронза хорошо
+сопротивляется коррозии, и ее можно использовать для производства деталей,
+работающих в морской воде и других агрессивных средах. Кроме того, она имеет
+высокие механические и технологические свойства.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp26">При
+легировании меди кремнием (до 3,5% </span><span class="hcp12"> </span><span lang="EN-US" class="hcp27">Si</span><span class="hcp26">) существенно повышаются прочность и пластичность сплава. В таких
+сплавах кроме основного легирующего компонента используются и другие легирующие
+добавки, такие как</span> <span lang="EN-US" class="hcp27">Mg</span><span
+lang=EN-US> </span><span class="hcp26">и другие. Благодаря хорошим
+технологическим и механическим свойствам подобные бронзовые сплавы применяют
+для изготовления пружин, работающих в агрессивных средах.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">В результате легирования меди бериллием</span> <span lang="EN-US" class="hcp14">Be</span><span class="hcp3">, предельная растворимость которого
+составляет <sub><img width="38" height="18" src="chap2_11.files/image131.gif" v:shapes="_x0000_i1095"></sub>,
+получается бронза, имеющая высокую прочность и пластичность. Достигаются такие
+механические характеристики в результате закалки и последующего старения. Эта
+бронза имеет высокий предел выносливости и успешно работает в агрессивных средах.
+Она хорошо сваривается и обрабатывается резанием, ее можно с успехом
+использовать для изготовления пружин, мембран, различных подвижных контактов и
+деталей, работающих на износ.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Медь, легированная свинцом</span> <span lang="EN-US" class="hcp14">Pb</span><span class="hcp3">, представляет собой сплав, который
+после затвердевания состоит из кристаллов меди и включений свинца. Это
+происходит потому, что свинец не растворяется. Тем не менее такой вид бронзы
+обладает хорошими антифрикционными свойствами и используется как материал для
+антифрикционных покрытий. Поскольку эта бронза имеет низкую прочность, то ее
+целесообразно применять в качестве покрытия, нанесенного на металлическую поверхность,
+чаще всего в подшипниках скольжения.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Как бронза, так и латунь используются для изготовления
+трущихся сопряжений, так как обладают хорошими антифрикционными свойствами.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b><span class="hcp18">Алюминий
+и сплавы на его основе. </span></b><i class="hcp11"><span class="hcp3">Алюминий</span></i> <i class="hcp11"><span lang="EN-US" class="hcp14">Al</span></i><span class="hcp3">&nbsp;– это металл серебристо-белого цвета с
+температурой плавления <sub><img width="48" height="20" src="chap2_11.files/image133.gif" v:shapes="_x0000_i1096"></sub>.
+Он имеет гранецентрированную кристаллическую решетку с периодом <sub><img width="74" height="18" src="chap2_11.files/image135.gif" v:shapes="_x0000_i1097"></sub>нм.
+Так как алюминий обладает низкой плотностью, <sub><img width="52" height="20" src="chap2_11.files/image137.gif" v:shapes="_x0000_i1098"></sub>г/</span><span lang="EN-US" class="hcp14">c</span><span class="hcp3">м<sup>3</sup>, то сплавы на основе
+алюминия называются <i class="hcp11">легкими</i>.
+Алюминий, как и медь, имеет высокую электро- и теплопроводность. Модуль
+упругости <sub><img width="124" height="24" src="chap2_11.files/image139.gif" v:shapes="_x0000_i1099"></sub><span class="hcp12"> </span>МПа.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Алюминий является коррозийно-стойким материалом, так как на
+его поверхности появляется пленка окислов, защищающая основной металл от
+коррозии. Чистый алюминий имеет низкую прочность и применяется для производства
+деталей, не воспринимающих силового воздействия. Он хорошо деформируется
+пластически, успешно сваривается, но плохо обрабатывается механически. По этой
+причине из алюминия изготавливают трубопроводы, резервуары, палубные надстройки
+речных и морских судов и т.&nbsp;п. Из чистого алюминия изготавливают также
+металлическую фольгу, токопроводящие и кабельные материалы.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">На основе алюминия получают различные сплавы, которые
+существенно изменяют его свойства. Наибольшее распространение получили сплавы</span>
+<span lang="EN-US" class="hcp14">Al</span><span class="hcp3">-</span><span lang="EN-US" class="hcp14">Cu</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">Al</span><span class="hcp3">-</span><span lang="EN-US" class="hcp14">Si</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">Al</span><span class="hcp3">-</span><span lang="EN-US" class="hcp14">Mg</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">Al</span><span class="hcp3">-</span><span lang="EN-US" class="hcp14">Cu</span><span class="hcp3">-</span><span lang="EN-US" class="hcp14">Mn</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">Al</span><span class="hcp3">-</span><span lang="EN-US" class="hcp14">Cu</span><span class="hcp3">-Mg-Si,</span> <span lang="EN-US" class="hcp14">Al</span><span class="hcp3">-</span><span lang="EN-US" class="hcp14">Mg</span><span class="hcp3">-</span><span lang="EN-US" class="hcp14">Si</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">Al</span><span class="hcp3">-</span><span lang="EN-US" class="hcp14">Zn</span><span class="hcp3">-</span><span lang="EN-US" class="hcp14">Mg</span><span class="hcp3">-</span><span lang="EN-US" class="hcp14">Si</span><span class="hcp3">. По технологическим признакам алюминиевые
+сплавы подразделяются на <i class="hcp11">деформируемые</i>,
+т.&nbsp;е. получаемые пластическим деформированием, и <i class="hcp11">литейные</i>, предназначенные для получения фасонных деталей методом
+литья.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp26">Литейные
+сплавы на базе алюминия <span class="hcp23">(</span></span><span lang="EN-US" class="hcp28">Al</span><span class="hcp29">-</span><span lang="EN-US" class="hcp28">Cu</span><b class="hcp5"><span class="hcp29">,</span></b>
+<span lang="EN-US" class="hcp28">Al</span><span class="hcp29">-</span><span lang="EN-US" class="hcp28">Mg</span><span class="hcp29">,</span> <span lang="EN-US" class="hcp28">Al</span><span class="hcp29">-</span><span lang="EN-US" class="hcp28">Si</span><span class="hcp29">,</span> <span lang="EN-US" class="hcp28">Al</span><span class="hcp29">-</span><span lang="EN-US" class="hcp28">Zn</span><span class="hcp29">-</span><span lang="EN-US" class="hcp28">Mg</span><span class="hcp29">-</span><span lang="EN-US" class="hcp28">Si</span><span class="hcp29">)</span> <span class="hcp26">благодаря низкой
+плотности и хорошей технологичности широко используются в самолетостроении,
+судостроении, автомобилестроении, строительстве и других областях.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Наилучшими литейными свойствами обладают сплавы системы</span>
+<span lang="EN-US" class="hcp14">Al</span><span class="hcp3">-</span><span lang="EN-US" class="hcp14">Cu</span><span
+lang=EN-US> </span><span class="hcp3">(<i class="hcp11">силумины</i>), которые применяются для литья
+деталей сложной формы. С целью улучшения механических характеристик силумины
+легируют натрием</span> <span lang="EN-US" class="hcp14">Na</span><span class="hcp3">. Отливки алюминиевых сплавов подвергают термической
+обработке и процедуре старения. Сплавы</span> <span lang="EN-US" class="hcp14">Al</span><span class="hcp3">-</span><span lang="EN-US" class="hcp14">Mg</span><span
+lang=EN-US> </span><span class="hcp3">сильно
+повышают коррозийную стойкость, но ухудшают литейные качества. Эти отливки
+рекомендуется использовать для работы в агрессивных средах и в судостроении.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Легируя сплавы такими добавками, как</span> <span lang="EN-US" class="hcp14">Ti</span><span
+lang=EN-US> </span><span class="hcp3">и</span> <span lang="EN-US" class="hcp14">Ni</span><span class="hcp3">, можно получать жаропрочные
+материалы, которые используются для изготовления поршней головок двигателей и
+других деталей, работающих в условиях высоких температур.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Наиболее известным представителем класса деформируемых
+сплавов является <i class="hcp11">дюралюминий</i> (</span><span lang="EN-US" class="hcp14">Al</span><span class="hcp3">-</span><span lang="EN-US" class="hcp14">Cu</span><span class="hcp3">-</span><span lang="EN-US" class="hcp14">Mg</span><span class="hcp3">), который получил распространение в
+авиационной технике и транспортном машиностроении. Медь</span> <span lang="EN-US" class="hcp14">Cu</span><span
+lang=EN-US> </span><span class="hcp3">и магний</span>
+<span lang="EN-US" class="hcp14">Mg</span><span lang=EN-US> </span><span class="hcp3">вводят в сплав для его упрочнения, а для повышения
+коррозийной стойкости в состав сплава добавляется марганец</span> <span lang="EN-US" class="hcp14">Mn</span><span class="hcp3">. Кроме того, часто в состав таких
+сплавов входят присадки в виде</span> <span lang="EN-US" class="hcp14">Cr</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">Zn</span><span class="hcp3">,</span> <span lang="EN-US" class="hcp14">Fe</span><span lang=EN-US> </span><span class="hcp3">и</span> <span lang="EN-US" class="hcp14">Si</span><span class="hcp3">.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Дюралюминий хорошо обрабатывается и потому широко используется
+в производстве листового и профильного проката. Для повышения прочности такие
+сплавы часто подвергаются закалке при температуре <sub><img width="94" height="26" src="chap2_11.files/image141.gif" v:shapes="_x0000_i1100"></sub><span class="hcp12"> </span>с последующим охлаждением в воде и выдержкой
+при нормальной температуре в течение <sub><img width="58" height="18" src="chap2_11.files/image143.gif" v:shapes="_x0000_i1101"></sub><span class="hcp12"> </span>часов (естественное старение). Кроме того,
+деформируемые сплавы подвергаются обработкой давлением с последующей
+механической обработкой. Такую технологию применяют для изготовления деталей с
+высокой прочностью, например, дисков центробежных машин, деталей компрессоров и
+т.&nbsp;д.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Помимо вышеперечисленных, в машиностроении используется ряд
+других металлических сплавов, как правило, предназначенных для изготовления
+деталей с особыми свойствами. Например, сплав олова и свинца&nbsp; – <i class="hcp11">баббит</i> –</span> <span class="hcp3">обладает высокими антикоррозийными свойствами и
+применяется как материал при производстве вкладышей подшипников скольжения.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp5"><span class="hcp3">Термическая и термохимическая обработка металлических материалов.</span></b></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp10">Отжиг&nbsp;–
+</span><span class="hcp3">вид термообработки,
+устраняющий химическую и физическую неоднородности, полученные в результате
+предшествующей обработки. При отжиге металл нагревают до определенной
+температуры, затем длительно выдерживают при ней и медленно охлаждают с целью
+получения однородных структур. Отжиг бывает <i class="hcp11">низкотемпературным</i>
+и <i class="hcp11">высокотемпературным.</i> В первом
+случае температура нагрева не превышает температуру фазовых превращений, а во
+втором – выше этой температуры.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span style='font-size:10.0pt;
+mso-bidi-font-size:11.0pt;font-family:Arial;letter-spacing:-.2pt'>Отжиг
+применяется с целью снятия внутренних напряжений, возникших в результате
+сварки, после литья, обработки металлов давлением и т.&nbsp;д. В результате
+такой термообработки увеличивается пластичность и снижается твердость. Такая
+операция является необходимой для выполнения последующей операции
+механообработки.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp10">Закалка</span>
+<span class="hcp3">представляет собой процесс
+нагрева стали до температуры выше температуры фазовых изменений, выдержке при
+этой температуре и последующего охлаждения с большой скоростью. Нагрев
+поверхности до нужной температуры обеспечивается за счет индукционных токов
+высокой частоты. Изменение магнитного поля вызывает появление на поверхности
+детали индукционного тока, прохождение которого по поверхности способствует
+тепловыделению. Это, в конечном итоге, приводит к нагреву поверхностных слоев.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Закалка может быть выполнена по всему объему или по
+поверхности. Поверхностная закалка повышает твердость материала, его
+износостойкость и т.&nbsp;д. При таком виде закалки основная объемная часть
+материала остается пластичной, что благоприятным образом сказывается на
+конструкции в целом.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">При закалке материал упрочняется, но остается хрупким.
+Закалка не является окончательной операцией термообработки. Чтобы уменьшить
+хрупкость, снять остаточные напряжения и получить требуемые механические
+свойства, закаленные детали подвергают <i class="hcp11">отпуску.</i></span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp10">Отпуск</span>
+<span class="hcp3">заключается в нагреве металла
+до температуры ниже критической, выдержке при этой температуре и охлаждения с
+определенной скоростью. Отпуск бывает: низкотемпературным, когда температура
+нагрева <sub><img width="74" height="22" src="chap2_11.files/image145.gif" v:shapes="_x0000_i1102"></sub>,
+среднетемпературным с <sub><img width="132" height="22" src="chap2_11.files/image147.gif" v:shapes="_x0000_i1103"></sub><span class="hcp12"> </span>и высокотемпературным, <sub><img width="132" height="22" src="chap2_11.files/image149.gif" v:shapes="_x0000_i1104"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Термообработка, состоящая из закалки и высокого отпуска,
+называется <i class="hcp11">улучшением</i>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Металлы могут подвергаться не только термической, но и <i class="hcp11">термохимической</i> обработке
+(поверхностному легированию), т.&nbsp;е. термическому и химическому воздействию
+на поверхностный слой. Наиболее распространенным видом такой обработки является
+<i class="hcp11">цементация</i>, при которой поверхностный
+слой насыщается углеродом. При таком варианте термообработки цементирующий слой
+может наноситься только на отдельные участки детали. Для цементации чаще всего
+используют низкоуглеродистые легированные стали. В результате на их поверхности
+образуется диффузионный слой, химический состав которого сильно зависит от
+глубины. Это можно объяснить тем, что проникновение диффундирующего элемента в
+глубинные слои оказывается затрудненным. Отметим, что на цементацию поступают
+детали, уже прошедшие механообработку, так как после цементации возможно провести
+только операцию шлифования.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp10">Нитроцементация</span><span class="hcp3">&nbsp;– процесс диффузионного
+насыщения поверхностного слоя углеродом и азотом, протекающий при температуре <sub><img width="110" height="23" src="chap2_11.files/image151.gif" v:shapes="_x0000_i1105"></sub>.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp10">Азотирование</span><span class="hcp3">&nbsp;– термохимическая обработка,
+при которой поверхностный слой насыщается азотом. Азотирование сильно повышает
+твердость поверхности, ее износостойкость, предел выносливости и стойкость к
+коррозии.</span></p>
+
+<p class=Bookbody style='margin-top:6.0pt;text-indent:21.25pt;line-height:normal'><b class="hcp5"><span class="hcp24">Неметаллические материалы.</span></b> <i class="hcp11"><span class="hcp24">Композиционные материалы</span></i><span class="hcp24"> представляют
+собой композицию из легких металлов (металлическая основа, или <i class="hcp11">матрица</i>) и прочных волокон
+(наполнитель). В качестве металлической основы используют</span> <span lang="EN-US" class="hcp25">Al</span><span class="hcp24">,</span> <span lang="EN-US" class="hcp25">Mg</span><span class="hcp24">,</span> <span lang="EN-US" class="hcp25">Ni</span><span lang=EN-US> </span><span class="hcp24">и их сплавы.
+Металлическая матрица связывает волокна в единое целое. Волокна располагаются
+таким образом, что создают определенную композицию. Композиционные материалы
+обладают более высокой статической прочностью и прочностью при переменном
+режиме нагружения, чем обычные сплавы. Применение этих материалов повышает
+жесткость конструкции и снижает ее металлоемкость. При этом прочность
+композиционного материала определяется прежде всего свойствами волокон, а
+матрица выполняет роль связующего элемента.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Для упрочнения алюминия и магния и их сплавов применяют
+борные и углеродистые волокна. Для армирования титана и его сплавов применяют
+молибденовую проволоку, проволоку карбида кремния и т.&nbsp;д. Повышение
+жаропрочности никелевых сплавов достигается за счет использования вольфрамовой
+и молибденовой проволок и т.&nbsp;д.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Для композиционных материалов характерно наличие анизотропии
+свойств по объему, что в конечном итоге можно эффективно использовать за счет
+соответствующего расположения детали.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Композиционные материалы обладают высокой статической
+прочностью, малой чувствительностью к концентраторам напряжений и в результате
+повышенный предел усталостной прочности.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Кроме металлической, иногда используют полимерную либо
+керамическую основы.</span></p>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp5"><i class="hcp11"><span class="hcp3">Керамика</span></i></b> – <span class="hcp3">поликристаллический материал на основе соединений
+неметаллов. Если такой материал смешивается с металлами, то в результате
+получаются <i class="hcp11">металлокерамические</i>
+материалы, которые изготовляются методами порошковой металлургии. Такое
+сочетание позволяет создавать материалы, имеющие высокие термическую прочность,
+износостойкость, коррозийную стойкость и стойкость к агрессивным химическим
+средам.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Технология изготовления металлокерамических изделий включает
+получение порошков металлов (а также их смесей с неметаллическими порошками),
+прессование и последующее спекание в пресс-формах. Полученные таким образом
+детали не требуют дальнейшей механической обработки.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Заметим, что металлокерамические материалы могут получаться
+пористыми, причем пористость достигает <sub><img width="72" height="22" src="chap2_11.files/image153.gif" v:shapes="_x0000_i1106"></sub>. Такие
+материалы, имеющие низкий коэффициент трения, который для контакта с металлом
+лежит в диапазоне <sub><img width="113" height="26" src="chap2_11.files/image155.gif" v:shapes="_x0000_i1107"></sub>,
+целесообразно использовать в качестве фильтров и антифрикционных покрытий, а
+также вкладышей подшипников.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Металлокерамические материалы используются также и в других
+случаях, где их применение оправдано благодаря описанным выше свойствам.</span></p>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp5"><i class="hcp11"><span class="hcp3">Пластические массы (пластмассы)</span></i></b><span class="hcp3">&nbsp;–</span> <span class="hcp3">материалы на основе синтетических
+или природных высокомолекулярных смол (полимеров). Пластмасса может целиком
+состоять из смолы или представлять собой композиционный материал из полимерной
+основы (матрицы) и наполнителя, или из связующего и армирующих волокон (стекло,
+углерод и т.&nbsp;д.). Пластмассы бывают термопластические и термореактивные.
+Термопластические пластмассы могут быть использованы повторно. Они имеют
+значительно меньшую прочность и жесткость, применяются для изготовления
+малонагруженных деталей и благодаря хорошим антифрикционным свойствам
+используются как антифрикционные материалы.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">При нагреве пластмассы способны размягчаться и становятся
+пластичными. В таком состоянии им придают необходимую форму, которую они
+сохраняют при нормальной температуре.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Пластмассы имеют малую плотность, низкую теплопроводность,
+высокий коэффициент линейного расширения (в <sub><img width="50" height="16" src="chap2_11.files/image157.gif" v:shapes="_x0000_i1108"></sub>раз
+больше, чем у стали), хорошие электроизоляционные свойства, высокую химическую
+стойкость, фрикционные и антифрикционные свойства.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">К числу недостатков пластмасс можно отнести невысокую
+теплостойкость, низкий модуль упругости и склонность некоторых пластмасс к
+старению.</span></p>
+
+<p class=Bookbody style='line-height:normal'><b class="hcp5"><i class="hcp11"><span class="hcp24">Резина</span></i></b><span class="hcp24">&nbsp;–
+материал, получаемый вулканизацией смеси натурального либо синтетического
+каучука с серой и другими добавками. Резина отличается от других материалов высокими
+эластическими свойствами. Она обладает также высокой износостойкостью, хорошими
+диэлектрическими свойствами и тем, что способна сопротивляться многим
+агрессивным средам. Резина может выдерживать большие деформациям, которые, в
+свою очередь, полностью обратимы. Модуль упругости для резины лежит в пределах <sub><img width="48" height="22" src="chap2_11.files/image159.gif" v:shapes="_x0000_i1109"></sub><span class="hcp12"> </span>МПа, что в тысячи и десятки тысяч раз меньше,
+чем для других материалов. Высокая эластичность и определяет область применения
+деталей из резины. Резина используется для изготовления шин, упругих муфт,
+амортизаторов, различного рода упругих элементов высокой податливости,
+различного рода уплотнений и т.&nbsp;п.</span></p>
+
+<p class=Bookbody style='line-height:normal'><span class="hcp3">Серьезным недостатком резиновых деталей является низкая
+прочность. Для повышения прочности резину армируют текстильными материалами
+либо стальными элементами.</span></p>
+
+</div>
+
+<div placeholder id="footer" style="width:100%;" class="hcp1">
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			border-bottom-color: #000080;
+			border-bottom-style: Ridge;
+			border-bottom-width: 2px;
+			font-size: 10pt;">&nbsp;</p>
+ <p style="color: #000093;
+			margin-left: 0px;
+			margin-top: 0pt;
+			margin-bottom: 0pt;
+			font-family: Arial, sans-serif;
+			line-height: Normal;
+			font-size: 8pt;">&#169; 
+ 2007 Copyright &nbsp;&#1053;&#1058;&#1062; 
+ &#1040;&#1055;&#1052;</p>
+</div>
+</body>
+</html>
